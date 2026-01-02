@@ -1,0 +1,142 @@
+ID000_dummy.SPC            - UNUSED ROOM
+ID001_sch_1F.SPC           - Floor 1 with the 3rd floor still not built
+ID002_sch_2F.SPC           - Floor 2 with the 3rd floor still not built
+ID003_sch_3F.SPC           - Floor 3 with tarp over the floor
+ID004_sch_B1.SPC           - Floor -1
+ID005_sch_4F.SPC           - Floor 4
+ID006_sch_5F.SPC           - Floor 5
+ID007_gym.SPC              - The gym at the start of the game and when Kokichi brings over weapons
+ID008_gym_magic.SPC        - CH2 The gym during the magic show
+ID010_cafe.SPC             - The cafetaria
+ID014_shop.SPC             - The shop which I never visited once
+ID015_warehousea.SPC       - The wearhouse with greenary at the start of the game
+ID016_wc.SPC               - GIRL WC where you meet Miu Iruma in
+ID017_classRoom_A.SPC      - A Classroom with blue motif
+ID018_classRoom_B.SPC      - Actually first room in the game when you start and fall out of the locker
+ID019_libA.SPC             - The library in the basemenet from the point near the stairs
+ID020_libB.SPC             - Rantoro Dead room
+ID021_libA.SPC             - CH6 room with the Headmaster door exploded
+ID025_gam.SPC              - Gaming room where Tsumugi is homophobic
+ID026_av.SPC               - Cinema Room
+ID027_secretRoom_0.SPC     - CH6 Headmaster Room
+ID028_secretRoom_1.SPC     - CH6 Headmaster Room with the Monokuma head expldoed
+ID029_secret.SPC           - CH6 The passageway from the toilet to the headmaster room
+ID030_classRoom_C.SPC      - A classroom with a pink motif
+ID031_classRoom_C.SPC      - CH6 version of the same classroom with the exploded wall
+ID032_cold.SPC             - CH6 room with the space like pods
+ID034_wc.SPC               - BOYS WC
+ID036_vacancy_00.SPC       - CH3 One of the empty ritual rooms
+ID037_vacancy_01.SPC       - CH3 Tenko dead room
+ID038_vacancy_02.SPC       - CH3 UNUSED? Duplicate of one of the empty ritual rooms
+ID040_vacancy_01.SPC       - CH3 Room with statue on top of Tenko cage
+ID041_vacancy_01.SPC       - CH3 Room under the floorboards
+ID042_sch_1F.SPC           - CH1 Floor 1 Walk to the Gym without the exisals and wall still intact
+ID043_sch_1F.SPC           - CH1 Floor 1 Where you get chased by the Exisals
+ID044_sch_2F.SPC           - CH1 Floor 2... do you get chased by the Exisals here though?
+ID045_sch_6F.SPC           - CH4 Spiral staircase to Kaito's Lab
+ID050_sch_B1.SPC           - CH6 Floor -1 with rubble around to block you
+ID051_sch_1F.SPC           - CH6 Floor 1 with rubble, has the broken hole in the first room you enter
+ID052_sch_1F.SPC           - CH6 Floor 1 walk to gym with rubble
+ID053_sch_2F.SPC           - CH6 Floor 2 with rubble
+ID054_sch_3F.SPC           - CH6 Floor 3 with rubble
+ID055_sch_4F.SPC           - CH6 Floor 4 with rubble
+ID056_sch_5F.SPC           - CH6 Floor 5 with rubble
+ID058_cave.SPC             - CH6 walkway where you have to destroy rock to get to some kind of bunker
+ID060_warehousea.SPC       - Warehouse without greenary
+ID061_classRoom_A.SPC      - CH6 Classroom A with the campus visible outside
+ID062_classRoom_B.SPC      - CH6 Classroom B with the campus visible outside
+ID063_classRoom_C.SPC      - CH6 Classroom C with the campus visible outside
+ID070_sch_1F.SPC           - Floor 1 with F3 built and no greenary
+ID071_sch_1F.SPC           - Floor 1 with Magician Lab wall unlocked and F3 built
+ID072_sch_2F.SPC           - Floor 2 with no more statue and F3 built
+ID073_sch_3F.SPC           - Floor 3 with Floor 4 door
+ID074_sch_B1.SPC           - UNUSED? Duplicate of ID 004
+ID076_wc.SPC               - GIRL WC where the cutscene for the hidden toilet entrance happens
+ID100_residence.SPC        - The Dormitory
+ID101_Private_00.SPC       - Shuici's Room
+ID103_Private_02.SPC       - Ryoma's Room
+ID106_Private_05.SPC       - Kokichi's Room
+ID116_Private_15.SPC       - CH1 Kaede's Room
+ID130_lab_saihara.SPC      - Shuici's Lab
+ID131_lab_momota.SPC       - Kaito's Lab
+ID132_lab_hoshi.SPC        - Ryoma'S Tennis Court
+ID134_lab_hoshi_shower.SPC - Ryoma's Shower
+ID135_lab_amami.SPC        - Rantaro's Lab
+ID136_lab_gokuhara.SPC     - Gonta's Lab
+ID137_lab_oma.SPC          - Oh so this was the futuristic Batman cave, Kokichi's Lab
+ID138_lab_shinguji.SPC     - I never wanna see this man again
+ID146_lab_Ki-Bo.SPC        - Kebo's Lab
+ID147_lab_tojo.SPC         - Kirumi's Lab
+ID148_lab_yumeno.SPC       - UNUSED? Himiko's Lab but with 2 water tanks
+ID149_lab_yumeno.SPC       - Himiko's Lab but with 1 water tank
+ID150_lab_harukawa.SPC     - Maki's Lab
+ID151_lab_chabasira.SPC    - Tenko's Dojo
+ID152_lab_shirogane.SPC    - The place Tsumugi faked the pregame videos
+ID153_lab_yonaga.SPC       - Angie's Art Gallery with her dead
+ID154_lab_iruma.SPC        - Miu's Lab
+ID155_lab_akamatu.SPC      - Kaede's Lab during the pink day
+ID156_lab_yonaga_af.SPC    - Angie's Lab after death
+ID190_pool.SPC             - Normal Pool
+ID191_pool.SPC             - CH2 Pool Room with Evidence
+ID200_computer_A.SPC       - CH4 Room where you get instructions from Miu about the headset and where she cries
+ID201_computer_B.SPC       - CH4 Room with the seats amd Miu dead
+ID220_hangar.SPC           - CH5 The Hangar where Kaito faked the Kokichi Video
+ID222_hangar_wc.SPC        - CH5 Hangar peepee place
+ID240_casino_1f.SPC        - Casino Upper Floor
+ID241_casino_B1.SPC        - Casino Lower Floor
+ID247_sch_side_p.SPC       - CH1 Outdoors with Casino, Pool and Entrance to the back still locked
+ID248_elv_side_p.SPC       - CH1 Outdoors down a level, entranec to Miu and Tenko Dojo not built
+ID249_sch_side_0.SPC       - CH? Outdoors but you can now go in multiple places, pool's closed and F2 is still under construction
+ID251_elv_side_0.SPC       - CH? Outdoors but you can now go to Miu's Lab
+ID252_backyard_c1.SPC      - CH1 The place where that fuced up flash of Gonta's face popus up lifting a manhole
+ID253_elevator_c1.SPC      - CH1 Elevator to trial
+ID255_sch_side_1.SPC       - CH? Outdoors but with trees cut down, Pool's still closed and F3 is still not built
+ID256_elv_side_1.SPC       - CH? Outdoors down a level, deforested and entrance to elevator has lees greenary
+ID257_backyard_c2.SPC      - CH2 Fucked up Gonta sprite room with less greenary
+ID258_sch_side_2.SPC       - CH3 Outdoors with even less fucked greenary, starting building on the upper levels
+ID259_elv_side_2.SPC       - CH3 Outdoors down a level, Tenko's Dojo built
+ID262_sch_side_3.SPC       - CH? Outdoors with the final levels finished and Keeboo's Lab finished
+ID263_elv_side_3.SPC       - CH? Outdoors down a level, Keeboo's lab finished
+ID266_sch_side_4.SPC       - CH5 Outdoors with Hangar built
+ID267_elv_side_4.SPC       - CH5 Outdoors down a level, with Hangar built
+ID270_sch_side_5.SPC       - CH6 Outdoors when Keeboo fires in all directions, can go in the back to the Cold room
+ID271_elv_side_5.SPC       - CH6 Outdoors down a level, Keeboo fight
+ID272_backyard_c6.SPC      - CH6 Fucked up Gonta sprite room but destroyed
+ID273_elevator_c1.SPC      - CH6 Destroyed Elevator Room
+ID281_casino_area_0.SPC    - Area where you walk to the Love Hotel or the casino
+ID287_cyber_area_0.SPC     - CH5 Area near Keeboo/Miu's room, the room you enter the hangar and see the hangar wc from
+ID300_LC_01.SPC            - CH1-4 Class Trial
+ID301_LC_01s.SPC           - CH1-4 Dubstep area
+ID308_LC_05.SPC            - CH5 Class Trial
+ID309_LC_05s.SPC           - CH5 Dubstep area
+ID310_LC_06.SPC            - CH6 Class Trial
+ID311_LC_06_nico.SPC       - CH6 Class Trial with NicoNico text
+ID330_LC_01_after.SPC      - CH1-4 After Class Trial Talk
+ID334_LC_05_after.SPC      - CH5 After Class Trial Talk (where Maki cries)
+ID335_LC_06_before.SPC     - CH6 Before Nico Nico Class Trial
+ID336_LC_06_after.SPC      - CH1-4 After Class Trial with NicoNico text
+ID353_under.SPC            - CH1 Room before the stupid 2D game
+ID354_escapedeck.SPC       - CH1 Room if you finish the 2D game, CH5 Room where Kokichi shows us the exit
+ID400_loveapart.SPC        - Love Museum Minigame
+ID501_sch_1F.SPC           - CH1 Floor 1, but at night, gates at entrance
+ID502_sch_2F.SPC           - CH1 Floor 2, but at night, Statue still there
+ID510_cafe.SPC             - Cafetaria, but at night
+ID517_classRoom_A.SPC      - CH1 ClassRoom A where Kaede sets up the floor, Monitor has Killing Motive video
+ID570_sch_1F.SPC           - CH? Floor 1, but at night, no more green
+ID571_sch_1F.SPC           - CH? Floor 1 on your way to the gym, but at night, wall to Magician lab removed
+ID572_sch_2F.SPC           - CH? Floor 2, but at night, statue removed
+ID573_sch_3F.SPC           - CH? Floor 3, but at night
+ID600_residence.SPC        - Dormitory, but at night
+ID601_Private_00.SPC       - Shuici's Room, but at night
+ID616_Private_15.SPC       - CH1 Kaede's Room, but at night
+ID655_lab_akamatu.SPC      - Shuici's Lab, but at night
+ID749_sch_side_0.SPC       - CH? Outdoors, can go anywhere but pool's closed, but at night
+ID752_backyard_c1.SPC      - CH1 Fucked up Gonta sprite room, with greenary, but at night
+ID753_elevator_c1.SPC      - CH? Elevator to trial, buta t night
+ID755_sch_side_1.SPC       - Equivalent to the corresponding numbers from above, but at night
+ID758_sch_side_2.SPC       - Equivalent to the corresponding numbers from above, but at night
+ID762_sch_side_3.SPC       - Equivalent to the corresponding numbers from above, but at night
+ID766_sch_side_4.SPC       - Equivalent to the corresponding numbers from above, but at night
+ID770_sch_side_6.SPC       - CH6 Outdoors Keeboo destryored 
+ID771_elv_side_6.SPC       - CH6, seems to be the final room before the elevator for the trial, bird cage botanical greenhouse still intact
+ID999_dummy.SPC            - UNUSED Just a red square
