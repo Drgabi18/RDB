@@ -1,4 +1,4 @@
-# RBS
+# RDB
 This repository includes the random stuff I was able to find reverse engineering Danganronpa.
 
 This repo is related to these 2 videos I made:
