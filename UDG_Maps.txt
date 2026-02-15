@@ -1,0 +1,189 @@
+data/_map
+mp00_fr00_00.bnm - Kitchen, when you get that gun with every bullet
+mp00_fr01_00.bnm - Scene where you are in 2D after exiting the kitchen
+mp00_fr02_00.bnm - DUPLICATE of above, maybe UNUSED? One above has no shipping containers, but this one does, maybe this was used only on PS4 and PC while the one above was only used on PSV?
+mp00_ha00_00.bnm - The ship interior, probably for cutscenes
+mp00_kr00_00.bnm - Komaru Naegi's room, first room in the game
+mp00_kr00_01.bnm - Corridor where you run out of your house after masterfully avoiding Monokuma
+mp00_pr00_00.bnm - Room after you wake up and Nagi- sorry, Servant gives you the gun
+mp00_pr00_01.bnm - DUPLICATE same thing as above ... maybe UNUSED?
+mp01_cl00_00.bnm - Clinic Floor 0
+mp01_cl00_01.bnm - Clinic Floor A
+mp01_cl00_02.bnm - Clinic Floor A - Side Room on one of the floors
+mp01_cl00_03.bnm - Clinic Floor A - Side Room with hospital beds
+mp01_cl00_04.bnm - Clinic Floor A - Room where that monokuma on legs gets out of the mourge
+mp01_cl00_05.bnm - Clinic Floor A - Side Room with bookshelf
+mp01_cl00_06.bnm - Clinic Floor B - Side Room with hospital beds
+mp01_cl00_07.bnm - Clinic Floor B - Side Room with boxes
+mp01_cl00_08.bnm - Clinic Floor B - Room with a TV
+mp01_cl00_09.bnm - Clinic Floor B - Another CEO type room
+mp01_cl00_10.bnm - First map where you meet with Toko
+mp01_cl00_11.bnm - Clinic - Puzzle Room
+mp01_cl00_12.bnm - Clinic - Puzzle Room 2
+mp01_co00_00.bnm - First Boss Room
+mp01_co00_00__.bnm - UNUSED BOSS ROOM
+mp01_co00_01.bnm - First boss room after door opens
+mp01_ht00_00.bnm - Hotel - Lobby
+mp01_ht00_01.bnm - Hotel - I think that puzzle room where you look from above at the code
+mp01_ht00_02.bnm - Hotel - Generator Room
+mp01_ht00_03.bnm - Hotel - Puzzle Room
+mp01_ht00_04.bnm - Hotel - Hotel Room
+mp01_ht00_05.bnm - Hotel - Hotel Room 2
+mp01_ht00_06.bnm - UNUSED ROOM - Seems like a side room, has no Colission
+mp01_ht00_07.bnm - Hotel - Administrative Room
+mp01_ht00_08.bnm - Hotel - Corridor with broken side so you can see outside, looking outside the map you can see the form of the unused room, also has the corridor where the Monokuma glass was
+mp01_st00_00.bnm - Streets - Streets after exiting out the hotel
+mp01_st00_01.bnm - Streets - Construction Monokuma introduction
+mp01_st00_02.bnm - Streets - Still streets with ocean visible
+mp01_st00_03.bnm - Streets - Still streets but going more towards the Tilted Towers
+mp01_st00_04.bnm - Streets - Still streets but has the entire subway path to the boss room
+mp01_st00_05.bnm - Streets - But only the part with the tilted tower
+mp01_st00_06.bnm - Streets - DUPLICATE of mp01_st00_01.bnm? Unused?
+mp01_st01_00.bnm - Streets - Part with bridge visible and the bridge exists now
+mp01_st01_01.bnm - Streets - Map after bridge collapse
+mp01_st01_02.bnm - Streets - DUPLICATE of above idk can't be bothered to check more
+mp01_st02_00.bnm - Streets - Bridge map
+mp01_st02_01.bnm - Streets - that one map where you go on the bridge and then aoi's brother dies rip
+mp02_ba00_00.bnm - Base - That hideout that looks like a Japanase sewer but in actuallity it's used to hide Godzilla, no box for Toko and Komaru to climb
+mp02_ba00_01.bnm - Base - Cutscene only map where you meet Haiji
+mp02_bw00_00.bnm - Amsterdam Area - Graveyard
+mp02_bw00_01.bnm - Amsterdam Area - Where there's a gift the platforms are still intact
+mp02_bw00_02.bnm - Amsterdam Area - Puzzle Room
+mp02_bw00_03.bnm - Amsterdam Area - Puzzle Room 2
+mp02_bw00_04.bnm - Towa Tower - Entering that weird rotating Tower but the way outside is blocked
+mp02_co00_00.bnm - BOSS ROOM
+mp02_co00_01.bnm - Same as above, after I guess
+mp02_sh00_00.bnm - UNUSED City
+mp02_sh00_01.bnm - UNUSED Base of a Tower from map above
+mp02_tt00_00.bnm - Towa Tower - Base
+mp02_tt00_01.bnm - Towa Tower - Tank of fishes are animated on the 3rd floor now I guess
+mp02_tt00_02.bnm - Towa Tower - Tank of fishes are animated on the 4rd floor, I think it goes up with the floor, so previous 2 maps are 0/1st and 2nd floor
+mp02_tt00_03.bnm - Towa Tower - Puzzle Room with the bars
+mp02_tt00_04.bnm - Towa Tower - Where you first meet ball monokuma and at one point you have to climb with Toko and Komaru up some goo
+mp02_tt00_05.bnm - Towa Tower - That Room with the weird staircases, exists for literally a single gift
+mp02_tt00_06.bnm - Towa Tower - Some kind of locker room, but for boys
+mp02_tt00_07.bnm - Towa Tower - Some kind of locker room, but for girls
+mp02_tt00_08.bnm - Towa Tower - That one puzzle room that looks underwater
+mp02_tt01_00.bnm - Towa Tower - Top of the tower which looks like one from mp02_sh00_01.bnm, but this map is actually used
+mp02_tt01_01.bnm - Towa Tower - Elevator
+mp02_un00_00.bnm - Subway - Yes, the start of Chapter 2 is not at the start of the list, this is the same map you get when you start Chapter 2 from the Level Select
+mp02_un01_00.bnm - Subway - Seeing the Train Tracks
+mp02_un01_01.bnm - Subway - Same Map
+mp02_un01_02.bnm - Subway - Same Map again, one of these is where pretty boy shows you that motive video and there's real advertisments in the Japanese PSV version
+mp02_un02_00.bnm - Subway - When you first meet Shirokuma
+mp02_un02_01.bnm - Subway - Some Side Room
+mp02_un02_02.bnm - Subway - UNUSED Puzzle Room
+mp02_un02_03.bnm - Subway - Puzzle Room, has the same shape as the one from the unused map above
+mp02_un02_04.bnm - Subway - When you meet Shirokuma but now you have to go to the other exit
+mp02_un02_05.bnm - Subway - Side Room with lockers
+mp02_un02_06.bnm - Subway - Kitchen Monokuma introduction
+mp02_un02_07.bnm - Subway - Some long room
+mp02_un02_08.bnm - Subway - Another Side Room with lockers
+mp02_un02_09.bnm - Subway - Puzzle Room in those kind of halls that look like that Discovery Channel show where they bought lockers
+mp02_un02_10.bnm - Subway - Side Room with TVs
+mp02_un02_11.bnm - Subway - Side Room to the Sewers
+mp02_un03_00.bnm - Sewer - When you first enter the sewers
+mp02_un03_01.bnm - Sewer - More going down
+mp02_un03_02.bnm - Sewer - More More going down
+mp02_un03_03.bnm - Sewer - I see a Puzzle Room of sorts
+mp02_un03_04.bnm - Sewer - Can go to either sewer base or graveyard
+mp02_un03_05.bnm - Sewer - Looks like mp02_un03_03.bnm with the same generators but with no puzzle door
+mp02_un03_06.bnm - Sewer - Same as above
+mp03_ba00_00.bnm - Base - same as mp04_ba00_00.bnm but much darker
+mp03_bw00_00.bnm - Towa Tower - entering that weird rotating tower but the way outside is no longer blocked
+mp03_bw00_01.bnm - Amsterdam Area - When you exit out the graveyard and there's a gift
+mp03_bw00_02.bnm - Amsterdam Area - Puzzle Room
+mp03_bw00_03.bnm - Amsterdam Area - Puzzle Room 2 but now it has the kids paintings
+mp03_bw00_04.bnm - Amsterdam Area - Puzzle Room 3
+mp03_bw00_05.bnm - Amsterdam Area - Puzzle Room 4
+mp03_bw00_06.bnm - Amsterdam Area - Grave yard
+mp03_co00_00.bnm - BOSS map where you use paralyze
+mp03_mo00_00.bnm - Train
+mp03_mo00_01.bnm - Train 2
+mp03_mo00_02.bnm - Train 3
+mp03_mo00_03.bnm - Train 4 - before the room
+mp03_mo00_04.bnm - Train 5?
+mp03_mo00_05.bnm - That room
+mp03_mo00_06.bnm - Komaru Naegi, more like, Cumaru Naegi
+mp03_tt00_00.bnm - Towa Tower - Climbing down to... somwhere and seeing the caricature of Amsterdab streets
+mp03_tt00_01.bnm - Towa Tower - That puzzle room with the light in the wall
+mp03_tt00_02.bnm - Towa Tower - The map after that one
+mp03_tt00_03.bnm - Towa Tower - First Floor again... wooo
+mp03_tt00_04.bnm - Towa Tower - Staircase with drawings
+mp03_tt00_05.bnm - Towa Tower - Puzzle Room
+mp03_tt00_06.bnm - Towa Tower - First Floor again?
+mp03_tt01_00.bnm - Towa Tower - At the top again, with only the interior renredered, CUTSCENE ONLY map probably
+mp03_tt01_01.bnm - Towa Tower - At the top again
+mp03_tt01_02.bnm - Towa Tower - At the top again, but the power got cut out
+mp04_ba00_00.bnm - Base - EVENT ONLY CUTSCENE MAP where a girl with a gun gives a speach to people who can't pick up a weapon
+mp04_co00_00.bnm - Nagisa BOSS Room
+mp04_co00_01.bnm - Nagisa BOSS Room after?
+mp04_ct00_00.bnm - I guess the streets where Nagisa accompanies you
+mp04_ct00_01.bnm - Where the Bomb Monokumas try to drop bombs
+mp04_ct00_02.bnm - After they drop the bombs when you go backwards and there's a puzzle?
+mp04_ct00_03.bnm - When you are on those streets with the black and white houses
+mp04_ct00_04.bnm - When you get ambused by red buses in the corners of a square
+mp04_ct00_05.bnm - Still on those streets, idk too lazy to check
+mp04_ct00_06.bnm - Same as above
+mp04_ct00_07.bnm - When you get like in front of that blue buliding
+mp04_jj00_00.bnm - Dojo - Dojo fight
+mp04_jj00_01.bnm - Dojo - Going up stairs Dojo
+mp04_sf00_00.bnm - Monokuma Factory - 1st Underground Floor
+mp04_sf00_01.bnm - Monokuma Factory - 2nd Underground Floor
+mp04_sf00_02.bnm - Monokuma Factory - 3rd Underground Floor
+mp04_sf00_03.bnm - Monokuma Factory - 4th Underground Floor, has that weird gift where you have to walk in the wall and open the doors to a DR2 styled room
+mp04_sf00_04.bnm - Monokuma Factory - Side Room
+mp04_sf00_05.bnm - Monokuma Factory - Puzzle Room
+mp04_sf00_06.bnm - Monokuma Factory - Side Room 2
+mp04_sf00_07.bnm - Monokuma Factory - Puzzle Room 2
+mp04_sf00_08.bnm - Monokuma Factory - Puzzle Room 3
+mp04_sf00_09.bnm - Monokuma Factory - Puzzle Room 4
+mp04_sf00_10.bnm - Monokuma Factory - Side Room 3 with bugs I think
+mp04_sf00_11.bnm - Monokuma Factory - That dreaded fucking puzzle room
+mp04_un00_00.bnm - Subway - I hope it's not that stupid underground map aga- IT'S THE SUBWAY MAPS AGAIN
+mp04_un01_00.bnm - Subway - I think in the end Toko eventually blows up a pathway and the subway tracks become like a ladder
+mp04_un01_01.bnm - Subway - More into the same lenght of track
+mp04_un01_02.bnm - Subway - Just progressing, I think this map has the immersion breaking walls since they couldn't find a way to add something in-world there
+mp04_un01_03.bnm - Subway - Oh hey map where that subway rail becomes a ladder
+mp04_un01_04.bnm - Subway - Same thing as above
+mp04_un03_00.bnm - Sewer - Back to the sewers I guess
+mp05_co00_00.bnm - Map where you fight the Final Boss
+mp05_gB00_00.bnm - That map that is just the kids' room and you can climb up to the Junko room
+mp05_ge00_00.bnm - I don't even remember what this is called but it's the one where you go into each kid's room
+mp05_ge00_01.bnm - Idk really, I think just the upper floor for the map above
+mp05_ge01_00.bnm - Puzzle Room 1 - 1
+mp05_ge01_01.bnm - Puzzle Room 1 - 2
+mp05_ge02_00.bnm - Puzzle Room 2 - 1
+mp05_ge02_01.bnm - Puzzle Room 2 - 2
+mp05_ge03_00.bnm - Puzzle Room 3 - 1
+mp05_ge03_01.bnm - Puzzle Room 3 - 2
+mp05_ge04_00.bnm - Puzzle Room 4 - 1
+mp05_ge04_01.bnm - Puzzle Room 4 - 2
+mp05_ge50_00.bnm - Room before you climb that spiral to the top
+mp05_ge50_01.bnm - Room where you actually climb that spiral to the top
+mp05_gm00_00.bnm - This is where my parents died Toko. This is where you parents died Oops Oops
+mp05_go00_00.bnm - Room where you fight Monoca's Boss
+mp05_go00_01.bnm - CUTSCENE ONLY MAP after debris fall and Haiji comes and says he doesn't care about her anymore and then Pink Hair Girl is very sassy, they also forgot the baseplate underneath the map whoops
+mp05_go01_00.bnm - Break the remote frozen Komaru part where you play as normal Toko for once
+mp05_mr00_00.bnm - Junko Room
+mp05_oa01_00.bnm - When going up the Hotel, Corridor, one of the maps before the puzzle map with Pink Hair Girl and that Monokuma Casket thing
+mp05_oa01_01.bnm - Some corporate meeting room
+mp05_oa01_02.bnm - Some corporate meeting room 2
+mp05_oa02_00.bnm - When going up the Hotel, Corridor 2
+mp05_oa02_01.bnm - The Puzzle Room I was talking about above
+mp05_oa03_00.bnm - The dark corridor where you go to the room with your parents
+mp05_oe00_00.bnm - Bottom of some building, Komaru starts hearing ghosts here
+mp05_oe00_01.bnm - That puzzle room where you have to platform on metal stills
+mp05_oe00_02.bnm - That room after with the really blue windows
+mp05_oe00_04.bnm - Some kind of CEO room, number jumps from 02 to 04
+mp05_pm00_00.bnm - Map when going to the area
+mp05_pm00_01.bnm - Same thing?
+mp05_pm00_02.bnm - Same thing again????
+mp05_pm00_03.bnm - AGAIN???? Same thing again????
+mp05_pm00_ev.bnm - EVENT ONLY CUTSCENE MAP before going up to the end area, where servant/izuru cutscene happens
+mp05_rt00_00.bnm - Room where you fight the hoard of monokumas before entering the ship
+mp05_tg00_00.bnm - PRERENDERED CUTSCENE ONLY ROOM
+mp_street_01.bnm - UNUSED, i think early version of mp01_st00_00.bnm
+mp_street_03.bnm - UNUSED
+mp_street_04.bnm - UNUSED
+mp_street_05.bnm - UNUSED, i think early version of mp01_st02_01.bnm
