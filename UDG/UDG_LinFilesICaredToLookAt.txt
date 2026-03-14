@@ -1,0 +1,16 @@
+data/_scr/en
+e99_000_000.lin - Uses 2nd Hospital floor, used for testing break the remote, bilboarding, events, buttons, text boxes, detect bullet, getting documents
+e99_000_001.lin - Same result as above
+e99_001_001.lin - Uses mp_street_01.bnm, tests lighting, climbing, 2nd tier monokumas, and opening doors
+e99_002_000.lin - Uses mp_street_03.bnm, stuck if accessed through loading the .lin directly
+e99_002_001.lin - Testing fight with Toko at the Dojo, bullets used as placeholder for markers, also 2 random objects in the sky
+e99_003_000.lin - Uses mp_street_04.bnm, stuck if accessed through loading the .lin directly
+e99_003_001.lin - Hospital test layout, accessed through e99_007_001.lin, stuck if accessed through loading the .lin directly
+e99_004_000.lin - Uses mp_street_05.bnm, no way to play in it, stuck if accessed through loading the .lin directly
+e99_004_001.lin - Bridge test layout, accessed through e99_007_001.lin, stuck if accessed through loading the .lin directly
+e99_005_001.lin - Fighting Kotoko in train test, accessed through e99_003_001.lin, stuck if accessed through loading the .lin directly
+e99_006_001.lin - Uses mp_street_03.bnm, tests proprieties for falling off edges
+e99_007_001.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas?
+e99_007_002.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas?, stuck if accessed through loading the .lin directly
+e99_007_003.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas?, stuck if accessed through loading the .lin directly
+e99_007_004.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas?, stuck if accessed through loading the .lin directly
