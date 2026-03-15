@@ -3,8 +3,7 @@ I am completly in awe what whatever this structure is, or how it was even progra
 ```cpp
 // not the actual name
 enum UDG_CanChangePlayerAndOtherStuff {
-	CanChangeToAndFromGenocider = 1 << 4
-	UNK = 1 << 6
+	CanChangeToAndFromSyo = 1 << 3
 }
 
 /* 0x1407b73d0 */ UDG_CanChangePlayerAndOtherStuff PlayerChangeEnum;
@@ -28,13 +27,13 @@ enum UDG_CanChangePlayerAndOtherStuff {
 // ...
 /* 0x1407b7440 */ short TokoBatteryPower; // how many batteries she has
 // ...
-/* 0x1407b7444 */ float TokoBatteryFloat;
+/* 0x1407b7444 */ float TokoBatteryFloat; // 100.0 to 0.0
 // ...
 ```
 That's fine and all, it's just how the game works. As you might have noticed however, they are not part of a struct or anything, they are just global variables in the code that simply get caled and changed (e.g. `66 89 3d e7 21 71 00		MOV word ptr [CurrentPlayer],DI` to change the `CurrentPlayer` value).
-There's a problem however... the functions at `0x140099fc0` and `0x140099450`, which have a loop for a struct that starts at `0x1407b73d0` (the assembly instruction is `0f 28 02        MOVAPS     XMM0,xmmword ptr [0x1407b73d0]`). As you've seen above, those variables in the code are treated as global variables, however this function calls this region of code as if it's a struct.
-So then... how the hell does this work?
-Normally, if we were to make the above variables a struct, then the assembly for every single function called would absoluley not look like that, all instructions would have been executed with stuff like `MOV CL,[rdx+rcx*4]` to move something from the struct to where we want, but it isn't.
+There's a problem however... the functions at `0x140099fc0` and `0x140099450`, which have a loop for a struct that starts at `0x1407b73d0`, the player change enum, and the struct size is `0x80` bytes, the assembly instruction for itt is `0f 28 02        MOVAPS     XMM0,xmmword ptr [0x1407b73d0]`.
+As you've seen above, those variables in the code are treated as global variables, however this function calls this region of code as if it's a struct. So then... how the hell does this work?
+Normally, if we were to make the above variables a struct, then the assembly for every single field called would absoluley not look like that, all instructions would have been executed with stuff like `MOV CL,[rdx+rcx*4]` to move something from the struct to where we want, but it isn't.
 
 ## First idea
 My first idea was that that they did something like
@@ -50,7 +49,7 @@ struct UDG_Gamer {
 
 OurPlayer.CurrentPlayer = 5
 ```
-However, if we did this and looked at the dissasembly, we see code that calls the class constructor for `OurPlayer`, this doesn't exist at all in UDG's code, so it's not that.
+However, at least on the latest MSVC x86_64 dissasembly (UDG was done in VS 2012 but it's not on Compile Explorer sooo), we see code that this idea calls the class constructor for `OurPlayer`, this doesn't exist at all in UDG's code, so it's not it.
 Even after that, the line where we change the current player does include the `[rdx+rcx*4]` thing I was talking about.
 This is not how they did it in the slightes, so it must mean it's another way.
 
@@ -75,6 +74,6 @@ Now the question is... why would you make it like this in the first place, what 
 ...
 OHHHHHHHHH... different people indeed wrote these parts of the code.
 
-Funny thing is, I still have no idea what the functions at `0x140099fc0` and `0x140099450` even do, after the loop iterates 1614 times doing `MOV        EAX,1614; DEC        RAX; JNZ        LAB_140099472` they start to call the struct as if it's an array, but there's no way it's an array, as one of the variables following the end of the struct is `0x1407b7454` which is an `int` controlling how much money you have (and right after the number of retries, which fun fact maxes at 99).
+Funny thing is, I still have no idea what the functions at `0x140099fc0` and `0x140099450` even do, after the loop iterates 1614 times (not kidding btw, `MOV        EAX,1614; DEC        RAX; JNZ        LAB_140099472`) they start to call the struct as if it's an array, but there's no way it's an array, as one of the variables following the end of the struct is `0x1407b7454` which is an `int` controlling how much money you have (and right after the number of retries, which fun fact maxes at 99). It makes sense why it stops at the place where it stops though, it's `0x80` bytes in size and everything inside it seems to be related ONLY to the player.
 
-This nicely reveals that all of the variables from above are all in a single file too, however, out of all things, the variable that controls if Komaru holds a weapon or her running animaion confidence isn't here... I still have no idea where they are.
+This nicely reveals that all of the variables from above (the ones inside the `UDG_Gamer` struct and then money, retries, unlockables) are all in a single header too, however, out of all things, the variable that controls if Komaru holds a weapon or her running animaion confidence somehow isn't here... I still have no idea where they are. The function that gets called when you first start the game is at `0x140099680`, but none of the variables there control it that.
