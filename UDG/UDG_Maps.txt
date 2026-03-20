@@ -114,7 +114,7 @@ mp03_tt00_05.bnm - Towa Tower - Puzzle Room
 mp03_tt00_06.bnm - Towa Tower - First Floor again?
 mp03_tt01_00.bnm - Towa Tower - At the top again, no lights, with only the interior renredered, CUTSCENE ONLY map probably
 mp03_tt01_01.bnm - Towa Tower - At the top again, boxes and middle pillar got exploded so you can't go from the exterior to the laptop with Makoto, golden monokuma statue also gone
-mp03_tt01_02.bnm - Towa Tower - At the top again, bpower cut out, completly pitch black
+mp03_tt01_02.bnm - Towa Tower - At the top again, power cut out, completly pitch black
 mp04_ba00_00.bnm - Base - EVENT ONLY CUTSCENE MAP where a girl with a gun gives a speach to people who can't pick up a weapon
 mp04_co00_00.bnm - Nagisa BOSS Room
 mp04_co00_01.bnm - Nagisa BOSS Room after?
