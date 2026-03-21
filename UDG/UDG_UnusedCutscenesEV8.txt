@@ -1,0 +1,39 @@
+data/_evt/
+e02_080_000.ev8 - Cutscene has Komaru, Toko and Cihiro's Dad and then it fades out after 1 second
+ev999_000_000.ev8 - Sports Boy walking for a bit
+ev999_000_001.ev8 - CRASH, boy I sure hope the next 17 cutscenes also don't crash
+ev999_000_002.ev8 - CRASH
+ev999_000_003.ev8 - CRASH
+ev999_000_004.ev8 - CRASH
+ev999_000_005.ev8 - CRASH
+ev999_000_006.ev8 - CRASH
+ev999_000_007.ev8 - CRASH
+ev999_000_008.ev8 - CRASH
+ev999_000_009.ev8 - CRASH
+ev999_000_010.ev8 - CRASH, by the way each crash means I had to load the game from 0
+ev999_000_011.ev8 - CRASH
+ev999_000_012.ev8 - CRASH
+ev999_000_013.ev8 - CRASH
+ev999_000_014.ev8 - CRASH
+ev999_000_015.ev8 - CRASH
+ev999_000_016.ev8 - CRASH
+ev999_000_017.ev8 - CRASH
+ev999_000_018.ev8 - CRASH
+ev999_000_019.ev8 - CRASH
+post_test.ev8 - Sets the screen to black and then returns to gameplay
+prev00.ev8 - Acts similar to test51.ev8 but then CRASHES
+test00.ev8 - Plays the in-game cutscene before Komaru watches the TV screen at the dinner... then Monoc t-poses in a wheelchair slowly coming toward her, then the normal movie plays
+test01.ev8 - First meeting Aoi's borther scene
+test06.ev8 - Sets the screen to black and then returns to gameplay
+test07.ev8 - Acts similar to test51.ev8
+test08.ev8 - CRASH
+test50.ev8 - I HAVE NO IDEA WHAT THIS IS IN FINAL, Starts from Toko, then pans to Komaru and CRASHES
+test51.ev8 - Needs further reserach, camera stays in place for a few seconds and then gameplay returns
+test_koizumi.ev8 - I HAVE NO IDEA WHAT THIS IS IN FINAL, Komaru asks if this is a hospital, while Aoi's brother sits in his running position
+test_koizumi2.ev8 - Kids bring in TV cutscene for Pretty Boy to talk, only the movie plays and the in-game scene at the end stops before anything
+test_koizumi3.ev8 - Komaru execution scene, how the hell did she survive that, only the movie plays and the in-game scene at the end stops before Nagito (thankfully)
+test_koizumi4.ev8 - Scene for like half a second where you look at some boss kid
+test_koizumi5.ev8 - Cutscene after Sports Boy dies, only the movie plays and the in-game scenes at the end stops before the kids talk
+test_koizumi6.ev8 - Nagisa cutscene before boss fight
+test_koizumi7.ev8 - BETA Cutscene from when you meet with people on the plane, Future Foundation use those blue and pink models
+test_koizumi8.ev8 - Meeting Hot Mom for the first time
