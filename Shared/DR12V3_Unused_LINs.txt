@@ -1,0 +1,54 @@
+=== DR1
+e01_196_000.lin - Chapter 1 Trial Menu
+e01_197_000.lin
+e02_195_000.lin - Chapter 2 Trial Menu
+e02_196_000.lin
+e03_196_000.lin - Chapter 3 Trial Menu
+e03_197_000.lin
+e04_195_000.lin - Chapter 4 Trial Menu
+e04_196_000.lin
+e04_197_000.lin
+e05_195_000.lin - Chapter 5 Trial Menu
+e05_196_000.lin
+e05_197_000.lin
+e06_195_000.lin - Chapter 6 Trial Menu
+e06_196_000.lin
+e06_197_000.lin
+e08_001_030.lin - Unused Ishimaru School Mode Event 1 
+e08_001_031.lin - Unused Ishimaru School Mode Event 2
+e08_001_032.lin - Unused Ishimaru School Mode Event 3
+e08_001_033.lin - Unused Ishimaru School Mode Event 4
+e08_001_034.lin - Unused Ishimaru School Mode Event 5 - you get a blank item at the end
+e09_001_000.lin - Beta Prolouge - Seemingly the start of the game, just in Japanase, sends you to e09_002_000.lin
+e09_002_000.lin - Beta Prolouge - Makoto waking up in the class room, uses the final letter designs, sends you to e00_003_000.lin
+e09_003_001.lin - Beta Prolouge - The first floor of the school, can't go to the gym, clicking on the entrance door sends you to 000_000_004
+e09_004_001.lin - Beta Prolouge - The first floor of the school, can go to the gym, clicking on the gym door sends you to 000_000_005
+e09_004_003.lin - Beta Prolouge - The part at the start of the game where you talk to everyone.
+e09_005_004.lin - Beta Prolouge - Going to the Gym, that part with Sayaka, Junko and Kyoko at the door.
+e09_006_007.lin - Beta Prolouge - When everone meets Monokuma in the Gymnasium, NASA mentions included
+e10_200_000.lin - Demo Chapter Trial Menu
+
+=== DR2
+e00_000_180.lin - First room in the game in the classroom, only 3 selectable objects
+e01_296_000.lin - Chapter 1 Trial Menu
+e01_297_000.lin
+e02_296_000.lin - Chapter 2 Trial Menu
+e02_297_000.lin
+e03_296_000.lin - Chapter 3 Trial Menu
+e03_297_000.lin
+e04_296_000.lin - Chapter 4 Trial Menu
+e04_297_000.lin
+e05_296_000.lin - Chapter 5 Trial Menu
+e05_297_000.lin
+e06_290_000.lin - Test Junko Boobs and stuff
+e06_295_000.lin - Chapter 6 Trial Menu
+e06_296_000.lin
+e06_297_000.lin
+e09_000_001.lin - Twilight Debug, press down 5 times to begin debug
+e09_090_001.lin - DR1 School Mode file with the same name
+e09_100_096.lin - Final Dead Room Debug, unfinished
+e09_100_250.lin - Twilight Debug Episode 1
+e09_100_251.lin - Twilight Debug Episode 2
+
+=== DRV3
+Chapter Verification
