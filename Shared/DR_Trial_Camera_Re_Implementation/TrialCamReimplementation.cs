@@ -1,7 +1,12 @@
 ﻿/*
-	Reimplementation of Binary Data found in "trial_camera.pak" in Danganronpa 2
+	  Reimplementation of Binary Data found in "trial_camera.pak" in Danganronpa 2
 	Not functional or efficient code, written recreationally for "fun" cause I
 	forgot to bring my lunch to work so I wrote this instead.
+	  The cameras don't actually point to a certain thing, for example, if you
+	recreate "FIXED_00" in Blender, you will notice it pointing to where Twogami's
+	spot would be in game, the OP Code that sets these Trial Cameras actually
+	uses an index to point toward the characters, so you can't really export
+	these and it takes extra math to have them work in a different game of yours.
 
 	==== MORE INFO ====
 		.pak files are basically just concatonated binary data blobs with some
@@ -11,7 +16,7 @@
 	is so easy that you can basically recreate it in code.
 	
 		This is not the same for all files, for stuff like "sv_test.pak", it's more
-	like if you did `cat pak_llfs.metadata bar.tga menu.tga >> sv_test.pak`.
+	like if you did `cat pak.metadata bar.tga menu.tga >> sv_test.pak`.
 	
 		Ultra Despair Girl actullay has some empty .h header files with pragma directives
 	at the start, so it's most likely that these were made in a file like that
@@ -117,11 +122,11 @@ public class DR_TrialCam {
 
 
 		// UNK: not XYZ Euler??? add 90 to XRot and ZRot to correct it in apps like Blender
-		public float ZRot;
-		public float YRot;
+		public float ZRot; // if not ZRot, this is possibly Yaw
+		public float YRot; // if not YRot, this is possibly Pitch
 		public float X, Y, Z; // in Danganronpa the 2nd parameter for the character player
 							  // is up/down (YPos internally)
-		public float XRot;
+		public float XRot; // if not XRot, this is possibly Roll or Vector4 quaternion
 	}
 
 	[StructLayout(LayoutKind.Sequential, Pack = 4), Serializable()]
@@ -138,10 +143,13 @@ public class DR_TrialCam {
 		}
 
 		public float Unk1; // 0-N, mostly 0.5, probably how much of it to play?
-		public float MotionDuration;
+		public float MotionDuration; // for the camera that pans around Junko, the
+									 // values are something like 0, 420, 470 for
+									 // the 3 cameras used, so how many frames
+									 // or start of keyframe
 		public CameraPositionStruct[] Keyframes;
 		public short ShouldGoToTheNextCam;	// if 0 then it stops, if 1 then it
-											// goees to the next camera, if
+											// goes to the next camera, if
 											// short.MaxValue then it goes 
 											// CurrentCameraID + 256
 		public short _Padding; // always 0x00 0x00 so the file is 4 bytes aligned
@@ -186,7 +194,7 @@ public class DR_TrialCam {
 		/* FIXED_02	*/
 			// yeah i'm not doing the rest, you can make a Stream and use
 			// BinaryReader to parse the rest, kind of sucks that there isn't a
-			// strem.Read<TrialCameraStruct> to make this easier, oh well
+			// strem.Read<TrialCameraStruct>() to make this easier, oh well
 		/* FIXED_03	*/
 		/* FIXED_04	*/
 		// ...
@@ -430,7 +438,7 @@ public class DR_TrialCam {
 		"ZOOMOUT_DOLLYIN_04_END",
 		"Q_PAN_L_00",	// some of the cameras from above but with Q_ at the start
 						// since these aren't a nice number away like 128, these
-						// were probably made manually and set manually
+						// were probably made manually and jumped to manually
 		"Q_PAN_L_00_END",
 		"Q_PAN_L_01",
 		"Q_PAN_L_01_END",
