@@ -108,7 +108,7 @@ public class GangnamClass {
 		new(OpCodeHex.LOAD_MAP, 3),
 		new(OpCodeHex.LOAD_SCRIPT, 3),
 		new(OpCodeHex.RUN_SCRIPT, 3),
-		};
+	};
 
 	public static readonly List<DrOpCode> DR2_DrOpCodes = new List<DrOpCode>{
 		new(OpCodeHex.LOAD_MAP, 4), // idk why it has ONE more
@@ -144,6 +144,7 @@ class Program {
 	public static void Main(string[] args) {
 		int IsDr1orDr2 = 0; // 1 or 2
 		string FolderPath = null;
+		bool CoolGraphThing = false;
 
 		foreach (string command in args) {
 			switch(command) {
@@ -153,6 +154,9 @@ class Program {
 				case "-d":
 				case "--directory":
 					FolderPath = args[Array.IndexOf(args, command)+1]; break;
+				case "-v":
+				case "--graphviz":
+					CoolGraphThing = true; break;
 				case "-?":
 				case "--help":
 					Console.WriteLine("./ThisApp.exe -g/--game 1 -d/--directory ./Path/To/LinFiles/"); return;
@@ -176,6 +180,23 @@ class Program {
 		}
 		CreateNodes();
 
+		if (CoolGraphThing) {
+			string FileNameForViz = (IsDr1orDr2 == 1) ? "./dr1_lazy_graphviz.txt" : "./dr2_lazy_graphviz.txt";
+			
+			using (StreamWriter WhyDoINeedThis = new StreamWriter(FileNameForViz)) {
+				foreach (NodeClass.Node nodey in NodeClass.GetNodes()) {
+					WhyDoINeedThis.WriteLine("\"{0}\"", nodey);
+					if (nodey.NodeConnections is not null) {
+						foreach (NodeClass.Node inception in nodey.NodeConnections) {
+							WhyDoINeedThis.WriteLine("\"{0}\" -> \"{1}\"", nodey, inception);
+						}
+					}
+					WhyDoINeedThis.Flush();
+				}
+			}
+
+			return; // exit early from Main here cause i didn't my commit to look ugly
+		}
 
 		// write to file
 		var SeriOptons = new JsonSerializerOptions{
@@ -194,8 +215,8 @@ class Program {
 			NodeClass.GetNodes(), SeriOptons);
 		Console.WriteLine(SerializedOutput2);
 
-		string FileNameForCodes = IsDr1orDr2 == 1 ? "./dr1_code_results.txt" : "./dr2_code_results.txt";
-		string FileNameForNodes = IsDr1orDr2 == 1 ? "./dr1_node_results.txt" : "./dr2_node_results.txt";
+		string FileNameForCodes = (IsDr1orDr2 == 1) ? "./dr1_code_results.txt" : "./dr2_code_results.txt";
+		string FileNameForNodes = (IsDr1orDr2 == 1) ? "./dr1_node_results.txt" : "./dr2_node_results.txt";
 		File.WriteAllText(FileNameForCodes, SerializedOutput);
 		File.WriteAllText(FileNameForNodes, SerializedOutput2);
 	}
@@ -207,7 +228,7 @@ class Program {
 	// as it's written right now, the connections aren't even references but new objects
 	public static void ReadFile(string theFile) {
 		var fileInfo = new FileInfo(theFile);
-		
+
 		List<KeyValuePair<GangnamClass.OpCodeHex, List<byte>>> ListOfFoundCodes = new();
 		byte[] FileBytes = File.ReadAllBytes(theFile);
 		// easiest way i could think of making this is just getting all instances
@@ -231,7 +252,7 @@ class Program {
 		offset++;
 		}
 		Globals.DictionaryWithFilesAndCodes.Add(fileInfo.Name, ListOfFoundCodes);
-		// Thread.Sleep(16); // just for show
+		// Thread.Sleep(16); // just for show for the video :P
 	}
 
 	public static void CreateNodes() {
