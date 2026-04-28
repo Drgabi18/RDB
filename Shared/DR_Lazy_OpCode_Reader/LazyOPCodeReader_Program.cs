@@ -62,6 +62,11 @@ public class NodeClass {
 			AddsToListOfNodes(nodey); // gets rejected by the function if it exists already
 			if (!GetNodeExists(NodeConnections, nodey)) this.NodeConnections.Add(nodey);
 		}
+
+		public override string ToString()
+		{
+			return $"e{Arg1:D2}_{Arg2:D3}_{Arg3:D3}";
+		}
 	}
 
 	public static List<Node> GetNodes() {
@@ -84,33 +89,43 @@ public class NodeClass {
 
 public class GangnamClass {
 	public enum OpCodeHex : byte {
-		START = 0x70,	// 112
-		LOAD_MAP = 0x15,	// 21
-		LOAD_SCRIPT = 0x19,	// 25
-		STOP_SCRIPT = 0x1A,	// 26
-		RUN_SCRIPT = 0x1B	// 27
+		START = 0x70,
+		LOAD_MAP = 0x15,
+		LOAD_SCRIPT = 0x19,
+		STOP_SCRIPT = 0x1A,
+		RUN_SCRIPT = 0x1B
 	}
 
+	public static readonly Dictionary<byte, string> OpCodeName = new Dictionary<byte, string> {
+		[0x70] = "Start", 
+		[0x15] = "Load Map", 
+		[0x19] = "Load Script", 
+		[0x1A] = "Stop Script", 
+		[0x1B] = "Run Script", 
+	};
+
 	public static readonly List<DrOpCode> DR1_DrOpCodes = new List<DrOpCode>{
-		new("Load Map", OpCodeHex.LOAD_MAP, 3),
-		new("Load Script", OpCodeHex.LOAD_SCRIPT, 3),
-		new("Run Script", OpCodeHex.RUN_SCRIPT, 3),
+		new(OpCodeHex.LOAD_MAP, 3),
+		new(OpCodeHex.LOAD_SCRIPT, 3),
+		new(OpCodeHex.RUN_SCRIPT, 3),
 		};
 
 	public static readonly List<DrOpCode> DR2_DrOpCodes = new List<DrOpCode>{
-		new("Load Map", OpCodeHex.LOAD_MAP, 4), // idk why it has ONE more
-		new("Load Script", OpCodeHex.LOAD_SCRIPT, 5), // idk why it has TWO more
-		new("Run Script", OpCodeHex.RUN_SCRIPT, 5), // idk why it has TWO more
+		new(OpCodeHex.LOAD_MAP, 4), // idk why it has ONE more
+		new(OpCodeHex.LOAD_SCRIPT, 5), // idk why it has TWO more
+		new(OpCodeHex.RUN_SCRIPT, 5), // idk why it has TWO more
 	};
 
 	// named DrOpCode because C# already has an OpCode class :)
 	public class DrOpCode {
-		public DrOpCode(string name, OpCodeHex id, int arguments) {
-			this.Name=name;
+		public DrOpCode(/* string name, */ OpCodeHex id, int arguments) {
+			//this.Name=name;
 			this.ID=id;
 			this.Arguments=arguments;
 		}
-		public readonly string Name; // cosmetic, no one understands what 0x15 would mean without text :P
+		// cosmetic, no one understands what 0x15 would mean without text :P
+		// also horribly wasteful, since it makes no sense to store this
+		//public readonly string Name;
 		// [JsonConverter(typeof(OpCodeHex))]
 		public readonly OpCodeHex ID;
 		public readonly int Arguments;
@@ -208,8 +223,8 @@ class Program {
 							tempBuffer.Add(FileBytes[offset + 1 + i]);
 						}
 						ListOfFoundCodes.Add(new KeyValuePair<GangnamClass.OpCodeHex, List<byte>>(opy.ID, tempBuffer)); // https://www.youtube.com/watch?v=dT4oWwM266k
-						Console.WriteLine("[{0}]\tFound\t{1}\t(0x{2})\tat offset\t{3}",
-							fileInfo.Name, opy.Name, opy.ID.ToString("x").ToUpper(), offset); // nice to see stuff :P
+						Console.WriteLine("[{0}] Found\t{1}\t(0x{2})\tat offset {3}",
+							fileInfo.Name, GangnamClass.OpCodeName[(byte)opy.ID], opy.ID.ToString("x").ToUpper(), offset); // nice to see stuff :P
 					}
 				}
 			}
