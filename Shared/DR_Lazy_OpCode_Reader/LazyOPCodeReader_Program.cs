@@ -239,7 +239,8 @@ class Program {
 			NodeClass.Node newNode = new NodeClass.Node(Codes.Key);
 			NodeClass.AddsToListOfNodes(newNode);
 			foreach (var Instruction in Codes.Value) {
-				if (Instruction.Key == GangnamClass.OpCodeHex.LOAD_SCRIPT) {
+				if (Instruction.Key == GangnamClass.OpCodeHex.LOAD_SCRIPT ||
+					Instruction.Key == GangnamClass.OpCodeHex.RUN_SCRIPT) {
 					newNode.AddNodeConnection(new NodeClass.Node(Instruction.Value.ToArray()));
 				}
 			}
