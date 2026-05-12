@@ -21,7 +21,7 @@ For the PSP, I explored the following Catalog Numbers:
 For the Anniversary ports where the debug symbols are from, I extraced them from the following versions:
 * `jp.co.spike_chunsoft.DR1.apk` - Version 1.0.0
 * `jp.co.spike_chunsoft.DR2.apk` - Version 1.0.2
-* `jp.co.spike_chunsoft.DRV3.apk`  - Version 1.1
+* `jp.co.spike_chunsoft.DRV3.apk` - Version 1.1
 
 Each file for each game is sorted individually into the folder for what title they are part of. To explain what each file is:
 * `./DR1_Rooms.ods`, `./DR2_Rooms.ods`, `./DRV3_Rooms.txt`, `./UDG_Maps.txt` are the files containing the Room IDs and a short description of what they do. This is probably what you would want to know the most.
