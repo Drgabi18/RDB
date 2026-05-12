@@ -19,7 +19,7 @@ For the PSP, I explored the following Catalog Numbers:
 * `NPJH50515 v1.00` - _Danganronpa 1 (PSP The Best Edition)_
 * `NPJH50631 v1.02` - _Super Danganronpa 2_
 
-For the Anniversary ports where the debug symbols are from, I extraced them from the following versions:
+For the Anniversary ports where the Debug Symbols are from, I extraced them from the following versions:
 * `jp.co.spike_chunsoft.DR1.apk` - Version 1.0.0
 * `jp.co.spike_chunsoft.DR2.apk` - Version 1.0.2
 * `jp.co.spike_chunsoft.DRV3.apk` - Version 1.1
