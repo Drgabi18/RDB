@@ -139,4 +139,15 @@ ID762_sch_side_3.SPC       - Equivalent to the corresponding numbers from above,
 ID766_sch_side_4.SPC       - Equivalent to the corresponding numbers from above, but at night
 ID770_sch_side_6.SPC       - CH6 Outdoors Keeboo destryored 
 ID771_elv_side_6.SPC       - CH6, seems to be the final room before the elevator for the trial, bird cage botanical greenhouse still intact
-ID999_dummy.SPC            - UNUSED Just a red square
+ID950_1F.SPC               - DEMO Floor 1
+ID951_residence.SPC        - DEMO The Dormitory
+ID952_classRoom_B.SPC      - DEMO Classroom where you wake up
+ID953_gym.SPC              - DEMO Gym
+ID954_Private_15.SPC       - DEMO Kaede's Room
+ID955_showerroom.SPC       - DEMO Bathroom, Hrio Dead
+ID956_cafe.SPC             - DEMO Cafetaria and you can inspect the Kitchen
+ID957_warehousea.SPC       - DEMO Warehouse
+ID958_wc.SPC               - DEMO Girl WC
+ID960_LC_01_after.SPC      - DEMO Tehnically used before and never after in the Demo, the Trial Room when you enter
+ID961_LC_01.SPC            - DEMO  Class Trial
+ID999_dummy.SPC            - UNUSED Just a red square, but it's actually used during the Epilouge, a bit impossible to see don't you think :^)
