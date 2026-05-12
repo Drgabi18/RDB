@@ -6,11 +6,12 @@ This repo contains a collection of research documents I created for the followin
 * [[Danganronpa 1/2/V3] Development Trivia & Fun Facts](https://www.youtube.com/watch?v=ljNlJfbsQQk)
 * [[Danganronpa 1/2/UDG/V3] Development Trivia & Super Fun Facts 2](./poop)
 
-I explored the following Steam depots
-* DR1: `download_depot 413410 413413 6184791363566370453`
-* DR2: `download_depot 413420 413423 4176999508874191731` (actually all of them and I lost my mind)
-* UDG: `download_depot 555950 555952 4190759877809212923`
-* DRV3: `download_depot 567640 567641 5154425171419538896`
+I explored the following Steam depots:
+* DR1 Linux: `download_depot 413410 413413 6184791363566370453`
+* DR2 Linux: `download_depot 413420 413423 4176999508874191731` ~~(actually all of them and I lost my mind)~~
+* DR2 MacOS: `download_depot 413420 413422 73890315654914570`
+* UDG Windows: `download_depot 555950 555952 4190759877809212923`
+* DRV3 Windows: `download_depot 567640 567641 5154425171419538896`
 
 For the PSP, I explored the following Catalog Numbers:
 * `NPJH90164 v1.01` - _Danganronpa 1 DEMO_ (but the English Patch)
