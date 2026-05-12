@@ -1,7 +1,7 @@
 # RDB
 This repository includes the random stuff I was able to find reverse engineering Danganronpa.
 
-This repo is related to these 2 videos I made:
+This repo contains a collection of research documents I created for the following videos that I've made:
 * [[Danganronpa 1/2/V3] Unused Rooms](https://www.youtube.com/watch?v=QMtvbAJh83s)
 * [[Danganronpa 1/2/V3] Development Trivia & Fun Facts](https://www.youtube.com/watch?v=ljNlJfbsQQk)
 * [[Danganronpa 1/2/UDG/V3] Development Trivia & Super Fun Facts 2](./poop)
