@@ -245,7 +245,7 @@ class Program {
 						}
 						ListOfFoundCodes.Add(new KeyValuePair<GangnamClass.OpCodeHex, List<byte>>(opy.ID, tempBuffer)); // https://www.youtube.com/watch?v=dT4oWwM266k
 						Console.WriteLine("[{0}] Found\t{1}\t(0x{2})\tat offset {3}",
-							fileInfo.Name, GangnamClass.OpCodeName[(byte)opy.ID], opy.ID.ToString("x").ToUpper(), offset); // nice to see stuff :P
+							fileInfo.Name, Enum.GetName<GangnamClass.OpCodeHex>(opy.ID), opy.ID.ToString("x").ToUpper(), offset); // nice to see stuff :P
 					}
 				}
 			}
