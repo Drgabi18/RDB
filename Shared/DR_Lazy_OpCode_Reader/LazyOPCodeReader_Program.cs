@@ -13,8 +13,15 @@
 
 	Meaning of Op Codes used from here
 	https://github.com/SpiralFramework/Spiral/blob/master/Formats.md#op-codes 
+
+	If you're thinking aobut submitting a PR to fix my horrible code, don't, I
+	wouldn't understand why your commits would fix it, I'd rather learn myself
 */
 
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -96,13 +103,10 @@ public class GangnamClass {
 		RUN_SCRIPT = 0x1B
 	}
 
-	public static readonly Dictionary<byte, string> OpCodeName = new Dictionary<byte, string> {
-		[0x70] = "Start", 
-		[0x15] = "Load Map", 
-		[0x19] = "Load Script", 
-		[0x1A] = "Stop Script", 
-		[0x1B] = "Run Script", 
-	};
+	public enum UDGOpCodeHex : byte {
+		START = 0x70,
+		LOAD_SCRIPT = 0x0E
+	}
 
 	public static readonly List<DrOpCode> DR1_DrOpCodes = new List<DrOpCode>{
 		new(OpCodeHex.LOAD_MAP, 3),
@@ -128,6 +132,16 @@ public class GangnamClass {
 		//public readonly string Name;
 		// [JsonConverter(typeof(OpCodeHex))]
 		public readonly OpCodeHex ID;
+		public readonly int Arguments;
+	}
+
+	// this is fucking disastorous coding
+	public class UDGOpCode {
+		public UDGOpCode(UDGOpCodeHex id, int arguments) {
+			this.ID=id;
+			this.Arguments=arguments;
+		}
+		public readonly UDGOpCodeHex ID;
 		public readonly int Arguments;
 	}
 }
@@ -177,7 +191,7 @@ class Program {
 		foreach (string file in LinFiles) {
 			if (file.Contains("novel")) continue; // skip novels cause i'm lazy
 			if (GameID != "UDG") { // i hate how this reads
-			ReadFile(file);
+				ReadFile(file);
 			} else {
 				ReadFileUDG(file);
 			}
@@ -185,7 +199,7 @@ class Program {
 		}
 		
 		if (GameID != "UDG") {
-		CreateNodes();
+			CreateNodes();
 		} else {
 			TheOnlyWayToFixThisIs_With_A_Gun();
 			return; // exit super early because this whole thing is a mess
@@ -283,7 +297,7 @@ class Program {
 		offset++;
 		}
 		Globals.DictionaryWithFilesAndCodes.Add(fileInfo.Name, ListOfFoundCodes);
-		// Thread.Sleep(16); // just for show for the video :P
+		//Thread.Sleep(16); // just for show for the video :P
 	}
 
 	public static void CreateNodes() {
@@ -295,6 +309,61 @@ class Program {
 					Instruction.Key == GangnamClass.OpCodeHex.RUN_SCRIPT) {
 					newNode.AddNodeConnection(new NodeClass.Node(Instruction.Value.ToArray()));
 				}
+			}
+		}
+	}
+
+	// hacky code made for UDG only since i didn't think beforehand when making
+	// this code also because i was butthurt and didn't want to extend it to
+	// multiple files, guess what now...
+
+	public static Dictionary<string, List<KeyValuePair<GangnamClass.UDGOpCodeHex, byte[]>>>
+		DictionaryWithFilesAndCodes2 = new();
+
+	public static void ReadFileUDG(string theFile) {
+		var fileInfo = new FileInfo(theFile);
+
+		List<KeyValuePair<GangnamClass.UDGOpCodeHex, byte[]>> ListOfFoundCodes = new();
+		byte[] FileBytes = File.ReadAllBytes(theFile);
+		int offset = 0;
+		foreach (byte bi in FileBytes) {
+			if (bi == (byte)GangnamClass.UDGOpCodeHex.START) {
+				if (FileBytes[offset + 1] == (byte)GangnamClass.UDGOpCodeHex.LOAD_SCRIPT) {
+					byte[] tempBuffer = new byte[6];
+					for(int i = 0; i <= 5; i++) { // hardcoded for loadscript's argument size for now
+						tempBuffer[i]=FileBytes[offset + 2 + i];
+					}
+					ListOfFoundCodes.Add(new KeyValuePair<GangnamClass.UDGOpCodeHex, byte[]>(GangnamClass.UDGOpCodeHex.LOAD_SCRIPT, tempBuffer));
+					Console.WriteLine("[{0}] Found\t{1}\t({2})\tat offset {3}",
+						fileInfo.Name, "LOAD_SCRIPT", "0x0E", offset); // nice to see stuff :P
+				}
+			}
+			offset++;
+		}
+		DictionaryWithFilesAndCodes2.Add(fileInfo.Name, ListOfFoundCodes);
+		//Thread.Sleep(16); // just for show for the video :P
+	}
+
+	public static void TheOnlyWayToFixThisIs_With_A_Gun() {
+		byte[] ThisIsStupid1 = new byte[2];
+		byte[] ThisIsStupid2 = new byte[2];
+		byte[] ThisIsStupid3 = new byte[2];
+		foreach (var Codes in DictionaryWithFilesAndCodes2) {
+			foreach (var Instruction in Codes.Value) {
+				// 00 37 00 66 00 4A -> 37 00 66 00 4A 00
+				// idk how to big endian to little endian easier
+				ThisIsStupid1[0] = Instruction.Value[1];
+				ThisIsStupid1[1] = Instruction.Value[0];
+				ThisIsStupid2[0] = Instruction.Value[3];
+				ThisIsStupid2[1] = Instruction.Value[2];
+				ThisIsStupid3[0] = Instruction.Value[5];
+				ThisIsStupid3[1] = Instruction.Value[4];
+				Console.WriteLine("\"{0}\" -> \"e{1:D2}_{2:D3}_{3:D3}.lin\"", // doing it manually instead
+					Codes.Key,
+					BitConverter.ToInt16(ThisIsStupid1), // this code is aleady bad so we're not even gonna bother
+					BitConverter.ToInt16(ThisIsStupid2), // with platform specific stuff like checking if we're LE first
+					BitConverter.ToInt16(ThisIsStupid3)
+				);
 			}
 		}
 	}
