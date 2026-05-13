@@ -142,15 +142,15 @@ class Program {
 	// accept directory only
 	// TODO: directiroies*
 	public static void Main(string[] args) {
-		int IsDr1orDr2 = 0; // 1 or 2
-		string FolderPath = null;
+		string GameID = null; // rant time, why the fuck is dotnet giving me an error when i compile these without null,
+		string FolderPath = null; // but when i add null, it then tells me it's not null and can be simplified?
 		bool CoolGraphThing = false;
 
 		foreach (string command in args) {
 			switch(command) {
 				case "-g":
 				case "--game":
-					IsDr1orDr2 = Convert.ToInt16(args[Array.IndexOf(args, command)+1]); break;
+					GameID = args[Array.IndexOf(args, command)+1]; break;
 				case "-d":
 				case "--directory":
 					FolderPath = args[Array.IndexOf(args, command)+1]; break;
@@ -164,9 +164,10 @@ class Program {
 			}
 		}
 		
-		switch(IsDr1orDr2) {
-			case 1: Globals.ListOfDrOpCodes = GangnamClass.DR1_DrOpCodes; break;
-			case 2: Globals.ListOfDrOpCodes = GangnamClass.DR2_DrOpCodes; break;
+		switch(GameID) {
+			case "DR1": Globals.ListOfDrOpCodes = GangnamClass.DR1_DrOpCodes; break;
+			case "DR2": Globals.ListOfDrOpCodes = GangnamClass.DR2_DrOpCodes; break;
+			case "UDG": break; // we are handling this inside the udg code sadly
 			default: throw new Exception("No game ID specified");
 		}
 
@@ -175,13 +176,28 @@ class Program {
 		// everything below could be multithread but naaaah
 		foreach (string file in LinFiles) {
 			if (file.Contains("novel")) continue; // skip novels cause i'm lazy
+			if (GameID != "UDG") { // i hate how this reads
 			ReadFile(file);
+			} else {
+				ReadFileUDG(file);
+			}
 			// break; // early debugging exit
 		}
+		
+		if (GameID != "UDG") {
 		CreateNodes();
+		} else {
+			TheOnlyWayToFixThisIs_With_A_Gun();
+			return; // exit super early because this whole thing is a mess
+		}
 
 		if (CoolGraphThing) {
-			string FileNameForViz = (IsDr1orDr2 == 1) ? "./dr1_lazy_graphviz.txt" : "./dr2_lazy_graphviz.txt";
+			string FileNameForViz = null;
+			switch(GameID) {
+				case "DR1": FileNameForViz = "./dr1_lazy_graphviz.txt";break;
+				case "DR2": FileNameForViz = "./dr2_lazy_graphviz.txt";break;
+				case "UDG": FileNameForViz = "./udg_lazy_graphviz.txt";break; // unused
+			}
 			
 			using (StreamWriter WhyDoINeedThis = new StreamWriter(FileNameForViz)) {
 				foreach (NodeClass.Node nodey in NodeClass.GetNodes()) {
@@ -215,8 +231,23 @@ class Program {
 			NodeClass.GetNodes(), SeriOptons);
 		Console.WriteLine(SerializedOutput2);
 
-		string FileNameForCodes = (IsDr1orDr2 == 1) ? "./dr1_code_results.txt" : "./dr2_code_results.txt";
-		string FileNameForNodes = (IsDr1orDr2 == 1) ? "./dr1_node_results.txt" : "./dr2_node_results.txt";
+		string FileNameForCodes = null;
+		string FileNameForNodes = null;
+		switch(GameID) {
+			case "DR1":
+				FileNameForCodes = "./dr1_code_results.txt";
+				FileNameForNodes = "./dr1_node_results.txt";
+				break;
+			case "DR2":
+				FileNameForCodes = "./dr2_code_results.txt";
+				FileNameForNodes = "./dr2_node_results.txt";
+				break;
+			case "UDG": // unused
+				FileNameForCodes = "./udg_code_results.txt";
+				FileNameForNodes = "./udg_node_results.txt";
+				break;
+		}
+		
 		File.WriteAllText(FileNameForCodes, SerializedOutput);
 		File.WriteAllText(FileNameForNodes, SerializedOutput2);
 	}
