@@ -18,10 +18,6 @@
 	wouldn't understand why your commits would fix it, I'd rather learn myself
 */
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -105,7 +101,8 @@ public class GangnamClass {
 
 	public enum UDGOpCodeHex : byte {
 		START = 0x70,
-		LOAD_SCRIPT = 0x0E
+		LOAD_SCRIPT = 0x0E,
+		RUN_SCRIPT = 0x30
 	}
 
 	public static readonly List<DrOpCode> DR1_DrOpCodes = new List<DrOpCode>{
@@ -337,6 +334,15 @@ class Program {
 					Console.WriteLine("[{0}] Found\t{1}\t({2})\tat offset {3}",
 						fileInfo.Name, "LOAD_SCRIPT", "0x0E", offset); // nice to see stuff :P
 				}
+				else if (FileBytes[offset + 1] == (byte)GangnamClass.UDGOpCodeHex.RUN_SCRIPT && FileBytes[offset + 2] == 0x00) { // oh my god gabi REFFACTOR HE FUCKING CODE
+					byte[] tempBuffer = new byte[8];
+					for(int i = 0; i <= 7; i++) {
+						tempBuffer[i]=FileBytes[offset + 2 + i];
+					}
+					ListOfFoundCodes.Add(new KeyValuePair<GangnamClass.UDGOpCodeHex, byte[]>(GangnamClass.UDGOpCodeHex.RUN_SCRIPT, tempBuffer));
+					Console.WriteLine("[{0}] Found\t{1}\t({2})\tat offset {3}",
+						fileInfo.Name, "RUN_SCRIPT (?)", "0x30", offset);
+				} 
 			}
 			offset++;
 		}
@@ -348,22 +354,40 @@ class Program {
 		byte[] ThisIsStupid1 = new byte[2];
 		byte[] ThisIsStupid2 = new byte[2];
 		byte[] ThisIsStupid3 = new byte[2];
+		byte[] ThisIsStupid4 = new byte[2];
 		foreach (var Codes in DictionaryWithFilesAndCodes2) {
 			foreach (var Instruction in Codes.Value) {
 				// 00 37 00 66 00 4A -> 37 00 66 00 4A 00
 				// idk how to big endian to little endian easier
-				ThisIsStupid1[0] = Instruction.Value[1];
 				ThisIsStupid1[1] = Instruction.Value[0];
-				ThisIsStupid2[0] = Instruction.Value[3];
+				ThisIsStupid1[0] = Instruction.Value[1];
 				ThisIsStupid2[1] = Instruction.Value[2];
-				ThisIsStupid3[0] = Instruction.Value[5];
+				ThisIsStupid2[0] = Instruction.Value[3];
 				ThisIsStupid3[1] = Instruction.Value[4];
-				Console.WriteLine("\"{0}\" -> \"e{1:D2}_{2:D3}_{3:D3}.lin\"", // doing it manually instead
-					Codes.Key,
-					BitConverter.ToInt16(ThisIsStupid1), // this code is aleady bad so we're not even gonna bother
-					BitConverter.ToInt16(ThisIsStupid2), // with platform specific stuff like checking if we're LE first
-					BitConverter.ToInt16(ThisIsStupid3)
-				);
+				ThisIsStupid3[0] = Instruction.Value[5];
+				if (Instruction.Key == GangnamClass.UDGOpCodeHex.RUN_SCRIPT) {
+					ThisIsStupid4[1] = Instruction.Value[6];
+					ThisIsStupid4[0] = Instruction.Value[7];
+				}
+
+				short BEtoLE1 = BitConverter.ToInt16(ThisIsStupid1); // this code is aleady bad so we're not even gonna bother
+				short BEtoLE2 = BitConverter.ToInt16(ThisIsStupid2); // with platform specific stuff like checking if we're LE first
+				short BEtoLE3 = BitConverter.ToInt16(ThisIsStupid3);
+				short BEtoLE4 = BitConverter.ToInt16(ThisIsStupid4);
+
+				if (BEtoLE1 < 0 || BEtoLE1 > 99  ||
+					BEtoLE2 < 0 || BEtoLE2 > 999 ||
+					BEtoLE3 < 0 || BEtoLE3 > 999 ||
+					BEtoLE4 < 0 || BEtoLE4 > 999)
+					Console.WriteLine(" ================ Anomaly detected in {0} ================ ", Codes.Key);
+
+				if (Instruction.Key == GangnamClass.UDGOpCodeHex.LOAD_SCRIPT) {
+					Console.WriteLine("\"{0}\" -> \"e{1:D2}_{2:D3}_{3:D3}.lin\"", // doing it manually instead
+						Codes.Key, BEtoLE1,  BEtoLE2,  BEtoLE3);
+				} else if (Instruction.Key == GangnamClass.UDGOpCodeHex.RUN_SCRIPT) {
+					Console.WriteLine("[SPECULATIVE] \"{0}\" -> \"e{1:D2}_{2:D3}_{3:D3}.lin\"",
+						Codes.Key, BEtoLE1, BEtoLE2, BEtoLE4);
+				}
 			}
 		}
 	}
