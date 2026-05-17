@@ -1,0 +1,407 @@
+e00_000_180.lin: <CLT 04>Desk<CLT>
+e00_000_180.lin: <CLT 04>Blackboard<CLT>
+e00_000_180.lin: <CLT 04>Teacher's Desk<CLT>
+
+e01_296_000.lin: Argument 1-4
+e01_296_000.lin: Argument 5-8
+e01_296_000.lin: Argument 9
+e01_296_000.lin: Rebuttal 1-3 / Spot Select Area
+e01_296_000.lin: <CLT 06>Please select where you would like to go.
+e01_296_000.lin: <CLT>
+e01_296_000.lin: Nonstop Debate / Refute 1
+e01_296_000.lin: Nonstop Debate / Refute 2
+e01_296_000.lin: Nonstop Debate / Consent 3
+e01_296_000.lin: Nonstop Debate / Refute 4
+e01_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e01_296_000.lin: <CLT>
+e01_296_000.lin: Nonstop Argument / Consent 5
+e01_296_000.lin: Nonstop Argument / Refute 6
+e01_296_000.lin: Nonstop Argument / Refute 7
+e01_296_000.lin: Nonstop Argument / Refute 8
+e01_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e01_296_000.lin: <CLT>
+e01_296_000.lin: Nonstop Argument / Refute 9
+e01_296_000.lin: Before Suspend Point
+e01_296_000.lin: Go back
+e01_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e01_296_000.lin: <CLT>
+e01_296_000.lin: Rebuttal Showdown 1
+e01_296_000.lin: Rebuttal Showdown 2
+e01_296_000.lin: Rebuttal Showdown 3
+e01_296_000.lin: Spot Select
+e01_296_000.lin: <CLT 06>Which rebuttal would you like to jump to?
+e01_296_000.lin: <CLT>
+e01_297_000.lin: Hangman's Gambit 1
+e01_297_000.lin: Hangman's Gambit 2
+e01_297_000.lin: PTA (VS Teruteru)
+e01_297_000.lin: Closing Argument
+e01_297_000.lin: <CLT 06>Please select where you would like to go.
+e01_297_000.lin: <CLT>
+
+e02_296_000.lin: Argument 1-5
+e02_296_000.lin: Argument 5-8
+e02_296_000.lin: Spot Select 1-4
+e02_296_000.lin: Rebuttal 1-2 / Guess Person Area
+e02_296_000.lin: <CLT 06>Please select where you would like to jump to.
+e02_296_000.lin: <CLT>
+e02_296_000.lin: Nonstop Debate 1 / Refute 
+e02_296_000.lin: Nonstop Debate 2 / Consent
+e02_296_000.lin: Nonstop Debate 3 / Refute
+e02_296_000.lin: Nonstop Debate 4 / Refute
+e02_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e02_296_000.lin: <CLT>
+e02_296_000.lin: Nonstop Debate 5 / Refute
+e02_296_000.lin: Nonstop Debate 6 / Refute
+e02_296_000.lin: Nonstop Debate 7 / Refute
+e02_296_000.lin: Go back
+e02_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e02_296_000.lin: <CLT>
+e02_296_000.lin: Spot Select 2
+e02_296_000.lin: Spot Select 2, 4
+e02_296_000.lin: Sparkling Justice's appearance
+e02_296_000.lin: After climax
+e02_296_000.lin: <CLT 06>Which spot select would you like to jump to?
+e02_296_000.lin: <CLT>
+e02_296_000.lin: Rebuttal Showdown 1
+e02_296_000.lin: Rebuttal Showdown 2
+e02_296_000.lin: Guess person (Peko) Area
+e02_296_000.lin: Trash and society's...before
+e02_296_000.lin: <CLT 06>Which rebuttal would you like to jump to?
+e02_296_000.lin: <CLT>
+e02_297_000.lin: Logic Dive
+e02_297_000.lin: Hangman's Gambit (Improved)
+e02_297_000.lin: PTA (VS Fuyuhiko)
+e02_297_000.lin: Closing Argument
+e02_297_000.lin: <CLT 06>Please select where you would like to jump to.
+e02_297_000.lin: <CLT>
+
+e03_296_000.lin: Argument 1-5
+e03_296_000.lin: Argument 5-8
+e03_296_000.lin: Spot Select 1-4
+e03_296_000.lin: Rebuttal 1-2 / Guess Person Area
+e03_296_000.lin: <CLT 06>Please select where you would like to jump to.
+e03_296_000.lin: <CLT>
+e03_296_000.lin: Nonstop Debate 1 / Refute 
+e03_296_000.lin: Nonstop Debate 2 / Refute
+e03_296_000.lin: Nonstop Debate 3 / Consent
+e03_296_000.lin: Nonstop Debate 4 / Refute
+e03_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e03_296_000.lin: <CLT>
+e03_296_000.lin: Nonstop Debate 5 / Consent
+e03_296_000.lin: Nonstop Debate 6 / Consent
+e03_296_000.lin: Nonstop Debate 7 / Consent
+e03_296_000.lin: Nonstop Debate 8 / Refute
+e03_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e03_296_000.lin: <CLT>
+e03_296_000.lin: Spot Select 2
+e03_296_000.lin: Go back
+e03_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e03_296_000.lin: <CLT>
+e03_296_000.lin: Rebuttal Showdown 1 (Gundham)
+e03_296_000.lin: Rebuttal Showdown 2 (Akane)
+e03_296_000.lin: Guess person (Mikan) Area
+e03_296_000.lin: Go back
+e03_296_000.lin: <CLT 06>Which rebuttal would you like to jump to?
+e03_296_000.lin: <CLT>
+e03_297_000.lin: Hangman's Gambit 1-4
+e03_297_000.lin: Logic Dive 1-3
+e03_297_000.lin: PTA (VS Mikan)
+e03_297_000.lin: Closing Argument
+e03_297_000.lin: <CLT 06>Please select where you would like to jump to.
+e03_297_000.lin: <CLT>
+e03_297_000.lin: Hangman's Gambit 1
+e03_297_000.lin: Hangman's Gambit 2
+e03_297_000.lin: Hangman's Gambit 3
+e03_297_000.lin: Go back
+e03_297_000.lin: <CLT 06>Which Hangman's Gambit would you like to jump to?
+e03_297_000.lin: <CLT>
+e03_297_000.lin: Logic Dive 1
+e03_297_000.lin: Logic Dive 2
+e03_297_000.lin: Go back
+e03_297_000.lin: <CLT 06>Which Logic Dive would you like to jump to?
+e03_297_000.lin: <CLT>
+
+e04_296_000.lin: Argument 1-4
+e04_296_000.lin: Argument 5-9
+e04_296_000.lin: Argument 9-10 / Spot Select Area
+e04_296_000.lin: Rebuttal 1-3
+e04_296_000.lin: <CLT 06>Please select where you would like to jump to.
+e04_296_000.lin: <CLT>
+e04_296_000.lin: Nonstop Debate 1 / Refute 
+e04_296_000.lin: Nonstop Debate 2 / Refute
+e04_296_000.lin: Nonstop Debate 3 / Refute
+e04_296_000.lin: Nonstop Debate 4 / Refute
+e04_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e04_296_000.lin: <CLT>
+e04_296_000.lin: Nonstop Debate 5 / Refute
+e04_296_000.lin: Nonstop Debate 6 / Refute
+e04_296_000.lin: Nonstop Debate 7 / Consent
+e04_296_000.lin: Nonstop Debate 8 / Refute
+e04_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e04_296_000.lin: <CLT>
+e04_296_000.lin: Nonstop Debate 9 / Consent
+e04_296_000.lin: Nonstop Debate 10 / Refute
+e04_296_000.lin: Spot Select 1
+e04_296_000.lin: Spot Select 2
+e04_296_000.lin: <CLT 06>Rebuttal Showdown 2 (Akane)
+e04_296_000.lin: <CLT>
+e04_296_000.lin: Rebuttal Showdown 1 (Sonia)
+e04_296_000.lin: Rebuttal Showdown 2 (Kazuichi)
+e04_296_000.lin: Rebuttal Showdown 2 (Gundham)
+e04_296_000.lin: Go back
+e04_296_000.lin: <CLT 06>Which rebuttal would you like to jump to?
+e04_296_000.lin: <CLT>
+e04_297_000.lin: (Improved) Hangman's Gambit 1-3
+e04_297_000.lin: Logic Dive 1-3
+e04_297_000.lin: PTA (VS Gundham)
+e04_297_000.lin: Closing Argument
+e04_297_000.lin: <CLT 06>Please select where you would like to jump to.
+e04_297_000.lin: <CLT>
+e04_297_000.lin: (Improved) Hangman's Gambit 1
+e04_297_000.lin: (Improved) Hangman's Gambit 2
+e04_297_000.lin: To suspend point
+e04_297_000.lin: <CLT 06>Which Hangman's Gambit(renewed) would you like to jump
+e04_297_000.lin: <CLT>
+e04_297_000.lin: Logic Dive 1
+e04_297_000.lin: Logic Dive 2
+e04_297_000.lin: Go back
+e04_297_000.lin: <CLT 06>Which Logic Dive would you like to jump to?
+e04_297_000.lin: <CLT>
+
+e05_296_000.lin: Argument 1-5
+e05_296_000.lin: Argument 5-9
+e05_296_000.lin: Debug Mode
+e05_296_000.lin: Argument 1-2 / Spot Select Area
+e05_296_000.lin: <CLT 06>Please select where you would like to jump to.
+e05_296_000.lin: <CLT>
+e05_296_000.lin: Nonstop Debate 1 / Refute 
+e05_296_000.lin: Nonstop Debate 2 / Consent
+e05_296_000.lin: Nonstop Debate 3 / Refute
+e05_296_000.lin: Nonstop Debate 4 / Consent
+e05_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e05_296_000.lin: <CLT>
+e05_296_000.lin: Nonstop Debate 5 / Refute
+e05_296_000.lin: Nonstop Debate 6 / Consent
+e05_296_000.lin: Nonstop Debate 7 / Consent
+e05_296_000.lin: Go back
+e05_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e05_296_000.lin: <CLT>
+e05_296_000.lin: 05 215 000
+e05_296_000.lin: Go back
+e05_296_000.lin: Go back
+e05_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e05_296_000.lin: <CLT>
+e05_296_000.lin: Rebuttal Showdown 1 (Kazuichi)
+e05_296_000.lin: Rebuttal Showdown 2 (Sonia)
+e05_296_000.lin: Spot Select 2
+e05_296_000.lin: <CLT 06>Which rebuttal would you like to jump to?
+e05_296_000.lin: <CLT>
+e05_297_000.lin: (Improved) Hangman's Gambit 1-3
+e05_297_000.lin: Logic Dive 2
+e05_297_000.lin: PTA (VS Monomi)
+e05_297_000.lin: Closing Argument
+e05_297_000.lin: <CLT 06>Please select where you would like to jump to.
+e05_297_000.lin: <CLT>
+e05_297_000.lin: (Improved) Hangman's Gambit 1
+e05_297_000.lin: (Improved) Hangman's Gambit 2
+e05_297_000.lin: Go back
+e05_297_000.lin: <CLT 06>Which (Improved) Hangman's Gambit would you like to jump
+e05_297_000.lin: <CLT>
+e05_297_000.lin: Logic Dive 1
+e05_297_000.lin: Logic Dive 2
+e05_297_000.lin: Go back
+e05_297_000.lin: <CLT 06>Which Logic Dive would you like to jump to?
+e05_297_000.lin: <CLT>
+
+e06_290_000.lin: Resting chin loop
+e06_290_000.lin: Resting chin 
+e06_290_000.lin:  Lie down
+e06_290_000.lin: Lie down loop
+e06_290_000.lin: Lie down 
+e06_290_000.lin:  Resting chin
+e06_290_000.lin: Resting chin 
+e06_290_000.lin:  Playing with hair
+e06_290_000.lin: Playing with hair loop
+e06_290_000.lin: Playing with hair 
+e06_290_000.lin:  resting chin
+e06_290_000.lin: Alarmed loop
+e06_290_000.lin: Alarmed 
+e06_290_000.lin:  Leans back
+e06_290_000.lin: Leans back loop
+e06_290_000.lin: Playing with cell phone
+e06_290_000.lin: Ready for Nihil Beam
+e06_290_000.lin: Ready for Nihil beam 
+e06_290_000.lin:  Fire
+e06_290_000.lin: Nihil beam fire loop
+e06_290_000.lin: Camera test
+
+e06_295_000.lin: <CLT 06>Select trial ground?
+e06_295_000.lin: <CLT>
+e06_295_000.lin: Site A
+e06_295_000.lin: Site B
+e06_295_000.lin: Site C
+e06_295_000.lin: Next
+e06_295_000.lin: <CLT 06>Select trial ground
+e06_295_000.lin: <CLT>
+e06_295_000.lin: Tropical Island
+e06_295_000.lin: Nothingness
+e06_295_000.lin: Site D (same as C)
+e06_295_000.lin: Go back
+e06_295_000.lin: <CLT 06>Select trial ground
+e06_295_000.lin: <CLT>
+e06_296_000.lin: Argument 1-4
+e06_296_000.lin: Argument 5-8
+e06_296_000.lin: Argument 9 / Other conversation scene
+e06_296_000.lin: Last rebuttal or encounter with Chiaki
+e06_296_000.lin: <CLT 06>Please select where you would like to jump to.
+e06_296_000.lin: <CLT>
+e06_296_000.lin: Nonstop Debate 1 / Consent 
+e06_296_000.lin: Nonstop Debate 2 / Refute
+e06_296_000.lin: Nonstop Debate 3 / Consent
+e06_296_000.lin: Nonstop Debate 4 / Refute
+e06_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e06_296_000.lin: <CLT>
+e06_296_000.lin: Nonstop Debate 5 / Consent
+e06_296_000.lin: Nonstop Debate 6 / Special
+e06_296_000.lin: Nonstop Debate 7 / Special
+e06_296_000.lin: Nonstop Debate 8 / Special
+e06_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e06_296_000.lin: <CLT>
+e06_296_000.lin: Nonstop Debate 9 / Special
+e06_296_000.lin: After Logical Dive
+e06_296_000.lin: Conversation right before Debate 6
+e06_296_000.lin: Go back
+e06_296_000.lin: <CLT 06>Which argument would you like to jump to?
+e06_296_000.lin: <CLT>
+e06_296_000.lin: Argument Showdown 1
+e06_296_000.lin: Encounter with Chiaki
+e06_296_000.lin: Confirm Junko motion
+e06_296_000.lin: Go back
+e06_296_000.lin: <CLT 06>Which rebuttal would you like to jump to?
+e06_296_000.lin: <CLT>
+e06_297_000.lin: Hangman's Gambit (renewed) 1-2
+e06_297_000.lin: Logic Dive 1-2
+e06_297_000.lin: PTA (VS Monokuma)
+e06_297_000.lin: PTA (VS Junko)
+e06_297_000.lin: <CLT 06>Please select where you would like to jump to.
+e06_297_000.lin: <CLT>
+e06_297_000.lin: Hangman's Gambit (renewed) 1
+e06_297_000.lin: Hangman's Gambit (renewed) 2
+e06_297_000.lin: Frin Hajime's awakening
+e06_297_000.lin: Go back
+e06_297_000.lin: <CLT 06>Which Hangman's Gambit(renewed) would you like to jump to?
+e06_297_000.lin: <CLT>
+e06_297_000.lin: Logic Dive 1
+e06_297_000.lin: Logic Dive 2
+e06_297_000.lin: Mark of Debate 1
+e06_297_000.lin: Before Nihility Beam
+e06_297_000.lin: <CLT 06>Which Logical Dive would you like to jump to?
+e06_297_000.lin: <CLT>
+
+e09_000_001.lin: Begin Exploration Edition
+e09_000_001.lin: Begin Investigation Edition
+e09_000_001.lin: Twilight Complete
+e09_000_001.lin: Suspend Exploration
+e09_000_001.lin: Exploration Complete
+e09_000_001.lin: Suspend Investigation
+e09_000_001.lin: Investigation Complete
+
+e09_090_001.lin: So I guess there's no doubt that the kitchen knife
+e09_090_001.lin: was the murder weapon.
+e09_090_001.lin: But where does that get us?
+e09_090_001.lin: M-Makoto must have taken it f-from the kitchen, right?
+e09_090_001.lin: He did it in s-secret, when nobody was in the
+e09_090_001.lin: d-dining
+e09_090_001.lin: hall...
+e09_090_001.lin: And then he w-went and stabbed S-Sayaka with it!
+e09_090_001.lin: So he really did do it!
+e09_090_001.lin: Mm, mm, yes. Then it's been decided...
+e09_090_001.lin: We've reached the end!
+e09_090_001.lin: <CLT 06>That's right...!<CLT>
+e09_090_001.lin: <CLT 06>It's gotta be, right?<CLT>
+e09_090_001.lin: <CLT 06>Yeah, totally!<CLT>
+e09_090_001.lin: <CLT 06>It can't be anyone else but you!<CLT>
+
+e09_100_096.lin: Obtained hanger.
+e09_100_096.lin: Obtained pliers.
+e09_100_096.lin: This number is correct.
+e09_100_096.lin: This number is incorrect.
+e09_100_096.lin: Please input number.
+e09_100_096.lin: The password is correct.
+e09_100_096.lin: The password is incorrect.
+e09_100_096.lin: Please input password.
+e09_100_096.lin: Obtained scissors.
+e09_100_096.lin: Description of hanger. You can use it in many ways.
+e09_100_096.lin: Description of pliers. You can use it in many ways.
+e09_100_096.lin: Description of desk key. You can use it in many ways.
+e09_100_096.lin: Description of USB memory card. You can use it in
+e09_100_096.lin: many ways.
+e09_100_096.lin: Description of digital camera. You can use it in
+e09_100_096.lin: many ways.
+e09_100_096.lin: Description of batteries. You can use it in many ways.
+e09_100_096.lin: Description of wire. You can use it in many ways.
+e09_100_096.lin: Description of scissors. You can use it in many ways.
+e09_100_096.lin: Description of digital camera (with batteries).
+e09_100_096.lin: You can use it in many ways.
+e09_100_096.lin: Used something on the hanger.
+e09_100_096.lin: Used something on the pliers.
+e09_100_096.lin: Used something on the desk key.
+e09_100_096.lin: Used pliers on the USB memory.
+e09_100_096.lin: You cannot use this item.
+e09_100_096.lin: Used something on the digital camera.
+e09_100_096.lin: Used something on the batteries.
+e09_100_096.lin: Used something on the wire.
+e09_100_096.lin: Used something on the scissors.
+e09_100_096.lin: Used something on the digital camera (with batteries).
+
+e09_100_250.lin: Testing Twilight. Is this good?
+e09_100_250.lin: Never never never never never never never never never 
+e09_100_250.lin: never never never never never never never never never
+e09_100_250.lin: Still testing. Is this good?
+e09_100_250.lin: Run Twilight test operation.
+e09_100_250.lin: Testing Twilight. Multiple test messages.
+e09_100_250.lin: With this, it will be multiplied.
+e09_100_250.lin: Can we go on with this? Hm, hm.
+e09_100_250.lin: How is this window?
+e09_100_250.lin: Still testing. Is this good?
+e09_100_250.lin: I'm Girl A.
+e09_100_250.lin: I'm Girl B.
+e09_100_250.lin: I'm Girl C.
+e09_100_250.lin: I'm Girl D.
+e09_100_250.lin: I'm Girl E.
+e09_100_250.lin: I'm Guy F!
+e09_100_250.lin: I'm ???.
+e09_100_250.lin: Well a lot of things happened.
+e09_100_250.lin: What's this? 1
+e09_100_250.lin: What's this? 2
+e09_100_250.lin: What's this? 3
+e09_100_250.lin: What's this? 4
+e09_100_250.lin: What's this? 5
+e09_100_250.lin: What's this? 6
+e09_100_250.lin: What's this? 7
+e09_100_250.lin: What's this? 8
+
+e09_100_251.lin: Testing Twilight. Is this good?
+e09_100_251.lin: Still testing. Is this good?
+e09_100_251.lin: Run Twilight test operation.
+e09_100_251.lin: Testing Twilight. Multiple test messages.
+e09_100_251.lin: With this, it will be multiplied.
+e09_100_251.lin: Can we go on with this? Hm, hm.
+e09_100_251.lin: How is this window?
+e09_100_251.lin: Still testing. Is this good?
+e09_100_251.lin: I'm Girl A.
+e09_100_251.lin: I'm Girl B.
+e09_100_251.lin: I'm Girl C.
+e09_100_251.lin: I'm Girl D.
+e09_100_251.lin: I'm Girl E.
+e09_100_251.lin: I'm Guy F!
+e09_100_251.lin: I'm ???.
+e09_100_251.lin: Well a lot of things happened.
+e09_100_251.lin: What's this? 1
+e09_100_251.lin: What's this? 2
+e09_100_251.lin: What's this? 3
+e09_100_251.lin: What's this? 4
+e09_100_251.lin: What's this? 5
+e09_100_251.lin: What's this? 6
+e09_100_251.lin: What's this? 7
+e09_100_251.lin: What's this? 8

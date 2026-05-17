@@ -31,6 +31,7 @@ Each file for each game is sorted individually into the folder for what title th
 * `./DR1/DR1_UserDefinedSymbols.csv`, `./DR2/DR2_UserDefinedSymbols.csv` and `./UDG/UDG_UserDefinedSymbols.csv` contain the names I gave to memory addresses I could find. Again these only work assuming you used the same manifest versions as me and the stars aligned correctly so you have dumped the same stuff (in DRV3's case, you can do the same by running x64dbg in Wine to dump the game, since ASLR is disabled in Wine, thank fuck).
 * `./DR1/DR1_DebugSymbols.csv`, `./DR2/DR2_DebugSymbols.csv`, `./UDG/UDG_DebugSymbols.csv` and `./DRV3/DRV3_DebugSymbols.csv` contain the names of the symbols extracted from the Anniversary versions of the game (except for UDG which is just the strings that remained for Steam Achivements and uhh... random vtables???????), these are provided as plaintext files instead of a Ghidra Project
 * `./Shared/DR12V3_Unused_LINs.txt` contains a list of the unused LIN files I found in the mainline series games.
+* `./DR1/DR1_UnusedLINStrings.txt` and `./DR2/DR2_UnusedLINStrings.txt` conain the strings from those unused LINs, so it's easier to see where they send you.
 * `./UDG/UDG_LinFilesICaredToLookAt.txt` is just a list of the unused LIN files I found for that game.
 * `./UDG/UDG_UnusedCutscenesEV8.txt` is a list of the Unused Cutscenes I showed in my video, these are specifically those not showcased by a video on TCRF.
 * `./UDG/NightmarePlayerStruct.md` is some dissasembled code I am completly unable to wrap my head around to decipher how it was made.

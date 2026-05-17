@@ -1,0 +1,210 @@
+e01_196_000.lin: Argument 1-3
+e01_196_000.lin: Argument 4-6
+e01_196_000.lin: Argument 7-8
+e01_196_000.lin: <CLT 23>Where would you like to jump to?
+e01_196_000.lin: <CLT>
+e01_196_000.lin: Jump to Argument 1
+e01_196_000.lin: Jump to Argument 2
+e01_196_000.lin: Jump to Argument 3
+e01_196_000.lin: <CLT 23>Where would you like to jump to?
+e01_196_000.lin: <CLT>
+e01_196_000.lin: Jump to Argument 4
+e01_196_000.lin: Jump to Argument 5
+e01_196_000.lin: Jump to Argument 6
+e01_196_000.lin: <CLT 23>Where would you like to jump to?
+e01_196_000.lin: <CLT>
+e01_196_000.lin: Jump to Argument 7
+e01_196_000.lin: Jump to Argument 8
+e01_196_000.lin: <CLT 23>Where would you like to jump to?
+e01_196_000.lin: <CLT>
+e01_197_000.lin: Jump to Closing Argument
+e01_197_000.lin: Jump to Bullet Time Battle
+e01_197_000.lin: Jump to Hangman's Gambit
+e01_197_000.lin: <CLT 23>Where would you like to jump to?
+e01_197_000.lin: <CLT>
+
+e02_195_000.lin: Killer Selection 1
+e02_195_000.lin: Killer Selection 2
+e02_195_000.lin: The Deciding Debate
+e02_195_000.lin: <CLT 23>Where would you like to jump to?
+e02_195_000.lin: <CLT>
+e02_196_000.lin: Argument 1-3
+e02_196_000.lin: Argument 4-6
+e02_196_000.lin: Argument 7-9
+e02_196_000.lin: <CLT 23>Where would you like to jump to?
+e02_196_000.lin: <CLT>
+e02_196_000.lin: Jump to Argument 1
+e02_196_000.lin: Jump to Argument 2
+e02_196_000.lin: Jump to Argument 3
+e02_196_000.lin: <CLT 23>Where would you like to jump to?
+e02_196_000.lin: <CLT>
+e02_196_000.lin: Jump to Argument 4
+e02_196_000.lin: Jump to Argument 5
+e02_196_000.lin: Jump to Argument 6
+e02_196_000.lin: <CLT 23>Where would you like to jump to?
+e02_196_000.lin: <CLT>
+e02_196_000.lin: Jump to Argument 7
+e02_196_000.lin: Jump to Argument 8
+e02_196_000.lin: Jump to Argument 9
+e02_196_000.lin: <CLT 23>Where would you like to jump to?
+e02_196_000.lin: <CLT>
+e02_197_000.lin: Jump to Closing Argument
+e02_197_000.lin: Jump to Bullet Time Battle
+e02_197_000.lin: Jump to Hangman's Gambit
+e02_197_000.lin: <CLT 23>Where would you like to jump to?
+e02_197_000.lin: <CLT>
+
+e03_196_000.lin: Argument 1-3
+e03_196_000.lin: Argument 4-6
+e03_196_000.lin: Argument 7-11
+e03_196_000.lin: <CLT 23>Where would you like to jump to?
+e03_196_000.lin: <CLT>
+e03_196_000.lin: Jump to Argument 1
+e03_196_000.lin: Jump to Argument 2
+e03_196_000.lin: Jump to Argument 3
+e03_196_000.lin: <CLT 23>Where would you like to jump to?
+e03_196_000.lin: <CLT>
+e03_196_000.lin: Jump to Argument 4
+e03_196_000.lin: Jump to Argument 5
+e03_196_000.lin: Jump to Argument 6
+e03_196_000.lin: <CLT 23>Where would you like to jump to?
+e03_196_000.lin: <CLT>
+e03_196_000.lin: Jump to Argument 7
+e03_196_000.lin: Jump to Argument 8
+e03_196_000.lin: Argument 9-11
+e03_196_000.lin: <CLT 23>Where would you like to jump to?
+e03_196_000.lin: <CLT>
+e03_196_000.lin: Jump to Argument 9
+e03_196_000.lin: Jump to Argument 10
+e03_196_000.lin: Jump to Argument 11
+e03_196_000.lin: <CLT 23>Where would you like to jump to?
+e03_196_000.lin: <CLT>
+e03_197_000.lin: Jump to the Closing Argument
+e03_197_000.lin: Jump to the Bullet Time Battle
+e03_197_000.lin: Jump to the Hangman's Gambit
+e03_197_000.lin: <CLT 23>Where would you like to jump to?
+e03_197_000.lin: <CLT>
+
+e04_195_000.lin: Killer Selection
+e04_195_000.lin: Truth Bullet Selection 1
+e04_195_000.lin: Truth Bullet Selection 2
+e04_195_000.lin: <CLT 23>Where would you like to jump to?
+e04_195_000.lin: <CLT>
+e04_196_000.lin: Argument 1-3
+e04_196_000.lin: Argument 4-6
+e04_196_000.lin: Argument 7-8
+e04_196_000.lin: <CLT 23>Where would you like to jump to?
+e04_196_000.lin: <CLT>
+e04_196_000.lin: Jump to Argument 1
+e04_196_000.lin: Jump to Argument 2
+e04_196_000.lin: Jump to Argument 3
+e04_196_000.lin: <CLT 23>Where would you like to jump to?
+e04_196_000.lin: <CLT>
+e04_196_000.lin: Jump to Argument 4
+e04_196_000.lin: Jump to Argument 5
+e04_196_000.lin: Jump to Argument 6
+e04_196_000.lin: <CLT 23>Where would you like to jump to?
+e04_196_000.lin: <CLT>
+e04_196_000.lin: Jump to Argument 7
+e04_196_000.lin: Jump to Argument 8
+e04_196_000.lin: <CLT 23>Where would you like to jump to?
+e04_196_000.lin: <CLT>
+e04_197_000.lin: Jump to Closing Argument
+e04_197_000.lin: Bullet Time Battle 1-3
+e04_197_000.lin: Hangman's Gambit 1-2
+e04_197_000.lin: <CLT 23>Where would you like to jump to?
+e04_197_000.lin: <CLT>
+e04_197_000.lin: Jump to Bullet Time Battle 1 (Hiro)
+e04_197_000.lin: Jump to Bullet Time Battle 2 (Toko)
+e04_197_000.lin: Jump to Bullet Time Battle 3 (Hina)
+e04_197_000.lin: <CLT 23>Which Bullet Time Battle would you like to jump to?
+e04_197_000.lin: <CLT>
+e04_197_000.lin: Jump to Hangman's Gambit 1
+e04_197_000.lin: Jump to Hangman's Gambit 2
+e04_197_000.lin: <CLT 23>Which Hangman's Gambit would you like to jump to?
+e04_197_000.lin: <CLT>
+
+e05_195_000.lin: Bad Ending Selection
+e05_195_000.lin: Truth Bullet Selection 1
+e05_195_000.lin: Truth Bullet Selection 2
+e05_195_000.lin: <CLT 23>Where would you like to jump to?
+e05_195_000.lin: <CLT>
+e05_196_000.lin: Argument 1-3
+e05_196_000.lin: Argument 4-6
+e05_196_000.lin: Argument 7-9
+e05_196_000.lin: <CLT 23>Where would you like to jump to?
+e05_196_000.lin: <CLT>
+e05_196_000.lin: Jump to Argument 1
+e05_196_000.lin: Jump to Argument 2
+e05_196_000.lin: Jump to Argument 3
+e05_196_000.lin: <CLT 23>Where would you like to jump to?
+e05_196_000.lin: <CLT>
+e05_196_000.lin: Jump to Argument 4
+e05_196_000.lin: Jump to Argument 5
+e05_196_000.lin: Jump to Argument 6
+e05_196_000.lin: <CLT 23>Where would you like to jump to?
+e05_196_000.lin: <CLT>
+e05_196_000.lin: Jump to Argument 7
+e05_196_000.lin: Jump to Argument 8
+e05_196_000.lin: Jump to Argument 9
+e05_196_000.lin: <CLT 23>Where would you like to jump to?
+e05_196_000.lin: <CLT>
+e05_197_000.lin: Jump to Bad Ending
+e05_197_000.lin: Jump to Bullet Time Battle (Toko)
+e05_197_000.lin: Jump to Hangman's Gambit 1-2
+e05_197_000.lin: <CLT 23>Where would you like to jump to?
+e05_197_000.lin: <CLT>
+e05_197_000.lin: Jump to Hangman's Gambit 1
+e05_197_000.lin: Jump to Hangman's Gambit 2
+e05_197_000.lin: <CLT 23>Which Hangman's Gambit would you like to jump to?
+e05_197_000.lin: <CLT>
+
+e06_195_000.lin: Killer Selection
+e06_195_000.lin: Truth Bullet Selection 1
+e06_195_000.lin: Truth Bullet Selection 2
+e06_195_000.lin: <CLT 23>Where would you like to jump to?
+e06_195_000.lin: <CLT>
+e06_196_000.lin: Argument 1-3
+e06_196_000.lin: Argument 4-6
+e06_196_000.lin: Argument 7-10
+e06_196_000.lin: <CLT 23>Where would you like to jump to?
+e06_196_000.lin: <CLT>
+e06_196_000.lin: Jump to Argument 1
+e06_196_000.lin: Jump to Argument 2
+e06_196_000.lin: Jump to Argument 3
+e06_196_000.lin: <CLT 23>Where would you like to jump to?
+e06_196_000.lin: <CLT>
+e06_196_000.lin: Jump to Argument 4
+e06_196_000.lin: Jump to Argument 5
+e06_196_000.lin: Jump to Argument 6
+e06_196_000.lin: <CLT 23>Where would you like to jump to?
+e06_196_000.lin: <CLT>
+e06_196_000.lin: Jump to Argument 7
+e06_196_000.lin: Jump to Argument 8
+e06_196_000.lin: Jump to Argument 9-10
+e06_196_000.lin: <CLT 23>Where would you like to jump to?
+e06_196_000.lin: <CLT>
+e06_196_000.lin: Jump to Argument 9
+e06_196_000.lin: Jump to Argument 10
+e06_196_000.lin: <CLT 23>Where would you like to jump to?
+e06_196_000.lin: <CLT>
+e06_197_000.lin: Jump to Closing Argument
+e06_197_000.lin: Bullet Time Battle 1-3
+e06_197_000.lin: Hangman's Gambit 1-2
+e06_197_000.lin: <CLT 23>Where would you like to jump to?
+e06_197_000.lin: <CLT>
+e06_197_000.lin: Jump to Bullet Time Battle 1 (Monokuma A)
+e06_197_000.lin: Jump to Bullet Time Battle 2 (Monokuma B)
+e06_197_000.lin: Jump to Bullet Time Battle 3 (Junko)
+e06_197_000.lin: <CLT 23>Which Bullet Time Battle would you like to jump to?
+e06_197_000.lin: <CLT>
+e06_197_000.lin: Jump to Hangman's Gambit 1
+e06_197_000.lin: Jump to Hangman's Gambit 2
+e06_197_000.lin: Jump to Hangman's Gambit 3
+e06_197_000.lin: <CLT 23>Which Hangman's Gambit would you like to jump to?
+e06_197_000.lin: <CLT>
+
+e10_200_000.lin: ノンストップ２に飛ぶ
+e10_200_000.lin: ＭＴＢに飛ぶ
+e10_200_000.lin: アナグラムに飛ぶ
+e10_200_000.lin: <CLT 23>ジャンプ先を選んでください<CLT>
