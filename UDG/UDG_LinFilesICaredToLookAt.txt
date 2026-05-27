@@ -14,3 +14,66 @@ e99_007_001.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms 
 e99_007_002.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas? , stuck if accessed through loading the .lin directly
 e99_007_003.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas? , stuck if accessed through loading the .lin directly
 e99_007_004.lin - Uses mp_street_04.bnm, teleporters are separated into 4 rooms because they have a limit of 32 Rectangle Trigger Areas? , stuck if accessed through loading the .lin directly
+
+e00_017_000 - Placeholder that display a window with the file name and nothing else
+e00_019_000 - Ditto
+e01_016_000 - Ditto
+e01_022_000 - Ditto
+e01_024_000 - Ditto
+e01_033_002 - Ditto
+e01_036_001 - Ditto
+e01_036_002 - Ditto
+e01_037_001 - Ditto
+e01_037_002 - Ditto
+e01_037_003 - Ditto
+e01_037_004 - Ditto
+e01_037_005 - Ditto
+e01_037_006 - Ditto
+e01_044_001 - Ditto
+e01_044_002 - Ditto
+e01_047_000 - Ditto
+e01_047_001 - Ditto
+e01_050_000 - Ditto
+e01_051_000 - Ditto
+e01_051_001 - Ditto
+e01_051_002 - Ditto
+e01_057_001 - Ditto
+e01_078_001 - Ditto
+e01_095_001 - Ditto
+e01_095_002 - Ditto
+e01_102_001 - Ditto
+e01_102_002 - Ditto
+e01_102_003 - Ditto
+e01_102_004 - Ditto
+e01_114_000 - Ditto
+e01_124_000 - Ditto
+e01_125_000 - Ditto
+e01_134_000 - Ditto
+e01_135_000 - Ditto
+e01_136_000 - Ditto
+e01_137_000 - Ditto
+e01_138_000 - Ditto
+e02_007_000 - Ditto
+e02_007_006 - Ditto
+e02_007_007 - Ditto
+e02_007_008 - Ditto
+e02_012_000 - Ditto
+e02_016_000 - Ditto
+e02_018_001 - Ditto
+e02_049_000 - Ditto
+e02_051_000 - Ditto
+e02_061_000 - Ditto
+e02_076_000 - Ditto
+e02_076_001 - Ditto
+e02_080_000 - Ditto
+e02_084_002 - Ditto
+e04_102_001 - Ditto
+e04_129_000 - Ditto
+e04_130_000 - Ditto
+e04_131_000 - Ditto
+e04_132_000 - Ditto
+e04_133_000 - Ditto
+e04_134_000 - Ditto
+e90_003_000 - Ditto
+e90_004_000 - Ditto
+
