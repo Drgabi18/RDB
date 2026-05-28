@@ -13,6 +13,8 @@ namespace LazyOpCodeReader.Games {
 		}
 
 		public GameID GameName;
+		public DateTime DateOfCollection = DateTime.Now;
+		public int ThisSoftwareVersionIDThingShitWhatever = 1;
 		public List<LinFile> LinFiles = new List<LinFile>();
 
 		public List<OperationCode> GetValidOpCodes() {

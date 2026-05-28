@@ -5,6 +5,7 @@
 
 // also we could multithread it
 
+using System.Text;
 using System.Text.Json;
 using LazyOpCodeReader.Games;
 using LazyOpCodeReader.LIN;
@@ -15,9 +16,19 @@ namespace LazyOpCodeReader {
 		None = 0,
 		JsonSerialized,
 		GraphViz,
+		Specialized = 9
 	}
+
 	public class Program {
+		public static bool DEBUG_BUILD = false;
+		//	"Non-nullable field 'OurGame' must contain a non-null value when exiting
+		//	constructor. Consider adding the 'required' modifier or declaring the field
+		//	as nullable."
+		// *adds required*
+		//	"The modifier 'required' is not valid for this item"
+		// THEN WHY FUCKING GIVE ME THE OPTION TO ADD REQUIRED??????
 		public static Game OurGame;
+
 		public static void Main(string[] args) {
 			// at least this code is easy enough to copy paste from the old code
 			Game.GameID GameID = Game.GameID.NONE;	// "DR1", "DR2" or "UDG"
@@ -55,9 +66,8 @@ namespace LazyOpCodeReader {
 										"[-m/--mode \"JsonSerialized\"] " +
 										"[-?/--help]" + "\n\n" +
 										"Valid options are:\n" +
-										"\t-g \"DR1\"/\"DR2\"/\"UDG\" (note that UDG is experimental)\n" +
+										"\t-g \"DR1\"/\"DR2\"/\"UDG\"\n" +
 										"\t-m \"JsonSerialized\"/\"GraphViz\"\n"
-
 										); return;
 					default: break;
 				}
@@ -83,7 +93,6 @@ namespace LazyOpCodeReader {
 			// BUG?: Because we're doing it in parallel, the alphabetic order no longer matters
 			List<string> LinFilesFromFolder =
 				Directory.EnumerateFiles(FolderPath, "*.lin").Order().ToList();
-			List<Task> x = new List<Task>();
 			
 			//foreach (string file in LinFilesFromFolder) {
 			Parallel.ForEach(LinFilesFromFolder, file => {
@@ -96,7 +105,8 @@ namespace LazyOpCodeReader {
 			}
 			);
 
-			Console.Clear();
+			// this does nothing when piping lol
+			// Console.Clear();
 
 			switch(PrintMode) {
 				default:
@@ -108,10 +118,26 @@ namespace LazyOpCodeReader {
 						}));
 					return;
 				case PrintModes.GraphViz:
-					// throw new Exception("I didn't get to - or if you're still reading this - want to rewrite this part (yet)");
 					foreach (LinFile lin in OurGame.LinFiles) {
-						foreach (object objy in lin.ResultingOpCodeObjects) {;
-							Console.WriteLine($"{lin} -> {objy}");
+						foreach (object objy in lin.ResultingOpCodeObjects) {
+							// if only there was an easier way of doing this
+							if (objy.GetType() == typeof(DR1Classes.LoadScript) ||
+								objy.GetType() == typeof(DR1Classes.RunScript) ||
+								objy.GetType() == typeof(DR2Classes.LoadScript) ||
+								objy.GetType() == typeof(DR2Classes.RunScript) ||
+								objy.GetType() == typeof(UDGClasses.LoadScript)) {
+								Console.WriteLine($"{lin} -> {objy}");
+							}
+						}
+					}
+					return;
+				// used for my own shenanigans
+				case PrintModes.Specialized:
+					foreach (LinFile lin in OurGame.LinFiles) {
+						foreach (object objy in lin.ResultingOpCodeObjects) {
+							if (objy.GetType() == typeof(UDGClasses.SetFlag)) {
+								Console.WriteLine($"{lin.PrettyFileName}\t{objy}");
+							}
 						}
 					}
 					return;
@@ -126,8 +152,26 @@ namespace LazyOpCodeReader {
 			// and then did the job of that, i will most likely need binary
 			// reader in the future, so to learn it, i'm using it in this project
 			using (FileStream fs = File.Open(leFile.LongFileName, FileMode.Open)) {
-				using (BinaryReader br = new BinaryReader(fs)) {
-					while (br.BaseStream.Position < br.BaseStream.Length) {
+				using (BinaryReader br = new BinaryReader(fs, Encoding.Unicode)) {
+					
+					// we are only reading and parsing the start of the LIN files
+					// because i wanna avoid false positives like 0x7004 textoffset
+					leFile.LinType = br.ReadInt32();
+					// this is useless to read since LinType dictates header size
+					leFile.HeaderSize = br.ReadInt32();
+					if (leFile.LinType == 2) leFile.TextOffset = br.ReadInt32();
+					leFile.FileSize = br.ReadInt32();
+
+					// just so we don't read 0x70 from the text side
+					long HowMuchToRead = (leFile.LinType == 2) ? 
+										(long)leFile.TextOffset :
+										br.BaseStream.Length;
+
+					// make it so if i forgot some header shit, we skip over it					
+					br.BaseStream.Position = leFile.HeaderSize;
+
+					// now we can be sure that the results we read will be opcodes
+					while (br.BaseStream.Position < HowMuchToRead) {	
 						byte ByteRead = br.ReadByte();
 						if (ByteRead == OperationCode.START_HEX) { // hacky
 							//Console.WriteLine("Found potential opcode");
@@ -143,15 +187,42 @@ namespace LazyOpCodeReader {
 									int ResultingArguments = ResultingOpCode.NoOfArguments;
 									byte[] TheBytesPassed = br.ReadBytes(ResultingArguments);
 									// a bit buggy buuuuuut it looks cool
-									Console.Write("{0} - {1} -", leFile.PrettyFileName, ResultingOpCode.Value);
-									foreach (byte bytes in TheBytesPassed) Console.Write("{0:X2} ", bytes);
-									Console.Write("- Offset: {0}", br.BaseStream.Position);
-									Console.WriteLine();
+									if (DEBUG_BUILD) {
+										Console.Write("{0} - {1} - ", leFile.PrettyFileName, ResultingOpCode.Value);
+										foreach (byte bytes in TheBytesPassed) Console.Write("{0:X2} ", bytes);
+										Console.Write("- Offset: {0}", br.BaseStream.Position);
+										Console.WriteLine();
+									}
 									leFile.ResultingOpCodeObjects.Add(
 										OurGame.MakeGameLinObjects(NextByte, TheBytesPassed)
 									);
 								}
 							} 
+						}
+					}
+
+					// read strings... or at attempt to
+					if (leFile.LinType == 2) {
+						br.BaseStream.Position = leFile.TextOffset;
+						leFile.HowManyStrings = br.ReadInt32();
+						int[] Offsets = new int[leFile.HowManyStrings];
+						for (int offset = 1; offset <= leFile.HowManyStrings; offset++) {
+							Offsets[offset-1] = br.ReadInt32();
+						}
+						foreach(int offsy in Offsets) {
+							if (DEBUG_BUILD) Console.WriteLine("{0} - Lin File Type 2 -\t" +
+																"{1} strings \t- " + 
+																"INDEX IN OFFSY: {2}",
+																leFile.PrettyFileName, leFile.HowManyStrings, offsy);
+							br.BaseStream.Position = leFile.TextOffset + offsy;
+							// well, the reason why i'm not trying to read it is
+							// because some strings are UTF-16 while some are
+							// SHIFT-JIS in the unused files, while i could read
+							// byte for byte untill an 0xFEFF (or whatever the
+							// Shift-JIS equivalent is) and then decode them with
+							// `Encoding.GetEncoding("Shift-JIS")`,
+							// I think it's easier to admit i don't know how to
+							//leFile.Strings.Add(br.ReadString());
 						}
 					}
 				}

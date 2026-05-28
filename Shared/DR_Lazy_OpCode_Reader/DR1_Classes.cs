@@ -19,6 +19,14 @@ namespace LazyOpCodeReader.Games {
 			}
 		}
 
+		/*
+		public static List<object> DR1ObjectTypes = new(){
+			typeof(LoadScript),
+			typeof(RunScript),
+			typeof(LoadMap)
+		};
+		*/
+
 		// 0x19
 		public class LoadScript {
 			public string Type = "Load Script"; // hack to see what the objects are
