@@ -120,12 +120,13 @@ namespace LazyOpCodeReader {
 				case PrintModes.GraphViz:
 					foreach (LinFile lin in OurGame.LinFiles) {
 						foreach (object objy in lin.ResultingOpCodeObjects) {
-							// if only there was an easier way of doing this
-							if (objy.GetType() == typeof(DR1Classes.LoadScript) ||
-								objy.GetType() == typeof(DR1Classes.RunScript) ||
-								objy.GetType() == typeof(DR2Classes.LoadScript) ||
-								objy.GetType() == typeof(DR2Classes.RunScript) ||
-								objy.GetType() == typeof(UDGClasses.LoadScript)) {
+							// turns out there is an easier way
+							List<Type> ListOfAcceptedTypes = new(){
+								typeof(DR1Classes.LoadScript), typeof(DR1Classes.RunScript),
+								typeof(DR2Classes.LoadScript), typeof(DR2Classes.RunScript),
+								typeof(UDGClasses.LoadScript)
+							};
+							if (ListOfAcceptedTypes.Any(o => objy.GetType() == o)) {
 								Console.WriteLine($"{lin} -> {objy}");
 							}
 						}
