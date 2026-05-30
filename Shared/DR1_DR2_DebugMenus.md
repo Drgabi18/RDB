@@ -271,7 +271,7 @@ CROSS     : END
 ```
 Used to debug a Light System that is not used in the game. The game always sets this to off. When changing it to ON, the entire world becomes black and you can add up to 4 sub lights. Implementations of the lights are rather subpar, as they only use the vertex colors to simulate light.
 
-## ???? Debug Menu
+## Projector Debug Menu
 
 ```
 NOISE
@@ -312,9 +312,6 @@ Honestly, no clue, allows you to select a file (most likely object type) and cha
 
 ## Target Point Debug Menu
 Does nothing. If it worked, it may have been used to test what happens currently when you set the Priority bool on the characters, but for other points of interest
-
-## Projector Debug Menu
-Does nothing.
 
 # Game Debug Menus
 These are the Debug Menus that affect the game state and not elements in the world. Can be accessed on the MacOS version by just pressing Q+E and V. Values changed by it are the same values that end up in the save file.
@@ -454,13 +451,22 @@ Represents which Truth Bullets are visible in the menu and in-game when you have
 %02d %02d %02d %02d %02d %02d %02d %02d %02d %02d %02d 
 %03d %02d %02d %02d %02d %02d %02d %02d %02d %02d %02d 
 ```
-Represents what gifts you have collected. Maximum is 99. you can set character gifts, such as... *(sighs)* panties to 99.
+Represents what gifts you have collected. 
 
 Has special code in DR1 where you can increment all items by pressing a button
 ```
 ALL Increment is SQUARE Button
 ALL Decrement is SQUARE Button + L Button
 ```
+
+Now I know this is loser shit, but they programmed panties different between games. 
+
+In DR2 they are normal items, maximum is 99. You can set the character gifts, such as... *(sighs)* the number of panties to 99. But in DR1 they are special tiems, as such you can't get them to 99 and instead can only have one, which are special in this menu and have
+```
+Pa %02d %02d %02d %02d %02d %02d %02d %02d %02d %02d 
+Pa %02d %02d %02d %02d 
+```
+in DR1 only.
 
 ## `Adv_Skill` Debug Menu
 ```
