@@ -42,10 +42,10 @@ e04_297_000.lin - Chapter 4 Debug Trial Menu 2
 e05_296_000.lin - Chapter 5 Debug Trial Menu 1
 e05_297_000.lin - Chapter 5 Debug Trial Menu 2
 e06_290_000.lin - Test Camera Movement on Junko
-e06_295_000.lin - Chapter 6 Debug  Trial Menu 1
+e06_295_000.lin - Chapter 6 Debug Trial Menu 1
 e06_296_000.lin - Chapter 6 Debug Trial Menu 2
 e06_297_000.lin - Chapter 6 Debug Trial Menu 3
-e09_000_001.lin - Twilight Debug, press down 5 times to begin debug
+e09_000_001.lin - Twilight Debug, press down 5 times to begin the game
 e09_090_001.lin - DR1 File of Toko blaming Makoto
 e09_100_096.lin - Final Dead Room Debug, unfinished
 e09_100_250.lin - Twilight Debug Episode 1
