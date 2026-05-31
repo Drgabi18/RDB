@@ -4,7 +4,11 @@ This repository includes the random stuff I was able to find reverse engineering
 This repo contains a collection of research documents I created for the following videos that I've made:
 * [[Danganronpa 1/2/V3] Unused Rooms](https://www.youtube.com/watch?v=QMtvbAJh83s)
 * [[Danganronpa 1/2/V3] Development Trivia & Fun Facts](https://www.youtube.com/watch?v=ljNlJfbsQQk)
-* [[Danganronpa 1/2/UDG/V3] Development Trivia & Super Fun Facts 2](./poop)
+* [[Danganronpa 1/2/V3] Unused Story (.LIN) Files](https://www.youtube.com/watch?v=nDRb3It6jOs)
+* [[Danganronpa 1/2/V3] Super Development Trivia & Fun Facts 2: Goodbye Debug Menus](https://www.youtube.com/watch?v=jjzG6y8MyrU)
+* [[Danganronpa UDG] Unused Rooms, Cutscenes & Development Trivia](https://www.youtube.com/eH-B8eT481U)
+
+Please check them out since I put more effort than necessary in all of them!
 
 I explored the following Steam depots:
 * DR1 Linux: `download_depot 413410 413413 6184791363566370453`
@@ -31,6 +35,7 @@ Each file for each game is sorted individually into the folder for what title th
 * `./DR1/DR1_UserDefinedSymbols.csv`, `./DR2/DR2_UserDefinedSymbols.csv` and `./UDG/UDG_UserDefinedSymbols.csv` contain the names I gave to memory addresses I could find. Again these only work assuming you used the same manifest versions as me and the stars aligned correctly so you have dumped the same stuff (in DRV3's case, you can do the same by running x64dbg in Wine to dump the game, since ASLR is disabled in Wine, thank fuck).
 * `./DR1/DR1_DebugSymbols.csv`, `./DR2/DR2_DebugSymbols.csv`, `./UDG/UDG_DebugSymbols.csv` and `./DRV3/DRV3_DebugSymbols.csv` contain the names of the symbols extracted from the Anniversary versions of the game (except for UDG which is just the strings that remained for Steam Achivements and uhh... random vtables???????), these are provided as plaintext files instead of a Ghidra Project
 * `./Shared/DR12V3_Unused_LINs.txt` contains a list of the unused LIN files I found in the mainline series games.
+* `./Shared/DR1_DR2_DebugMenus.md` contains explanations for what the Debug Menus included in the games actually do.
 * `./DR1/DR1_UnusedLINStrings.txt` and `./DR2/DR2_UnusedLINStrings.txt` conain the strings from those unused LINs, so it's easier to see where they send you.
 * `./UDG/UDG_LinFilesICaredToLookAt.txt` is just a list of the unused LIN files I found for that game.
 * `./UDG/UDG_UnusedCutscenesEV8.txt` is a list of the Unused Cutscenes I showed in my video, these are specifically those not showcased by a video on TCRF.
@@ -43,7 +48,7 @@ Each file for each game is sorted individually into the folder for what title th
 
 Note that what you're seeing here is a passion project, the accuracy of some information may be low or straight up incorrect. I'm discovering stuff at the same time as of the making of the videos.
 
-I've put a restriction on myself to not look at information that would help me, information like [Spiral Framework's SpiralNeo](https://github.com/SpiralFramework/SpiralNeo) or [BitesizeBird's Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding) who have basically documented 5 years before me what I've discovered for the first time in the period of when I upload my videos. This is also the reason I don't look or use the Debug Symbols that much either. The joy of making these videos is discovery and learning to use the tools available to me for this, having everything in front of you isn't so fun anymore, wouldn't you agree?
+I've put a restriction on myself to not look at information that would help me, information like [Spiral Framework's Spiral](https://github.com/SpiralFramework/Spiral) or [BitesizeBird's Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding) who have basically documented 5 years before me what I've discovered for the first time in the period of when I upload my videos. This is also the reason I don't look or use the Debug Symbols that much either. The joy of making these videos is discovery and learning to use the tools available to me for this, having everything in front of you isn't so fun anymore, wouldn't you agree?
 
 ## Acknowledgements
 -# (for projects that are here on GitHub which I used, not auxiliary things like TCRF or TSR; and in the order that I used them)
@@ -52,6 +57,11 @@ I've put a restriction on myself to not look at information that would help me, 
 * morgana-x - For creating [Danganronpa-Script-Dumps](https://github.com/morgana-x/Danganronpa-Script-Dumps) which is what lead to me making the Unused Story Files video; For creating [PakLib](https://github.com/morgana-x/PakLib) which was easier to use for unpacking.
 * shadow.nero - Helping me understand how the text renderer and debug text array work in-game... well in-code... as well as other interesting tidbits; also being cool and friendly.
 * CaptainSwag101 - For creating [DRV3-Sharp](https://github.com/CaptainSwag101/DRV3-Sharp) which I used to extract files for the Super Dev Facts Pt 2 and DRV3 Chapter test in Unused Story Files video
+* BitesizeBird - For their [Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding)
+* Spiral Framework - For their efforts documenting the [OpCodes](https://github.com/SpiralFramework/Spiral)
 * You - yes, you! if you watched or commented <3
 
 Anyways, if you wanna see something fun in the first game, run `set {int}0x009f7e4c=0` (`0x00b3e4ee` in the 2nd game) in any 2D room. Have fun!
+
+## For TCRF or other research projects
+I hereby grant my permission for info from this repo to be used on TCRF pages for the respecive games and other projects documenting these games. I am unfamiliar with how to edit pages on WikiMedia forks and English isn't my first language if it wasn't already obvious.
