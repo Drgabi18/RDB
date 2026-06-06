@@ -207,8 +207,8 @@ namespace LazyOpCodeReader {
 						br.BaseStream.Position = leFile.TextOffset;
 						leFile.HowManyStrings = br.ReadInt32();
 						int[] Offsets = new int[leFile.HowManyStrings];
-						for (int offset = 1; offset <= leFile.HowManyStrings; offset++) {
-							Offsets[offset-1] = br.ReadInt32();
+						for (int offset = 0; offset < leFile.HowManyStrings; offset++) {
+							Offsets[offset] = br.ReadInt32();
 						}
 						foreach(int offsy in Offsets) {
 							if (DEBUG_BUILD) Console.WriteLine("{0} - Lin File Type 2 -\t" +

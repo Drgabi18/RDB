@@ -1,2 +1,2 @@
-./Shared/*/obj/
-./Shared/*/bin/
+/Shared/*/obj/
+/Shared/*/bin/
