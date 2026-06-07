@@ -7,6 +7,7 @@ This repo contains a collection of research documents I created for the followin
 * [[Danganronpa 1/2/V3] Unused Story (.LIN) Files](https://www.youtube.com/watch?v=nDRb3It6jOs)
 * [[Danganronpa 1/2/V3] Super Development Trivia & Fun Facts 2: Goodbye Debug Menus](https://www.youtube.com/watch?v=jjzG6y8MyrU)
 * [[Danganronpa UDG] Unused Rooms, Cutscenes & Development Trivia](https://www.youtube.com/eH-B8eT481U)
+* [[Danganronpa UDG] Addendum: How to "play" as Toko](https://www.youtube.com/watch?v=iCMTiXoMFgI)
 
 Please check them out since I put more effort than necessary in all of them!
 
