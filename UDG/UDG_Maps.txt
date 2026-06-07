@@ -183,7 +183,7 @@ mp05_pm00_03.bnm - AGAIN???? Same thing again????
 mp05_pm00_ev.bnm - EVENT ONLY CUTSCENE MAP before going up to the end arena, where servant/izuru cutscene happens
 mp05_rt00_00.bnm - Room where you fight the hoard of monokumas before entering the ship
 mp05_tg00_00.bnm - PRERENDERED CUTSCENE ONLY ROOM
-mp_street_01.bnm - UNUSED, i think early version of mp01_st00_00.bnm
+mp_street_01.bnm - UNUSED, I think early version of mp01_st00_00.bnm
 mp_street_03.bnm - UNUSED
 mp_street_04.bnm - UNUSED
-mp_street_05.bnm - UNUSED, i think early version of mp01_st02_01.bnm
+mp_street_05.bnm - UNUSED, I think early version of mp01_st02_01.bnm
