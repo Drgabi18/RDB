@@ -20,7 +20,12 @@ namespace LazyOpCodeReader {
 	}
 
 	public class Program {
+		#if DEBUG
+		public static bool DEBUG_BUILD = true;
+		#else
 		public static bool DEBUG_BUILD = false;
+		#endif
+
 		//	"Non-nullable field 'OurGame' must contain a non-null value when exiting
 		//	constructor. Consider adding the 'required' modifier or declaring the field
 		//	as nullable."
@@ -101,12 +106,9 @@ namespace LazyOpCodeReader {
 				LinFile OurLinFile = new LinFile(file);
 				ReadFile(OurLinFile);
 				OurGame.LinFiles.Add(OurLinFile);
-				// Thread.Sleep(16);
+				//Thread.Sleep(16);
 			}
 			);
-
-			// this does nothing when piping lol
-			// Console.Clear();
 
 			switch(PrintMode) {
 				default:
@@ -148,7 +150,6 @@ namespace LazyOpCodeReader {
 		// whenever i write deep nested loops like this, god holds a gun between
 		// my temple, but in the back instead of the front, and he's ready to pull
 		public static void ReadFile(LinFile leFile) {
-			// Console.WriteLine(leFile.LongFileName);
 			// although originally i just got the entire file, found every 0x70
 			// and then did the job of that, i will most likely need binary
 			// reader in the future, so to learn it, i'm using it in this project
@@ -187,12 +188,12 @@ namespace LazyOpCodeReader {
 								if (ResultingOpCode is not null) {
 									int ResultingArguments = ResultingOpCode.NoOfArguments;
 									byte[] TheBytesPassed = br.ReadBytes(ResultingArguments);
-									// a bit buggy buuuuuut it looks cool
 									if (DEBUG_BUILD) {
-										Console.Write("{0} - {1} - ", leFile.PrettyFileName, ResultingOpCode.Value);
-										foreach (byte bytes in TheBytesPassed) Console.Write("{0:X2} ", bytes);
-										Console.Write("- Offset: {0}", br.BaseStream.Position);
-										Console.WriteLine();
+										StringBuilder sb = new StringBuilder();
+										sb.AppendFormat("{0} - {1} - ", leFile.PrettyFileName, ResultingOpCode.Value);
+										foreach (byte bytes in TheBytesPassed) sb.AppendFormat("{0:X2} ", bytes);
+										sb.AppendFormat("- Offset: {0}", br.BaseStream.Position);
+										Console.WriteLine(sb.ToString());
 									}
 									leFile.ResultingOpCodeObjects.Add(
 										OurGame.MakeGameLinObjects(NextByte, TheBytesPassed)
