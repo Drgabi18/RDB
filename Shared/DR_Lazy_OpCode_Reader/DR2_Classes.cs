@@ -25,10 +25,14 @@ namespace LazyOpCodeReader.Games {
 			public byte Chapter;
 			public byte Episode;
 			public byte SubEpisode; // sometimes matches room id (e.g. e00_000_180)
+			public byte Unk1;
+			public byte Unk2;
 			public LoadScript(byte[] bytes) {
 				this.Chapter = bytes[0];
 				this.Episode = bytes[1];
 				this.SubEpisode = bytes[2];
+				this.Unk1 = bytes[3];
+				this.Unk2 = bytes[4];
 			}
 			public override string ToString()
 			{
@@ -42,11 +46,15 @@ namespace LazyOpCodeReader.Games {
 			public string Type = "Run Script"; // hack to see what the objects are
 			public byte Chapter;
 			public byte Episode;
+			public byte Unk1;
+			public byte Unk2;
 			public byte SubEpisode;  // sometimes matches room id
 			public RunScript(byte[] bytes) {
 				this.Chapter = bytes[0];
 				this.Episode = bytes[1];
 				this.SubEpisode = bytes[2];
+				this.Unk1 = bytes[3];
+				this.Unk2 = bytes[4];
 			}
 			public override string ToString()
 			{
@@ -59,10 +67,12 @@ namespace LazyOpCodeReader.Games {
 			public byte Room;
 			public byte Unk2;
 			public byte Unk3;
+			public byte Unk4;
 			public LoadMap(byte[] bytes) {
 				this.Room = bytes[0];
 				this.Unk2 = bytes[1];
 				this.Unk3 = bytes[2];
+				this.Unk4 = bytes[3];
 			}
 			// this is where we convert the data to the room name...
 			// IF I HAD ONE LIST... i mean i did make one but yeah no, not
