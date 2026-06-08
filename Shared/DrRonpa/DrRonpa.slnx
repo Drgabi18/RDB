@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Lazy.NonStopDebate.Reader/">
+    <Project Path="Lazy.NonStopDebate.Reader/DebateReader.csproj" />
+  </Folder>
+  <Folder Name="/Lazy.OpCode.Reader/">
+    <Project Path="Lazy.OpCode.Reader/OpCodeReader.csproj" />
+  </Folder>
+  <Folder Name="/TrialCamera.Exercise/">
+    <Project Path="TrialCamera.Exercise/TrialCamReimplementation.csproj" />
+  </Folder>
+</Solution>
