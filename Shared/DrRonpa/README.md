@@ -38,8 +38,8 @@ Parameters **aren't sequential** but are all **requiered**:
 * `-d`/`--directory`
 	* Path where the LIN files are. DR2 Novels are skipped.
 * `-m`/`--mode`
-	* `"JsonSerialized"` - prints the OpCodes into a .json file which can be easily readable. [Example](Shared/DrRonpa/Lazy.OpCode.Reader/output/UDG_Serialized.json).
-	* `"GraphViz"` - prints the OpCodes into a text file which can be easily used to print GraphViz files. [Example](Shared/DrRonpa/Lazy.OpCode.Reader/output/udg_manual_graphviz.txt).
+	* `"JsonSerialized"` - prints the OpCodes into a .json file which can be easily readable. [Example](Lazy.OpCode.Reader/output/UDG_Serialized.json).
+	* `"GraphViz"` - prints the OpCodes into a text file which can be easily used to print GraphViz files. [Example](Lazy.OpCode.Reader/output/udg_manual_graphviz.txt).
 	* `"Specialized"` - whatever bullshit you wanna make
 
 **Example usage**: `./OpCodeReader --game "DR2" -d "./Path/To/Files/" --mode "JsonSerialized"`
