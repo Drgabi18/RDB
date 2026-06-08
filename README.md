@@ -32,7 +32,7 @@ For the Anniversary ports where the Debug Symbols are from, I extraced them from
 Each file for each game is sorted individually into the folder for what title they are part of. To explain what each file is:
 * `./DR1/DR1_Rooms.ods`, `./DR2/DR2_Rooms.ods`, `./DRV3/DRV3_Rooms.txt`, `./UDG/UDG_Maps.txt` are the files containing the Room IDs and a short description of what they do.
 * `./DR1/DR1 Room File Paths.txt` and `./DR2/DR2 Room File Paths.txt` contain strings extracted from decompressed .pak files. These file paths have been recreated in `./DR1/DR1FolderStructureRemade` and `./DR2/DR2FolderStructureRemade` respectivley if you wanna explore them.
-* `./Shared/Codepaths_from_DR2.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. These file paths have been recreated in `./Shared/DR2_Codepaths/` if you wanna explore them.
+* `./Shared/Codepaths_from_DR2.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. These file paths have been recreated in `./Shared/Codepaths_from_DR2/` if you wanna explore them.
 * `./DR1/DR1_UserDefinedSymbols.csv`, `./DR2/DR2_UserDefinedSymbols.csv` and `./UDG/UDG_UserDefinedSymbols.csv` contain the names I gave to memory addresses I could find. Again these only work assuming you used the same manifest versions as me and the stars aligned correctly so you have dumped the same stuff (in DRV3's case, you can do the same by running x64dbg in Wine to dump the game, since ASLR is disabled in Wine, thank fuck).
 * `./DR1/DR1_DebugSymbols.csv`, `./DR2/DR2_DebugSymbols.csv`, `./UDG/UDG_DebugSymbols.csv` and `./DRV3/DRV3_DebugSymbols.csv` contain the names of the symbols extracted from the Anniversary versions of the game (except for UDG which is just the strings that remained for Steam Achivements and uhh... random vtables???????), these are provided as plaintext files instead of a Ghidra Project
 * `./Shared/DR12V3_Unused_LINs.txt` contains a list of the unused LIN files I found in the mainline series games.
@@ -43,9 +43,10 @@ Each file for each game is sorted individually into the folder for what title th
 * `./UDG/NightmarePlayerStruct.md` is some dissasembled code I am completly unable to wrap my head around to decipher how it was made.
 * `./UDG/Some_ReverseEngineered_Code.cpp` is what it says on the can, ok I lied a bit, it's just a few structs for what control the player character, commented with too much detail, contains addresses which are `base + 0xNNNNNNNN` which should be helpul to use in Cheat Enine.
 * `./UDG/LevelSelectSave/` is a Save that brings you onto one of the Unused Lins, which has a Level Select, Woohoo!
-* `./Shared/DR_Lazy_OpCode_Reader/` contains the code and output of my Lazy OpCode Reader™, used primarily for my curiosity in analysis discrete structures.
-* `./Shared/DR_Lazy_Read_Dat/` contains the code and output of my Lazy DAT Reader™™, used to decompile Nonstop/Hanron/Kokonronpa Debate Files. Results are in the .ods files inside the `././output/` folder.
-* `./Shared/DR_Trial_Camera_Re_Implementation/` contains the code of my Trial Camera Reimplementation™™™, that I absolutley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than jusjt to brag that I wrote it.
+* `./Shared/DrRonpa/` is a suite of C# apps I've made in order to read the binary data from some (easily reverse engineer-able) file formats. The apps are explained in the [README file](Shared/DrRonpa/README.md)
+   * `./Lazy.NonStopDebate.Reader` contains the code and output of my Lazy DAT Reader™, used to parse Nonstop/Hanron/Kokonronpa Debate Files. Results are in the .ods files inside the `././output/` folder.
+   * `./Lazy.OpCode.Reader` contains the code and output of my Lazy OpCode Reader™™, used primarily for my curiosity in analysis of discrete and the weird ass structure the games have. Results are in the .json files inside the `././output/` folder.
+   * `./TrialCamera.Exercise` contains the code of my Trial Camera Reimplementation™™™, that I absolutley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than just to brag that I wrote it.
 
 Note that what you're seeing here is a passion project, the accuracy of some information may be low or straight up incorrect. I'm discovering stuff at the same time as of the making of the videos.
 

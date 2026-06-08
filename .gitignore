@@ -1,2 +1,3 @@
-/Shared/*/obj/
-/Shared/*/bin/
+.vscode/
+/Shared/DrRonpa/*/obj/
+/Shared/DrRonpa/*/bin/
