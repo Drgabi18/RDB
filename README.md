@@ -29,6 +29,12 @@ For the Anniversary ports where the Debug Symbols are from, I extraced them from
 * `jp.co.spike_chunsoft.DR2.apk` - Version 1.0.2
 * `jp.co.spike_chunsoft.DRV3.apk` - Version 1.1
 
+Several Markdown file with some text explanation documenting some aspects of the game:
+* [The Debug Menus from the PSP and Steam releases](Shared/DR1_DR2_DebugMenus.md) _(not including Android/iOS versions which have way too many)_
+* [DrRonpa documentation](Shared/DrRonpa/README.md)
+* [How to add the Save with the Level Select in UDG](UDG/LevelSelectSave/README.md)
+* [Confusion on how the player class in UDG is set](UDG/NightmarePlayerStruct.md)
+
 Each file for each game is sorted individually into the folder for what title they are part of. To explain what each file is:
 * `./DR1/DR1_Rooms.ods`, `./DR2/DR2_Rooms.ods`, `./DRV3/DRV3_Rooms.txt`, `./UDG/UDG_Maps.txt` are the files containing the Room IDs and a short description of what they do.
 * `./DR1/DR1 Room File Paths.txt` and `./DR2/DR2 Room File Paths.txt` contain strings extracted from decompressed .pak files. These file paths have been recreated in `./DR1/DR1FolderStructureRemade` and `./DR2/DR2FolderStructureRemade` respectivley if you wanna explore them.
