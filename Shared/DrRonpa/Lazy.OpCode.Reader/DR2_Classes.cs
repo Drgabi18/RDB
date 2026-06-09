@@ -46,9 +46,9 @@ namespace LazyOpCodeReader.Games {
 			public string Type = "Run Script"; // hack to see what the objects are
 			public byte Chapter;
 			public byte Episode;
+			public byte SubEpisode;  // sometimes matches room id
 			public byte Unk1;
 			public byte Unk2;
-			public byte SubEpisode;  // sometimes matches room id
 			public RunScript(byte[] bytes) {
 				this.Chapter = bytes[0];
 				this.Episode = bytes[1];

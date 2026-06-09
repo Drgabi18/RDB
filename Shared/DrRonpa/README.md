@@ -2,12 +2,12 @@
 
 A suite of C# apps I've made in order to read the binary data from some (easily reverse engineer-able) file formats in the Danganronpa series. This has already been done better by other people before me, but I wanted to learn how to do the same thing as well individual of others' research and code.
 
-**You are expected to pipe the output out to a file running any of these.**
+**You are expected to pipe the output out to a file when running any of these.**
 
 Run `dotnet build ./DrRonpa.slnx -c Release -o ./Binaries/` to build all the applications at once.
 
 # Requierments
-* .NET 10
+* .NET (tested only on .NET 10)
 
 # Projects
 ## Lazy.NonStopDebate.Reader

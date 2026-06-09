@@ -40,9 +40,10 @@ namespace LazyOpCodeReader.OpCodes {
 				and it makes the most sense with 0x21 where the 2nd argument seems
 				to be this number 
 
+			0x11 = 0 bytes (always present before END_CHECK_FLAG)
+			0x4F = 0 bytes (always present before CHECK_FLAG)
 			0x01 = 2 bytes (text at the bottom, like ones said by genocider)
 			0x0F = 0 bytes (exists after LOAD_SCRIPT in e99_004_001, maybe kill_script?)
-			0x11 = 0 bytes (always present before END_CHECK_FLAG)
 			0x1D = 4 bytes (seems like 2 shorts)
 			0x24 = 2 bytes (associate certain object to flag?)
 			0x26 = 6 bytes (seems like 3 shorts, maybe voice)
@@ -50,7 +51,6 @@ namespace LazyOpCodeReader.OpCodes {
 			0x30 = 8 bytes (seems like 4 shorts)
 			0x3D = 10 bytes (seems like 5 shorts)
 			0x41 = 8 bytes (seems like 4 shorts)
-			0x4F = 0 bytes (always present before CHECK_FLAG)
 			0x05 = 3 bytes
 			0x06 = 4 bytes
 			0x07 = 5 bytes
