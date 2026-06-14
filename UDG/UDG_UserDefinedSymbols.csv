@@ -17,7 +17,7 @@
 "1407e9ba0","UDG_Bitmask_SettingItTo8800StopsTime_AlsoItShouldBeALongLong","Data Label"
 "1407b7464","UDG_EquippedSkills","Data Label"
 "14020b86c","UDG_???_SeemsRelatedToGenociderJigglePhysics","Data Label"
-"14020b874","UDG_FOV","Data Label"
+"14020b874","UDG_FOV (DESTROYS EARS IF CHANGED)","Data Label"
 "14020b878","UDG_SomeKindOfFunnyScalar","Data Label"
 "140800c94","UDG_SomeKindOfFunnyScalarCopyByValue","Data Label"
 "140210aac","UDG_InterpolationValue","Data Label"
