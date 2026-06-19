@@ -46,6 +46,13 @@ Parameters **aren't sequential** but are all **requiered**:
 
 This was already done better than me [countless](https://github.com/vn-tools/danganronpa-tools) [times](https://github.com/SpiralFramework/Spiral) [before](https://github.com/morgana-x/danganronpa-lin-compiler-v2).
 
+## EV8.Parser
+**WIP** Tool used to parse EV8 files from Ultra Despair Girls.
+
+Only parameter is the Folder with the `.ev8` files.
+
+**Example usage**: `./EV8Parser "/Path/To/Files/"`
+
 ## TrialCamera.Exercise
 Just random code I absolutley didn't write because I forgot to bring my lunch to work. Currently useless.
 

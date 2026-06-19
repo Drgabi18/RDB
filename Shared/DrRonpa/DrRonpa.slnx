@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/EV8.Parser/">
+    <Project Path="EV8.Parser/EV8Parser.csproj" />
+  </Folder>
   <Folder Name="/Lazy.NonStopDebate.Reader/">
     <Project Path="Lazy.NonStopDebate.Reader/DebateReader.csproj" />
   </Folder>

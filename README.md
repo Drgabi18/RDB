@@ -53,6 +53,7 @@ Each file for each game is sorted individually into the folder for what title th
    * `./Lazy.NonStopDebate.Reader` contains the code and output of my Lazy DAT Reader™, used to parse Nonstop/Hanron/Kokonronpa Debate Files. Results are in the .ods files inside the `././output/` folder.
    * `./Lazy.OpCode.Reader` contains the code and output of my Lazy OpCode Reader™™, used primarily for my curiosity in analysis of discrete and the weird ass structure the games have. Results are in the .json files inside the `././output/` folder.
    * `./TrialCamera.Exercise` contains the code of my Trial Camera Reimplementation™™™, that I absolutley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than just to brag that I wrote it.
+   * `./EV8.Parser` is a WIP Tool used to extract EV8 files from UDG.
 
 Note that what you're seeing here is a passion project, the accuracy of some information may be low or straight up incorrect. I'm discovering stuff at the same time as of the making of the videos.
 
