@@ -1,4 +1,5 @@
 // TODO: COPY PASTED FROM EVTMDL CAUSE I'M LAZY, FIX LATER
+// TODO: Figure out how OBJTYP_CAMTRG is used in this
 
 namespace EV8Reader.ObjectTypes {
 	struct EvCamTrgChunk {

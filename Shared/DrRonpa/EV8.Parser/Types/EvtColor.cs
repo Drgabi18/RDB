@@ -1,3 +1,5 @@
+// TODO: figure out if OBJTYP_FADE is used in the case where it's 1500 bytes long
+
 // example from e02_019_003.ev8
 namespace EV8Reader.ObjectTypes {
 	struct UDGColor { byte R, G, B, A; } // TODO: CHECK IF THIS IS REALLY RGBA

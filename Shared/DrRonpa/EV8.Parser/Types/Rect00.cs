@@ -1,3 +1,6 @@
+// one of the comments left on the object says that it's the whole area, figure
+// out if it's OBJTYP_AREA or OBJTYP_TRIGER
+
 namespace EV8Reader.ObjectTypes {
 	// tested using e99_000_001.ev8, test06.ev8 seems to have this broken
 	struct Rect00Chunk {

@@ -1,29 +1,28 @@
-using System.Text;
-using System.Text.Json.Serialization;
-
 namespace EV8Reader.ObjectTypes {
 	/*
-	OBJTYP_NULL		- NEVER USED
-	OBJTYP_MAP		- NEVER USED
-	OBJTYP_BGMAP	- NEVER USED
-	OBJTYP_CAMPOS	- NEVER USED
-	OBJTYP_CAMTRG	- NEVER USED
-	OBJTYP_CHRMOV	- NEVER USED
-	OBJTYP_CHRANM	- NEVER USED
-	OBJTYP_MAPOBJ	- NEVER USED
-	OBJTYP_free		- NEVER USED
-	OBJTYP_POINT	- NEVER USED
-	OBJTYP_RECT		- NEVER USED
-	OBJTYP_AREA		- NEVER USED
-	OBJTYP_HAICH	- NEVER USED
-	OBJTYP_EBAREA	- NEVER USED
-	OBJTYP_ITMBOX	- NEVER USED
-	OBJTYP_REGMAP	- NEVER USED
-	OBJTYP_REGCHR	- NEVER USED
-	OBJTYP_REGPEF	- NEVER USED
-	OBJTYP_SETOBJ	- NEVER USED
-	OBJTYP_FADE		- NEVER USED
-	OBJTYP_TRIGER	- NEVER USED
+	===== "Chunk" Object Types ====
+	OBJTYP_NULL		- THESE ARE USED AS SUBTYPES TO THE BOTTOM ONES
+	OBJTYP_MAP		- ditto
+	OBJTYP_BGMAP	- ditto
+	OBJTYP_CAMPOS	- ditto
+	OBJTYP_CAMTRG	- ditto
+	OBJTYP_CHRMOV	- ditto
+	OBJTYP_CHRANM	- ditto
+	OBJTYP_MAPOBJ	- ditto
+	OBJTYP_free		- ditto
+	OBJTYP_POINT	- ditto
+	OBJTYP_RECT		- ditto
+	OBJTYP_AREA		- ditto
+	OBJTYP_HAICH	- ditto
+	OBJTYP_EBAREA	- ditto
+	OBJTYP_ITMBOX	- ditto
+	OBJTYP_REGMAP	- ditto
+	OBJTYP_REGCHR	- ditto
+	OBJTYP_REGPEF	- ditto
+	OBJTYP_SETOBJ	- ditto
+	OBJTYP_FADE		- ditto
+	OBJTYP_TRIGER	- ditto
+	===== "Group" Object Types ==== // no official name
 	OBJTYP_DSOMAP	- The Map in which you play (seemingly never used as .LINs load the map)
 	OBJTYP_EVTCOLOR	- Event - Color (over screen or enviourment?)
 	OBJTYP_DSOCHR	- Used to place NPCs that could move around in cutscenes
@@ -89,35 +88,35 @@ namespace EV8Reader.ObjectTypes {
 				case ObjTypes.OBJTYP_HAICH:		case ObjTypes.OBJTYP_EBAREA:	case ObjTypes.OBJTYP_ITMBOX:
 				case ObjTypes.OBJTYP_REGMAP:	case ObjTypes.OBJTYP_REGCHR:	case ObjTypes.OBJTYP_REGPEF:
 				case ObjTypes.OBJTYP_SETOBJ:	case ObjTypes.OBJTYP_FADE:		case ObjTypes.OBJTYP_TRIGER:
-				// these 2 seem to have been scrapped/replaced with other types kind of late
+				// subtypes
 				case ObjTypes.OBJTYP_POST_NPC:	case ObjTypes.OBJTYP_POST_SAV:
 					Console.WriteLine(
-						"These are Unused in the actual game, if you somehow have "+
-						"a version that uses these, please open an issue and/or "+
-						"document them too!/nThrowing a hard exception cause it's "+ 
-						"important!!1!/nTo ignore this error, pass --ignore-unused "+
-						"parameter to the app");
+						"These aren't \"unused\" per se, but are \"chunks\" "+
+						"of other \"groups\". If you somehow have a version that "+
+						"uses these, please open an issue and/or document them it!/n"+
+						"Throwing a hard exception cause it's important!!1!/n"+
+						"To ignore this error, pass --block-subs parameter to the app");
 					// TODO: Remove this error and replace it with what we say above
 					throw new Exception("Unused Objects Detected");
 				case ObjTypes.OBJTYP_DSOMAP:	// DONE SANS HEADER
 				case ObjTypes.OBJTYP_EVTCOLOR:	// DONE SANS HEADER
-				case ObjTypes.OBJTYP_DSOCHR:	// partially done
-				case ObjTypes.OBJTYP_EVTMDL:	// partially done
-				case ObjTypes.OBJTYP_EVTPTC:	// partially done
-				case ObjTypes.OBJTYP_EVTSE:		// partially done
-				case ObjTypes.OBJTYP_EVCAMPOS:	// partially done
-				case ObjTypes.OBJTYP_EVCAMTRG:	// partially done
+				case ObjTypes.OBJTYP_DSOCHR:	// needs subtypes implemented
+				case ObjTypes.OBJTYP_EVTMDL:	// ditto
+				case ObjTypes.OBJTYP_EVTPTC:	// ditto
+				case ObjTypes.OBJTYP_EVTSE:		// ditto
+				case ObjTypes.OBJTYP_EVCAMPOS:	// ditto
+				case ObjTypes.OBJTYP_EVCAMTRG:	// ditto
 				case ObjTypes.OBJTYP_MSCRIPT:	// DONE SANS HEADER
-				case ObjTypes.OBJTYP_PLIST:		// partially done
-				case ObjTypes.OBJTYP_RECT00:	// partially done
-				case ObjTypes.OBJTYP_POST_PLY:	// partially done
-				case ObjTypes.OBJTYP_POST_ENM:	// partially done
-				case ObjTypes.OBJTYP_POST_WCM:	// partially done
-				case ObjTypes.OBJTYP_POST_TBX:	// partially done
-				//case ObjTypes.OBJTYP_POST_NPC:// unused, moved above, code still exists
+				case ObjTypes.OBJTYP_PLIST:		// needs subtypes implemented
+				case ObjTypes.OBJTYP_RECT00:	// ditto
+				case ObjTypes.OBJTYP_POST_PLY:	// ditto
+				case ObjTypes.OBJTYP_POST_ENM:	// ditto
+				case ObjTypes.OBJTYP_POST_WCM:	// ditto
+				case ObjTypes.OBJTYP_POST_TBX:	// ditto
+				//case ObjTypes.OBJTYP_POST_NPC:// moved above
 				//case ObjTypes.OBJTYP_POST_SAV:// ditto
-				case ObjTypes.OBJTYP_POST_OBJ:	// partially done
-				case ObjTypes.OBJTYP_POST_PTC:	// partially done
+				case ObjTypes.OBJTYP_POST_OBJ:	// needs subtypes implemented
+				case ObjTypes.OBJTYP_POST_PTC:	// needs subtypes implemented
 				default:
 					//break;
 					throw new Exception("Not implemented yet!");

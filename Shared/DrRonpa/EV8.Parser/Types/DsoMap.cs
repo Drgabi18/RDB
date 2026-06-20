@@ -2,6 +2,8 @@
 namespace EV8Reader.ObjectTypes {
 	struct DsoMapChunk {
 		ObjTypeHeaderChunk Header;
+		// TODO: Figure out if this is OBJTYP_MAP and if it is, then what the
+		// hell are OBJTYP_BGMAP and OBJTYP_REGMAP
 		/* 0x80 */ ShortComment MapName;
 		int Unk1;
 	}
