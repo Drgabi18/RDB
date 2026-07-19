@@ -1,3 +1,6 @@
+using System.Runtime.InteropServices;
+using System.Text;
+
 namespace EV8Reader.ObjectTypes {
 	/*
 	From the Debug Files left inside, these are probably
@@ -58,21 +61,51 @@ namespace EV8Reader.ObjectTypes {
 	// There's more unused object types in the code that are not in the list above,
 	// for example, CBcDSOMAP, CEvtActDsoMap and CEvtIFDsoMap (latter 2 are part of CEiDsoMap)
 
-	public struct EV8FileHeader {
-		//string Header = "EvtMake ver 0.1";	// 0x00, never ever checked
-		/* 0x100 */ public int Unk1;	// read at 0x14004B886 in the code
-										// Always 2, is 1 only two times
-		/* 0x100 */ public int FileSize;
-		/* 0x100 */ public int NoOfObjects;
+	//[StructLayout(LayoutKind.Explicit)]
+	public class EV8FileHeader {
+		//[FieldOffset(0)]
+		public string Header = "EvtMake ver 0.1";	// never ever checked
+		//[FieldOffset(0x100)]
+		public int ExtraDataB4Objects;	// read at 0x14004B886 in the code
+										// if 2, there's extrada data that
+										// is 80 bytes in size
+		//[FieldOffset(0x104)]
+		public int FileSize;
+		//[FieldOffset(0x108)]
+		public int NoOfObjects;
+		//[FieldOffset(0x10C)]
 		// would have been an array but...
+		// seemingly can hold a maximum of 256 objects after which the objects
+		// are written
+		// public EV8ListEntry[] ListOfObjects = new EV8ListEntry[256];
 		public List<EV8ListEntry> ListOfObjects;
-		//  = new List<EV8ListEntry>();
+		// = new List<EV8ListEntry>();
+		//[FieldOffset(0x290C)]
+		public EV8ExtraData? ExtraData;
 	}
 	public class EV8ListEntry {
 		public string ObjectName; // Example "OBJTYP_MSCRIPT"
 		public int AdressOfObject;
 		public int HeaderReportedSize;	// or object header size? or where object ends?
 		public object DataFromSerializedObject; // only here for JsonSerializer
+	}
+
+	[StructLayout(LayoutKind.Sequential)]
+	public struct EV8ExtraData {
+		public int Unk1; // seems to be 1
+		public int Unk2;
+		public int Unk3;
+		public int Unk4; // seems to be 1
+		[MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)]
+		public float[] Unknown16Floats;
+		public EV8ExtraData() {
+			//Unk1, Unk2, Unk3, Unk4 = 0;
+			Unk1 = 0;
+			Unk2 = 0;
+			Unk3 = 0;
+			Unk4 = 0;
+			Unknown16Floats = new float[16];
+		}
 	}
 
 	public class ObjectClasses{

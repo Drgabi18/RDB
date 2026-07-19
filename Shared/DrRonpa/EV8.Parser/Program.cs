@@ -18,10 +18,9 @@ namespace EV8Reader {
 			foreach (string file in LinFilesFromFolder) {
 				using (FileStream fs = File.Open(file, FileMode.Open)) {
 				using (BinaryReader br = new BinaryReader(fs, Encoding.Unicode)) {
+					EV8FileHeader FileHeader = new EV8FileHeader();
 					br.BaseStream.Position = 0x100;
-					EV8FileHeader FileHeader;
-					//  = new EV8FileHeader();
-					FileHeader.Unk1 = br.ReadInt32();
+					FileHeader.ExtraDataB4Objects = br.ReadInt32();
 					FileHeader.FileSize = br.ReadInt32();
 					FileHeader.NoOfObjects = br.ReadInt32();
 					FileHeader.ListOfObjects = new List<EV8ListEntry>();
@@ -33,6 +32,12 @@ namespace EV8Reader {
 						TheObj.HeaderReportedSize = br.ReadInt32();
 
 						FileHeader.ListOfObjects.Add(TheObj);
+					}
+
+					// let's have some fun trying some new stuff
+					if (FileHeader.ExtraDataB4Objects == 2) {
+						br.BaseStream.Position = 0x290C;
+						FileHeader.ExtraData = CastingHelper.CastToStruct<EV8ExtraData>(br.ReadBytes(80));
 					}
 
 					foreach (EV8ListEntry obj in FileHeader.ListOfObjects) {
