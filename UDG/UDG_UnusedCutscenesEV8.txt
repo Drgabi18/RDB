@@ -37,3 +37,6 @@ test_koizumi5.ev8 - Cutscene after Sports Boy dies, only the movie plays and the
 test_koizumi6.ev8 - Nagisa cutscene before boss fight
 test_koizumi7.ev8 - BETA Cutscene from when you meet with people on the plane, Future Foundation use those blue and pink models
 test_koizumi8.ev8 - Meeting Hot Mom for the first time
+gameover01_1.ev8 - Present in events.bnd with other unused cutscenes, seems to be a duplicate of GAMEOVER_EN00_01.ev8, Komaru gets eaten by Monokuma
+gameover01_2.ev8 - Present in events.bnd with other unused cutscenes, seems to be a duplicate of GAMEOVER_EN00_02.ev8, Toko saves Komaru but she has no animation
+==== Included but not present in this file, all placeholder LINs with an unused ev8 file, e.g. e90_004_000 which is just a LIN with placeholder text, but previously used to be an early game over screen
