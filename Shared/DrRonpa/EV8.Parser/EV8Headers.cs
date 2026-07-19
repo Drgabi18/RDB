@@ -1,6 +1,17 @@
 namespace EV8Reader.ObjectTypes {
 	/*
+	From the Debug Files left inside, these are probably
+	* `CBcEVTPTC`, Classs Binary Chunk Event Particles
+	* `CEiDsoRect00`, Class Entity DSO Rectangle Trigger Area
+	* `CEvtActRect00`, Class Event Act(?) Rectangle Trigger Area
+	* `CEvtIFRect00`, Class Event Interface(?) Rectangle Trigger Area
+
+	* `Evt` - Event
+	* `POST` - Playing Area
+	* `If` - Interface(?)
+
 	===== "Chunk" Object Types ====
+		These are most likely the results of the CBc* classes
 	OBJTYP_NULL		- THESE ARE USED AS SUBTYPES TO THE BOTTOM ONES
 	OBJTYP_MAP		- ditto
 	OBJTYP_BGMAP	- ditto
