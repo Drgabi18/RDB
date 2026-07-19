@@ -27,7 +27,7 @@ namespace EV8Reader {
 
 					for (int ObjType=0; ObjType < FileHeader.NoOfObjects; ObjType++) {
 						EV8ListEntry TheObj = new EV8ListEntry();
-						TheObj.ObjectName = Encoding.ASCII.GetString(br.ReadBytes(32)).Replace("\u0000", "");
+						TheObj.ObjectName = Encoding.ASCII.GetString(br.ReadBytes(32)).TrimEnd('\u0000');
 						TheObj.AdressOfObject = br.ReadInt32();
 						TheObj.HeaderReportedSize = br.ReadInt32();
 

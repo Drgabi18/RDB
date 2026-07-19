@@ -135,8 +135,8 @@ namespace EV8Reader.ObjectTypes {
 				// subtypes
 				case ObjTypes.OBJTYP_POST_NPC:	case ObjTypes.OBJTYP_POST_SAV:
 					Console.WriteLine(
-						"These aren't \"unused\" per se, but are \"chunks\" "+
-						"of other \"groups\". If you somehow have a version that "+
+						"These aren't \"unused\" per se, but are \"chunks\""+
+						"of other \"groups\". If you somehow have a version that"+
 						"uses these, please open an issue and/or document them it!/n"+
 						"Throwing a hard exception cause it's important!!1!/n"+
 						"To ignore this error, pass --block-subs parameter to the app");
