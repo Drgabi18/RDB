@@ -29,17 +29,30 @@ class Program {
 	static void Main(string[] args) {
 
 		// i gave up on making a switch to make this easier
-		string DebateFormat = args[0]; // nonstop, kokoro, hanron
-		string GameID = args[1]; // "DR1" or "DR2"
+		string DebateFormat = args[0]; // nonstop, kokoro, hanron, scrum
+		string GameID = args[1]; // "DR1", "DR2" or "DR3"
 		int PrintMode = Convert.ToInt16(args[2]); // print mode
-		string FolderPath = args[3]; // has to be the folder with the .dat files
+		string FileOrFolderPath = args[3]; // has to be the folder with the .dat files
 		
-		int SizeOfCharDebate = GameID == "DR1" ? 60 : 68;
+		int SizeOfCharDebate;
+		switch (GameID) {
+			default:
+			case "DR1"	: SizeOfCharDebate = 60; break;
+			case "DR2"	: SizeOfCharDebate = 68; break;
+			case "DRV3"	: SizeOfCharDebate = 105; break;
+		}
+
 		List<string> FileNamesForAlphabet = new();
 
-		foreach (string file in Directory.EnumerateFiles(FolderPath)) {
-			if (file.Contains(DebateFormat) && file.EndsWith(".dat")) {
-				FileNamesForAlphabet.Add(file);
+		// if we are selecting an individual file, then do only that
+		if (Path.HasExtension(FileOrFolderPath)) {
+			// TODO: Maybe make this better, add the checks from below too?
+			FileNamesForAlphabet.Add(FileOrFolderPath);
+		} else {
+			foreach (string file in Directory.EnumerateFiles(FileOrFolderPath)) {
+				if (file.Contains(DebateFormat) && file.EndsWith(".dat")) {
+					FileNamesForAlphabet.Add(file);
+				}
 			}
 		}
 		
@@ -54,6 +67,7 @@ class Program {
 			using (BinaryReader br = new(fs) ) {
 				// and we're commenting ot this code cause i don't know 
 				// how to cast a byte array to a struct
+				// 19/07/2026: ok i found out how to cast byte array to struct, check EV8.Parser
 				/*
 				Duration = br.ReadInt16();
 				HowManyEvents = br.ReadInt16();
@@ -93,6 +107,7 @@ class Program {
 						HowManyEvents = br.ReadInt16();
 						for (int i = 0; i < HowManyEvents; i++) {
 							Console.Write(Path.GetFileName(file));
+							Console.Write("\t");
 							for (int j =0; j < (SizeOfCharDebate/2); j++) {
 								Console.Write(";{0}",br.ReadInt16());
 							}
@@ -106,8 +121,3 @@ class Program {
 		}
 	}
 }
-
-
-
-
-	
