@@ -43,8 +43,8 @@ namespace EV8Reader {
 						ObjHeader.HowManyChunks=br.ReadInt32();
 						ObjHeader.HeaderSize=br.ReadInt32();
 						ObjHeader.Unk1=br.ReadInt32();
-						br.BaseStream.Position += 0x50;
-						ObjHeader.TEMPORARY_STRING = Encoding.Unicode.GetString(br.ReadBytes(64)).Replace("\u0000", "");
+						//br.BaseStream.Position += 0x50;
+						//ObjHeader.TEMPORARY_STRING = Encoding.ASCII.GetString(br.ReadBytes(64)).Replace("\u0000", "");
 						// Console.WriteLine(ObjHeader.TEMPORARY_STRING);
 						// obj.DataFromSerializedObject = ObjectClasses.CreateObject(ResObj);
 						obj.DataFromSerializedObject = ObjHeader;

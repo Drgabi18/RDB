@@ -151,7 +151,7 @@ namespace EV8Reader.ObjectTypes {
 		/* 0x4 */ public int HowManyChunks;	// how many "Chunks" of the object there are
 		/* 0x8 */ public int HeaderSize;		// mostly 16 bytes
 		/* 0xC */ public int Unk1; 			// always 0, unused
-		public string TEMPORARY_STRING;
+		//public string TEMPORARY_STRING;
 	}
 
 
