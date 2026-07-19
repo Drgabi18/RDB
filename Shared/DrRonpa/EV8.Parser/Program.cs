@@ -57,7 +57,7 @@ namespace EV8Reader {
 
 					string ShortFileName = new FileInfo(file).Name;
 					ListOfEventFiles[ShortFileName] = FileHeader;
-					}
+				}
 				}
 			}
 
