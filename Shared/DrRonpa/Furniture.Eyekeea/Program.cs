@@ -87,17 +87,19 @@ namespace DanganFurniture
 			Mask = 9,	// no clue, name taken from bg_100 in DR2
 			Sun = 50,	// DR2 only
 			HiddenMonokuma = 70,	// DR2 only
-			Path = 90,	// DR2 Only, Unk1 represents the ID of the path
+			AnotherHiddenMonokuma = 71,	// DR2 only
+			Path = 90,	// DR2 Only, Unk1 represents the ID of the path, unused one in bg_025
 			NULL2 = 255	// DR2 only, padding?
 
 			// Speculative
 			/*
-			Floor = 3,	// or maybe light floor?
+			Interacteable??? = 3,	// or maybe light floor?
 			Walls = 4,
 			ObjectWithAnimationWhenEnterirng = 6,
 			Color_UNK1 = 11,
 			Color_UNK2 = 17,
 			Color_UNK3 = 30,	// uses Size for something
+			CameraPos = 41,	// position sits roughly where the camera is in DR2's bg_169, maybe 51 is what it points at?
 			Color_UNK4 = 84,
 			WorldBorder = 61,	// DR2 only
 			WorldMesh = 80
@@ -105,9 +107,9 @@ namespace DanganFurniture
 			
 			Unk8 = 8, Unk10 = 10, Unk12 = 12, Unk13 = 13,
 			Unk14 = 14, Unk16 = 16, Unk18 = 18, Unk19 = 19, Unk22 = 22,
-			Unk40 = 40, Unk41 = 41, Unk51 = 51, Unk52 = 52, Unk53 = 53,
+			Unk40 = 40, Unk51 = 51, Unk52 = 52, Unk53 = 53,
 			Unk54 = 54, Unk60 = 60, Unk61 = 61, Unk62 = 62, Unk63 = 63, Unk64 = 64,
-			Unk66 = 66, Unk67 = 67, Unk71 = 71, Unk72 = 72, Unk73 = 73, Unk75 = 75,
+			Unk66 = 66, Unk67 = 67, Unk72 = 72, Unk73 = 73, Unk75 = 75,
 			Unk76 = 76, Unk77 = 77, Unk78 = 78, Unk79 = 79, Unk81 = 81,
 			Unk83 = 83, Unk85 = 85, Unk86 = 86,
 			*/
@@ -156,8 +158,8 @@ namespace DanganFurniture
 						Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 							// some objects have the scale 0, which would make it so we can't see anything, we should
 							// think a little more about what we should scare here lol
-							Object.Size[0], Object.Size[1], 1, Object.Position[0], Object.Position[1], Object.Position[2]);
-							//1, 1, 1, Object.Position[0], Object.Position[1], Object.Position[2]);
+							//Object.Size[0], Object.Size[1], 1, Object.Position[0], Object.Position[1], Object.Position[2]);
+							1, 1, 1, Object.Position[0], Object.Position[1], Object.Position[2]);
 						Console.WriteLine("metadata/type = \"{0}\"", Object.Type);
 						Console.WriteLine("metadata/id = \"{0}\"", Object.ID);
 						Console.WriteLine("metadata/unk1 = \"{0}\"", Object.Unk1);
