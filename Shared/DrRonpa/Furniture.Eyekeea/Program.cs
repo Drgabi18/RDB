@@ -165,9 +165,14 @@ namespace DanganFurniture
 						Console.WriteLine("metadata/rotation = \"{0}\"", Object.Rotation);
 						Console.WriteLine("gizmo_extents = 100.0");
 						Console.WriteLine();
+						// creating a bilboarded sprite
+						Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}\" unique_id={1}]", NodeName, Randomy.Next());
+						Console.WriteLine("pixel_size = 0.5");
+						Console.WriteLine("billboard = 2");
+						Console.WriteLine("texture = ExtResource(\"1_f3sb7\")");
 						// creating a box because it's impossible to see these on a 4K monitor
-						Console.WriteLine("[node name=\"CSGBox3D\" type=\"CSGBox3D\" parent=\"{0}\" unique_id={1}]", NodeName, Randomy.Next());
-						Console.WriteLine("size = Vector3(100, 100, 100)");
+						//Console.WriteLine("[node name=\"CSGBox3D\" type=\"CSGBox3D\" parent=\"{0}\" unique_id={1}]", NodeName, Randomy.Next());
+						//Console.WriteLine("size = Vector3(100, 100, 100)");
 						Console.WriteLine();
 
 					}
