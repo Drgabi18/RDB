@@ -1,3 +1,5 @@
+using EV8Reader.Headers;
+
 namespace EV8Reader.ObjectTypes {
 	struct Unk_5Bytes { byte B1,B2,B3,B4,B5; }
 	struct PostWcmChunk {
@@ -14,6 +16,6 @@ namespace EV8Reader.ObjectTypes {
 	
 	struct PostWcm {
 		ObjTypeHeader Header;
-		PostWcmChunk[] Particles; // repeats `HowManyOfContent` times
+		PostWcmChunk[] Cabinets; // repeats `HowManyOfContent` times
 	}
 }

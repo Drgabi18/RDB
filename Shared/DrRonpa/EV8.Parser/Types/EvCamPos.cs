@@ -1,3 +1,4 @@
+using EV8Reader.Headers;
 // TODO: COPY PASTED FROM EVTMDL CAUSE I'M LAZY, FIX LATER
 // TODO: Figure out how OBJTYP_CAMPOS is used in this
 

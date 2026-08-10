@@ -1,3 +1,5 @@
+using EV8Reader.Headers;
+
 /*
 Code used for reading this found at 0x140074CC0
 
@@ -58,7 +60,7 @@ namespace EV8Reader.ObjectTypes {
 		short LinEpisode;
 		short LinUnk1; // or SubEpisode
 		// according to the header, this is 6 bytes, so what is this?
-		short LinUnk2; // text in LIN? checking ChunkHeader, this seems to be 1 byte sized?
+		short Unk2; // text in LIN? checking ChunkHeader, this seems to be 1 byte sized?
 		
 	}
 	

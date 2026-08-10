@@ -1,3 +1,5 @@
+using EV8Reader.Headers;
+
 // reimplementation of CEiDsoMap
 namespace EV8Reader.ObjectTypes {
 	struct DsoMapChunk {

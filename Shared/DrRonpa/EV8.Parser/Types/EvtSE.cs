@@ -1,3 +1,5 @@
+using EV8Reader.Headers;
+
 namespace EV8Reader.ObjectTypes {
 	struct EvtSeChunk {
 		ObjTypeHeaderChunk Header;

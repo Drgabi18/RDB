@@ -1,3 +1,4 @@
+using EV8Reader.Headers;
 // one of the comments left on the object says that it's the whole area, figure
 // out if it's OBJTYP_AREA or OBJTYP_TRIGER
 

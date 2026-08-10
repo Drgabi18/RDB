@@ -1,3 +1,5 @@
+using EV8Reader.Headers;
+
 namespace EV8Reader.ObjectTypes {
 	// they could never get me to get rid of you PeePeePos
 	struct PeePeePos { UDGPos PosRot; } 
