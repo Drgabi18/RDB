@@ -11,4 +11,7 @@
   <Folder Name="/TrialCamera.Exercise/">
     <Project Path="TrialCamera.Exercise/TrialCamReimplementation.csproj" />
   </Folder>
+  <Folder Name="/Furniture.Eyekeea/">
+    <Project Path="Furniture.Eyekeea/Furniture.Eyekeea.csproj" />
+  </Folder>
 </Solution>

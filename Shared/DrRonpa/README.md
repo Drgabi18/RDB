@@ -56,6 +56,16 @@ Only parameter is the Folder with the `.ev8` files.
 ## TrialCamera.Exercise
 Just random code I absolutley didn't write because I forgot to bring my lunch to work. Currently useless.
 
+## Furniture.Eyekeea
+I'm not even gonna lie I saw https://github.com/morgana-x/danganronpa-RoomObjectsToJson and wanted to remake it for myself. Exports "furniture" objects from map files to JSON or Godot.
+
+Accepted parameter is the 2nd (0002.bin) binary data file from any `bg_NNN` room file.
+
+To export to Godot you need change `PrintModesEnum PrintModes` from `true` to `false`.
+
+**Example usage**: `./DanganFurniture "/Path/To/bg_000/0002.bin" "/Path/To/bg_001/0002.bin"`
+
+
 # Footnotes
 
 ¹ - I haven't used AI to code anything in this entire project, everything here is writen with pure stupidity, researched by pure autism and fueled by pure lesbianism. [I am training to become a lesbian the difficulty level is pretty high I am 99% gay and 1% synesthesia](https://bsky.app/profile/blockedforthispost.bsky.social/post/3mleqlvgmoh2x)
