@@ -17,6 +17,7 @@ namespace DanganFurniture.PrintModesClass {
 			int Indexer = 0;
 			
 			foreach (Room Map in Everything) { // lol
+			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
 			foreach (Furniture Object in Map.Objects) {
 				Indexer++;
 				string NodeName;
@@ -25,10 +26,12 @@ namespace DanganFurniture.PrintModesClass {
 				} else {
 					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypes), Object.Type), "Node", Indexer);
 				}
-				// TODO: Use Quaternion
+
+				Console.WriteLine();
+
 				// TODO: Godot.Transform3D WHY DID THEY HAVE TO MAKE A CLASS NOT SUPPORTED HERE
-				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\".\" unique_id={1}]",
-					NodeName, Indexer * 100);
+				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
+					NodeName, Map.RoomName, Indexer * 100);
 				Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 					// some objects have the scale 0, which would make it so we can't see anything, we should
 					// think a little more about what we should scare here lol
@@ -59,8 +62,8 @@ namespace DanganFurniture.PrintModesClass {
 					string NodeName;
 					Indexer++;
 					NodeName = String.Concat(Obiect.Key, "_AABB_", Indexer);
-					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\".\" unique_id={1}]",
-						NodeName, Randomy.Next());
+					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
+						NodeName, Map.RoomName, Randomy.Next());
 					Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 						1, 1, 1, Obiect.Value.SixFloats[i], Obiect.Value.SixFloats[i+1], Obiect.Value.SixFloats[i+2]);
 					Console.WriteLine("gizmo_extents = 100.0");
