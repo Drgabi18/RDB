@@ -44,8 +44,8 @@ namespace DanganFurniture.PrintModesClass {
 				Console.WriteLine("gizmo_extents = 100.0");
 				Console.WriteLine();
 				// creating a bilboarded sprite
-				Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}\" unique_id={1}]",
-					NodeName, Randomy.Next());
+				Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}/{1}\" unique_id={2}]",
+					Map.RoomName, NodeName, Randomy.Next());
 				Console.WriteLine("pixel_size = 0.5");
 				Console.WriteLine("billboard = 2");
 				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
@@ -68,8 +68,8 @@ namespace DanganFurniture.PrintModesClass {
 					Console.WriteLine("gizmo_extents = 100.0");
 					Console.WriteLine();
 					// creating a bilboarded sprite
-					Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}\" unique_id={1}]",
-						NodeName, Randomy.Next());
+					Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}/{1}\" unique_id={2}]",
+						Map.RoomName, NodeName, Randomy.Next());
 					Console.WriteLine("pixel_size = 0.5");
 					Console.WriteLine("billboard = 2");
 					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
