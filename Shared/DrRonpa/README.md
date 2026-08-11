@@ -57,6 +57,8 @@ Only parameter is the Folder with the `.ev8` files.
 Just random code I absolutley didn't write because I forgot to bring my lunch to work. Currently useless.
 
 ## Furniture.Eyekeea
+**Tool is still worked on, except this description to be outdated and the commands to not work.**
+
 I'm not even gonna lie I saw https://github.com/morgana-x/danganronpa-RoomObjectsToJson and wanted to remake it for myself. Exports "furniture" objects from map files to JSON or Godot.
 
 Accepted parameter is the 2nd (0002.bin) binary data file from any `bg_NNN` room file.
