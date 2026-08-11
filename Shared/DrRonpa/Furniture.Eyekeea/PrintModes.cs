@@ -18,6 +18,8 @@ namespace DanganFurniture.PrintModesClass {
 			
 			foreach (Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
+			Console.WriteLine();
+
 			foreach (Furniture Object in Map.Objects) {
 				Indexer++;
 				string NodeName;
@@ -26,9 +28,6 @@ namespace DanganFurniture.PrintModesClass {
 				} else {
 					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypes), Object.Type), "Node", Indexer);
 				}
-
-				Console.WriteLine();
-
 				// TODO: Godot.Transform3D WHY DID THEY HAVE TO MAKE A CLASS NOT SUPPORTED HERE
 				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
 					NodeName, Map.RoomName, Indexer * 100);
