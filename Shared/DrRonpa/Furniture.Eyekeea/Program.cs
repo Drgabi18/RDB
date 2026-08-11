@@ -41,7 +41,7 @@ namespace DanganFurniture
 {
 	class Program {
 		public static List<Room> EyekeeaShowroom = new List<Room>();
-		public static readonly string GodotSvgIdentifierWhatever = "1_awcjp";
+		public static readonly string GodotSvgIdentifierWhatever = "1_f3sb7";
 		
 		// TODO: arguments should be folders extracted using pak_extractor
 		// or we integrate PakLibrary to read files off there
@@ -59,18 +59,12 @@ namespace DanganFurniture
 				if (FolderName == "bg_054") continue;
 
 				Room Showcase = new Room();
+				Showcase.ModelNames = Readers.ReadModelNames(Path.Combine(Folder, "0000"));
 				Showcase.RoomName = FolderName;
-				Showcase.Unk1 = Readers.Read0001(Path.Combine(Folder, "0001.gmo"));
-				Showcase.Objects = Readers.ReadFurniture(Path.Combine(Folder, "0002.gmo"));
+				Showcase.Unk1 = Readers.Read0001(Path.Combine(Folder, "0001"));
+				Showcase.Objects = Readers.ReadFurniture(Path.Combine(Folder, "0002"));
 				// DR2 only, at the moment it currently breaks DR1 parsing
-				Showcase.AABB = Readers.ReadAABBMasks(Path.Combine(Folder, "0003.gmo"));
-				
-				// HACK: find a way to gracefully not error out on special cases
-				// like this where bg_000 has no 0000.gmo, the other files work
-				// but this one doesn't, so skip at the end with others resolved
-				if (FolderName != "bg_000") {
-					Showcase.ModelNames = Readers.ReadModelNames(Path.Combine(Folder, "0000.gmo"));
-				}
+				Showcase.AABB = Readers.ReadAABBMasks(Path.Combine(Folder, "0003"));
 
 				EyekeeaShowroom.Add(Showcase);
 			}
