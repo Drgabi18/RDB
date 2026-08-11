@@ -56,7 +56,7 @@ namespace DanganFurniture.PrintModesClass {
 				Console.WriteLine();
 			}
 
-			foreach (var Obiect in Everything.First().AABB) {
+			foreach (var Obiect in Map.AABB) {
 				for (int i = 0; i < 4; i += 3 ) {
 					string NodeName;
 					Indexer++;
