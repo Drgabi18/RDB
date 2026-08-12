@@ -1,7 +1,20 @@
 [
   {
     "RoomName": "bg_000",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -172,11 +185,36 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_001",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_001_p00",
+      "bg_001_p01",
+      "bg_001_p02",
+      "bg_001_p03",
+      "bg_001_p04",
+      "bg_001_p05",
+      "bg_001_p06",
+      "bg_001_p07",
+      "bg_001_p08",
+      "bg_001_p09b1",
+      "bg_001_p10b1e",
+      "bg_001_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 8,
         "ID": 20,
@@ -1503,11 +1541,33 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_002",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_002_p00",
+      "bg_002_p01",
+      "bg_002_p02",
+      "bg_002_p03",
+      "bg_002_p04",
+      "bg_002_p05",
+      "bg_002_p06",
+      "bg_002_p07",
+      "bg_002_p08"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 3,
         "ID": 0,
@@ -1542,11 +1602,42 @@
         "Unk2": 1130102784,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_003",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_003_p00",
+      "bg_003_p01",
+      "bg_003_p02",
+      "bg_003_p03",
+      "bg_003_p04",
+      "bg_003_p05",
+      "bg_003_p06s00",
+      "bg_003_p07s01",
+      "bg_003_p08s02",
+      "bg_003_p09s03",
+      "bg_003_p10s04",
+      "bg_003_p11s05",
+      "bg_003_p12s06",
+      "bg_003_p13s07",
+      "bg_003_p14s08",
+      "bg_003_p15s09",
+      "bg_003_p16",
+      "bg_003_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 393206,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -1870,11 +1961,46 @@
         "Unk2": 1127809024,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_004",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_004_p00",
+      "bg_004_p01",
+      "bg_004_p02",
+      "bg_004_p03s11",
+      "bg_004_p04s10",
+      "bg_004_p05s9",
+      "bg_004_p06s8",
+      "bg_004_p07s7",
+      "bg_004_p08s6",
+      "bg_004_p09s5",
+      "bg_004_p10",
+      "bg_004_p11",
+      "bg_004_p12",
+      "bg_004_p13",
+      "bg_004_p14s4",
+      "bg_004_p15s3",
+      "bg_004_p16s2",
+      "bg_004_p17s1",
+      "bg_004_p18s0",
+      "bg_004_p19",
+      "bg_004_p20",
+      "bg_004_p21"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -2266,11 +2392,32 @@
         "Unk2": -1039400960,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_005",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_005_p00",
+      "bg_005_p01",
+      "bg_005_p02",
+      "bg_005_p03",
+      "bg_005_p04",
+      "bg_005_p05",
+      "bg_005_p06",
+      "bg_005_p07"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -2407,11 +2554,55 @@
         "Unk2": -1024458752,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_006",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_006_p00",
+      "bg_006_p01",
+      "bg_006_p02",
+      "bg_006_p03",
+      "bg_006_p04",
+      "bg_006_p05",
+      "bg_006_p06s15",
+      "bg_006_p07s14",
+      "bg_006_p08s13",
+      "bg_006_p09s12",
+      "bg_006_p10s11",
+      "bg_006_p11s10",
+      "bg_006_p12",
+      "bg_006_p13s9",
+      "bg_006_p14s8",
+      "bg_006_p15",
+      "bg_006_p16s7",
+      "bg_006_p17s6",
+      "bg_006_p18s5",
+      "bg_006_p19s4",
+      "bg_006_p20s3",
+      "bg_006_p21s2",
+      "bg_006_p22s1",
+      "bg_006_p23s0",
+      "bg_006_p24",
+      "bg_006_p25",
+      "bg_006_p26",
+      "bg_006_p27",
+      "bg_006_p28",
+      "bg_006_p29",
+      "bg_006_p30"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -2956,11 +3147,48 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_007",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_007_p00",
+      "bg_007_p01s16",
+      "bg_007_p02",
+      "bg_007_p03",
+      "bg_007_p04",
+      "bg_007_p05",
+      "bg_007_p06",
+      "bg_007_p07s15",
+      "bg_007_p08s14",
+      "bg_007_p09s13",
+      "bg_007_p10",
+      "bg_007_p11s12",
+      "bg_007_p12s11",
+      "bg_007_p13s10",
+      "bg_007_p14s9",
+      "bg_007_p15s8",
+      "bg_007_p16s7",
+      "bg_007_p17s6",
+      "bg_007_p18s5",
+      "bg_007_p19s4",
+      "bg_007_p20s3",
+      "bg_007_p21s2",
+      "bg_007_p22s1",
+      "bg_007_p23s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -3454,11 +3682,25 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_008",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -3629,11 +3871,44 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_009",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_009_p00",
+      "bg_009_p01",
+      "bg_009_p02",
+      "bg_009_p03s5",
+      "bg_009_p04",
+      "bg_009_p05",
+      "bg_009_p06",
+      "bg_009_p07",
+      "bg_009_p08",
+      "bg_009_p09s4",
+      "bg_009_p10",
+      "bg_009_p11",
+      "bg_009_p12s3",
+      "bg_009_p13",
+      "bg_009_p14s2",
+      "bg_009_p15",
+      "bg_009_p16s1",
+      "bg_009_p17",
+      "bg_009_p18s0",
+      "bg_009_p19"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 524278,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -3872,11 +4147,45 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_010",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_010_p00",
+      "bg_010_p01",
+      "bg_010_p02",
+      "bg_010_p03",
+      "bg_010_p04",
+      "bg_010_p05",
+      "bg_010_p06",
+      "bg_010_p07",
+      "bg_010_p08",
+      "bg_010_p09",
+      "bg_010_p10",
+      "bg_010_p11",
+      "bg_010_p12",
+      "bg_010_p13",
+      "bg_010_p14s0",
+      "bg_010_p15",
+      "bg_010_p16",
+      "bg_010_p17",
+      "bg_010_p18",
+      "bg_010_p19",
+      "bg_010_p20"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -4081,11 +4390,40 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_011",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_011_p00",
+      "bg_011_p01",
+      "bg_011_p02s5",
+      "bg_011_p03s4",
+      "bg_011_p04s3",
+      "bg_011_p05s2",
+      "bg_011_p06",
+      "bg_011_p07",
+      "bg_011_p08",
+      "bg_011_p09",
+      "bg_011_p10s1",
+      "bg_011_p11s0",
+      "bg_011_p12",
+      "bg_011_p13",
+      "bg_011_p14",
+      "bg_011_p15"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -4375,11 +4713,25 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_012",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -4550,11 +4902,25 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_013",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -4725,11 +5091,44 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_014",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_014_p00",
+      "bg_014_p01s7",
+      "bg_014_p02",
+      "bg_014_p03s6",
+      "bg_014_p04",
+      "bg_014_p05s5",
+      "bg_014_p06s4",
+      "bg_014_p07a0",
+      "bg_014_p08",
+      "bg_014_p09",
+      "bg_014_p10s3",
+      "bg_014_p11s2",
+      "bg_014_p12",
+      "bg_014_p13s1",
+      "bg_014_p14s0",
+      "bg_014_p15",
+      "bg_014_p16",
+      "bg_014_p17",
+      "bg_014_p18",
+      "bg_014_p19"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -5070,11 +5469,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_015",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_015_p00",
+      "bg_015_p01s7",
+      "bg_015_p02",
+      "bg_015_p03s6",
+      "bg_015_p04",
+      "bg_015_p05s5",
+      "bg_015_p06s4",
+      "bg_015_p07a0",
+      "bg_015_p08",
+      "bg_015_p09",
+      "bg_015_p10s3",
+      "bg_015_p11s2",
+      "bg_015_p12",
+      "bg_015_p13s1",
+      "bg_015_p14s0",
+      "bg_015_p15",
+      "bg_015_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -5381,11 +5810,34 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_016",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_016_p00",
+      "bg_016_p01",
+      "bg_016_p02",
+      "bg_016_p03s04",
+      "bg_016_p04s03",
+      "bg_016_p05s02",
+      "bg_016_p06s01",
+      "bg_016_p07s00",
+      "bg_016_p08",
+      "bg_016_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -5539,11 +5991,31 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_017",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_017_p00",
+      "bg_017_p01",
+      "bg_017_p02",
+      "bg_017_p03s02",
+      "bg_017_p04s01",
+      "bg_017_p05s00",
+      "bg_017_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -5663,11 +6135,34 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_018",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_001_p00",
+      "bg_001_p01",
+      "bg_001_p02",
+      "bg_001_p03",
+      "bg_001_p04",
+      "bg_001_p05",
+      "bg_001_p06",
+      "bg_001_p07b1",
+      "bg_001_p08b1e",
+      "bg_001_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 8,
         "ID": 20,
@@ -6926,11 +7421,35 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_021",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_021_p00",
+      "bg_021_p01",
+      "bg_021_p02",
+      "bg_021_p03",
+      "bg_021_p04",
+      "bg_021_p05",
+      "bg_021_p06",
+      "bg_021_p07",
+      "bg_021_p08b1",
+      "bg_021_p09b1e",
+      "bg_021_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 8,
         "ID": 20,
@@ -8427,11 +8946,42 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_022",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_022_p00",
+      "bg_022_p01s5",
+      "bg_022_p02s4",
+      "bg_022_p03s3",
+      "bg_022_p04",
+      "bg_022_p05",
+      "bg_022_p06",
+      "bg_022_p07s2",
+      "bg_022_p08s1",
+      "bg_022_p09s0",
+      "bg_022_p10",
+      "bg_022_p11",
+      "bg_022_p12",
+      "bg_022_p13",
+      "bg_022_p14",
+      "bg_022_p15",
+      "bg_022_p16",
+      "bg_022_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -8823,11 +9373,25 @@
         "Unk2": 1130430464,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_023",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -8998,11 +9562,25 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_024",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -9173,11 +9751,34 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_025",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_025_p00",
+      "bg_025_p01",
+      "bg_025_p02s00",
+      "bg_025_p03s01",
+      "bg_025_p04",
+      "bg_025_p05",
+      "bg_025_p06s02",
+      "bg_025_p07",
+      "bg_025_p08",
+      "bg_025_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -9416,11 +10017,40 @@
         "Unk2": 1128136704,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_026",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_026_p00",
+      "bg_026_p01s7",
+      "bg_026_p02s6",
+      "bg_026_p03s5",
+      "bg_026_p04s4",
+      "bg_026_p05s3",
+      "bg_026_p06s2",
+      "bg_026_p07s1",
+      "bg_026_p08s0",
+      "bg_026_p09",
+      "bg_026_p10",
+      "bg_026_p11",
+      "bg_026_p12",
+      "bg_026_p13",
+      "bg_026_p14",
+      "bg_026_p15"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -9778,11 +10408,41 @@
         "Unk2": 1110704128,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_027",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_027_p00",
+      "bg_027_p01",
+      "bg_027_p02",
+      "bg_027_p03",
+      "bg_027_p04",
+      "bg_027_p05",
+      "bg_027_p06s00",
+      "bg_027_p07s01",
+      "bg_027_p08",
+      "bg_027_p09",
+      "bg_027_p10",
+      "bg_027_p11",
+      "bg_027_p12",
+      "bg_027_p13s02",
+      "bg_027_p14",
+      "bg_027_p15s03",
+      "bg_027_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -10021,11 +10681,39 @@
         "Unk2": -1039400960,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_028",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_028_p00",
+      "bg_028_p01",
+      "bg_028_p02",
+      "bg_028_p03",
+      "bg_028_p04",
+      "bg_028_p05",
+      "bg_028_p06s00",
+      "bg_028_p07s01",
+      "bg_028_p08",
+      "bg_028_p09s02",
+      "bg_028_p10s03",
+      "bg_028_p11",
+      "bg_028_p12",
+      "bg_028_p13",
+      "bg_028_p14"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -10247,11 +10935,42 @@
         "Unk2": -1035468800,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_029",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_029_p00",
+      "bg_029_p01",
+      "bg_029_p02",
+      "bg_029_p03",
+      "bg_029_p04s00",
+      "bg_029_p05s01",
+      "bg_029_p06",
+      "bg_029_p07",
+      "bg_029_p08",
+      "bg_029_p09",
+      "bg_029_p10",
+      "bg_029_p11",
+      "bg_029_p12s02",
+      "bg_029_p13",
+      "bg_029_p14",
+      "bg_029_p15s03",
+      "bg_029_p16",
+      "bg_029_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -10541,11 +11260,53 @@
         "Unk2": -1035468800,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_030",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_030_p00",
+      "bg_030_p01",
+      "bg_030_p02",
+      "bg_030_p03",
+      "bg_030_p04",
+      "bg_030_p05",
+      "bg_030_p06",
+      "bg_030_p07",
+      "bg_030_p08",
+      "bg_030_p09s0",
+      "bg_030_p10s1",
+      "bg_030_p11s2",
+      "bg_030_p12s3",
+      "bg_030_p13s4",
+      "bg_030_p14s5",
+      "bg_030_p15s6",
+      "bg_030_p16",
+      "bg_030_p17",
+      "bg_030_p18",
+      "bg_030_p19",
+      "bg_030_p20",
+      "bg_030_p21",
+      "bg_030_p22s7",
+      "bg_030_p23s8",
+      "bg_030_p24",
+      "bg_030_p25",
+      "bg_030_p26",
+      "bg_030_p27",
+      "bg_030_p28s9"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -11039,11 +11800,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_031",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_031_p00",
+      "bg_031_p01s7",
+      "bg_031_p02",
+      "bg_031_p03s6",
+      "bg_031_p04",
+      "bg_031_p05s5",
+      "bg_031_p06s4",
+      "bg_031_p07a0",
+      "bg_031_p08",
+      "bg_031_p09",
+      "bg_031_p10s3",
+      "bg_031_p11s2",
+      "bg_031_p12",
+      "bg_031_p13s1",
+      "bg_031_p14s0",
+      "bg_031_p15",
+      "bg_031_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -11350,11 +12141,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_032",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_032_p00",
+      "bg_032_p01s7",
+      "bg_032_p02",
+      "bg_032_p03s6",
+      "bg_032_p04",
+      "bg_032_p05s5",
+      "bg_032_p06s4",
+      "bg_032_p07a0",
+      "bg_032_p08",
+      "bg_032_p09",
+      "bg_032_p10s3",
+      "bg_032_p11s2",
+      "bg_032_p12",
+      "bg_032_p13s1",
+      "bg_032_p14s0",
+      "bg_032_p15",
+      "bg_032_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -11661,11 +12482,34 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_033",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_033_p00",
+      "bg_033_p01",
+      "bg_033_p02",
+      "bg_033_p03s4",
+      "bg_033_p04s3",
+      "bg_033_p05s2",
+      "bg_033_p06s1",
+      "bg_033_p07s0",
+      "bg_033_p08",
+      "bg_033_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -11870,11 +12714,31 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_034",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_034_p00",
+      "bg_034_p01",
+      "bg_034_p02",
+      "bg_034_p03s02",
+      "bg_034_p04s01",
+      "bg_034_p05s00",
+      "bg_034_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -11994,11 +12858,28 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_035",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_035_p00",
+      "bg_035_p01",
+      "bg_035_p02",
+      "bg_035_p03"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -12101,11 +12982,39 @@
         "Unk2": 1119748096,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_036",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_036_p00",
+      "bg_036_p01",
+      "bg_036_p02",
+      "bg_036_p03",
+      "bg_036_p04",
+      "bg_036_p05s3",
+      "bg_036_p06s2",
+      "bg_036_p07s1",
+      "bg_036_p08s0",
+      "bg_036_p09",
+      "bg_036_p10",
+      "bg_036_p11",
+      "bg_036_p12",
+      "bg_036_p13s0",
+      "bg_036_p14"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -12395,11 +13304,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_037",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_037_p00",
+      "bg_037_p01",
+      "bg_037_p02",
+      "bg_037_p03",
+      "bg_037_p04",
+      "bg_037_p05",
+      "bg_037_p06_s00",
+      "bg_037_p07_s01",
+      "bg_037_p08",
+      "bg_037_p09",
+      "bg_037_p10",
+      "bg_037_p11",
+      "bg_037_p12",
+      "bg_037_p13_s02",
+      "bg_037_p14",
+      "bg_037_p15_s03",
+      "bg_037_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -12621,11 +13560,36 @@
         "Unk2": -1039400960,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_041",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_041_p00",
+      "bg_041_p01",
+      "bg_041_p02",
+      "bg_041_p03",
+      "bg_041_p04",
+      "bg_041_p05",
+      "bg_041_p06",
+      "bg_041_p07",
+      "bg_041_p08",
+      "bg_041_p09b1",
+      "bg_041_p10b1e",
+      "bg_041_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 8,
         "ID": 20,
@@ -14479,11 +15443,41 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_042",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_042_p00",
+      "bg_042_p01",
+      "bg_042_p02s6",
+      "bg_042_p03s5",
+      "bg_042_p04s4",
+      "bg_042_p05s3",
+      "bg_042_p06s2",
+      "bg_042_p07s1",
+      "bg_042_p08s0",
+      "bg_042_p09",
+      "bg_042_p10",
+      "bg_042_p11",
+      "bg_042_p12",
+      "bg_042_p13",
+      "bg_042_p14",
+      "bg_042_p15",
+      "bg_042_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -14960,11 +15954,47 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_043",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_043_p00",
+      "bg_043_p01s6",
+      "bg_043_p02",
+      "bg_043_p03s5",
+      "bg_043_p04s4",
+      "bg_043_p05s3",
+      "bg_043_p06s2",
+      "bg_043_p07s1",
+      "bg_043_p08s0",
+      "bg_043_p09",
+      "bg_043_p10",
+      "bg_043_p11",
+      "bg_043_p12",
+      "bg_043_p13",
+      "bg_043_p14",
+      "bg_043_p15",
+      "bg_043_p16",
+      "bg_043_p17",
+      "bg_043_p18",
+      "bg_043_p19",
+      "bg_043_p20",
+      "bg_043_p21",
+      "bg_043_p22"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -15543,11 +16573,35 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_044",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_044_p00",
+      "bg_044_p01s4",
+      "bg_044_p02s3",
+      "bg_044_p03s2",
+      "bg_044_p04s1",
+      "bg_044_p05s0",
+      "bg_044_p06",
+      "bg_044_p07",
+      "bg_044_p08",
+      "bg_044_p09",
+      "bg_044_p10"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -15905,11 +16959,28 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_045",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_045_p00",
+      "bg_045_p01",
+      "bg_045_p02",
+      "bg_045_p03"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -16165,11 +17236,48 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_046",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_046_p00",
+      "bg_046_p01",
+      "bg_046_p02",
+      "bg_046_p03",
+      "bg_046_p04",
+      "bg_046_p05s7",
+      "bg_046_p06s6",
+      "bg_046_p07s5",
+      "bg_046_p08s4",
+      "bg_046_p09s3",
+      "bg_046_p10s1",
+      "bg_046_p11s0",
+      "bg_046_p12",
+      "bg_046_p13s7",
+      "bg_046_p14s5",
+      "bg_046_p15",
+      "bg_046_p16s2",
+      "bg_046_p17",
+      "bg_046_p18",
+      "bg_046_p19",
+      "bg_046_p20",
+      "bg_046_p21",
+      "bg_046_p22",
+      "bg_046_p23"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -16561,11 +17669,56 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_047",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_047_p00",
+      "bg_047_p01",
+      "bg_047_p02",
+      "bg_047_p03",
+      "bg_047_p04",
+      "bg_047_p05",
+      "bg_047_p06",
+      "bg_047_p07",
+      "bg_047_p08",
+      "bg_047_p09",
+      "bg_047_p10",
+      "bg_047_p11",
+      "bg_047_p12",
+      "bg_047_p13",
+      "bg_047_p14",
+      "bg_047_p15",
+      "bg_047_p16",
+      "bg_047_p17",
+      "bg_047_p18",
+      "bg_047_p19",
+      "bg_047_p20",
+      "bg_047_p21",
+      "bg_047_p22",
+      "bg_047_p23s3",
+      "bg_047_p24s2",
+      "bg_047_p25s4",
+      "bg_047_p26",
+      "bg_047_p27s1",
+      "bg_047_p28s0",
+      "bg_047_p29",
+      "bg_047_p30",
+      "bg_047_p31"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 393206,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -16872,11 +18025,44 @@
         "Unk2": 1116471296,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_048",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_048_p00",
+      "bg_048_p01",
+      "bg_048_p02",
+      "bg_048_p03s5",
+      "bg_048_p04s4",
+      "bg_048_p05s3",
+      "bg_048_p06s2",
+      "bg_048_p07s1",
+      "bg_048_p08",
+      "bg_048_p09",
+      "bg_048_p10",
+      "bg_048_p11",
+      "bg_048_p12s0",
+      "bg_048_p13",
+      "bg_048_p14",
+      "bg_048_p15",
+      "bg_048_p16",
+      "bg_048_p17",
+      "bg_048_p18",
+      "bg_048_p19"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -17251,11 +18437,30 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_049",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_049_p00",
+      "bg_049_p01",
+      "bg_049_p02",
+      "bg_049_p03",
+      "bg_049_p04",
+      "bg_049_p05"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -17528,11 +18733,29 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_050",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_050_p00",
+      "bg_050_p01",
+      "bg_050_p02",
+      "bg_050_p03",
+      "bg_050_p04"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -17788,11 +19011,41 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_051",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_051_p00",
+      "bg_051_p01s7",
+      "bg_051_p02",
+      "bg_051_p03s6",
+      "bg_051_p04",
+      "bg_051_p05s5",
+      "bg_051_p06s4",
+      "bg_051_p07a0",
+      "bg_051_p08",
+      "bg_051_p09",
+      "bg_051_p10s3",
+      "bg_051_p11s2",
+      "bg_051_p12",
+      "bg_051_p13s1",
+      "bg_051_p14s0",
+      "bg_051_p15",
+      "bg_051_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -18099,11 +19352,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_052",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_052_p00",
+      "bg_052_p01s7",
+      "bg_052_p02",
+      "bg_052_p03s6",
+      "bg_052_p04",
+      "bg_052_p05s5",
+      "bg_052_p06s4",
+      "bg_052_p07a0",
+      "bg_052_p08",
+      "bg_052_p09",
+      "bg_052_p10s3",
+      "bg_052_p11s2",
+      "bg_052_p12",
+      "bg_052_p13s1",
+      "bg_052_p14s0",
+      "bg_052_p15",
+      "bg_052_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -18410,11 +19693,34 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_061",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_061_p00",
+      "bg_061_p01",
+      "bg_061_p02",
+      "bg_061_p03",
+      "bg_061_p04",
+      "bg_061_p05",
+      "bg_061_p06",
+      "bg_061_p07b1",
+      "bg_061_p08b1e",
+      "bg_061_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 8,
         "ID": 20,
@@ -20302,11 +21608,27 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_062",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_062_p00",
+      "bg_062_p01",
+      "bg_062_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -20528,11 +21850,42 @@
         "Unk2": 1119092736,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_063",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_063_p00",
+      "bg_063_p01",
+      "bg_063_p02",
+      "bg_063_p03",
+      "bg_063_p04s5",
+      "bg_063_p05s4",
+      "bg_063_p06",
+      "bg_063_p07",
+      "bg_063_p08s3",
+      "bg_063_p09",
+      "bg_063_p10s2",
+      "bg_063_p11s1",
+      "bg_063_p12s0",
+      "bg_063_p13",
+      "bg_063_p14",
+      "bg_063_p15",
+      "bg_063_p16",
+      "bg_063_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 393211,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -20839,11 +22192,30 @@
         "Unk2": 1108606976,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_064",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_064_p00",
+      "bg_064_p01",
+      "bg_064_p02",
+      "bg_064_p03",
+      "bg_064_p04s0",
+      "bg_064_p05"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 1310720,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -21031,11 +22403,36 @@
         "Unk2": 1101004800,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_065",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_065_p00",
+      "bg_065_p01",
+      "bg_065_p02s5",
+      "bg_065_p03",
+      "bg_065_p04s4",
+      "bg_065_p05s3",
+      "bg_065_p06",
+      "bg_065_p07",
+      "bg_065_p08s2",
+      "bg_065_p09s1",
+      "bg_065_p10s0",
+      "bg_065_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -21342,11 +22739,41 @@
         "Unk2": 1112014848,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_066",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_066_p00",
+      "bg_066_p01",
+      "bg_066_p02",
+      "bg_066_p03",
+      "bg_066_p04s5",
+      "bg_066_p05s4",
+      "bg_066_p06s3",
+      "bg_066_p07",
+      "bg_066_p08",
+      "bg_066_p09s3",
+      "bg_066_p10",
+      "bg_066_p11",
+      "bg_066_p12",
+      "bg_066_p13s2",
+      "bg_066_p14s1",
+      "bg_066_p15",
+      "bg_066_p16s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 40,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -21636,11 +23063,40 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_067",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_067_p00",
+      "bg_067_p01",
+      "bg_067_p02s4",
+      "bg_067_p03",
+      "bg_067_p04",
+      "bg_067_p05",
+      "bg_067_p06",
+      "bg_067_p07s3",
+      "bg_067_p08s2",
+      "bg_067_p09",
+      "bg_067_p10s2",
+      "bg_067_p11s1",
+      "bg_067_p12",
+      "bg_067_p13s1",
+      "bg_067_p14s0",
+      "bg_067_p15"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -21845,11 +23301,39 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_068",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_068_p00",
+      "bg_068_p01",
+      "bg_068_p02",
+      "bg_068_p03",
+      "bg_068_p04",
+      "bg_068_p05s4",
+      "bg_068_p06s3",
+      "bg_068_p07",
+      "bg_068_p08s2",
+      "bg_068_p09s1",
+      "bg_068_p10s0",
+      "bg_068_p11",
+      "bg_068_p12",
+      "bg_068_p13",
+      "bg_068_p14"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720891,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -22139,11 +23623,34 @@
         "Unk2": 1110441984,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_069",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_069_p00",
+      "bg_069_p01",
+      "bg_069_p02s1",
+      "bg_069_p03",
+      "bg_069_p04",
+      "bg_069_p05",
+      "bg_069_p06",
+      "bg_069_p07",
+      "bg_069_p08s0",
+      "bg_069_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 22,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -22314,11 +23821,41 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_070",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_070_p00",
+      "bg_070_p01s7",
+      "bg_070_p02",
+      "bg_070_p03s6",
+      "bg_070_p04",
+      "bg_070_p05s5",
+      "bg_070_p06s4",
+      "bg_070_p07a0",
+      "bg_070_p08",
+      "bg_070_p09",
+      "bg_070_p10s3",
+      "bg_070_p11s2",
+      "bg_070_p12",
+      "bg_070_p13s1",
+      "bg_070_p14s0",
+      "bg_070_p15",
+      "bg_070_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -22625,11 +24162,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_071",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_071_p00",
+      "bg_071_p01s7",
+      "bg_071_p02",
+      "bg_071_p03s6",
+      "bg_071_p04",
+      "bg_071_p05s5",
+      "bg_071_p06s4",
+      "bg_071_p07a0",
+      "bg_071_p08",
+      "bg_071_p09",
+      "bg_071_p10s3",
+      "bg_071_p11s2",
+      "bg_071_p12",
+      "bg_071_p13s1",
+      "bg_071_p14s0",
+      "bg_071_p15",
+      "bg_071_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -22936,11 +24503,34 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_072",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_072_p00",
+      "bg_072_p01",
+      "bg_072_p02",
+      "bg_072_p03s04",
+      "bg_072_p04s03",
+      "bg_072_p05s02",
+      "bg_072_p06s01",
+      "bg_072_p07s00",
+      "bg_072_p08",
+      "bg_072_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -23094,11 +24684,31 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_073",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_073_p00",
+      "bg_073_p01",
+      "bg_073_p02",
+      "bg_073_p03s02",
+      "bg_073_p04s01",
+      "bg_073_p05s00",
+      "bg_073_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -23218,11 +24828,32 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_081",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_081_p00",
+      "bg_081_p01",
+      "bg_081_p02",
+      "bg_081_p03",
+      "bg_081_p04",
+      "bg_081_p05b1",
+      "bg_081_p06b1e",
+      "bg_081_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 8,
         "ID": 20,
@@ -24566,11 +26197,25 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_082",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -24741,11 +26386,41 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_083",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_083_p00",
+      "bg_083_p01",
+      "bg_083_p02",
+      "bg_083_p03s5",
+      "bg_083_p04s4",
+      "bg_083_p05s3",
+      "bg_083_p06s2",
+      "bg_083_p07",
+      "bg_083_p08",
+      "bg_083_p09",
+      "bg_083_p10",
+      "bg_083_p11",
+      "bg_083_p12s1",
+      "bg_083_p13s0",
+      "bg_083_p14",
+      "bg_083_p15",
+      "bg_083_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -25120,11 +26795,27 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_084",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_084_p00",
+      "bg_084_p01",
+      "bg_084_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 2621480,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -25244,11 +26935,28 @@
         "Unk2": 1086324736,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_085",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_085_p00",
+      "bg_085_p01",
+      "bg_085_p02",
+      "bg_085_p03"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 917497,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -25419,11 +27127,28 @@
         "Unk2": -1031012352,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_086",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_086_p00",
+      "bg_086_p01",
+      "bg_086_p02",
+      "bg_086_p03"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 2621480,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -25577,11 +27302,45 @@
         "Unk2": 1121452032,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_087",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_009_p00",
+      "bg_009_p01s6",
+      "bg_009_p02",
+      "bg_009_p03",
+      "bg_009_p04",
+      "bg_009_p05",
+      "bg_009_p06",
+      "bg_009_p07s5",
+      "bg_009_p08s4",
+      "bg_009_p09",
+      "bg_009_p10",
+      "bg_009_p11",
+      "bg_009_p12",
+      "bg_009_p13",
+      "bg_009_p14s3",
+      "bg_009_p15s2",
+      "bg_009_p16",
+      "bg_009_p17",
+      "bg_009_p18",
+      "bg_009_p19s1",
+      "bg_009_p20s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -25922,11 +27681,27 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_088",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_088_p00",
+      "bg_088_p01",
+      "bg_088_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -26029,11 +27804,38 @@
         "Unk2": 1120403456,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_089",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_089_p00",
+      "bg_089_p01",
+      "bg_089_p02",
+      "bg_089_p03",
+      "bg_089_p04s00",
+      "bg_089_p05s01",
+      "bg_089_p06",
+      "bg_089_p07s02",
+      "bg_089_p08s03",
+      "bg_089_p09",
+      "bg_089_p10",
+      "bg_089_p11",
+      "bg_089_p12s04",
+      "bg_089_p13"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720891,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -26391,11 +28193,41 @@
         "Unk2": 1112014848,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_090",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_090_p00",
+      "bg_090_p01s7",
+      "bg_090_p02",
+      "bg_090_p03s6",
+      "bg_090_p04",
+      "bg_090_p05s5",
+      "bg_090_p06s4",
+      "bg_090_p07a0",
+      "bg_090_p08",
+      "bg_090_p09",
+      "bg_090_p10s3",
+      "bg_090_p11s2",
+      "bg_090_p12",
+      "bg_090_p13s1",
+      "bg_090_p14s0",
+      "bg_090_p15",
+      "bg_090_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -26702,11 +28534,41 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_091",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_091_p00",
+      "bg_091_p01s7",
+      "bg_091_p02",
+      "bg_091_p03s6",
+      "bg_091_p04",
+      "bg_091_p05s5",
+      "bg_091_p06s4",
+      "bg_091_p07a0",
+      "bg_091_p08",
+      "bg_091_p09",
+      "bg_091_p10s3",
+      "bg_091_p11s2",
+      "bg_091_p12",
+      "bg_091_p13s1",
+      "bg_091_p14s0",
+      "bg_091_p15",
+      "bg_091_p16"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -27013,11 +28875,38 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_092",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_092_p00",
+      "bg_092_p01",
+      "bg_092_p02a0",
+      "bg_092_p03",
+      "bg_092_p04s1",
+      "bg_092_p05",
+      "bg_092_p06",
+      "bg_092_p07",
+      "bg_092_p08",
+      "bg_092_p09",
+      "bg_092_p10s0",
+      "bg_092_p11",
+      "bg_092_p12",
+      "bg_092_p13"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -27205,11 +29094,36 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_101",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_101_p00",
+      "bg_101_p01",
+      "bg_101_p02b1",
+      "bg_101_p03",
+      "bg_101_p04",
+      "bg_101_p05",
+      "bg_101_p06",
+      "bg_101_p07",
+      "bg_101_p08",
+      "bg_101_p09",
+      "bg_101_p10",
+      "bg_101_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -28468,11 +30382,42 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_103",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_103_p00",
+      "bg_103_p01a0",
+      "bg_103_p02s3",
+      "bg_103_p03",
+      "bg_103_p04",
+      "bg_103_p05s2",
+      "bg_103_p06",
+      "bg_103_p07",
+      "bg_103_p08",
+      "bg_103_p09s1",
+      "bg_103_p10",
+      "bg_103_p11",
+      "bg_103_p12",
+      "bg_103_p13",
+      "bg_103_p14s0",
+      "bg_103_p15",
+      "bg_103_p16",
+      "bg_103_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -28898,11 +30843,43 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_104",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_104_p00",
+      "bg_104_p01",
+      "bg_104_p02",
+      "bg_104_p03",
+      "bg_104_p04",
+      "bg_104_p05a0",
+      "bg_104_p06s3",
+      "bg_104_p07",
+      "bg_104_p08s2",
+      "bg_104_p09",
+      "bg_104_p10",
+      "bg_104_p11s1",
+      "bg_104_p12",
+      "bg_104_p13",
+      "bg_104_p14",
+      "bg_104_p15",
+      "bg_104_p16s0",
+      "bg_104_p17",
+      "bg_104_p18"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -29345,11 +31322,31 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_105",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_105_p00",
+      "bg_105_p01",
+      "bg_105_p02",
+      "bg_105_p03",
+      "bg_105_p04",
+      "bg_105_p05",
+      "bg_105_p06s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -29452,11 +31449,35 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_106",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_106_p00",
+      "bg_106_p01",
+      "bg_106_p02",
+      "bg_106_p03",
+      "bg_106_p04",
+      "bg_106_p05",
+      "bg_106_p06",
+      "bg_106_p07",
+      "bg_106_p08s1",
+      "bg_106_p09",
+      "bg_106_p10s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 1638410,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -29610,11 +31631,36 @@
         "Unk2": 1065353216,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_107",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_107_p00",
+      "bg_107_p01s3",
+      "bg_107_p02s2",
+      "bg_107_p03",
+      "bg_107_p04",
+      "bg_107_p05",
+      "bg_107_p06",
+      "bg_107_p07s1",
+      "bg_107_p08",
+      "bg_107_p09s0",
+      "bg_107_p10",
+      "bg_107_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -29853,11 +31899,37 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_109",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_109_p00",
+      "bg_109_p01s3",
+      "bg_109_p02s2",
+      "bg_109_p03",
+      "bg_109_p04",
+      "bg_109_p05",
+      "bg_109_p06",
+      "bg_109_p07s1",
+      "bg_109_p08",
+      "bg_109_p09",
+      "bg_109_p10s0",
+      "bg_109_p11",
+      "bg_109_p12"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -30096,11 +32168,36 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_111",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_111_p00",
+      "bg_111_p01",
+      "bg_111_p02s3",
+      "bg_111_p03s2",
+      "bg_111_p04",
+      "bg_111_p05",
+      "bg_111_p06",
+      "bg_111_p07s1",
+      "bg_111_p08",
+      "bg_111_p09",
+      "bg_111_p10s0",
+      "bg_111_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -30339,11 +32436,36 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_113",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_113_p00",
+      "bg_113_p01s3",
+      "bg_113_p02s2",
+      "bg_113_p03",
+      "bg_113_p04",
+      "bg_113_p05",
+      "bg_113_p06",
+      "bg_113_p07s1",
+      "bg_113_p08",
+      "bg_113_p09s0",
+      "bg_113_p10",
+      "bg_113_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -30582,11 +32704,37 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_115",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_115_p00",
+      "bg_115_p01s3",
+      "bg_115_p02s2",
+      "bg_115_p03",
+      "bg_115_p04",
+      "bg_115_p05",
+      "bg_115_p06",
+      "bg_115_p07s1",
+      "bg_115_p08",
+      "bg_115_p09",
+      "bg_115_p10s0",
+      "bg_115_p11",
+      "bg_115_p12"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -30825,11 +32973,38 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_117",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_117_p00",
+      "bg_117_p01s3",
+      "bg_117_p02s2",
+      "bg_117_p03",
+      "bg_117_p04",
+      "bg_117_p05",
+      "bg_117_p06",
+      "bg_117_p07s1",
+      "bg_117_p08",
+      "bg_117_p09",
+      "bg_117_p10",
+      "bg_117_p11s0",
+      "bg_117_p12",
+      "bg_117_p13"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -31085,11 +33260,31 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_118",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_118_p00",
+      "bg_118_p01",
+      "bg_118_p02",
+      "bg_118_p03",
+      "bg_118_p04",
+      "bg_118_p05",
+      "bg_118_p06s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -31192,11 +33387,36 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_119",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_119_p00",
+      "bg_119_p01",
+      "bg_119_p02s3",
+      "bg_119_p03s2",
+      "bg_119_p04",
+      "bg_119_p05",
+      "bg_119_p06",
+      "bg_119_p07s0",
+      "bg_119_p08",
+      "bg_119_p09s0",
+      "bg_119_p10",
+      "bg_119_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -31469,11 +33689,31 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_120",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_120_p00",
+      "bg_120_p01",
+      "bg_120_p02",
+      "bg_120_p03",
+      "bg_120_p04",
+      "bg_120_p05",
+      "bg_120_p06s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -31593,11 +33833,37 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_121",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_121_p00",
+      "bg_121_p01",
+      "bg_121_p02s3",
+      "bg_121_p03s2",
+      "bg_121_p04",
+      "bg_121_p05",
+      "bg_121_p06",
+      "bg_121_p07s1",
+      "bg_121_p08",
+      "bg_121_p09s0",
+      "bg_121_p10",
+      "bg_121_p11",
+      "bg_121_p12"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -31853,11 +34119,31 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_122",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_122_p00",
+      "bg_122_p01",
+      "bg_122_p02",
+      "bg_122_p03",
+      "bg_122_p04",
+      "bg_122_p05",
+      "bg_122_p06s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -31960,11 +34246,36 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_123",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_121_p00",
+      "bg_121_p01s3",
+      "bg_121_p02s2",
+      "bg_121_p03",
+      "bg_121_p04",
+      "bg_121_p05",
+      "bg_121_p06",
+      "bg_121_p07s1",
+      "bg_121_p08",
+      "bg_121_p09s0",
+      "bg_121_p10",
+      "bg_121_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -32203,11 +34514,38 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_125",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_125_p00",
+      "bg_125_p01s3",
+      "bg_125_p02s2",
+      "bg_125_p03",
+      "bg_125_p04",
+      "bg_125_p05",
+      "bg_125_p06",
+      "bg_125_p07s1",
+      "bg_125_p08",
+      "bg_125_p09",
+      "bg_125_p10s0",
+      "bg_125_p11",
+      "bg_125_p12",
+      "bg_125_p13"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -32446,11 +34784,38 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_127",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_127_p00",
+      "bg_127_p01s0",
+      "bg_127_p02s1",
+      "bg_127_p03",
+      "bg_127_p04",
+      "bg_127_p05",
+      "bg_127_p06",
+      "bg_127_p07",
+      "bg_127_p08s1",
+      "bg_127_p09",
+      "bg_127_p10s0",
+      "bg_127_p11",
+      "bg_127_p12",
+      "bg_127_p13"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -32689,11 +35054,38 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_129",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_129_p00",
+      "bg_129_p01s3",
+      "bg_129_p02s2",
+      "bg_129_p03",
+      "bg_129_p04",
+      "bg_129_p05",
+      "bg_129_p06",
+      "bg_129_p07s1",
+      "bg_129_p08",
+      "bg_129_p09s1",
+      "bg_129_p10",
+      "bg_129_p11s0",
+      "bg_129_p12",
+      "bg_129_p13"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -32932,11 +35324,34 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_131",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_131_p00",
+      "bg_131_p01",
+      "bg_131_p02s3",
+      "bg_131_p03s2",
+      "bg_131_p04",
+      "bg_131_p05",
+      "bg_131_p06s1",
+      "bg_131_p07",
+      "bg_131_p08s0",
+      "bg_131_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -33175,11 +35590,36 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_133",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_133_p00",
+      "bg_133_p01s3",
+      "bg_133_p02s2",
+      "bg_133_p03",
+      "bg_133_p04",
+      "bg_133_p05",
+      "bg_133_p06",
+      "bg_133_p07s0",
+      "bg_133_p08",
+      "bg_133_p09s0",
+      "bg_133_p10",
+      "bg_133_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -33418,11 +35858,51 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_135",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_135_p00",
+      "bg_135_p01",
+      "bg_135_p02s13",
+      "bg_135_p03s14",
+      "bg_135_p04",
+      "bg_135_p05s13",
+      "bg_135_p06",
+      "bg_135_p07s12",
+      "bg_135_p08s11",
+      "bg_135_p09s10",
+      "bg_135_p10s9",
+      "bg_135_p11s8",
+      "bg_135_p12s7",
+      "bg_135_p13s6",
+      "bg_135_p14s5",
+      "bg_135_p15s4",
+      "bg_135_p16s2",
+      "bg_135_p17s3",
+      "bg_135_p18s1",
+      "bg_135_p19s0",
+      "bg_135_p20",
+      "bg_135_p21",
+      "bg_135_p22",
+      "bg_135_p23",
+      "bg_135_p24",
+      "bg_135_p25",
+      "bg_135_p26"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -33814,11 +36294,44 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_136",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_136_p00",
+      "bg_136_p01",
+      "bg_136_p02",
+      "bg_136_p03",
+      "bg_136_p04",
+      "bg_136_p05",
+      "bg_136_p06",
+      "bg_136_p07s4",
+      "bg_136_p08s3",
+      "bg_136_p09s3",
+      "bg_136_p10s3",
+      "bg_136_p11",
+      "bg_136_p12",
+      "bg_136_p13",
+      "bg_136_p14",
+      "bg_136_p15",
+      "bg_136_p16s2",
+      "bg_136_p17s1",
+      "bg_136_p18s0",
+      "bg_136_p19"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -34125,11 +36638,47 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_137",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_137_p00",
+      "bg_137_p01",
+      "bg_137_p02",
+      "bg_137_p03",
+      "bg_137_p04",
+      "bg_137_p05",
+      "bg_137_p06",
+      "bg_137_p07",
+      "bg_137_p08",
+      "bg_137_p09",
+      "bg_137_p10s4",
+      "bg_137_p11s3",
+      "bg_137_p12s2",
+      "bg_137_p13s1",
+      "bg_137_p14",
+      "bg_137_p15",
+      "bg_137_p16",
+      "bg_137_p17",
+      "bg_137_p18s0",
+      "bg_137_p19",
+      "bg_137_p20",
+      "bg_137_p21",
+      "bg_137_p22"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -34402,11 +36951,44 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_138",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_138_p00",
+      "bg_138_p01",
+      "bg_138_p02",
+      "bg_138_p03",
+      "bg_138_p04",
+      "bg_138_p05",
+      "bg_138_p06",
+      "bg_138_p07",
+      "bg_138_p08",
+      "bg_138_p09s4",
+      "bg_138_p10s3",
+      "bg_138_p11s2",
+      "bg_138_p12s1",
+      "bg_138_p14",
+      "bg_138_p15",
+      "bg_138_p16s0",
+      "bg_138_p17",
+      "bg_138_p18",
+      "bg_138_p19",
+      "bg_138_p20"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -34696,11 +37278,42 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_139",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_139_p00",
+      "bg_139_p01s7",
+      "bg_139_p02s6",
+      "bg_139_p03",
+      "bg_139_p04s6",
+      "bg_139_p05",
+      "bg_139_p06",
+      "bg_139_p07s5",
+      "bg_139_p08s4",
+      "bg_139_p09s3",
+      "bg_139_p10s2",
+      "bg_139_p11s1",
+      "bg_139_p12s0",
+      "bg_139_p13",
+      "bg_139_p14s2",
+      "bg_139_p15",
+      "bg_139_p16",
+      "bg_139_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -35126,11 +37739,42 @@
         "Unk2": -1038090240,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_140",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_140_p00",
+      "bg_140_p01",
+      "bg_140_p02",
+      "bg_140_p03",
+      "bg_140_p04s6",
+      "bg_140_p05s5",
+      "bg_140_p06",
+      "bg_140_p07",
+      "bg_140_p08",
+      "bg_140_p09s4",
+      "bg_140_p10s3",
+      "bg_140_p11s2",
+      "bg_140_p12",
+      "bg_140_p13",
+      "bg_140_p14",
+      "bg_140_p15s1",
+      "bg_140_p16s0",
+      "bg_140_p17"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -35454,11 +38098,43 @@
         "Unk2": 1065353216,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_141",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_141_p00",
+      "bg_141_p01",
+      "bg_141_p02s8",
+      "bg_141_p03",
+      "bg_141_p04s9",
+      "bg_141_p05s7",
+      "bg_141_p06s6",
+      "bg_141_p07s5",
+      "bg_141_p08s4",
+      "bg_141_p09",
+      "bg_141_p10",
+      "bg_141_p11",
+      "bg_141_p12s3",
+      "bg_141_p13s2",
+      "bg_141_p14s1",
+      "bg_141_p15s0",
+      "bg_141_p16",
+      "bg_141_p17",
+      "bg_141_p18"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -35833,11 +38509,32 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_142",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_142_p00",
+      "bg_142_p01",
+      "bg_142_p02",
+      "bg_142_p03",
+      "bg_142_p04",
+      "bg_142_p05s0",
+      "bg_142_p06",
+      "bg_142_p07"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -35923,11 +38620,25 @@
         "Unk2": 1121714176,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_143",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -36098,11 +38809,40 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_144",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_144_p00",
+      "bg_144_p01",
+      "bg_144_p02",
+      "bg_144_p03s7",
+      "bg_144_p04s6",
+      "bg_144_p05s5",
+      "bg_144_p06s4",
+      "bg_144_p07s3",
+      "bg_144_p08s2",
+      "bg_144_p09s1",
+      "bg_144_p10s0",
+      "bg_144_p11",
+      "bg_144_p12",
+      "bg_144_p13",
+      "bg_144_p14",
+      "bg_144_p15"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 655360,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -36341,11 +39081,36 @@
         "Unk2": 1120403456,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_145",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_145_p00",
+      "bg_145_p01",
+      "bg_145_p02",
+      "bg_145_p03",
+      "bg_145_p04",
+      "bg_145_p05s4",
+      "bg_145_p06s3",
+      "bg_145_p07s2",
+      "bg_145_p08s1",
+      "bg_145_p09s0",
+      "bg_145_p10",
+      "bg_145_p11"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -36516,11 +39281,37 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_146",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_146_p00",
+      "bg_146_p01",
+      "bg_146_p02",
+      "bg_146_p03",
+      "bg_146_p04s00",
+      "bg_146_p05",
+      "bg_146_p06s01",
+      "bg_146_p07",
+      "bg_146_p08s02",
+      "bg_146_p09",
+      "bg_146_p10s03",
+      "bg_146_p11",
+      "bg_146_p12s04"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -36674,11 +39465,35 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_147",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_147_p00",
+      "bg_147_p01",
+      "bg_147_p02",
+      "bg_147_p03",
+      "bg_147_p04",
+      "bg_147_p05s00",
+      "bg_147_p06s01",
+      "bg_147_p07",
+      "bg_147_p08s02",
+      "bg_147_p09s03",
+      "bg_147_p10s04"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -36832,11 +39647,31 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_148",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_148_p00",
+      "bg_148_p01",
+      "bg_148_p02b1",
+      "bg_148_p03",
+      "bg_148_p04",
+      "bg_148_p05",
+      "bg_148_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -37143,11 +39978,34 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_149",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_149_p00",
+      "bg_149_p01s3",
+      "bg_149_p02s2",
+      "bg_149_p03",
+      "bg_149_p04",
+      "bg_149_p05",
+      "bg_149_p06s1",
+      "bg_149_p07",
+      "bg_149_p08s0",
+      "bg_149_p09"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -37386,11 +40244,31 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_150",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_150_p00",
+      "bg_150_p01",
+      "bg_150_p02s0",
+      "bg_150_p03",
+      "bg_150_p04",
+      "bg_150_p05",
+      "bg_150_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -37731,11 +40609,35 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_151",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_151_p00",
+      "bg_151_p01",
+      "bg_151_p02",
+      "bg_151_p03s1",
+      "bg_151_p04",
+      "bg_151_p05",
+      "bg_151_p06",
+      "bg_151_p07",
+      "bg_151_p08",
+      "bg_151_p09s0",
+      "bg_151_p10"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -38008,11 +40910,35 @@
         "Unk2": -1038090240,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_152",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_152_p00",
+      "bg_152_p01s1",
+      "bg_152_p02",
+      "bg_152_p03",
+      "bg_152_p04",
+      "bg_152_p05s2",
+      "bg_152_p06s1",
+      "bg_152_p07s0",
+      "bg_152_p08",
+      "bg_152_p09",
+      "bg_152_p10"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -38251,11 +41177,37 @@
         "Unk2": -1022623744,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_153",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_153_p00",
+      "bg_153_p01",
+      "bg_153_p02",
+      "bg_153_p03",
+      "bg_153_p04s00",
+      "bg_153_p05",
+      "bg_153_p06s01",
+      "bg_153_p07",
+      "bg_153_p08s02",
+      "bg_153_p09",
+      "bg_153_p10s03",
+      "bg_153_p11",
+      "bg_153_p12s04"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -38375,11 +41327,35 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_154",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_154_p00",
+      "bg_154_p01",
+      "bg_154_p02",
+      "bg_154_p03",
+      "bg_154_p04",
+      "bg_154_p05s00",
+      "bg_154_p06s01",
+      "bg_154_p07",
+      "bg_154_p08s02",
+      "bg_154_p09s03",
+      "bg_154_p10s04"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -38499,11 +41475,37 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_156",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_156_p00",
+      "bg_156_p01",
+      "bg_156_p02s4",
+      "bg_156_p03",
+      "bg_156_p04s3",
+      "bg_156_p05s2",
+      "bg_156_p06",
+      "bg_156_p07s1",
+      "bg_156_p08",
+      "bg_156_p09s0",
+      "bg_156_p10",
+      "bg_156_p11",
+      "bg_156_p12"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -38708,11 +41710,27 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_157",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_157_p00",
+      "bg_157_p01",
+      "bg_157_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 1310720,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -38832,11 +41850,27 @@
         "Unk2": -1031012352,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_158",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_158_p00",
+      "bg_158_p01",
+      "bg_158_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720891,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 2,
         "ID": 20,
@@ -38922,11 +41956,35 @@
         "Unk2": 1101004800,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_159",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_106_p00",
+      "bg_106_p01",
+      "bg_106_p02",
+      "bg_106_p03",
+      "bg_106_p04",
+      "bg_106_p05",
+      "bg_106_p06",
+      "bg_106_p07",
+      "bg_106_p08s1",
+      "bg_106_p09",
+      "bg_106_p10s0"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -39080,11 +42138,32 @@
         "Unk2": 1065353216,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_160",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_101_p00",
+      "bg_101_p01",
+      "bg_101_p02b1",
+      "bg_101_p03",
+      "bg_101_p04",
+      "bg_101_p05",
+      "bg_101_p06",
+      "bg_101_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -40241,11 +43320,46 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_201",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_201_p00",
+      "bg_201_p01",
+      "bg_201_p02s15",
+      "bg_201_p03s14",
+      "bg_201_p04s13",
+      "bg_201_p05s12",
+      "bg_201_p06s11",
+      "bg_201_p07s10",
+      "bg_201_p08s9",
+      "bg_201_p09s8",
+      "bg_201_p10s7",
+      "bg_201_p11s6",
+      "bg_201_p12s5",
+      "bg_201_p13s4",
+      "bg_201_p14s3",
+      "bg_201_p15s2",
+      "bg_201_p16s1",
+      "bg_201_p17s0",
+      "bg_201_p18",
+      "bg_201_p19",
+      "bg_201_p20",
+      "bg_201_p21"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -40654,11 +43768,25 @@
         "Unk2": 1084227584,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_202",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_000_p00"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -40829,11 +43957,27 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_203",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_203_p00",
+      "bg_203_p01",
+      "bg_203_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -41174,11 +44318,27 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_204",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_204_p00",
+      "bg_204_p01",
+      "bg_204_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -41519,11 +44679,27 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_205",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_205_p00",
+      "bg_205_p01",
+      "bg_205_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -41864,11 +45040,27 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_206",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_206_p00",
+      "bg_206_p01",
+      "bg_206_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -42209,11 +45401,27 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_207",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_207_p00",
+      "bg_207_p01",
+      "bg_207_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -42554,11 +45762,27 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_208",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_lc01_p00",
+      "bg_lc01_p01",
+      "bg_lc01_p02"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -42899,11 +46123,39 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_216",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_216_p00",
+      "bg_216_p01s5",
+      "bg_216_p02s4",
+      "bg_216_p03",
+      "bg_216_p04s3",
+      "bg_216_p05",
+      "bg_216_p06s2",
+      "bg_216_p07s1",
+      "bg_216_p08",
+      "bg_216_p09",
+      "bg_216_p10",
+      "bg_216_p11s0",
+      "bg_216_p12",
+      "bg_216_p13",
+      "bg_216_p14"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720866,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -43210,11 +46462,31 @@
         "Unk2": 1092616192,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_217",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_217_p00",
+      "bg_217_p01",
+      "bg_217_p02",
+      "bg_217_p03",
+      "bg_217_p04",
+      "bg_217_p05",
+      "bg_217_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 25,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -43538,11 +46810,31 @@
         "Unk2": 1111228416,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_218",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_217_p00",
+      "bg_217_p01",
+      "bg_217_p02",
+      "bg_217_p03",
+      "bg_217_p04",
+      "bg_217_p05",
+      "bg_217_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 25,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -43866,11 +47158,31 @@
         "Unk2": 1111228416,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_219",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_217_p00",
+      "bg_217_p01",
+      "bg_217_p02",
+      "bg_217_p03",
+      "bg_217_p04",
+      "bg_217_p05",
+      "bg_217_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 25,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -44211,11 +47523,31 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_220",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_220_p00",
+      "bg_220_p01",
+      "bg_220_p02",
+      "bg_220_p03",
+      "bg_220_p04",
+      "bg_220_p05",
+      "bg_220_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 25,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -44539,11 +47871,31 @@
         "Unk2": 1111228416,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_221",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_221_p00",
+      "bg_221_p01",
+      "bg_221_p02",
+      "bg_221_p03",
+      "bg_221_p04",
+      "bg_221_p05",
+      "bg_221_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 25,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -44867,11 +48219,31 @@
         "Unk2": 1111228416,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_222",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_217_p00",
+      "bg_217_p01",
+      "bg_217_p02",
+      "bg_217_p03",
+      "bg_217_p04",
+      "bg_217_p05",
+      "bg_217_p06"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720886,
+      "Unk6": 25,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -45195,11 +48567,43 @@
         "Unk2": 1111228416,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_244",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_104_p00",
+      "bg_104_p01",
+      "bg_104_p02",
+      "bg_104_p03",
+      "bg_104_p04",
+      "bg_104_p05a0",
+      "bg_104_p06s3",
+      "bg_104_p07",
+      "bg_104_p08s2",
+      "bg_104_p09",
+      "bg_104_p10",
+      "bg_104_p11s1",
+      "bg_104_p12",
+      "bg_104_p13",
+      "bg_104_p14",
+      "bg_104_p15",
+      "bg_104_p16s0",
+      "bg_104_p17",
+      "bg_104_p18"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 983040,
+      "Unk6": 27,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -45642,11 +49046,35 @@
         "Unk2": -1041235968,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_248",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_101_p00",
+      "bg_101_p01",
+      "bg_101_p02b1",
+      "bg_101_p03",
+      "bg_101_p04",
+      "bg_101_p05",
+      "bg_101_p06",
+      "bg_101_p07",
+      "bg_101_p08",
+      "bg_101_p09",
+      "bg_101_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -46429,11 +49857,31 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_900",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_900_p00",
+      "bg_900_p01",
+      "bg_900_p02b1",
+      "bg_900_p03",
+      "bg_900_p04",
+      "bg_900_p05",
+      "bg_900_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 720876,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 3,
         "ID": 0,
@@ -46604,11 +50052,57 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_901",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_cr01_p00",
+      "bg_cr01_p01t",
+      "bg_cr01_p02",
+      "bg_cr01_p03",
+      "bg_cr01_p04s3",
+      "bg_cr01_p05b1",
+      "bg_cr01_p06",
+      "bg_cr01_p07",
+      "bg_cr01_p08s2",
+      "bg_cr01_p09",
+      "bg_cr01_p10a0",
+      "bg_cr01_p11s1",
+      "bg_cr01_p12",
+      "bg_cr01_p13",
+      "bg_cr01_p14s0",
+      "bg_cr01_p15",
+      "bg_cr01_p16",
+      "bg_cr01_p17",
+      "bg_cr01_p18",
+      "bg_cr01_p19",
+      "bg_cr01_p20",
+      "bg_cr01_p21",
+      "bg_cr01_p22",
+      "bg_cr01_p23",
+      "bg_cr01_p24",
+      "bg_cr01_p25",
+      "bg_cr01_p26",
+      "bg_cr01_p27",
+      "bg_cr01_p28",
+      "bg_cr01_p29",
+      "bg_cr01_p30",
+      "bg_cr01_p31",
+      "bg_cr01_p32"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -46915,11 +50409,31 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_902",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_001_p00",
+      "bg_001_p01",
+      "bg_001_p02",
+      "bg_001_p03",
+      "bg_001_p04",
+      "bg_001_p05b1",
+      "bg_001_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 0,
+      "Unk4": 65536,
+      "Unk5": 720876,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 7,
         "ID": 20,
@@ -47090,11 +50604,43 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_CR01",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_cr01_p00",
+      "bg_cr01_p01t",
+      "bg_cr01_p02",
+      "bg_cr01_p03",
+      "bg_cr01_p04s0",
+      "bg_cr01_p05b1",
+      "bg_cr01_p06",
+      "bg_cr01_p07",
+      "bg_cr01_p08s3",
+      "bg_cr01_p09",
+      "bg_cr01_p10a0",
+      "bg_cr01_p11s2",
+      "bg_cr01_p12",
+      "bg_cr01_p13",
+      "bg_cr01_p14s1",
+      "bg_cr01_p15",
+      "bg_cr01_p16",
+      "bg_cr01_p17",
+      "bg_cr01_p18"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -47333,11 +50879,43 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_CR02",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_cr02_p00",
+      "bg_cr02_p01t",
+      "bg_cr02_p02",
+      "bg_cr02_p03",
+      "bg_cr02_p04s0",
+      "bg_cr02_p05b1",
+      "bg_cr02_p06",
+      "bg_cr02_p07",
+      "bg_cr02_p08s3",
+      "bg_cr02_p09",
+      "bg_cr02_p10a0",
+      "bg_cr02_p11s2",
+      "bg_cr02_p12",
+      "bg_cr02_p13",
+      "bg_cr02_p14s1",
+      "bg_cr02_p15",
+      "bg_cr02_p16",
+      "bg_cr02_p17",
+      "bg_cr02_p18"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 1,
+      "Unk4": 2,
+      "Unk5": 720876,
+      "Unk6": 35,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -47576,11 +51154,32 @@
         "Unk2": 1109393408,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_LC01",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_lc01_p00",
+      "bg_lc01_p01",
+      "bg_lc01_p02",
+      "bg_lc01_p03",
+      "bg_lc01_p04",
+      "bg_lc01_p05",
+      "bg_lc01_p06",
+      "bg_lc01_p07"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 0,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -47921,11 +51520,30 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   },
   {
     "RoomName": "bg_PS01",
-    "Objects": [
+    "ModelNameFile": [
+      "bg_ps01_p00",
+      "bg_ps01_p01b1e",
+      "bg_ps01_p02",
+      "bg_ps01_p03",
+      "bg_ps01_p04b1e",
+      "bg_ps01_c"
+    ],
+    "Options": {
+      "Unk1": 1,
+      "Unk2": 8,
+      "Unk3": 65536,
+      "Unk4": 65536,
+      "Unk5": 1376236,
+      "Unk6": 45,
+      "Unk7": 0,
+      "Unk8": 0
+    },
+    "Places": [
       {
         "Type": 1,
         "ID": 0,
@@ -48419,6 +52037,7 @@
         "Unk2": 0,
         "ObjectName": null
       }
-    ]
+    ],
+    "AABB": null
   }
 ]
