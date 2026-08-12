@@ -39,10 +39,10 @@ using DanganFurniture.PrintModesClass;
 
 namespace DanganFurniture
 {
-	class Program {
+	public class Program {
 		public static List<Room> EyekeeaShowroom = new List<Room>();
 		public static readonly string GodotSvgIdentifierWhatever = "1_f3sb7";
-		
+		public static bool IsDR2 = false;
 		// TODO: arguments should be folders extracted using pak_extractor
 		// or we integrate PakLibrary to read files off there
 		
@@ -56,22 +56,21 @@ namespace DanganFurniture
 				string FolderName = new DirectoryInfo(Folder).Name;
 				
 				// HACK: DR2 ONLY, skip over corrupted 054
-				if (FolderName == "bg_054") continue;
+				if (IsDR2 == true && FolderName == "bg_054") continue;
 
 				Room Showcase = new Room();
-				Showcase.ModelNames = Readers.ReadModelNames(Path.Combine(Folder, "0000"));
+				Showcase.ModelNameFile = Readers.ReadModelNames(Path.Combine(Folder, "0000"));
 				Showcase.RoomName = FolderName;
-				Showcase.Unk1 = Readers.Read0001(Path.Combine(Folder, "0001"));
-				Showcase.Objects = Readers.ReadFurniture(Path.Combine(Folder, "0002"));
+				Showcase.Options = Readers.Read0001(Path.Combine(Folder, "0001"));
+				Showcase.Places = Readers.ReadFurniture(Path.Combine(Folder, "0002"));
 				// DR2 only, at the moment it currently breaks DR1 parsing
-				Showcase.AABB = Readers.ReadAABBMasks(Path.Combine(Folder, "0003"));
+				if (IsDR2) Showcase.AABB = Readers.ReadAABBMasks(Path.Combine(Folder, "0003"));
 
 				EyekeeaShowroom.Add(Showcase);
 			}
 
 			// yes i am this lazy
 			PrintModesEnum PrintModes = true ? PrintModesEnum.JsonSerialized : PrintModesEnum.LazyGodot;
-
 			
 			switch (PrintModes) {
 				default:

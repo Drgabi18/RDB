@@ -99,8 +99,8 @@ namespace DanganFurniture {
 		}
 
 		// 0001
-		public static UnkStruct1 Read0001(this string FilePath) {
-			UnkStruct1 RoomInfo = new UnkStruct1();
+		public static OptionsFile Read0001(this string FilePath) {
+			OptionsFile RoomInfo = new OptionsFile();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {

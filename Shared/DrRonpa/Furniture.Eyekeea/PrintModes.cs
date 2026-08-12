@@ -20,7 +20,7 @@ namespace DanganFurniture.PrintModesClass {
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
 			Console.WriteLine();
 
-			foreach (Furniture Object in Map.Objects) {
+			foreach (Furniture Object in Map.Places) {
 				Indexer++;
 				string NodeName;
 				if (Object.ObjectName != null) {
@@ -56,6 +56,7 @@ namespace DanganFurniture.PrintModesClass {
 				Console.WriteLine();
 			}
 
+			if (Program.IsDR2) {
 			foreach (var Obiect in Map.AABB) {
 				for (int i = 0; i < 4; i += 3 ) {
 					string NodeName;
@@ -75,6 +76,7 @@ namespace DanganFurniture.PrintModesClass {
 					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
 					Console.WriteLine();
 				}
+			}
 			}
 			}
 		}
