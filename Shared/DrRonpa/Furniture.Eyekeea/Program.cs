@@ -33,6 +33,7 @@ FurnitureBank bank @ 0x0;
 */
 #endregion
 
+using System.Runtime.CompilerServices;
 using DanganFurniture.Enums;
 using DanganFurniture.Headers;
 using DanganFurniture.PrintModesClass;
@@ -42,11 +43,14 @@ namespace DanganFurniture
 	public class Program {
 		public static List<Room> EyekeeaShowroom = new List<Room>();
 		public static readonly string GodotSvgIdentifierWhatever = "1_f3sb7";
-		public static bool IsDR2 = false;
+		public static readonly bool PrintJason = true;
+		
+		// TODO: pls
+		public static bool IsDR2 = true;
+		
 		// TODO: arguments should be folders extracted using pak_extractor
 		// or we integrate PakLibrary to read files off there
 		
-		// TODO: Fix this for DR1
 		public static void Main(string[] args) {
 			if (args.Length == 0) throw new Exception("[DanganFurniture] No file(s) provided");
 			//if (args.Contains("-d") || args.Contains("--directory")) IsFolder = true;
@@ -59,18 +63,28 @@ namespace DanganFurniture
 				if (IsDR2 == true && FolderName == "bg_054") continue;
 
 				Room Showcase = new Room();
-				Showcase.ModelNameFile = Readers.ReadModelNames(Path.Combine(Folder, "0000"));
 				Showcase.RoomName = FolderName;
-				Showcase.Options = Readers.Read0001(Path.Combine(Folder, "0001"));
-				Showcase.Places = Readers.ReadFurniture(Path.Combine(Folder, "0002"));
+				Showcase.ModelNameFile = Readers.ReadModelNamesFile(Path.Combine(Folder, "0000"));
+				Showcase.Options = Readers.ReadOptionsFile(Path.Combine(Folder, "0001"));
+				Showcase.Places = Readers.ReadFurnitureFile(Path.Combine(Folder, "0002"));
 				// DR2 only, at the moment it currently breaks DR1 parsing
-				if (IsDR2) Showcase.AABB = Readers.ReadAABBMasks(Path.Combine(Folder, "0003"));
+				if (IsDR2) {
+					Showcase.AABB = Readers.ReadAABBBonesFile(Path.Combine(Folder, "0003"));
+					
+					// TODO: is there a better way than just seraching through every file
+					// 		and not using the file list inside the game? 
+					foreach (string File in Directory.GetFiles(Folder)) {
+						if (Readers.IsZColFile(File)) {
+							Showcase.Colissions = Readers.ReadZColFile(File);
+						}
+					}
+				}
 
 				EyekeeaShowroom.Add(Showcase);
 			}
 
 			// yes i am this lazy
-			PrintModesEnum PrintModes = true ? PrintModesEnum.JsonSerialized : PrintModesEnum.LazyGodot;
+			PrintModesEnum PrintModes = PrintJason ? PrintModesEnum.JsonSerialized : PrintModesEnum.LazyGodot;
 			
 			switch (PrintModes) {
 				default:

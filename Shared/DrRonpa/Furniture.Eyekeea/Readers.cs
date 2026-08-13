@@ -1,10 +1,15 @@
+using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 using DanganFurniture.Headers;
 
 namespace DanganFurniture {
+	
+	// we could maybe make like an interface for these, or make them a class lol
+
 	public static class Readers {
 		// file 0002
-		public static List<Furniture> ReadFurniture(this string FilePath) {
+		public static List<Furniture> ReadFurnitureFile(this string FilePath) {
 			List<Furniture> Bucatarie = new List<Furniture>();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
@@ -46,6 +51,7 @@ namespace DanganFurniture {
 					
 					// DR1 does not store object names, thus the result for these will always be 0,
 					// we should probably do this check earlier than here and only once
+					// TODO: Remove this once we have a game toggle
 					bool IsDR1 = ((NextOffsetStart - (int)br.BaseStream.Position) == 0) ? true : false;
 					if (!IsDR1) {
 						string AttemptedString = System.Text.Encoding.ASCII.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position));
@@ -68,7 +74,7 @@ namespace DanganFurniture {
 		}
 
 		// 0000
-		public static List<string> ReadModelNames(this string FilePath) {
+		public static List<string> ReadModelNamesFile(this string FilePath) {
 			List<string> ModelNames = new List<string>();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
@@ -99,7 +105,7 @@ namespace DanganFurniture {
 		}
 
 		// 0001
-		public static OptionsFile Read0001(this string FilePath) {
+		public static OptionsFile ReadOptionsFile(this string FilePath) {
 			OptionsFile RoomInfo = new OptionsFile();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
@@ -123,7 +129,7 @@ namespace DanganFurniture {
 		// TO GET THE NAMES AND THEN IT SERIALZIES THE REST
 		// so now the question is, in this file is everything forwards or backwards?
 		// LATER EDIT: It's normal, no back to front
-		public static Dictionary<string, AABBStruct> ReadAABBMasks(this string FilePath) {
+		public static Dictionary<string, AABBStruct> ReadAABBBonesFile(this string FilePath) {
 			Dictionary<string, AABBStruct> ExtraObjectData = new();
 
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
@@ -169,7 +175,55 @@ namespace DanganFurniture {
 		}
 		
 		// last one before iamges
-		// public static Dictionary<string, UnkStruct3> Unk3();
+		public static CollisionFile ReadZColFile(this string FilePath) {
+			CollisionFile Colissions = new();
+			
+			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
+			using (BinaryReader br = new(fs) ) {
+				Colissions.Identifier = br.ReadUInt32(); // whatev
+				Colissions.FileSize = br.ReadInt32();
+				Colissions.Unk2_HeaderSize = br.ReadInt32();
+				Colissions.SizeBeforeTriangles = br.ReadInt32();
+				Colissions.ListOfSomething = new List<int>();
+				Colissions.Verticies = new List<Vertex>();
+
+				// this is a dog shit implementation and the game is smarter here
+				// at 0x0046aa00
+				/*
+					if ((ZColFile == (int *)0x0) || (*ZColFile != -0x112234)) {
+						return 0;
+					}
+					ZCol_FileSize = ZColFile[1];
+					DAT_00aa9f60 = '\x01';
+					ZCol_???_HeaderSize = ZColFile[2];
+					ZCol_ListSize = ZColFile[3];
+					ZCol_StartOfList = *(uint *)((long)ZColFile + (ulong)(uint)ZCol_???_HeaderSize);
+					ZCol_EndOfList = *(uint *)((long)ZColFile + (ulong)(uint)ZCol_ListSize);
+					DAT_00aa9fc0 = (float *)FUN_00413ec0((ulong)ZCol_EndOfList * 0xc);
+				*/
+				// recreate this correctly later
+
+				while (br.BaseStream.Position < Colissions.SizeBeforeTriangles + 4) {
+					Colissions.ListOfSomething.Add(br.ReadInt32());
+				}
+				while (br.BaseStream.Position < Colissions.FileSize) {
+					Vertex vertex = new();
+					vertex.Pos[0] = br.ReadSingle();
+					vertex.Pos[1] = br.ReadSingle();
+					vertex.Pos[2] = br.ReadSingle();
+					Colissions.Verticies.Add(vertex);
+				}
+			}}
+
+			return Colissions;
+		}
+
+		public static bool IsZColFile(this string FilePath) {
+			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
+			using (BinaryReader br = new(fs) ) {
+				return br.ReadUInt32() == 4293844428; // 0xCCDDEEFF casting to uint doesn't work??????????
+			}}
+		}
 
 	}
 }

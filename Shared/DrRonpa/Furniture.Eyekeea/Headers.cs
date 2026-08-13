@@ -37,7 +37,7 @@ namespace DanganFurniture.Headers {
 		public OptionsFile Options;	// file 0001
 		public List<Furniture> Places;	// file 0002
 		public Dictionary<string, AABBStruct> AABB;	// file 0003
-		//public Dictionary<string, UnkStruct3> Masks; // last file before iamges
+		public CollisionFile Colissions; // last file before iamges
 	}
 
 	// 0001
@@ -67,6 +67,7 @@ namespace DanganFurniture.Headers {
 		public int Unk2;
 		public string? ObjectName;
 
+		// idk how to not have this since i need to specify a construct for the array sizes
 		public Furniture() {
 			Type = 0;
 			ID = 0;
@@ -95,13 +96,26 @@ namespace DanganFurniture.Headers {
 		}
 	}
 
-	// colision file
-	public struct Colision {
-		uint Identifier = 0xCCDDEEFF;
-		int FileSize;	// with identifier included 
-		int Unk2;	// header size?
-		int SizeOfObjects;	// size of the list at the top after the identifier
+	
+	public struct Vertex {
+		public float[] Pos; // crazy shit
+		public Vertex() {
+			Pos = new float[3];
+		}
+	}
 
-		public Colision() {}
+	// collision file
+	// how i think this works before i look at the code, the list at the top
+	// is IDs of the vertecies array, so first 9 floats make a place in space and
+	// they are asigned the first ID
+	// the next 2 are the same and they form a triangle
+	public struct CollisionFile {
+		public uint Identifier = 0xCCDDEEFF;
+		public int FileSize;	// without identifier
+		public int Unk2_HeaderSize;	// header size? sometimes 8, sometimes 10
+		public int SizeBeforeTriangles;	// size of the list at the top after the identifier
+		public List<int> ListOfSomething;
+		public List<Vertex> Verticies;
+		public CollisionFile() {}
 	}
 }
