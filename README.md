@@ -40,21 +40,21 @@ Each file for each game is sorted individually into the folder for what title th
 * `./DR1/DR1 Room File Paths.txt` and `./DR2/DR2 Room File Paths.txt` contain strings extracted from decompressed .pak files. These file paths have been recreated in `./DR1/DR1FolderStructureRemade` and `./DR2/DR2FolderStructureRemade` respectivley if you wanna explore them.
 * `./Shared/Codepaths_from_DR2.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. These file paths have been recreated in `./Shared/Codepaths_from_DR2/` if you wanna explore them.
 * `./DR1/DR1_UserDefinedSymbols.csv`, `./DR2/DR2_UserDefinedSymbols.csv` and `./UDG/UDG_UserDefinedSymbols.csv` contain the names I gave to memory addresses I could find. Again these only work assuming you used the same manifest versions as me and the stars aligned correctly so you have dumped the same stuff (in DRV3's case, you can do the same by running x64dbg in Wine to dump the game, since ASLR is disabled in Wine, thank fuck).
-* `./DR1/DR1_DebugSymbols.csv`, `./DR2/DR2_DebugSymbols.csv`, `./UDG/UDG_DebugSymbols.csv` and `./DRV3/DRV3_DebugSymbols.csv` contain the names of the symbols extracted from the Anniversary versions of the game (except for UDG which is just the strings that remained for Steam Achivements and uhh... random vtables???????), these are provided as plaintext files instead of a Ghidra Project
+* `./DR1/DR1_DebugSymbols.csv`, `./DR2/DR2_DebugSymbols.csv`, `./UDG/UDG_DebugSymbols.csv` and `./DRV3/DRV3_DebugSymbols.csv` contain the names of the symbols extracted from the Anniversary versions of the game (except for UDG which is just the strings that remained for Steam Achievements and uhh... random vtables???????), these are provided as plaintext files instead of a Ghidra Project
 * `./Shared/DR12V3_Unused_LINs.txt` contains a list of the unused LIN files I found in the mainline series games.
 * `./Shared/DR1_DR2_DebugMenus.md` contains explanations for what the Debug Menus included in the games actually do.
-* `./DR1/DR1_UnusedLINStrings.txt` and `./DR2/DR2_UnusedLINStrings.txt` conain the strings from those unused LINs, so it's easier to see where they send you.
+* `./DR1/DR1_UnusedLINStrings.txt` and `./DR2/DR2_UnusedLINStrings.txt` contain the strings from those unused LINs, so it's easier to see where they send you.
 * `./UDG/UDG_LinFilesICaredToLookAt.txt` is just a list of the unused LIN files I found for that game.
 * `./UDG/UDG_UnusedCutscenesEV8.txt` is a list of the Unused Cutscenes I showed in my video, these are specifically those not showcased by a video on TCRF.
-* `./UDG/NightmarePlayerStruct.md` is some dissasembled code I am completly unable to wrap my head around to decipher how it was made.
-* `./UDG/Some_ReverseEngineered_Code.cpp` is what it says on the can, ok I lied a bit, it's just a few structs for what control the player character, commented with too much detail, contains addresses which are `base + 0xNNNNNNNN` which should be helpul to use in Cheat Enine.
-* `./UDG/LevelSelectSave/` is a Save that brings you onto one of the Unused Lins, which has a Level Select, Woohoo!
+* `./UDG/NightmarePlayerStruct.md` is some disassembled code I am completely unable to wrap my head around to decipher how it was made.
+* `./UDG/Some_ReverseEngineered_Code.cpp` is what it says on the can, ok I lied a bit, it's just a few structs for what control the player character, commented with too much detail, contains addresses which are `base + 0xNNNNNNNN` which should be helpful to use in Cheat Enine.
+* `./UDG/LevelSelectSave/` is a Save that brings you onto one of the Unused Lins, which has a Level Select. Woohoo!
 
 ## DrRonpa
 [`./Shared/DrRonpa/`](Shared/DrRonpa/) is a suite of C# apps I've made in order to read the binary data from some (easily reverse engineer-able) file formats. The apps are explained in the [README file](Shared/DrRonpa/README.md)
 * `./Lazy.NonStopDebate.Reader` contains the code and output of my Lazy DAT Reader™, used to parse Nonstop/Hanron/Kokonronpa Debate Files. Results are in the .ods files inside the `././output/` folder.
 * `./Lazy.OpCode.Reader` contains the code and output of my Lazy OpCode Reader™™, used primarily for my curiosity in analysis of discrete and the weird ass structure the games have. Results are in the .json files inside the `././output/` folder.
-* `./TrialCamera.Exercise` contains the code of my Trial Camera Reimplementation™™™, that I absolutley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than just to brag that I wrote it.
+* `./TrialCamera.Exercise` contains the code of my Trial Camera Reimplementation™™™, that I absoluteley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than just to brag that I wrote it.
 * `./EV8.Parser` is a WIP Tool used to extract EV8 files from UDG.
 * `./Furniture.Eyekeea` is a tool used to export furniture objects from maps. Did you know the airport has the sun behind your back?
 
@@ -76,4 +76,4 @@ I've put a restriction on myself to not look at information that would help me, 
 Anyways, if you wanna see something fun in the first game, run `set {int}0x009f7e4c=0` (`0x00b3e4ee` in the 2nd game) in any 2D room. Have fun!
 
 ## For TCRF or other research projects
-I hereby grant my permission for info from this repo to be used on TCRF pages for the respecive games and other projects documenting these games. I am unfamiliar with how to edit pages on WikiMedia forks and English isn't my first language if it wasn't already obvious.
+I hereby grant my permission for info from this repo to be used on TCRF pages for the respective games and other projects documenting these games. I am unfamiliar with how to edit pages on WikiMedia forks and English isn't my first language if it wasn't already obvious.
