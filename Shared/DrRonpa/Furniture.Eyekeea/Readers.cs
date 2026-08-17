@@ -1,6 +1,3 @@
-using System.Net.Http.Headers;
-using System.Runtime.CompilerServices;
-using System.Text.Json;
 using DanganFurniture.Headers;
 
 namespace DanganFurniture {
@@ -87,7 +84,6 @@ namespace DanganFurniture {
 				for (int i = 0; i < HowManyModels; i++) {
 					ModelNameOffset[i] = br.ReadInt32();
 				}
-
 
 				for (int i = 0; i < ModelNameOffset.Count(); i++) {
 					int NextOffsetStart =

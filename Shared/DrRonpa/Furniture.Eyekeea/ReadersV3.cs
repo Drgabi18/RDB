@@ -1,0 +1,186 @@
+/*
+		Actually glad these were easier to understand lol
+	
+	================================ place.dat ================================
+	
+	struct FurnitureObject {
+		u16 Unk1;
+		u16 Unk2;
+		float float1;
+		float float2;
+		float float3;
+		float float4;
+		float float5;
+		float float6;
+		float float7;
+		float float8;
+		u16 Unk3;
+		u16 Unk4;
+	}
+
+	struct PlaceFile {
+		int HowMuchFurniture;
+		int Unk1;
+		int HeaderSize;
+		// 164 bytes that tell the game how to deserialize, "float1 f32 float2 f32"
+		// ...REFER...No..A
+		// SCII...float1.f3
+		// 2...float2.f32..
+		// .float3.f32...fl
+		// oat4.f32...float
+		// 5.f32...float6.f
+		// 32...float7.f32.
+		// ..float8.f32...a
+		// scii.ASCII...int
+		// 1.s16...........
+		FurnitureObject Objects[HowMuchFurniture];
+		int HowMuchAscii;
+		ASCII Names[HowMuchAscii]; // UTF-8 ??????????????????????????
+	}
+
+
+	================================ text.stx ================================
+	struct IndexNum {int Index; int Offset;}
+	
+	struct TextFile {
+		char[8] Identifier = "STXTJPLL"
+		int Unk1;
+		int OffsetToStartOfIndexes;
+		int Unk2;
+		int HowMuchText;
+		// 8 bytes of emtpy space, maybe Unk2?
+		IndexNum Indexes[HowMuchText];
+		// and the UTF-16EL text is here :P
+	}
+*/
+
+namespace DanganFurniture.V3 {
+	// place.dat
+	public struct FurnitureV3 {
+		public int Unk1;
+		public int Unk2;
+		public float float1;
+		public float float2;
+		public float float3;
+		public float float4;
+		public float float5;
+		public float float6;
+		public float float7;
+		public float float8;
+		public int Unk3;
+		public int Unk4;
+	}
+
+	struct PlaceFile {
+		/* 0x0 */ int HowMuchFurniture;
+		/* 0x4 */ int Unk1;
+		/* 0x8 */ int HeaderSize;
+		FurnitureV3[] Objects;
+		int HowMuchUTF8;
+		// System.Text.Encoding.UTF8[] Names;
+		
+		// seems to be separated by 0x00 (.. below)
+		// 32 .. .. .. E6 93 8D E4  BD 9C .. .. E3 82 AD E3
+		// 83 A3 E3 83 A9 E8 A1 A8  E7 8F BE .. 
+		// 					\/
+		// 50 (0x32) strings - キャラ表現 - カメラ上下角度制限
+	}
+
+	// isn't it weird that in phienes and ferb there's a rabbit boy with a 
+	// blender and nobody questions why there's an anthro rabbit?
+
+	// text.stx
+	public struct IndexNum {public int Index; public int Offset;}
+
+	public struct TextFile {
+		/* 0x0 */ // char[8] Identifier = "STXTJPLL"	// S?... Text... Japanase... LL?
+		/* 0x4 */ int Unk1;
+		/* 0x8 */ int OffsetToStartOfIndexes;
+		/* 0x10 */ int Unk2;
+		/* 0x14 */ int HowMuchText;
+		/* 0x18 */ // 8 bytes of emtpy space, maybe Unk2?
+		/* 0x20 */ IndexNum[] Indexes;
+		// and the UTF-16EL text is here :P
+	}
+
+	public static class Readers {
+		// place.dat
+		public static List<FurnitureV3> ReadFurnitureFile(this string FilePath) {
+			List<FurnitureV3> Bucatarie = new List<FurnitureV3>();
+			List<string> ObjectNames = new List<string>();
+			
+			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
+			using (BinaryReader br = new(fs) ) {
+				
+				int HowMuchFurniture = br.ReadInt32();
+				Console.WriteLine("[DanganFurniture V3] Found {0} furniture objects", HowMuchFurniture);
+				
+				int[] FurnitureOffset = new int[HowMuchFurniture];
+				for (int i = 0; i < HowMuchFurniture; i++) {
+					FurnitureOffset[i] = br.ReadInt32();
+				}
+
+				for (int i = 0; i < FurnitureOffset.Count(); i++) {
+					br.BaseStream.Position = FurnitureOffset[i];
+					// still couldn't think of a non romanian name sorry
+					FurnitureV3 Mobilier = new FurnitureV3();
+					Mobilier.Unk1 = br.ReadInt32();
+					Mobilier.Unk2 = br.ReadInt32();
+					Mobilier.float1 = br.ReadSingle();
+					Mobilier.float2 = br.ReadSingle();
+					Mobilier.float3 = br.ReadSingle();
+					Mobilier.float4 = br.ReadSingle();
+					Mobilier.float5 = br.ReadSingle();
+					Mobilier.float6 = br.ReadSingle();
+					Mobilier.float7 = br.ReadSingle();
+					Mobilier.float8 = br.ReadSingle();
+					Mobilier.Unk3 = br.ReadInt32();
+					Mobilier.Unk4 = br.ReadInt32();
+
+					Bucatarie.Add(Mobilier);
+				}
+				
+				int HowMuchUTF8 = br.ReadInt32();
+
+				// TODO: Figure out how to read the UTF-8 strings here
+
+			}}
+			return Bucatarie;
+		}
+
+		// text.stx
+		// TODO: Is a string List what we want? Would the previous KeyValue
+		// matter in other places?
+		public static List<string> ReadTextFile(this string FilePath) {
+			List<string> TextNames = new List<string>();
+			
+			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
+			using (BinaryReader br = new(fs) ) {
+				br.BaseStream.Position = 0x14;
+
+				int HowMuchText = br.ReadInt32();
+				Console.WriteLine("[DanganFurniture V3] Found {0} texts", HowMuchText);
+				
+				IndexNum[] TextsOffsets = new IndexNum[HowMuchText];
+
+				for (int i = 0; i < HowMuchText; i++) {
+					TextsOffsets[i].Index = br.ReadInt32();
+					TextsOffsets[i].Offset = br.ReadInt32();
+				}
+
+				for (int i = 0; i < TextsOffsets.Count(); i++) {
+					int NextOffsetStart =
+							(!(i + 1 == TextsOffsets.Count())) ?
+							NextOffsetStart = TextsOffsets[i+1].Offset :
+							NextOffsetStart = (int)fs.Length;
+					
+					br.BaseStream.Position = TextsOffsets[i].Offset;
+					string AttemptedString = System.Text.Encoding.UTF8.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position)).TrimEnd('\u0000');
+					TextNames.Add(AttemptedString);
+				}
+
+			}}
+			return TextNames;
+		}
+	}
+}

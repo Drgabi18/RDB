@@ -33,7 +33,6 @@ FurnitureBank bank @ 0x0;
 */
 #endregion
 
-using System.Runtime.CompilerServices;
 using DanganFurniture.Enums;
 using DanganFurniture.Headers;
 using DanganFurniture.PrintModesClass;
