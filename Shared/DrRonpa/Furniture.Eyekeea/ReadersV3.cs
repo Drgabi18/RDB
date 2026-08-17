@@ -100,7 +100,7 @@ namespace DanganFurniture.V3 {
 		/* 0x14 */ int HowMuchText;
 		/* 0x18 */ // 8 bytes of emtpy space, maybe Unk2?
 		/* 0x20 */ IndexNum[] Indexes;
-		// and the UTF-16EL text is here :P
+		// and the UTF-16LE text is here :P
 	}
 
 	public static class Readers {
@@ -143,6 +143,11 @@ namespace DanganFurniture.V3 {
 				int HowMuchUTF8 = br.ReadInt32();
 
 				// TODO: Figure out how to read the UTF-8 strings here
+				// only idea I can think of is just reading untill there's a 0
+				// at which point the string is "called", then it skips the
+				// following zeros to the new string
+				// there should just be a single condition to not search past the
+				// end of file
 
 			}}
 			return Bucatarie;
@@ -170,9 +175,9 @@ namespace DanganFurniture.V3 {
 
 				for (int i = 0; i < TextsOffsets.Count(); i++) {
 					int NextOffsetStart =
-							(!(i + 1 == TextsOffsets.Count())) ?
-							NextOffsetStart = TextsOffsets[i+1].Offset :
-							NextOffsetStart = (int)fs.Length;
+						(!(i + 1 == TextsOffsets.Count())) ?
+						NextOffsetStart = TextsOffsets[i+1].Offset :
+						NextOffsetStart = (int)fs.Length;
 					
 					br.BaseStream.Position = TextsOffsets[i].Offset;
 					string AttemptedString = System.Text.Encoding.UTF8.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position)).TrimEnd('\u0000');
