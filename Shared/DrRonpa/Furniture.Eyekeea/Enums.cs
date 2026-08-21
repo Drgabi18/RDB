@@ -24,7 +24,6 @@ namespace DanganFurniture.Enums {
 		Interacteable_Unk2 = 8,	// used a lot in DR1, has a different
 								// purpose in DR2 where they hold the string
 		DR1_UNK_DR2Mask = 9,	// no clue, name taken from bg_100 in DR2
-
 		DR1_UNK_DR2SetBloom = 10,	// only used once in DR1 in the map after celestia's trial
 					// used in DR2 for some things
 		
@@ -52,7 +51,7 @@ namespace DanganFurniture.Enums {
 		WarpAroundPointIn2D = 61,
 		HowMuchToMoveInTwilight2D = 62,	// Size[0] is X pos, Size[1] is how long, needs to be rotated on the Y axis by 90deg
 		HowMuchToMoveInTwilight2D_2 = 63,	// roughly the same thing?
-		UNK_64 = 64,	// only used once in bg_905, not related to the crash
+		UNUSED_UNK_64 = 64,	// only used once in bg_905, not related to the crash
 		HiddenMonokuma = 70,	// object name contains monokuma, may set the id in the world for him
 		UNK_72 = 72,	// ???? get model to render when climbing up floors, may set which objects are visible in multi floor maps
 		UNK_73 = 73,	// related to camerea zooming to object to talk
@@ -60,10 +59,10 @@ namespace DanganFurniture.Enums {
 		ChangeFov = 76,	// change fov, code at 0x0056cc84, Pos[0] is FOV
 		LockPerspectiveHorizontally = 78,	// lock perspective to only look left and right
 		LockPerspectiveVertically = 79,	// gee i wonder which map uses this
-		PathForCamera = 80,	//eg bg_002, airport when you start pans front to back
+		PathForCameraWhenEnteringRoom = 80,	// eg bg_002, airport when you start pans front to back
 		CameraModeChange = 83,	//camera mode change in strawberry and grape house when you inspect the park and lounge
-		DissapearingBlockEffects = 84,
-		PathWhenWalingInRoomsWithFloors = 90,	// Unk1 represents the ID of the path, unused one in bg_025
+		UNUSED_DissapearingBlockEffects = 84,	// only used in bg_906
+		PathWhenWalkingInRoomsWithFloors = 90,	// Unk1 represents the ID of the path, unused one in bg_025
 		SANITY_CHECK = 255,	// DR2 starts reading the furniture only if this object exists
 
 		/*
