@@ -54,6 +54,8 @@
 	}
 */
 
+using System.Text;
+
 namespace DanganFurniture.V3 {
 	// place.dat
 	public struct FurnitureV3 {
@@ -72,18 +74,20 @@ namespace DanganFurniture.V3 {
 	}
 
 	struct PlaceFile {
-		/* 0x0 */ int HowMuchFurniture;
-		/* 0x4 */ int Unk1;
-		/* 0x8 */ int HeaderSize;
-		FurnitureV3[] Objects;
-		int HowMuchUTF8;
-		// System.Text.Encoding.UTF8[] Names;
-		
+		/* 0x00 */ public int HowMuchFurniture;
+		/* 0x04 */ public int Unk1;
+		/* 0x08 */ public int HeaderSize;
+		/* 0x0C */ public string[] FormatStuff;
+		/* 0xB0 */ public FurnitureV3[] Objects;
+
 		// seems to be separated by 0x00 (.. below)
 		// 32 .. .. .. E6 93 8D E4  BD 9C .. .. E3 82 AD E3
 		// 83 A3 E3 83 A9 E8 A1 A8  E7 8F BE .. 
 		// 					\/
 		// 50 (0x32) strings - キャラ表現 - カメラ上下角度制限
+		public int HowMuchUTF8;
+		public string[] Names;
+		
 	}
 
 	// isn't it weird that in phienes and ferb there's a rabbit boy with a 
@@ -106,22 +110,19 @@ namespace DanganFurniture.V3 {
 	public static class Readers {
 		// place.dat
 		public static List<FurnitureV3> ReadFurnitureFile(this string FilePath) {
+			List<PlaceFile> Bucatarii = new List<PlaceFile>();
 			List<FurnitureV3> Bucatarie = new List<FurnitureV3>();
 			List<string> ObjectNames = new List<string>();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
-				
+				PlaceFile TEST_RENAME_LATER = new PlaceFile();
 				int HowMuchFurniture = br.ReadInt32();
 				Console.WriteLine("[DanganFurniture V3] Found {0} furniture objects", HowMuchFurniture);
-				
-				int[] FurnitureOffset = new int[HowMuchFurniture];
-				for (int i = 0; i < HowMuchFurniture; i++) {
-					FurnitureOffset[i] = br.ReadInt32();
-				}
 
-				for (int i = 0; i < FurnitureOffset.Count(); i++) {
-					br.BaseStream.Position = FurnitureOffset[i];
+				br.BaseStream.Position = 0xB0;
+
+				for (int i = 0; i < HowMuchFurniture; i++) {
 					// still couldn't think of a non romanian name sorry
 					FurnitureV3 Mobilier = new FurnitureV3();
 					Mobilier.Unk1 = br.ReadInt32();
@@ -141,6 +142,9 @@ namespace DanganFurniture.V3 {
 				}
 				
 				int HowMuchUTF8 = br.ReadInt32();
+
+				byte[] StringByteArray = br.ReadBytes((int)br.BaseStream.Position - (int)fs.Length);
+				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 
 				// TODO: Figure out how to read the UTF-8 strings here
 				// only idea I can think of is just reading untill there's a 0
