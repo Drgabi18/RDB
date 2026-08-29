@@ -9,7 +9,8 @@ namespace DanganFurniture.Headers {
 
 		==== 0001
 			INTERNAL NAME: s_bg_NNN_NN_opt.dat
-		4 ints, unknown, 1 int, unknown
+		options file, camera paramters, used in both games but in the 2nd game
+		it's a bit useless since type 6 overrides these
 
 		==== 0002
 			INTERNAL NAME: s_bg_NNN_NN_place.dat
