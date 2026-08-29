@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- TODO: Conditionally add Godot if availiable at some random folder we'll set
+       and also find out how GodotSharp is detected in Godot projects
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net40' ">
+    <Reference Include="Godot" />
+  </ItemGroup>
+  -->
+
 </Project>

@@ -1,3 +1,4 @@
+// TODO: using Godot;	// find a way to add the #if GODOT preprocessor in the csproj
 using System.Text.Json;
 using DanganFurniture.Enums;
 using DanganFurniture.Headers;
@@ -26,7 +27,7 @@ namespace DanganFurniture.PrintModesClass {
 				if (Object.ObjectName != null) {
 					NodeName = Object.ObjectName;	// DR2 ONLY
 				} else {
-					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypes), Object.Type), "Node", Indexer);
+					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypes), Object.Type), "_Node_", Indexer);
 				}
 				// TODO: Godot.Transform3D WHY DID THEY HAVE TO MAKE A CLASS NOT SUPPORTED HERE
 				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
