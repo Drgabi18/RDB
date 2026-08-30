@@ -6,7 +6,7 @@ This repo contains a collection of research documents I created for the followin
 * [[Danganronpa 1/2/V3] Development Trivia & Fun Facts](https://www.youtube.com/watch?v=ljNlJfbsQQk)
 * [[Danganronpa 1/2/V3] Unused Story (.LIN) Files](https://www.youtube.com/watch?v=nDRb3It6jOs)
 * [[Danganronpa 1/2/V3] Super Development Trivia & Fun Facts 2: Goodbye Debug Menus](https://www.youtube.com/watch?v=jjzG6y8MyrU)
-* [[Danganronpa UDG] Unused Rooms, Cutscenes & Development Trivia](https://www.youtube.com/eH-B8eT481U)
+* [[Danganronpa UDG] Unused Rooms, Cutscenes & Development Trivia](https://www.youtube.com/watch?eH-B8eT481U)
 * [[Danganronpa UDG] Addendum: How to "play" as Toko](https://www.youtube.com/watch?v=iCMTiXoMFgI)
 
 Please check them out since I put more effort than necessary in all of them!
@@ -23,6 +23,9 @@ For the PSP, I explored the following Catalog Numbers:
 * `NPJH50372 v1.03` - _Danganronpa 1_
 * `NPJH50515 v1.00` - _Danganronpa 1 (PSP The Best Edition)_
 * `NPJH50631 v1.02` - _Super Danganronpa 2_
+
+For the PSV, I explored the following Catalog Number(s):
+* `PCSG00202 v1.00` - _ダンガンロンパ１・２ Reload_
 
 For the Anniversary ports where the Debug Symbols are from, I extraced them from the following versions:
 * `jp.co.spike_chunsoft.DR1.apk` - Version 1.0.0
@@ -50,7 +53,7 @@ Each file for each game is sorted individually into the folder for what title th
 * `./UDG/Some_ReverseEngineered_Code.cpp` is what it says on the can, ok I lied a bit, it's just a few structs for what control the player character, commented with too much detail, contains addresses which are `base + 0xNNNNNNNN` which should be helpful to use in Cheat Enine.
 * `./UDG/LevelSelectSave/` is a Save that brings you onto one of the Unused Lins, which has a Level Select. Woohoo!
 
-## DrRonpa
+## [DrRonpa](Shared/DrRonpa/)
 [`./Shared/DrRonpa/`](Shared/DrRonpa/) is a suite of C# apps I've made in order to read the binary data from some (easily reverse engineer-able) file formats. The apps are explained in the [README file](Shared/DrRonpa/README.md)
 * `./Lazy.NonStopDebate.Reader` contains the code and output of my Lazy DAT Reader™, used to parse Nonstop/Hanron/Kokonronpa Debate Files. Results are in the .ods files inside the `././output/` folder.
 * `./Lazy.OpCode.Reader` contains the code and output of my Lazy OpCode Reader™™, used primarily for my curiosity in analysis of discrete and the weird ass structure the games have. Results are in the .json files inside the `././output/` folder.
@@ -64,13 +67,14 @@ I've put a restriction on myself to not look at information that would help me, 
 
 ## Acknowledgements
 -# (for projects that are here on GitHub which I used, not auxiliary things like TCRF or TSR; and in the order that I used them)
-* Liquid-S - For creating [DRAT](https://github.com/Liquid-S/Danganronpa-Another-Tool) which I used for repacking game files for the Sayaka Fun House joke
-* vn-tools - For creating [danganronpa-tools](https://github.com/vn-tools/danganronpa-tools/) which I used `pak_archiver` and `wad_archiver` from in the initial first 2 episodes.
-* morgana-x - For creating [Danganronpa-Script-Dumps](https://github.com/morgana-x/Danganronpa-Script-Dumps) which is what lead to me making the Unused Story Files video; For creating [PakLib](https://github.com/morgana-x/PakLib) which was easier to use for unpacking.
-* shadow.nero - Helping me understand how the text renderer and debug text array work in-game... well in-code... as well as other interesting tidbits; also being cool and friendly.
-* CaptainSwag101 - For creating [DRV3-Sharp](https://github.com/CaptainSwag101/DRV3-Sharp) which I used to extract files for the Super Dev Facts Pt 2 and DRV3 Chapter test in Unused Story Files video
 * BitesizeBird - For their [Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding)
-* Spiral Framework - For their efforts documenting the [OpCodes](https://github.com/SpiralFramework/Spiral)
+* CaptainSwag101 - For creating [DRV3-Sharp](https://github.com/CaptainSwag101/DRV3-Sharp) which I used to extract files for the Super Dev Facts Pt 2 and DRV3 Chapter _test_ in the Unused Story Files video
+* [DanganBase](https://danganbase.neocities.org/)/jabbaimond - Effort in documenting other aspects which I took note and expanded upon in some parts
+* Liquid-S - For creating [DRAT](https://github.com/Liquid-S/Danganronpa-Another-Tool) which I used for repacking game files for the Sayaka Fun House joke
+* morgana-x - For creating [Danganronpa-Script-Dumps](https://github.com/morgana-x/Danganronpa-Script-Dumps) which is what lead to me making the Unused Story Files video; For creating [PakLib](https://github.com/morgana-x/PakLib) which was easier to use for unpacking; For continously updating [danganronpa-lin-compiler-v2](https://github.com/morgana-x/danganronpa-lin-compiler-v2) which is a better version than what I made and used it instead for diffing story files 
+* shadow.nero - Helping me understand how the text renderer and debug text array work in-game... well in-code... as well as other interesting tidbits; also being cool and friendly.
+* Spiral Framework - For their efforts documenting the [OpCodes](https://github.com/SpiralFramework/Spiral) and many more formats the game uses, even if I sadly can't read Kotlin to know what it actually does.
+* vn-tools - For creating [danganronpa-tools](https://github.com/vn-tools/danganronpa-tools/) which I used `pak_archiver` and `wad_archiver` from in the initial first 2 episodes.
 * You - yes, you! if you watched or commented <3
 
 Anyways, if you wanna see something fun in the first game, run `set {int}0x009f7e4c=0` (`0x00b3e4ee` in the 2nd game) in any 2D room. Have fun!
