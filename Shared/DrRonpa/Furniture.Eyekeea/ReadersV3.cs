@@ -146,7 +146,8 @@ namespace DanganFurniture.V3 {
 				int HowMuchUTF8 = br.ReadInt32();
 
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
-				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
+				// TODO: Figure out how to get these to print Japanase characters in the Console (maybe convert to utf16? but it should be that already)
+				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\u0000");
 
 				Console.WriteLine(JsonSerializer.Serialize(TEST_RENAME_LATER.Names, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
 				
@@ -186,6 +187,7 @@ namespace DanganFurniture.V3 {
 				}
 
 			}}
+			Console.WriteLine(JsonSerializer.Serialize(TextNames, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
 			return TextNames;
 		}
 	}

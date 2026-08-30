@@ -54,11 +54,20 @@ namespace DanganFurniture
 			if (args.Length == 0) throw new Exception("[DanganFurniture] No file(s) provided");
 			//if (args.Contains("-d") || args.Contains("--directory")) IsFolder = true;
 
+
 			string[] AllMapFolders = Directory.GetDirectories(args[0]);
 			foreach (string Folder in AllMapFolders) {
 				string FolderName = new DirectoryInfo(Folder).Name;
+			
+				Console.WriteLine(FolderName);
+				// HACK: Until I make a proper command line this will have to do
+				if (args[1] == "--V3") {
+					DanganFurniture.V3.Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
+					//DanganFurniture.V3.Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
+					continue;
+				}
 				
-				// HACK: DR2 ONLY, skip over corrupted 054
+				// HACK: DR2 PC ONLY, skip over corrupted 054
 				if (IsDR2 == true && FolderName == "bg_054") continue;
 
 				Room Showcase = new Room();
@@ -81,6 +90,9 @@ namespace DanganFurniture
 
 				EyekeeaShowroom.Add(Showcase);
 			}
+
+			// HACK
+			if (args[1] == "--V3") return;
 
 			// yes i am this lazy
 			PrintModesEnum PrintModes = PrintJason ? PrintModesEnum.JsonSerialized : PrintModesEnum.LazyGodot;
