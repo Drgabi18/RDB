@@ -55,6 +55,7 @@
 */
 
 using System.Text;
+using System.Text.Json;
 
 namespace DanganFurniture.V3 {
 	// place.dat
@@ -125,8 +126,8 @@ namespace DanganFurniture.V3 {
 				for (int i = 0; i < HowMuchFurniture; i++) {
 					// still couldn't think of a non romanian name sorry
 					FurnitureV3 Mobilier = new FurnitureV3();
-					Mobilier.Unk1 = br.ReadInt32();
-					Mobilier.Unk2 = br.ReadInt32();
+					Mobilier.Unk1 = br.ReadInt16();
+					Mobilier.Unk2 = br.ReadInt16();
 					Mobilier.float1 = br.ReadSingle();
 					Mobilier.float2 = br.ReadSingle();
 					Mobilier.float3 = br.ReadSingle();
@@ -135,24 +136,20 @@ namespace DanganFurniture.V3 {
 					Mobilier.float6 = br.ReadSingle();
 					Mobilier.float7 = br.ReadSingle();
 					Mobilier.float8 = br.ReadSingle();
-					Mobilier.Unk3 = br.ReadInt32();
-					Mobilier.Unk4 = br.ReadInt32();
+					Mobilier.Unk3 = br.ReadInt16();
+					Mobilier.Unk4 = br.ReadInt16();
 
+					Console.WriteLine(JsonSerializer.Serialize(Mobilier, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
 					Bucatarie.Add(Mobilier);
 				}
 				
 				int HowMuchUTF8 = br.ReadInt32();
 
-				byte[] StringByteArray = br.ReadBytes((int)br.BaseStream.Position - (int)fs.Length);
+				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
 				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 
-				// TODO: Figure out how to read the UTF-8 strings here
-				// only idea I can think of is just reading untill there's a 0
-				// at which point the string is "called", then it skips the
-				// following zeros to the new string
-				// there should just be a single condition to not search past the
-				// end of file
-
+				Console.WriteLine(JsonSerializer.Serialize(TEST_RENAME_LATER.Names, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
+				
 			}}
 			return Bucatarie;
 		}
@@ -184,7 +181,7 @@ namespace DanganFurniture.V3 {
 						NextOffsetStart = (int)fs.Length;
 					
 					br.BaseStream.Position = TextsOffsets[i].Offset;
-					string AttemptedString = System.Text.Encoding.UTF8.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position)).TrimEnd('\u0000');
+					string AttemptedString = System.Text.Encoding.Unicode.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position)).TrimEnd('\u0000');
 					TextNames.Add(AttemptedString);
 				}
 
