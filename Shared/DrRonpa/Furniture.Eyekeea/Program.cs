@@ -1,47 +1,27 @@
 ﻿#region Aknowladgement
 //	This project only exists because I saw this tool by morgana
 //		https://github.com/morgana-x/danganronpa-RoomObjectsToJson
-//	that didn't work with DR2's furnitre format, so I made my own version and
-//	I also tried to learn how to make ImHex patterns, present below
+//	that didn't work with DR2's furnitre format, so I made my own version 
+#endregion
 
+#region Sketching
 /*
-==== ImHex Pattern
-
-struct Furniture {
-    u32 Type;
-    u32 ID;
-    s32 Unk1;
-    float Position[3];
-    float Size[2];
-    float Rotation;
-    u32 Unk2;
-};
-
-struct FurOffsets {
-    u32 offset;
-    Furniture entries @ offset;
-};
-
-struct FurnitureBank {
-    u32 count;
-    FurOffsets offsets[count];
-};
-
-FurnitureBank bank @ 0x0;
-
-====
+	Game (1, 2, 3)
+	 ∟ Rooms (Room class)
+	   ∟ List of Furniture Items (all 3 games have it) 
 */
 #endregion
+
 
 using DanganFurniture.Enums;
 using DanganFurniture.Headers;
 using DanganFurniture.PrintModesClass;
 
-namespace DanganFurniture
-{
+namespace DanganFurniture {
 	public class Program {
 		public static List<Room> EyekeeaShowroom = new List<Room>();
-		public static readonly string GodotSvgIdentifierWhatever = "1_f3sb7";
+		GameID DefaultGame = GameID.DR1;
+		PrintModesEnum DefaultPrintMode = PrintModesEnum.JsonSerialized;
 		public static readonly bool PrintJason = true;
 		
 		// TODO: pls
@@ -52,16 +32,15 @@ namespace DanganFurniture
 		
 		public static void Main(string[] args) {
 			if (args.Length == 0) throw new Exception("[DanganFurniture] No file(s) provided");
-			//if (args.Contains("-d") || args.Contains("--directory")) IsFolder = true;
-
 
 			string[] AllMapFolders = Directory.GetDirectories(args[0]);
 			foreach (string Folder in AllMapFolders) {
 				string FolderName = new DirectoryInfo(Folder).Name;
 			
-				Console.WriteLine(FolderName);
 				// HACK: Until I make a proper command line this will have to do
 				if (args[1] == "--V3") {
+					RoomV3 ShowcaseV3 = new RoomV3();
+					
 					DanganFurniture.V3.Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
 					//DanganFurniture.V3.Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
 					continue;

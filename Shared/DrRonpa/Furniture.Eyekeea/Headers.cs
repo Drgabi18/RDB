@@ -1,4 +1,19 @@
 namespace DanganFurniture.Headers {
+	public struct Room {
+		public string RoomName;	// taken from folder name
+		public List<string> ModelNameFile;	// file 0000
+		public OptionsFile Options;	// file 0001
+		public List<Furniture> Places;	// file 0002
+		public Dictionary<string, AABBStruct> AABB;	// file 0003
+		public CollisionFile Colissions; // last file before iamges
+	}
+
+	public struct RoomV3 {
+		public string RoomName;	// taken from folder name
+		public List<string> ModelNameFile;	// text.stx
+		public List<Furniture> Places;	// place.dat
+	}
+
 	/*
 		==== 0000
 			INTERNAL NAME: s_bg_NNN_NN_file.dat
@@ -31,15 +46,6 @@ namespace DanganFurniture.Headers {
 		reads map files top to bottom, so this is the first binary file it reads)
 		is an array mesh for the walls, read at 0x0046a9e0 in the code
 	*/
-
-	public struct Room {
-		public string RoomName;	// taken from folder name
-		public List<string> ModelNameFile;	// file 0000
-		public OptionsFile Options;	// file 0001
-		public List<Furniture> Places;	// file 0002
-		public Dictionary<string, AABBStruct> AABB;	// file 0003
-		public CollisionFile Colissions; // last file before iamges
-	}
 
 	// 0001
 	public struct OptionsFile {

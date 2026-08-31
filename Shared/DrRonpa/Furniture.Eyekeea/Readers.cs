@@ -6,6 +6,38 @@ namespace DanganFurniture {
 
 	public static class Readers {
 		// file 0002
+		/*
+		==== ImHex Pattern
+
+		struct Furniture {
+			u32 Type;
+			u32 ID;
+			s32 Unk1;
+			float Position[3];
+			float Size[2];
+			float Rotation;
+			u32 Unk2;
+		};
+
+		struct FurOffsets {
+			u32 offset;
+			Furniture entries @ offset;
+		};
+
+		struct FurnitureBank {
+			u32 count;
+			FurOffsets offsets[count];
+		};
+
+		FurnitureBank bank @ 0x0;
+
+		====
+		*/
+
+		//public static T ParseDataFile<T>(string FileName) {
+		//	return new T;
+		//}
+		
 		public static List<Furniture> ReadFurnitureFile(this string FilePath) {
 			List<Furniture> Bucatarie = new List<Furniture>();
 			
