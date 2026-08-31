@@ -22,7 +22,7 @@ namespace DanganFurniture {
 		public static List<RoomV3> EyekeeaShowroomV3 = new List<RoomV3>();
 		GameID DefaultGame = GameID.DR1;
 		PrintModesEnum DefaultPrintMode = PrintModesEnum.JsonSerialized;
-		public static readonly bool PrintJason = true;
+		public static readonly bool PrintJason = false;
 		
 		// TODO: pls
 		public static bool IsDR2 = true;
@@ -87,7 +87,7 @@ namespace DanganFurniture {
 				case PrintModesEnum.LazyGodot:
 					Console.Clear();
 					if (args[1] == "--V3") {
-						throw new NotImplementedException();
+						Print.LazyGodotPrint(EyekeeaShowroomV3);
 					} else {
 						Print.LazyGodotPrint(EyekeeaShowroom);
 					}

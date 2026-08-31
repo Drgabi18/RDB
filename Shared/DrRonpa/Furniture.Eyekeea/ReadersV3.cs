@@ -60,11 +60,11 @@ using System.Text.Json;
 namespace DanganFurniture.V3 {
 	// place.dat
 	public struct FurnitureV3 {
-		public short Unk1;
-		public short Unk2;
-		public float float1;
-		public float float2;
-		public float float3;
+		public short Type;
+		public short ID;
+		public float X;
+		public float Y;
+		public float Z;
 		public float float4;
 		public float float5;
 		public float float6;
@@ -126,11 +126,11 @@ namespace DanganFurniture.V3 {
 				for (int i = 0; i < HowMuchFurniture; i++) {
 					// still couldn't think of a non romanian name sorry
 					FurnitureV3 Mobilier = new FurnitureV3();
-					Mobilier.Unk1 = br.ReadInt16();
-					Mobilier.Unk2 = br.ReadInt16();
-					Mobilier.float1 = br.ReadSingle();
-					Mobilier.float2 = br.ReadSingle();
-					Mobilier.float3 = br.ReadSingle();
+					Mobilier.Type = br.ReadInt16();
+					Mobilier.ID = br.ReadInt16();
+					Mobilier.X = br.ReadSingle();
+					Mobilier.Y = br.ReadSingle();
+					Mobilier.Z = br.ReadSingle();
 					Mobilier.float4 = br.ReadSingle();
 					Mobilier.float5 = br.ReadSingle();
 					Mobilier.float6 = br.ReadSingle();
