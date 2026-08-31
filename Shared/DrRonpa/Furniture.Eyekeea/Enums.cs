@@ -107,24 +107,26 @@ namespace DanganFurniture.Enums {
 		SANITY_CHECK = 255,	// DR2 starts reading the furniture only if this object exists
 	}
 
+	// TODO: These names are not yet corelated to the Object Names left in all files,
+	// these could be all resolved next commit
 	public enum FurnitureTypesV3 : int {
-		UNK_0 = 0,
-		UNK_2 = 2,
+		SANITY_CHECK = 0,	// present in every map, only Unk4 change from time to time
+		UNK_2 = 2,	// present in every map, only Unk2 and Unk4 change from time to time
 		UNK_3 = 3,
-		UNK_4 = 4,
-		UNK_5 = 5,
-		UNK_6 = 6,
-		UNK_7 = 7,
+		PersonInTrial = 4,	// as in chracter class object in trial, not the real life equivalent of this description
+		UNK_5 = 5,	// seems related to UNK_7
+		ExitPointIn3D_UNK_6 = 6,	// but not on all maps? some use 80
+		UNK_7 = 7,	// seems related to UNK_5
 		UNK_8 = 8,
-		UNK_9 = 9,
-		UNK_10 = 10,
-		UNK_11 = 11,
-		UNK_12 = 12,
-		UNK_13 = 13,
+		Person = 9,	// matches positions in ID999_dummy
+		UNK_10 = 10,	// person modifier, seems to be related to person as it follows them and their id in ID154_lab_iruma
+		UNK_11 = 11,	// person modifier, connected to UNK_10 in ID031_classRoom_C
+		BilboardedObject_UNK_12 = 12,	// is used for the boulders you destroy too, can have colission
+		ClickOrWalkableToChangeMap_UNK_13 = 13,
 		UNK_14 = 14,
 		UNK_15 = 15,
 		UNK_16 = 16,
-		UNK_17 = 17,
+		Models = 17,	// match hidden monokumas in shuichi's room but also random models in the world
 		UNK_18 = 18,
 		UNK_19 = 19,
 		UNK_20 = 20,
@@ -142,7 +144,7 @@ namespace DanganFurniture.Enums {
 		UNK_32 = 32,
 		UNK_33 = 33,
 		UNK_34 = 34,
-		UNK_35 = 35,
+		Interacteable = 35,	// based on ID000_dummy
 		UNK_36 = 36,
 		UNK_37 = 37,
 		UNK_38 = 38,
@@ -163,7 +165,7 @@ namespace DanganFurniture.Enums {
 		UNK_53 = 53,
 		UNK_54 = 54,
 		UNK_55 = 55,
-		UNK_56 = 56,
+		TrialPod_UNK_56 = 56,
 		UNK_57 = 57,
 		UNK_58 = 58,
 		UNK_59 = 59,
@@ -175,18 +177,22 @@ namespace DanganFurniture.Enums {
 		UNK_65 = 65,
 		UNK_66 = 66,
 		UNK_67 = 67,
-		UNK_68 = 68,
+		UNK_68 = 68,	// only present in ID132_lab_hoshi
 		UNK_69 = 69,
-		UNK_71 = 71,
-		UNK_72 = 72,
-		UNK_73 = 73,
-		UNK_74 = 74,
+
+		// 71 - 74
+		// only used in ID007_gym
+		Gym_UNK_71 = 71,
+		Gym_UNK_72 = 72,
+		Gym_UNK_73 = 73,
+		Gym_UNK_74 = 74,
+
 		UNK_75 = 75,
 		UNK_76 = 76,
 		UNK_77 = 77,
 		UNK_78 = 78,
 		UNK_79 = 79,
-		UNK_80 = 80,
+		ExitPointIn3D_UNK_80 = 80,	// but not on all maps?
 		UNK_81 = 81,
 		UNK_82 = 82,
 		UNK_83 = 83,
@@ -225,16 +231,19 @@ namespace DanganFurniture.Enums {
 		UNK_116 = 116,
 		UNK_117 = 117,
 		UNK_118 = 118,
-		UNK_135 = 135,
-		UNK_136 = 136,
-		UNK_137 = 137,
-		UNK_138 = 138,
-		UNK_139 = 139,
-		UNK_140 = 140,
-		UNK_141 = 141,
-		UNK_142 = 142,
-		UNK_143 = 143,
-		UNK_144 = 144,
-		UNK_145 = 145
+
+		// 135 - 145
+		// only used in the map with the flashback light creator
+		FlashbackLightSystem_UNK_135 = 135,
+		FlashbackLightSystem_UNK_136 = 136,
+		FlashbackLightSystem_UNK_137 = 137,
+		FlashbackLightSystem_UNK_138 = 138,
+		FlashbackLightSystem_UNK_139 = 139,
+		FlashbackLightSystem_UNK_140 = 140,
+		FlashbackLightSystem_UNK_141 = 141,
+		FlashbackLightSystem_UNK_142 = 142,
+		FlashbackLightSystem_UNK_143 = 143,
+		FlashbackLightSystem_UNK_144 = 144,
+		FlashbackLightSystem_UNK_145 = 145
 	}
 }
