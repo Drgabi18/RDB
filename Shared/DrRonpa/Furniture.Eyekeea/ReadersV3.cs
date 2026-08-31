@@ -22,7 +22,7 @@
 		int HowMuchFurniture;
 		int Unk1;
 		int HeaderSize;
-		// 164 bytes that tell the game how to deserialize, "float1 f32 float2 f32"
+		// 164 bytes that tell the game how to deserialize, "float1 f32 \x01 float2 f32 \x01 ..."
 		// ...REFER...No..A
 		// SCII...float1.f3
 		// 2...float2.f32..
@@ -35,7 +35,7 @@
 		// 1.s16...........
 		FurnitureObject Objects[HowMuchFurniture];
 		int HowMuchAscii;
-		ASCII Names[HowMuchAscii]; // UTF-8 ??????????????????????????
+		string Names[HowMuchAscii]; // UTF-8 ??????????????????????????
 	}
 
 
@@ -50,7 +50,7 @@
 		int HowMuchText;
 		// 8 bytes of emtpy space, maybe Unk2?
 		IndexNum Indexes[HowMuchText];
-		// and the UTF-16EL text is here :P
+		// and the UTF-16LE text is here :P
 	}
 */
 
@@ -60,8 +60,8 @@ using System.Text.Json;
 namespace DanganFurniture.V3 {
 	// place.dat
 	public struct FurnitureV3 {
-		public int Unk1;
-		public int Unk2;
+		public short Unk1;
+		public short Unk2;
 		public float float1;
 		public float float2;
 		public float float3;
@@ -70,8 +70,8 @@ namespace DanganFurniture.V3 {
 		public float float6;
 		public float float7;
 		public float float8;
-		public int Unk3;
-		public int Unk4;
+		public short Unk3;
+		public short Unk4;
 	}
 
 	struct PlaceFile {
@@ -147,7 +147,7 @@ namespace DanganFurniture.V3 {
 
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
 				// TODO: Figure out how to get these to print Japanase characters in the Console (maybe convert to utf16? but it should be that already)
-				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\u0000");
+				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 
 				Console.WriteLine(JsonSerializer.Serialize(TEST_RENAME_LATER.Names, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
 				
