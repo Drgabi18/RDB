@@ -11,7 +11,7 @@ namespace DanganFurniture.Headers {
 	public struct RoomV3 {
 		public string RoomName;	// taken from folder name
 		public List<string> ModelNameFile;	// text.stx
-		public List<Furniture> Places;	// place.dat
+		public List<V3.FurnitureV3> Places;	// place.dat
 	}
 
 	/*

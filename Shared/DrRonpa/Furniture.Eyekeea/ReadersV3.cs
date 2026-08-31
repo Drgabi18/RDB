@@ -72,6 +72,7 @@ namespace DanganFurniture.V3 {
 		public float float8;
 		public short Unk3;
 		public short Unk4;
+		public string? ObjectName;
 	}
 
 	struct PlaceFile {
@@ -109,15 +110,14 @@ namespace DanganFurniture.V3 {
 	}
 
 	public static class Readers {
+		
+		// TODO: Make this return a PlaceFile instead, this should be a list just for testing
 		// place.dat
 		public static List<FurnitureV3> ReadFurnitureFile(this string FilePath) {
-			List<PlaceFile> Bucatarii = new List<PlaceFile>();
 			List<FurnitureV3> Bucatarie = new List<FurnitureV3>();
-			List<string> ObjectNames = new List<string>();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
-				PlaceFile TEST_RENAME_LATER = new PlaceFile();
 				int HowMuchFurniture = br.ReadInt32();
 				Console.WriteLine("[DanganFurniture V3] Found {0} furniture objects", HowMuchFurniture);
 
@@ -139,19 +139,18 @@ namespace DanganFurniture.V3 {
 					Mobilier.Unk3 = br.ReadInt16();
 					Mobilier.Unk4 = br.ReadInt16();
 
-					Console.WriteLine(JsonSerializer.Serialize(Mobilier, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
 					Bucatarie.Add(Mobilier);
 				}
 				
 				int HowMuchUTF8 = br.ReadInt32();
-
+				string[] ObjectNames = new string[HowMuchUTF8];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
-				// TODO: Figure out how to get these to print Japanase characters in the Console (maybe convert to utf16? but it should be that already)
-				TEST_RENAME_LATER.Names = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
-
-				Console.WriteLine(JsonSerializer.Serialize(TEST_RENAME_LATER.Names, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
-				
+				// TODO: Figure out how to get these to print Japanase characters
+				// in the Console (maybe convert to UTF16LE? but it should be that already)
+				// TODO2: Put these somewhere where we can actually see them, this is unused
+				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 			}}
+
 			return Bucatarie;
 		}
 

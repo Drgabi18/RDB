@@ -10,6 +10,12 @@ namespace DanganFurniture.PrintModesClass {
 				new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
 			);
 		}
+		public static void JsonSerializedPrint(List<RoomV3> Everything) {
+			Console.WriteLine(
+				JsonSerializer.Serialize(Everything,
+				new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
+			);
+		}
 
 		public static void LazyGodotPrint(List<Room> Everything) {
 			Random Randomy = new Random();
@@ -33,6 +39,7 @@ namespace DanganFurniture.PrintModesClass {
 					(float)Double.DegreesToRadians(Object.Rotation));
 				Godot.Transform3D Test2 = new Godot.Transform3D(Test1, new Godot.Vector3(0, 0, 0));
 
+				// TODO: Finish this
 				Console.WriteLine(Test1);
 				Console.WriteLine(Test2);
 				
