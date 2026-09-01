@@ -67,7 +67,6 @@ ID101_Private_00.SPC	- Shuici's Room
 
 ID103_Private_02.SPC	- Ryoma's Room
 
-
 ID106_Private_05.SPC	- Kokichi's Room
 
 ID116_Private_15.SPC	- CH1 Kaede's Room

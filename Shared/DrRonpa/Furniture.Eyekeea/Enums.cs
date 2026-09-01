@@ -239,7 +239,7 @@ namespace DanganFurniture.Enums {
 
 		// 110 - 118
 		// all connected in ID152_lab_shirogane
-		// DISCLAIMER: these also probabl don't match
+		// DISCLAIMER: these also probably don't match
 		Shadow_UNK_110 = 110,	// 影
 		AmbientLight_UNK_111 = 111,	// 環境光
 		ParallelLightSource_UNK_112 = 112,	// 平行光源
