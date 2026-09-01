@@ -107,20 +107,22 @@ namespace DanganFurniture.Enums {
 		SANITY_CHECK = 255,	// DR2 starts reading the furniture only if this object exists
 	}
 
-	// TODO: These names are not yet corelated to the Object Names left in all files,
-	// these could be all resolved next commit
+	// TODO: corelating these with in-game stuff is harder than i thought
 	public enum FurnitureTypesV3 : int {
-		SANITY_CHECK = 0,	// present in every map, only Unk4 change from time to time
-		UNK_2 = 2,	// present in every map, only Unk2 and Unk4 change from time to time
-		UNK_3 = 3,
-		PersonInTrial = 4,	// as in chracter class object in trial, not the real life equivalent of this description
-		UNK_5 = 5,	// seems related to UNK_7
+		SANITY_CHECK = 0,	// supposedly called "操作", present in every map, only Unk4 change from time to time
+		UNK_2 = 2,	// supposedly called "キャラ表現", present in every map, only Unk2 and Unk4 change from time to time
+		LookUpDownAngleLimit = 3,
+		FOV_or_PersonInTrial_UNK_4 = 4,	// Type 4 with ID 1 is used for the FOV, Type 4 with any other ID is used to
+										// set the camera in trial as in chracter class object in trial, not the real
+										// life equivalent of this description
+		MovementSpeed_UNK_5 = 5,	// seems related to UNK_7
 		ExitPointIn3D_UNK_6 = 6,	// but not on all maps? some use 80
-		UNK_7 = 7,	// seems related to UNK_5
+		PointOfFocusCoordinates = 7,	// seems related to UNK_5
 		UNK_8 = 8,
-		Person = 9,	// matches positions in ID999_dummy
-		UNK_10 = 10,	// person modifier, seems to be related to person as it follows them and their id in ID154_lab_iruma
-		UNK_11 = 11,	// person modifier, connected to UNK_10 in ID031_classRoom_C
+		Person_UNK_9 = 9,	// matches positions in ID999_dummy and ID000_dummy
+		Bilboard_Person_UNK_10 = 10,	// matches positions in ID007_gym, person modifier in other places?
+										// seems to be related to person as it follows them and their id in ID154_lab_iruma
+		Person_UNK_11 = 11,	// person modifier, probably color modifier, connected to UNK_10 in ID031_classRoom_C
 		BilboardedObject_UNK_12 = 12,	// is used for the boulders you destroy too, can have colission
 		ClickOrWalkableToChangeMap_UNK_13 = 13,
 		UNK_14 = 14,
@@ -144,7 +146,7 @@ namespace DanganFurniture.Enums {
 		UNK_32 = 32,
 		UNK_33 = 33,
 		UNK_34 = 34,
-		Interacteable = 35,	// based on ID000_dummy
+		Object = 35,	// based on ID000_dummy
 		UNK_36 = 36,
 		UNK_37 = 37,
 		UNK_38 = 38,
@@ -155,41 +157,45 @@ namespace DanganFurniture.Enums {
 		UNK_43 = 43,
 		UNK_44 = 44,
 		UNK_45 = 45,
-		UNK_46 = 46,
+		Shadow = 46,
 		UNK_47 = 47,
-		UNK_48 = 48,
-		UNK_49 = 49,
+		AmbientLighting = 48,
+		ParallelLightSource = 49,	// name taken straight from ID000_dummy
 		UNK_50 = 50,
 		UNK_51 = 51,
 		UNK_52 = 52,
-		UNK_53 = 53,
+		UnusedObjects = 53,	// yes, objects categorized as unused by the game, but not an unused type in game per se
 		UNK_54 = 54,
-		UNK_55 = 55,
+		UNK_55 = 55,	// objects again?
 		TrialPod_UNK_56 = 56,
 		UNK_57 = 57,
 		UNK_58 = 58,
 		UNK_59 = 59,
 		UNK_60 = 60,
 		UNK_61 = 61,
-		UNK_62 = 62,
-		UNK_63 = 63,
-		UNK_64 = 64,
-		UNK_65 = 65,
-		UNK_66 = 66,
-		UNK_67 = 67,
-		UNK_68 = 68,	// only present in ID132_lab_hoshi
-		UNK_69 = 69,
+		
+		// 62 - 68
+		// seem to be connected?
+		ObjectCamera_UNK_62 = 62,
+		Shadow_UNK_63 = 63,
+		AmbientLight_UNK_64 = 64,
+		ParallelLightSource_UNK_65 = 65,
+		TouchFilter_UNK_66 = 66,
+		ObservationEye_AmbientLight_UNK_67 = 67,
+		Hoshi_ObservationEye_PointLightSource_UNK_68 = 68,	// only present in ID132_lab_hoshi
+		
+		UNK_69 = 69,	// hehe, Background Objects?
 
 		// 71 - 74
 		// only used in ID007_gym
-		Gym_UNK_71 = 71,
-		Gym_UNK_72 = 72,
-		Gym_UNK_73 = 73,
-		Gym_UNK_74 = 74,
+		Gym_Shadow = 71,
+		Gym_AmbientLight = 72,
+		Gym_ParallelLightSource = 73,
+		Gym_TouchFilter = 74,
 
-		UNK_75 = 75,
-		UNK_76 = 76,
-		UNK_77 = 77,
+		ObservationEye_AmbientLight = 75,
+		ObservationEye_PointLightSource = 76,
+		LensFlare = 77,
 		UNK_78 = 78,
 		UNK_79 = 79,
 		ExitPointIn3D_UNK_80 = 80,	// but not on all maps?
@@ -197,53 +203,66 @@ namespace DanganFurniture.Enums {
 		UNK_82 = 82,
 		UNK_83 = 83,
 		UNK_84 = 84,
-		UNK_85 = 85,
-		UNK_86 = 86,
-		UNK_87 = 87,
-		UNK_88 = 88,
-		UNK_89 = 89,
-		UNK_90 = 90,
-		UNK_91 = 91,
-		UNK_92 = 92,
-		UNK_93 = 93,
-		UNK_94 = 94,
-		UNK_95 = 95,
-		UNK_96 = 96,
-		UNK_97 = 97,
-		UNK_98 = 98,
-		UNK_99 = 99,
-		UNK_100 = 100,
-		UNK_101 = 101,
-		UNK_102 = 102,
-		UNK_103 = 103,
-		UNK_104 = 104,
-		UNK_105 = 105,
-		UNK_106 = 106,
-		UNK_107 = 107,
-		UNK_108 = 108,
-		UNK_109 = 109,
-		UNK_110 = 110,
-		UNK_111 = 111,
-		UNK_112 = 112,
-		UNK_113 = 113,
-		UNK_114 = 114,
-		UNK_115 = 115,
-		UNK_116 = 116,
-		UNK_117 = 117,
-		UNK_118 = 118,
+
+		// 85 - 108
+		// all seem to be connected in ID190_pool
+
+		// ===================
+		// DISCLAIMER: THESE DON'T MATCH IN ID191_pool LIKE AT ALL, FUUUUCK ME
+		// ===================
+		ObjectCamera_UNK_85 = 85,	// オブジェクトカメラ
+		Shadow_UNK_86 = 86,	// 影
+		AmbientLight_UNK_87 = 87,	// 環境光
+		ParallelLightSource_UNK_88 = 88,	// 平行光源
+		TouchFilter_UNK_89 = 89,	// タッチフィルター
+		ObservationEye_AmbientLight_UNK_90 = 90,	// 観察眼：環境光
+		ObservationEye_PointLightSource_UNK_91 = 91,	// 観察眼：点光源
+		LensFlare_UNK_92 = 92,	// レンズフレア
+		WaterSurface1_Setting1_UNK_93 = 93,	// 水面1：設定1
+		WaterSurface2_Setting2_UNK_94 = 94,	// 水面2：設定2
+		WaterSurface3_NormalMap1_UNK_95 = 95,	// 水面3：法線マップ1
+		WaterSurface4_NormalMap2_UNK_96 = 96,	// 水面4：法線マップ2
+		WaterSurface5_Color_UNK_97 = 97,	// 水面5：色
+		ShadowSetting_PS4_UNK_98 = 98,	// 影設定：PS4
+		ShadowSetting_Vita_UNK_99 = 99,	// 影設定：Vita
+		ShadowMap0_PS4_UNK_100 = 100,	// 影マップ0：PS4
+		ShadowMap1_PS4_UNK_101 = 101,	// 影マップ1：PS4
+		ShadowMap0_Vita_UNK_102 = 102,	// 影マップ0：Vita
+		WaterSurface_Windows1_Setting1_UNK_103 = 103,	// 水面Windows1：設定1
+		WaterSurface_Windows2_Setting2_UNK_104 = 104,	// 水面Windows2：設定2
+		WaterSurface_Windows3_NormalMap1_UNK_105 = 105,	// 水面Windows3：法線マップ1
+		WaterSurface_Windows4_NormalMap2_UNK_106 = 106,	// 水面Windows4：法線マップ2
+		WaterSurface_Windows5_Color_UNK_107 = 107,	// 水面Windows5：色
+		WaterSurface_Windows6_WaterSurfacePlate_UNK_108 = 108,	// 水面Windows6：水面板
+
+		UNK_109 = 109,	// "影マップ0：Vita" which is probably incorrect
+
+		// 110 - 118
+		// all connected in ID152_lab_shirogane
+		// DISCLAIMER: these also probabl don't match
+		Shadow_UNK_110 = 110,	// 影
+		AmbientLight_UNK_111 = 111,	// 環境光
+		ParallelLightSource_UNK_112 = 112,	// 平行光源
+		TouchFilter_UNK_113 = 113,	// タッチフィルター
+		ShadowSettings_PS4_UNK_114 = 114,	// 影設定：PS4
+		ShadowSettings_Vita_UNK_115 = 115,	// 影設定：Vita
+		ShadowMap0_PS4_UNK_116 = 116,	// 影マップ0：PS4
+		ShadowMap1_PS4_UNK_117 = 117,	// 影マップ1：PS4
+		ShadowMap0_Vita_UNK_118 = 118,	// 影マップ0：Vita
 
 		// 135 - 145
-		// only used in the map with the flashback light creator
-		FlashbackLightSystem_UNK_135 = 135,
-		FlashbackLightSystem_UNK_136 = 136,
-		FlashbackLightSystem_UNK_137 = 137,
-		FlashbackLightSystem_UNK_138 = 138,
-		FlashbackLightSystem_UNK_139 = 139,
-		FlashbackLightSystem_UNK_140 = 140,
-		FlashbackLightSystem_UNK_141 = 141,
-		FlashbackLightSystem_UNK_142 = 142,
-		FlashbackLightSystem_UNK_143 = 143,
-		FlashbackLightSystem_UNK_144 = 144,
-		FlashbackLightSystem_UNK_145 = 145
+		// only used in the map with the flashback light creator, ID031_classRoom_C
+		// copy pasted from google translate without even checking if the values mean anything
+		FlashbackClassroom_BackgroundObject = 135,	// 背景オブジェクト
+		FlashbackClassroom_Shadow = 136,	// 影
+		FlashbackClassroom_AmbientLight = 137,	// 環境光
+		FlashbackClassroom_ParallelLightSource = 138,	// 平行光源
+		FlashbackClassroom_TouchFilter = 139,	// タッチフィルター
+		FlashbackClassroom_ShadowSettings_PS4 = 140,	// 影設定：PS4
+		FlashbackClassroom_ShadowSettings_Vita = 141,	// 影設定：Vita
+		FlashbackClassroom_ShadowMap_0_PS4 = 142,	// 影マップ0：PS4
+		FlashbackClassroom_ShadowMap_1_PS4 = 143,	// 影マップ1：PS4
+		FlashbackClassroom_ShadowMap_0_Vita = 144,	// 影マップ0：Vita
+		FlashbackClassroom_Transparent_Object = 145	// 透過オブジェクト
 	}
 }
