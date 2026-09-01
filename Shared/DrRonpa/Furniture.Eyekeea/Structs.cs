@@ -1,4 +1,8 @@
-namespace DanganFurniture.Headers {
+namespace DanganFurniture.Structs {
+	// TODO: Add the respective structs to these files later
+	//class HPA {}
+	//class V3 {}
+
 	public struct Room {
 		public string RoomName;	// taken from folder name
 		public List<string> ModelNameFile;	// file 0000
@@ -11,7 +15,7 @@ namespace DanganFurniture.Headers {
 	public struct RoomV3 {
 		public string RoomName;	// taken from folder name
 		public List<string> ModelNameFile;	// text.stx
-		public List<V3.FurnitureV3> Places;	// place.dat
+		public List<FurnitureV3> Places;	// place.dat
 	}
 
 	/*
@@ -124,5 +128,22 @@ namespace DanganFurniture.Headers {
 		public List<int> ListOfSomething;
 		public List<Vertex> Verticies;
 		public CollisionFile() {}
+	}
+
+	// place.dat
+	public struct FurnitureV3 {
+		public short Type;
+		public short ID;
+		public float X;
+		public float Y;
+		public float Z;
+		public float float4;	// scale but also used as rotation on Type 6
+		public float float5;	// scale
+		public float float6;	// rotation
+		public float float7;
+		public float float8;
+		public short Unk3;
+		public short Unk4;
+		public string? ObjectName;
 	}
 }

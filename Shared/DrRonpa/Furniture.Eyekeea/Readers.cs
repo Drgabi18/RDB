@@ -1,4 +1,4 @@
-using DanganFurniture.Headers;
+using DanganFurniture.Structs;
 
 namespace DanganFurniture {
 	

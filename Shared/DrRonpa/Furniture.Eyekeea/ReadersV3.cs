@@ -56,24 +56,9 @@
 
 using System.Text;
 using System.Text.Json;
+using DanganFurniture.Structs;
 
 namespace DanganFurniture.V3 {
-	// place.dat
-	public struct FurnitureV3 {
-		public short Type;
-		public short ID;
-		public float X;
-		public float Y;
-		public float Z;
-		public float float4;
-		public float float5;
-		public float float6;
-		public float float7;
-		public float float8;
-		public short Unk3;
-		public short Unk4;
-		public string? ObjectName;
-	}
 
 	struct PlaceFile {
 		/* 0x00 */ public int HowMuchFurniture;

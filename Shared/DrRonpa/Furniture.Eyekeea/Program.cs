@@ -13,7 +13,7 @@
 #endregion
 
 using DanganFurniture.Enums;
-using DanganFurniture.Headers;
+using DanganFurniture.Structs;
 using DanganFurniture.PrintModesClass;
 
 namespace DanganFurniture {
@@ -22,7 +22,7 @@ namespace DanganFurniture {
 		public static List<RoomV3> EyekeeaShowroomV3 = new List<RoomV3>();
 		GameID DefaultGame = GameID.DR1;
 		PrintModesEnum DefaultPrintMode = PrintModesEnum.JsonSerialized;
-		public static readonly bool PrintJason = false;
+		public static readonly bool PrintJason = true;
 		
 		// TODO: pls
 		public static bool IsDR2 = true;
@@ -36,7 +36,8 @@ namespace DanganFurniture {
 			string[] AllMapFolders = Directory.GetDirectories(args[0]);
 			foreach (string Folder in AllMapFolders) {
 				string FolderName = new DirectoryInfo(Folder).Name;
-			
+
+				Console.WriteLine(FolderName);
 				// HACK: Until I make a proper command line this will have to do
 				if (args[1] == "--V3") {
 					RoomV3 ShowcaseV3 = new RoomV3();
@@ -47,6 +48,7 @@ namespace DanganFurniture {
 					EyekeeaShowroomV3.Add(ShowcaseV3);
 				} else {
 					// HACK: DR2 PC ONLY, skip over corrupted 054
+					// TODO: we can remove this if we just do File.Exists()
 					if (IsDR2 == true && FolderName == "bg_054") continue;
 
 					Room Showcase = new Room();

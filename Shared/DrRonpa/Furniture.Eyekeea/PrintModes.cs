@@ -1,7 +1,6 @@
-using System.Numerics;
 using System.Text.Json;
 using DanganFurniture.Enums;
-using DanganFurniture.Headers;
+using DanganFurniture.Structs;
 
 namespace DanganFurniture.PrintModesClass {
 	public class Print {
@@ -125,7 +124,7 @@ namespace DanganFurniture.PrintModesClass {
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
 			Console.WriteLine();
 
-			foreach (V3.FurnitureV3 Object in Map.Places) {
+			foreach (FurnitureV3 Object in Map.Places) {
 				Indexer++;
 				string NodeName;
 				if (Object.ObjectName != null) {
