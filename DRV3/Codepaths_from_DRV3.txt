@@ -1,0 +1,16 @@
+sp_file.cpp
+sp_file_server.cpp
+sp_postprocess_dof.cpp
+sp_middleware_cri_mobile.cpp 
+sp_game_server.cpp
+F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/rpg/scene/rpg_scene_title.cpp
+F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/rpg/ui/rpg_ui_dialog.cpp
+F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/system/rsc_game_flash_local_tag_manager.cpp
+F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/system/rsc_game_flash_manager.cpp
+trial_minigame_finish.cpp 
+bgmodel.cpp
+bgmodel_debug_remote_manager.cpp 
+logo.cpp
+wrd_script_check.cpp
+game_flash_maanger.cpp
+save_data_job_win.cpp
