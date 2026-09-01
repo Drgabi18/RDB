@@ -99,11 +99,12 @@ namespace DanganFurniture.V3 {
 		// TODO: Make this return a PlaceFile instead, this should be a list just for testing
 		// place.dat
 		public static List<FurnitureV3> ReadFurnitureFile(this string FilePath) {
-			List<FurnitureV3> Bucatarie = new List<FurnitureV3>();
-			
+			FurnitureV3[] Bucatarie;
+
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
 				int HowMuchFurniture = br.ReadInt32();
+				Bucatarie = new FurnitureV3[HowMuchFurniture];
 				Console.WriteLine("[DanganFurniture V3] Found {0} furniture objects", HowMuchFurniture);
 
 				br.BaseStream.Position = 0xB0;
@@ -116,27 +117,35 @@ namespace DanganFurniture.V3 {
 					Mobilier.X = br.ReadSingle();
 					Mobilier.Y = br.ReadSingle();
 					Mobilier.Z = br.ReadSingle();
-					Mobilier.float4 = br.ReadSingle();
-					Mobilier.float5 = br.ReadSingle();
-					Mobilier.float6 = br.ReadSingle();
+					Mobilier.float4 = br.ReadSingle();	
+					Mobilier.float5 = br.ReadSingle();	
+					Mobilier.float6 = br.ReadSingle();	
 					Mobilier.float7 = br.ReadSingle();
 					Mobilier.float8 = br.ReadSingle();
 					Mobilier.Unk3 = br.ReadInt16();
 					Mobilier.Unk4 = br.ReadInt16();
 
-					Bucatarie.Add(Mobilier);
+					Bucatarie[i] = Mobilier;
 				}
 				
 				int HowMuchUTF8 = br.ReadInt32();
+				Console.WriteLine("[DanganFurniture V3] Found {0} texts", HowMuchUTF8);
+
 				string[] ObjectNames = new string[HowMuchUTF8];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
-				// TODO: Figure out how to get these to print Japanase characters
-				// in the Console (maybe convert to UTF16LE? but it should be that already)
-				// TODO2: Put these somewhere where we can actually see them, this is unused
+				// BUG: \x00\x00 makes an empty element which doesn't actually exist... probably?
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
+
+				for (int i = 0; i < Bucatarie.Length; i++) {
+					Console.WriteLine(ObjectNames[i]);
+					Bucatarie[i].ObjectName = ObjectNames[i];
+				}
+
+				Console.WriteLine();
 			}}
 
-			return Bucatarie;
+			// ugly lazy hack
+			return Bucatarie.ToList<FurnitureV3>();
 		}
 
 		// text.stx
