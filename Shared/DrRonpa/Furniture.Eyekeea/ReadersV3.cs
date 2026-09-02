@@ -58,14 +58,14 @@ using System.Text;
 using System.Text.Json;
 using DanganFurniture.Structs;
 
-namespace DanganFurniture.V3 {
+namespace DanganFurniture.V3Readers {
 
 	struct PlaceFile {
 		/* 0x00 */ public int HowMuchFurniture;
 		/* 0x04 */ public int Unk1;
 		/* 0x08 */ public int HeaderSize;
 		/* 0x0C */ public string[] FormatStuff;
-		/* 0xB0 */ public FurnitureV3[] Objects;
+		/* 0xB0 */ public V3.Furniture[] Objects;
 
 		// seems to be separated by 0x00 (.. below)
 		// 32 .. .. .. E6 93 8D E4  BD 9C .. .. E3 82 AD E3
@@ -98,20 +98,20 @@ namespace DanganFurniture.V3 {
 		
 		// TODO: Make this return a PlaceFile instead, this should be a list just for testing
 		// place.dat
-		public static List<FurnitureV3> ReadFurnitureFile(this string FilePath) {
-			FurnitureV3[] Bucatarie;
+		public static List<V3.Furniture> ReadFurnitureFile(this string FilePath) {
+			V3.Furniture[] Bucatarie;
 
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
 				int HowMuchFurniture = br.ReadInt32();
-				Bucatarie = new FurnitureV3[HowMuchFurniture];
+				Bucatarie = new V3.Furniture[HowMuchFurniture];
 				Console.WriteLine("[DanganFurniture V3] Found {0} furniture objects", HowMuchFurniture);
 
 				br.BaseStream.Position = 0xB0;
 
 				for (int i = 0; i < HowMuchFurniture; i++) {
 					// still couldn't think of a non romanian name sorry
-					FurnitureV3 Mobilier = new FurnitureV3();
+					V3.Furniture Mobilier = new V3.Furniture();
 					Mobilier.Type = br.ReadInt16();
 					Mobilier.ID = br.ReadInt16();
 					Mobilier.X = br.ReadSingle();
@@ -145,7 +145,7 @@ namespace DanganFurniture.V3 {
 			}}
 
 			// ugly lazy hack
-			return Bucatarie.ToList<FurnitureV3>();
+			return Bucatarie.ToList<V3.Furniture>();
 		}
 
 		// text.stx

@@ -3,31 +3,30 @@ using DanganFurniture.Enums;
 using DanganFurniture.Structs;
 
 namespace DanganFurniture.PrintModesClass {
-	public class Print {
+	public class Print  {
 		public static string GodotSvgIdentifierWhatever = "1_awcjp";
 
-		public static void JsonSerializedPrint(List<Room> Everything) {
-			Console.WriteLine(
-				JsonSerializer.Serialize(Everything,
-				new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
-			);
-		}
-		public static void JsonSerializedPrint(List<RoomV3> Everything) {
-			Console.WriteLine(
-				JsonSerializer.Serialize(Everything,
-				new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
-			);
+		// easier to parse the game id here 
+		public static void JsonSerializedPrint<T>(GameID Game, List<T> Everything) where T : struct {
+			// although not ever necesary, check if it's the right type
+			if (Everything.GetType() == typeof(HPA.Room) ||
+				Everything.GetType() == typeof(V3.Room)) {
+				Console.WriteLine(
+					JsonSerializer.Serialize(Everything,
+					new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
+				);
+				}
 		}
 
-		public static void LazyGodotPrint(List<Room> Everything) {
+		public static void LazyGodotPrint(GameID Game, List<HPA.Room> Everything) {
 			Random Randomy = new Random();
 			int Indexer = 0;
 			
-			foreach (Room Map in Everything) { // lol
+			foreach (HPA.Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
 			Console.WriteLine();
 
-			foreach (Furniture Object in Map.Places) {
+			foreach (HPA.Furniture Object in Map.Places) {
 				Indexer++;
 				string NodeName;
 				if (Object.ObjectName != null) {
@@ -69,7 +68,8 @@ namespace DanganFurniture.PrintModesClass {
 				Console.WriteLine();
 			}
 
-			if (Program.IsDR2) {
+			// can we not add Program. without making a method to get the value?
+			if (Program.SelectedGame == GameID.DR2) {
 			foreach (var Obiect in Map.AABB) {
 				for (int i = 0; i < 4; i += 3 ) {
 					string NodeName;
@@ -92,7 +92,7 @@ namespace DanganFurniture.PrintModesClass {
 			}
 
 			if (Map.Colissions.Verticies != null) {
-				foreach (Vertex vertex in Map.Colissions.Verticies) {
+				foreach (HPA.Vertex vertex in Map.Colissions.Verticies) {
 					string NodeName;
 					Indexer++;
 					NodeName = String.Concat(Map.RoomName, "_Vertex_", Indexer);
@@ -116,15 +116,15 @@ namespace DanganFurniture.PrintModesClass {
 			}
 		}
 
-		public static void LazyGodotPrint(List<RoomV3> Everything) {
+		public static void LazyGodotPrint(List<V3.Room> Everything) {
 			Random Randomy = new Random();
 			int Indexer = 0;
 			
-			foreach (RoomV3 Map in Everything) { // lol
+			foreach (V3.Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
 			Console.WriteLine();
 
-			foreach (FurnitureV3 Object in Map.Places) {
+			foreach (V3.Furniture Object in Map.Places) {
 				Indexer++;
 				string NodeName;
 				if (Object.ObjectName != null) {
@@ -138,6 +138,13 @@ namespace DanganFurniture.PrintModesClass {
 				Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 					// TODO: temp
 					1, 1, 1, Object.X, Object.Y, Object.Z);
+				Console.WriteLine("metadata/float4 = \"{0}\"", Object.float4);
+				Console.WriteLine("metadata/float5 = \"{0}\"", Object.float5);
+				Console.WriteLine("metadata/float6 = \"{0}\"", Object.float6);
+				Console.WriteLine("metadata/float7 = \"{0}\"", Object.float7);
+				Console.WriteLine("metadata/float8 = \"{0}\"", Object.float8);
+				Console.WriteLine("metadata/unk3 = \"{0}\"", Object.Unk3);
+				Console.WriteLine("metadata/unk4 = \"{0}\"", Object.Unk4);
 				Console.WriteLine("gizmo_extents = 100.0");
 				Console.WriteLine();
 				// creating a bilboarded sprite

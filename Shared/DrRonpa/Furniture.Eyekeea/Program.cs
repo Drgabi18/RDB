@@ -17,47 +17,39 @@ using DanganFurniture.Structs;
 using DanganFurniture.PrintModesClass;
 
 namespace DanganFurniture {
-	public class Program {
-		public static List<Room> EyekeeaShowroom = new List<Room>();
-		public static List<RoomV3> EyekeeaShowroomV3 = new List<RoomV3>();
-		GameID DefaultGame = GameID.DR1;
-		PrintModesEnum DefaultPrintMode = PrintModesEnum.JsonSerialized;
-		public static readonly bool PrintJason = true;
-		
-		// TODO: pls
-		public static bool IsDR2 = true;
-		
-		// TODO: arguments should be folders extracted using pak_extractor
-		// or we integrate PakLibrary to read files off there
-		
-		public static void Main(string[] args) {
-			if (args.Length == 0) throw new Exception("[DanganFurniture] No file(s) provided");
+	
+	public static class Program {
+		public static GameID SelectedGame = GameID.DR1;	// default to DR1
+		static PrintModes PrintMode = PrintModes.JsonSerialized;	// default to Json
+		static string FolderPath = null;
 
-			string[] AllMapFolders = Directory.GetDirectories(args[0]);
+		public static List<HPA.Room> EyekeeaShowroom = new List<HPA.Room>();
+		public static List<V3.Room> EyekeeaShowroomV3 = new List<V3.Room>();
+		
+		
+		// TODO: don't forget to add instructions for what files are needed
+		public static void Main(string[] args) {
+			if (args.Length == 0) throw new Exception("[DanganFurniture] No commands were provided");
+			
+			HandleCommandLineArguments(args);
+
+			string[] AllMapFolders = Directory.GetDirectories(FolderPath);
 			foreach (string Folder in AllMapFolders) {
 				string FolderName = new DirectoryInfo(Folder).Name;
 
+				// TOOD: make this sexier
 				Console.WriteLine(FolderName);
-				// HACK: Until I make a proper command line this will have to do
-				if (args[1] == "--V3") {
-					RoomV3 ShowcaseV3 = new RoomV3();
-					ShowcaseV3.RoomName = FolderName;
-					ShowcaseV3.Places = V3.Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
-					//DanganFurniture.V3.Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
+				
+				if (SelectedGame == GameID.DR1 || SelectedGame == GameID.DR2) {
+					if (SelectedGame == GameID.DR2 && FolderName == "bg_054") continue;
 
-					EyekeeaShowroomV3.Add(ShowcaseV3);
-				} else {
-					// HACK: DR2 PC ONLY, skip over corrupted 054
-					// TODO: we can remove this if we just do File.Exists()
-					if (IsDR2 == true && FolderName == "bg_054") continue;
-
-					Room Showcase = new Room();
+					HPA.Room Showcase = new HPA.Room();
 					Showcase.RoomName = FolderName;
 					Showcase.ModelNameFile = Readers.ReadModelNamesFile(Path.Combine(Folder, "0000"));
 					Showcase.Options = Readers.ReadOptionsFile(Path.Combine(Folder, "0001"));
 					Showcase.Places = Readers.ReadFurnitureFile(Path.Combine(Folder, "0002"));
 					// DR2 only, at the moment it currently breaks DR1 parsing
-					if (IsDR2) {
+					if (SelectedGame == GameID.DR2) {
 						Showcase.AABB = Readers.ReadAABBBonesFile(Path.Combine(Folder, "0003"));
 						
 						// TODO: is there a better way than just seraching through every file
@@ -70,31 +62,56 @@ namespace DanganFurniture {
 					}
 
 					EyekeeaShowroom.Add(Showcase);
+				} else if (SelectedGame ==GameID.DRV3) {
+					V3.Room ShowcaseV3 = new V3.Room();
+					ShowcaseV3.RoomName = FolderName;
+					ShowcaseV3.Places = V3Readers.Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
+					//DanganFurniture.V3.Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
+
+					EyekeeaShowroomV3.Add(ShowcaseV3);
+				}
+			}
+			
+			switch (PrintMode) {
+				default:
+				case PrintModes.JsonSerialized:
+					Console.Clear();
+					Print.JsonSerializedPrint(SelectedGame, EyekeeaShowroom);
+					return;
+				case PrintModes.LazyGodot:
+					Console.Clear();
+					Print.LazyGodotPrint(SelectedGame, EyekeeaShowroom);
+					return;
+			}
+		}
+
+		public static void HandleCommandLineArguments(string[] args) {
+			foreach (string command in args) {
+				switch(command) {
+					case "-g":
+					case "--game":
+						// "DR1" to GameID.DR1
+						var _temp1 = 
+							Enum.TryParse(args[Array.IndexOf(args, command)+1],
+							out GameID _result1);
+						SelectedGame = _result1;
+						break;
+					case "-d":
+					case "--directory":
+						FolderPath = args[Array.IndexOf(args, command)+1]; break;
+					case "-m":
+					case "--mode":
+						// same thing as the previous enum parse
+						var _temp2 =
+							Enum.TryParse(args[Array.IndexOf(args, command)+1],
+							out PrintModes _result2);
+						PrintMode = _result2;
+						break;
+					default: break;
 				}
 			}
 
-			// yes i am this lazy
-			PrintModesEnum PrintModes = PrintJason ? PrintModesEnum.JsonSerialized : PrintModesEnum.LazyGodot;
-			
-			switch (PrintModes) {
-				default:
-				case PrintModesEnum.JsonSerialized:
-					Console.Clear();
-					if (args[1] == "--V3") {
-						Print.JsonSerializedPrint(EyekeeaShowroomV3);
-					} else {
-						Print.JsonSerializedPrint(EyekeeaShowroom);
-					}
-					return;
-				case PrintModesEnum.LazyGodot:
-					Console.Clear();
-					if (args[1] == "--V3") {
-						Print.LazyGodotPrint(EyekeeaShowroomV3);
-					} else {
-						Print.LazyGodotPrint(EyekeeaShowroom);
-					}
-					return;
-			}
+			if (FolderPath == null) throw new Exception("[DanganFurniture] No folder path was provided");
 		}
 	}
 }

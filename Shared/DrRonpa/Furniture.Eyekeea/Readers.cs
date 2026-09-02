@@ -38,8 +38,8 @@ namespace DanganFurniture {
 		//	return new T;
 		//}
 		
-		public static List<Furniture> ReadFurnitureFile(this string FilePath) {
-			List<Furniture> Bucatarie = new List<Furniture>();
+		public static List<HPA.Furniture> ReadFurnitureFile(this string FilePath) {
+			List<HPA.Furniture> Bucatarie = new List<HPA.Furniture>();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
@@ -60,7 +60,7 @@ namespace DanganFurniture {
 
 					br.BaseStream.Position = FurnitureOffset[i];
 					// couldn't think of a non romanian name sorry
-					Furniture Mobilier = new Furniture();
+					HPA.Furniture Mobilier = new HPA.Furniture();
 					Mobilier.Type = br.ReadInt32();
 					Mobilier.ID = br.ReadInt32(); 
 					Mobilier.Unk1 = br.ReadUInt32(); 
@@ -133,8 +133,8 @@ namespace DanganFurniture {
 		}
 
 		// 0001
-		public static OptionsFile ReadOptionsFile(this string FilePath) {
-			OptionsFile RoomInfo = new OptionsFile();
+		public static HPA.OptionsFile ReadOptionsFile(this string FilePath) {
+			HPA.OptionsFile RoomInfo = new HPA.OptionsFile();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
@@ -157,8 +157,8 @@ namespace DanganFurniture {
 		// TO GET THE NAMES AND THEN IT SERIALZIES THE REST
 		// so now the question is, in this file is everything forwards or backwards?
 		// LATER EDIT: It's normal, no back to front
-		public static Dictionary<string, AABBStruct> ReadAABBBonesFile(this string FilePath) {
-			Dictionary<string, AABBStruct> ExtraObjectData = new();
+		public static Dictionary<string, HPA.AABBStruct> ReadAABBBonesFile(this string FilePath) {
+			Dictionary<string, HPA.AABBStruct> ExtraObjectData = new();
 
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
@@ -178,7 +178,7 @@ namespace DanganFurniture {
 					.TrimEnd('\u0000').Split('\u0000');
 
 				for (int i = 0; i < SomethingOffset.Count() - 1; i++) {
-					AABBStruct Something = new AABBStruct();
+					HPA.AABBStruct Something = new HPA.AABBStruct();
 					br.BaseStream.Position = SomethingOffset[i];
 					Something.Unk1 = br.ReadInt32();
 					Something.SixFloats[0] = br.ReadSingle();
@@ -203,8 +203,8 @@ namespace DanganFurniture {
 		}
 		
 		// last one before iamges
-		public static CollisionFile ReadZColFile(this string FilePath) {
-			CollisionFile Colissions = new();
+		public static HPA.CollisionFile ReadZColFile(this string FilePath) {
+			HPA.CollisionFile Colissions = new();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
@@ -213,7 +213,7 @@ namespace DanganFurniture {
 				Colissions.Unk2_HeaderSize = br.ReadInt32();
 				Colissions.SizeBeforeTriangles = br.ReadInt32();
 				Colissions.ListOfSomething = new List<int>();
-				Colissions.Verticies = new List<Vertex>();
+				Colissions.Verticies = new List<HPA.Vertex>();
 
 				// this is a dog shit implementation and the game is smarter here
 				// at 0x0046aa00
@@ -235,7 +235,7 @@ namespace DanganFurniture {
 					Colissions.ListOfSomething.Add(br.ReadInt32());
 				}
 				while (br.BaseStream.Position < Colissions.FileSize) {
-					Vertex vertex = new();
+					HPA.Vertex vertex = new();
 					vertex.Pos[0] = br.ReadSingle();
 					vertex.Pos[1] = br.ReadSingle();
 					vertex.Pos[2] = br.ReadSingle();
