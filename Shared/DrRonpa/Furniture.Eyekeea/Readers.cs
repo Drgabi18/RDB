@@ -82,7 +82,7 @@ namespace DanganFurniture {
 					
 					// DR1 does not store object names, thus the result for these will always be 0,
 					// we should probably do this check earlier than here and only once
-					// TODO: Remove this once we have a game toggle
+					// TODO: Decide if this should remain as it harms no one, or replace it with SelectedGame = Game.DR2
 					bool IsDR1 = ((NextOffsetStart - (int)br.BaseStream.Position) == 0) ? true : false;
 					if (!IsDR1) {
 						string AttemptedString = System.Text.Encoding.ASCII.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position));
@@ -90,7 +90,7 @@ namespace DanganFurniture {
 						// TODO: there HAS to be a better way of doing this
 						if (AttemptedString.ToArray()[0] != 0x00) {
 							Mobilier.ObjectName = AttemptedString.TrimEnd('\u0000');
-							Console.WriteLine("[DanganFurniture] Object {0} is {1}", i, Mobilier.ObjectName);
+							// Console.WriteLine("[DanganFurniture] Object {0} is {1}", i, Mobilier.ObjectName);
 						} else {
 							Mobilier.ObjectName = null;
 						}
@@ -143,7 +143,7 @@ namespace DanganFurniture {
 				RoomInfo.Unk1 = br.ReadInt32();
 				RoomInfo.Unk2 = br.ReadInt32();
 				RoomInfo.Unk3 = br.ReadInt32();
-				RoomInfo.Unk4 = br.ReadInt32();	// written by the same species
+				RoomInfo.CameraMode = br.ReadInt32();	// written by the same species
 				RoomInfo.Unk5 = br.ReadInt32();	// that landed on the moon and
 				RoomInfo.Unk6 = br.ReadInt32();	// ate food from sewage
 				RoomInfo.Unk7 = br.ReadInt32();
@@ -164,15 +164,15 @@ namespace DanganFurniture {
 
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
 			using (BinaryReader br = new(fs) ) {
-				int HowManySomething = br.ReadInt32();
-				Console.WriteLine("[DanganFurniture] Found {0} somethings", HowManySomething);
+				int HowManyConnections = br.ReadInt32();
+				Console.WriteLine("[DanganFurniture] Found {0} AABB connections", HowManyConnections);
 
-				int[] SomethingOffset = new int[HowManySomething];
-				for (int i = 0; i < HowManySomething; i++) {
+				int[] SomethingOffset = new int[HowManyConnections];
+				for (int i = 0; i < HowManyConnections; i++) {
 					SomethingOffset[i] = br.ReadInt32();
 				}
 				
-				string[] SomeNames = new string[HowManySomething - 1];
+				string[] SomeNames = new string[HowManyConnections - 1];
 				// deal with object names first
 				// i don't understand why they made these different
 				br.BaseStream.Position = SomethingOffset.Last();
@@ -189,6 +189,7 @@ namespace DanganFurniture {
 					Something.SixFloats[3] = br.ReadSingle();
 					Something.SixFloats[4] = br.ReadSingle();
 					Something.SixFloats[5] = br.ReadSingle();
+					// TODO: GABI PLEASE
 					/*
 					Something.TopLeftCorner[0] = br.ReadSingle();
 					Something.TopLeftCorner[1] = br.ReadSingle();
@@ -314,7 +315,6 @@ namespace DanganFurniture {
 		}
 	*/
 
-
 		// TODO: Make this return a PlaceFile instead, this should be a list just for testing
 		// place.dat
 		public static List<V3.Furniture> ReadFurnitureFile(this string FilePath) {
@@ -348,7 +348,7 @@ namespace DanganFurniture {
 				}
 				
 				int HowMuchUTF8 = br.ReadInt32();
-				Console.WriteLine("[DanganFurniture V3] Found {0} texts", HowMuchUTF8);
+				Console.WriteLine("[DanganFurniture V3] Found {0} object descriptions", HowMuchUTF8);
 
 				string[] ObjectNames = new string[HowMuchUTF8];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);

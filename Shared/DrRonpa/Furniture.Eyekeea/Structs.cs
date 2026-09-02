@@ -43,10 +43,10 @@ namespace DanganFurniture.Structs {
 		}
 			// 0001
 		public struct OptionsFile {
-			public int Unk1;
-			public int Unk2;
+			public int Unk1;	// always mostly 1
+			public int Unk2;	// always mostly 8
 			public int Unk3;
-			public int Unk4;
+			public int CameraMode;
 			public int Unk5;
 			public int Unk6;
 			public int Unk7;
@@ -135,7 +135,7 @@ namespace DanganFurniture.Structs {
 			public float X;
 			public float Y;
 			public float Z;
-			public float float4;	// scale but also used as rotation on Type 6
+			public float float4;	// scale, but also used as rotation on Type 6
 			public float float5;	// scale
 			public float float6;	// rotation
 			public float float7;

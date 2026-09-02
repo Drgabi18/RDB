@@ -22,6 +22,7 @@ namespace DanganFurniture {
 		static PrintModes PrintMode = PrintModes.JsonSerialized;	// default to Json
 		static string FolderPath = null;
 
+		// TODO: Combine these into 1, maybe class<T> where T: struct?
 		public static List<HPA.Room> EyekeeaShowroom = new List<HPA.Room>();
 		public static List<V3.Room> EyekeeaShowroomV3 = new List<V3.Room>();
 		
@@ -37,7 +38,7 @@ namespace DanganFurniture {
 				string FolderName = new DirectoryInfo(Folder).Name;
 
 				// TOOD: make this sexier
-				Console.WriteLine(FolderName);
+				Console.WriteLine("[DanganFurniture] Inspecting room {0}", FolderName);
 				
 				if (SelectedGame == GameID.DR1 || SelectedGame == GameID.DR2) {
 					if (SelectedGame == GameID.DR2 && FolderName == "bg_054") continue;
