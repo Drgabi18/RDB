@@ -14,7 +14,6 @@
 
 using DanganFurniture.Enums;
 using DanganFurniture.Structs;
-using DanganFurniture.PrintModesClass;
 
 namespace DanganFurniture {
 	
@@ -48,6 +47,7 @@ namespace DanganFurniture {
 					Showcase.ModelNameFile = Readers.ReadModelNamesFile(Path.Combine(Folder, "0000"));
 					Showcase.Options = Readers.ReadOptionsFile(Path.Combine(Folder, "0001"));
 					Showcase.Places = Readers.ReadFurnitureFile(Path.Combine(Folder, "0002"));
+					
 					// DR2 only, at the moment it currently breaks DR1 parsing
 					if (SelectedGame == GameID.DR2) {
 						Showcase.AABB = Readers.ReadAABBBonesFile(Path.Combine(Folder, "0003"));
@@ -63,12 +63,12 @@ namespace DanganFurniture {
 
 					EyekeeaShowroom.Add(Showcase);
 				} else if (SelectedGame ==GameID.DRV3) {
-					V3.Room ShowcaseV3 = new V3.Room();
-					ShowcaseV3.RoomName = FolderName;
-					ShowcaseV3.Places = V3Readers.Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
-					//DanganFurniture.V3.Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
+					V3.Room Showcase = new V3.Room();
+					Showcase.RoomName = FolderName;
+					Showcase.Places = V3Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
+					Showcase.ObjectNames = V3Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
 
-					EyekeeaShowroomV3.Add(ShowcaseV3);
+					EyekeeaShowroomV3.Add(Showcase);
 				}
 			}
 			

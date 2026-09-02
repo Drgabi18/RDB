@@ -125,7 +125,7 @@ namespace DanganFurniture.Structs {
 		public struct Room {
 			public string RoomName;	// taken from folder name
 			public List<Furniture> Places;	// place.dat
-			public List<string> ModelNameFile;	// text.stx
+			public List<string> ObjectNames;	// text.stx
 		}
 
 		// place.dat
@@ -144,12 +144,38 @@ namespace DanganFurniture.Structs {
 			public short Unk4;
 			public string? ObjectName;
 		}
+
+		struct PlaceFile {
+			/* 0x00 */ public int HowMuchFurniture;
+			/* 0x04 */ public int Unk1;
+			/* 0x08 */ public int HeaderSize;
+			/* 0x0C */ public string[] FormatStuff;
+			/* 0xB0 */ public V3.Furniture[] Objects;
+
+			// seems to be separated by 0x00 (.. below)
+			// 32 .. .. .. E6 93 8D E4  BD 9C .. .. E3 82 AD E3
+			// 83 A3 E3 83 A9 E8 A1 A8  E7 8F BE .. 
+			// 					\/
+			// 50 (0x32) strings - キャラ表現 - カメラ上下角度制限
+			public int HowMuchUTF8;
+			public string[] Names;	
+		}
+
+		// isn't it weird that in phienes and ferb there's a rabbit boy with a 
+		// blender and nobody questions why there's an anthro rabbit?
+
+		// text.stx
+		public struct IndexNum {public int Index; public int Offset;}
+
+		public struct TextFile {
+			/* 0x0 */ // char[8] Identifier = "STXTJPLL"	// S?... Text... Japanase... LL?
+			/* 0x4 */ int Unk1;
+			/* 0x8 */ int OffsetToStartOfIndexes;
+			/* 0x10 */ int Unk2;
+			/* 0x14 */ int HowMuchText;
+			/* 0x18 */ // 8 bytes of emtpy space, maybe Unk2?
+			/* 0x20 */ IndexNum[] Indexes;
+			// and the UTF-16LE text is here :P
+		}
 	}
-	
-
-	
-
-
-
-	
 }

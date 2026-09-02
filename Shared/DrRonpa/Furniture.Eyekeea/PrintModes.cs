@@ -2,8 +2,8 @@ using System.Text.Json;
 using DanganFurniture.Enums;
 using DanganFurniture.Structs;
 
-namespace DanganFurniture.PrintModesClass {
-	public class Print  {
+namespace DanganFurniture {
+	public class Print {
 		public static string GodotSvgIdentifierWhatever = "1_awcjp";
 
 		// easier to parse the game id here 
