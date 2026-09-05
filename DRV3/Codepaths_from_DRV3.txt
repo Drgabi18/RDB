@@ -1,8 +1,7 @@
 sp_file.cpp
 sp_file_server.cpp
 sp_postprocess_dof.cpp
-sp_middleware_cri_mobile.cpp 
-sp_game_server.cpp
+sp_middleware_cri_mobile.cpp
 F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/rpg/scene/rpg_scene_title.cpp
 F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/rpg/ui/rpg_ui_dialog.cpp
 F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/system/rsc_game_flash_local_tag_manager.cpp
