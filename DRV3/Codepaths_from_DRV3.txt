@@ -7,6 +7,9 @@ F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/rpg/scene/rpg_s
 F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/rpg/ui/rpg_ui_dialog.cpp
 F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/system/rsc_game_flash_local_tag_manager.cpp
 F:/Work/DR_backlog/DRS3/Dangan3/project/source/game/minigame/rsc/system/rsc_game_flash_manager.cpp
+..\\..\\..\\source\\win\\system\\sp_game_server_win.cpp
+..\\..\\..\\source\\win\\hardware\\sp_graphic_server_win.cpp
+..\\..\\..\\source\\common\\kernel\\sp_heap.cpp
 trial_minigame_finish.cpp 
 bgmodel.cpp
 bgmodel_debug_remote_manager.cpp 

@@ -73,7 +73,7 @@ ID116_Private_15.SPC	- CH1 Kaede's Room
 
 ID130_lab_saihara.SPC	- Shuici's Lab
 ID131_lab_momota.SPC	- Kaito's Lab
-ID132_lab_hoshi.SPC	- Ryoma'S Tennis Court
+ID132_lab_hoshi.SPC	- Ryoma's Tennis Court
 
 ID134_lab_hoshi_shower.SPC - Ryoma's Shower
 ID135_lab_amami.SPC	- Rantaro's Lab
