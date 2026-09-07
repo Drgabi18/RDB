@@ -352,13 +352,17 @@ namespace DanganFurniture {
 
 				string[] ObjectNames = new string[HowMuchUTF8];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
-				// BUG: \x00\x00 makes an empty element which doesn't actually exist... probably?
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
-
+				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
+				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
+				
+				// TODO: Find out how the values are actually associated
+				/*
 				for (int i = 0; i < Bucatarie.Length; i++) {
 					Console.WriteLine(ObjectNames[i]);
 					Bucatarie[i].ObjectName = ObjectNames[i];
 				}
+				*/
 
 				Console.WriteLine();
 			}}
@@ -380,18 +384,24 @@ namespace DanganFurniture {
 				int HowMuchText = br.ReadInt32();
 				Console.WriteLine("[DanganFurniture V3] Found {0} texts", HowMuchText);
 				
+				// header size is at 0x20, it's 32 bytes, we go to that after
+				br.BaseStream.Position = 0x20;
+
 				V3.IndexNum[] TextsOffsets = new V3.IndexNum[HowMuchText];
 
 				for (int i = 0; i < HowMuchText; i++) {
 					TextsOffsets[i].Index = br.ReadInt32();
 					TextsOffsets[i].Offset = br.ReadInt32();
+					Console.WriteLine("{0} - {1}", TextsOffsets[i].Index, TextsOffsets[i].Offset);
 				}
 
 				for (int i = 0; i < TextsOffsets.Count(); i++) {
+					// BUG: Some files have the index-offset like 12-228; 13-228; 14-320; 15-228 and it breaks this logic
 					int NextOffsetStart =
 						(!(i + 1 == TextsOffsets.Count())) ?
 						NextOffsetStart = TextsOffsets[i+1].Offset :
 						NextOffsetStart = (int)fs.Length;
+					Console.WriteLine(NextOffsetStart);
 					
 					br.BaseStream.Position = TextsOffsets[i].Offset;
 					string AttemptedString = System.Text.Encoding.Unicode.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position)).TrimEnd('\u0000');

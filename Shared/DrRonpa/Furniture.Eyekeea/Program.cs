@@ -69,7 +69,7 @@ namespace DanganFurniture {
 					V3.Room Showcase = new V3.Room();
 					Showcase.RoomName = FolderName;
 					Showcase.Places = V3Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
-					Showcase.ObjectNames = V3Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
+					// Showcase.ObjectNames = V3Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
 
 					EyekeeaShowroomV3.Add(Showcase);
 				}
