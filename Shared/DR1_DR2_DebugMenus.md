@@ -210,12 +210,17 @@ ANAROG    : POS
 < >       : ANIME LOOP
 < >       : DISP
 ```
-Used to debug objects you can click in the world like doors, cameras, furniture etc. This creates a Square/Circle behind the objects, which represents the area in which you can select it. When the `Obj No` is at the index of said object, the background pulsates orange. When you hover over an object, the background pulsates light blue.
+Used to Debug furniture objects you can click in the world like doors, cameras, furniture etc. This creates a Square/Circle behind the objects, which represents the area in which you can select it. When the `Obj No` is at the index of said object, the background pulsates orange. When you hover over an object, the background pulsates light blue.
+In Danganronpa 1, this corresponds to the furniture objects present in the 3rd indexed file (0002) in the map file. In Danganronpa 2, these correspond to the AABB file 
 
 * `Obj No` - is used to select the object in the array
-* `File` - is used to select what type the object is, this changes if the object has a square or cicle behind it
-* `Pos`, `PosY`, `Scale`, `Scale`, `Rot`, `RotZ` - is pretty self explanatory
-* `Anime`, `AnimeLoop` - unknown behaivor, may have been used for the animation when you enter a room
+* `File` - is used to select what type the object is, this changes if the object has a square or cicle behind it; The numbers are pulled from the current *Type* used, Type 7 maps to 1, Type 8 to 2 and Type 9 to 3
+  * `1` represents interacteable objects that would give you money when interacting
+  * `2` represents doors that change level
+  * `3` represents masks in DR2
+  * `4` is possible, I've been unable to find a map that uses these. Judgning by the fact Type 70 (Hidden Monokumas) is the next in the list in the code, this number is probabl used by these.
+* `Pos`, `PosY`, `Scale`, `Scale`, `Rot`, `RotZ` - is pretty self explanatory. In DR2 these values very awkwardly map two 3D points in space.
+* `Anime`, `AnimeLoop` - unknown behaivor, may have been used for the animation when you enter a room or interact
 * `Disp` - is used to set if the object is selectable and visible in the world
 
 ## Light Debug Mode
