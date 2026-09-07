@@ -16,7 +16,7 @@ namespace DanganFurniture.Enums {
 		Person = 1,	// ID is index in the world, Size[1] is unused
 		ObjectsThatAppearBasedOnFlag = 2,	// Type is indexed object in world you click, used a lot in DR1
 		ExitPointIn3D = 3,	// unused exists for toilets in bg_252
-		Marker = 4,	// used in DR1 DEMO to change those unknown -5000 to 5000 values
+		UNUSED_Marker = 4,	// used in DR1 DEMO to change those unknown -5000 to 5000 values
 					// potentially limit how much you cal walk if you had the posibility
 					// to walk in the trial room, no purpose in other versions
 					// still present only in trial maps even in DR2
@@ -25,13 +25,13 @@ namespace DanganFurniture.Enums {
 		DR1_UNK_DR2CameraLimit = 6,	// limit how much you can look around,
 									// Pos[0] DR_X_CameraCenter, Pos[1] DR_Y_CameraCenter, Pos[2] DR_Z_CameraCenter
 									// Size[0] is DR_DistanceFromCenterPoint_RoomMode, UNK2 IS FLOAT HERE, Size[1] unused
-		Interacteable_Unk1 = 7,	// Type is indexed object in world you click,
+		Interacteable_UNK1 = 7,	// Type is indexed object in world you click,
 								// used a lot in DR1, has a different
 								// purpose in DR2 where they hold the string
-		Interacteable_Unk2 = 8,	// used a lot in DR1, has a different
+		Interacteable_UNK2 = 8,	// used a lot in DR1, has a different
 								// purpose in DR2 where they hold the string
-		DR1_UNK_DR2Mask = 9,	// no clue, name taken from bg_100 in DR2
-		DR1_UNK_DR2SetBloom = 10,	// only used once in DR1 in the map after celestia's trial
+		DR1_UNK9_DR2Mask = 9,	// no clue, name taken from bg_100 in DR2
+		DR1_UNUSED10_DR2SetBloom = 10,	// only used once in DR1 in the map after celestia's trial
 									// used in DR2 for some things
 		
 		// ============================= DR2 only =============================
@@ -109,8 +109,9 @@ namespace DanganFurniture.Enums {
 
 	// TODO: corelating these with in-game stuff is harder than i thought
 	public enum FurnitureTypesV3 : int {
-		SANITY_CHECK = 0,	// supposedly called "操作", present in every map, only Unk4 change from time to time
-		UNK_2 = 2,	// supposedly called "キャラ表現", present in every map, only Unk2 and Unk4 change from time to time
+		// 0 - 9
+		LoveSosa = 0,	// called "操作" intenrally, present in every map, Unk4 changes between first person and locked
+		CharacterPortreyal = 2,	// supposedly called "キャラ表現", present in every map, only Unk2 and Unk4 change from time to time
 		LookUpDownAngleLimit = 3,
 		FOV_or_PersonInTrial_UNK_4 = 4,	// Type 4 with ID 1 is used for the FOV, Type 4 with any other ID is used to
 										// set the camera in trial as in chracter class object in trial, not the real
@@ -120,6 +121,8 @@ namespace DanganFurniture.Enums {
 		PointOfFocusCoordinates = 7,	// seems related to UNK_5
 		UNK_8 = 8,
 		Person_UNK_9 = 9,	// matches positions in ID999_dummy and ID000_dummy
+		
+		// 10 - 19
 		Bilboard_Person_UNK_10 = 10,	// matches positions in ID007_gym, person modifier in other places?
 										// seems to be related to person as it follows them and their id in ID154_lab_iruma
 		Person_UNK_11 = 11,	// person modifier, probably color modifier, connected to UNK_10 in ID031_classRoom_C
@@ -131,6 +134,8 @@ namespace DanganFurniture.Enums {
 		Models = 17,	// match hidden monokumas in shuichi's room but also random models in the world
 		UNK_18 = 18,
 		UNK_19 = 19,
+
+		// 20 - 29
 		UNK_20 = 20,
 		UNK_21 = 21,
 		UNK_22 = 22,
@@ -141,6 +146,8 @@ namespace DanganFurniture.Enums {
 		UNK_27 = 27,
 		UNK_28 = 28,
 		UNK_29 = 29,
+
+		// 30 - 39
 		UNK_30 = 30,
 		UNK_31 = 31,
 		UNK_32 = 32,
@@ -151,6 +158,8 @@ namespace DanganFurniture.Enums {
 		UNK_37 = 37,
 		UNK_38 = 38,
 		UNK_39 = 39,
+
+		// 40 - 49
 		UNK_40 = 40,
 		UNK_41 = 41,
 		UNK_42 = 42,
@@ -161,6 +170,8 @@ namespace DanganFurniture.Enums {
 		UNK_47 = 47,
 		AmbientLighting = 48,
 		ParallelLightSource = 49,	// name taken straight from ID000_dummy
+
+		// 50 - 59
 		UNK_50 = 50,
 		UNK_51 = 51,
 		UNK_52 = 52,
@@ -171,6 +182,8 @@ namespace DanganFurniture.Enums {
 		UNK_57 = 57,
 		UNK_58 = 58,
 		UNK_59 = 59,
+
+		// 60 - 61
 		UNK_60 = 60,
 		UNK_61 = 61,
 		
@@ -193,11 +206,14 @@ namespace DanganFurniture.Enums {
 		Gym_ParallelLightSource = 73,
 		Gym_TouchFilter = 74,
 
+		// 75 - 79
 		ObservationEye_AmbientLight = 75,
 		ObservationEye_PointLightSource = 76,
 		LensFlare = 77,
 		UNK_78 = 78,
 		UNK_79 = 79,
+
+		// 80 - 84
 		ExitPointIn3D_UNK_80 = 80,	// but not on all maps?
 		UNK_81 = 81,
 		UNK_82 = 82,
