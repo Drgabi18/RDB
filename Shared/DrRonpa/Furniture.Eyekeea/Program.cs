@@ -33,7 +33,9 @@ namespace DanganFurniture {
 			
 			HandleCommandLineArguments(args);
 
-			string[] AllMapFolders = Directory.GetDirectories(FolderPath);
+			List<string> AllMapFolders = Directory.GetDirectories(FolderPath).ToList();
+			AllMapFolders.Sort();
+
 			foreach (string Folder in AllMapFolders) {
 				string FolderName = new DirectoryInfo(Folder).Name;
 
