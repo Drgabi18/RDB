@@ -94,8 +94,7 @@ namespace DanganFurniture {
 					case "-g":
 					case "--game":
 						// "DR1" to GameID.DR1
-						var _temp1 = 
-							Enum.TryParse(args[Array.IndexOf(args, command)+1],
+						Enum.TryParse(args[Array.IndexOf(args, command)+1],
 							out GameID _result1);
 						SelectedGame = _result1;
 						break;
@@ -105,8 +104,7 @@ namespace DanganFurniture {
 					case "-m":
 					case "--mode":
 						// same thing as the previous enum parse
-						var _temp2 =
-							Enum.TryParse(args[Array.IndexOf(args, command)+1],
+						Enum.TryParse(args[Array.IndexOf(args, command)+1],
 							out PrintModes _result2);
 						PrintMode = _result2;
 						break;

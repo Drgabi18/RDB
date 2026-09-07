@@ -45,8 +45,7 @@ namespace LazyOpCodeReader {
 					case "-g":
 					case "--game":
 						// "DR1" to Game.GameID.DR1
-						var _temp1 = 
-							Enum.TryParse(args[Array.IndexOf(args, command)+1],
+						Enum.TryParse(args[Array.IndexOf(args, command)+1],
 							out Game.GameID _result1);
 						GameID = _result1;
 						break;
@@ -56,8 +55,7 @@ namespace LazyOpCodeReader {
 					case "-m":
 					case "--mode":
 						// same thing as the previous enum parse
-						var _temp2 =
-							Enum.TryParse(args[Array.IndexOf(args, command)+1],
+						Enum.TryParse(args[Array.IndexOf(args, command)+1],
 							out PrintModes _result2);
 						PrintMode = _result2;
 						break;
