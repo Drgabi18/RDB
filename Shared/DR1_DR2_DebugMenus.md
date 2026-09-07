@@ -211,7 +211,7 @@ ANAROG    : POS
 < >       : DISP
 ```
 Used to Debug furniture objects you can click in the world like doors, cameras, furniture etc. This creates a Square/Circle behind the objects, which represents the area in which you can select it. When the `Obj No` is at the index of said object, the background pulsates orange. When you hover over an object, the background pulsates light blue.
-In Danganronpa 1, this corresponds to the furniture objects present in the 3rd indexed file (0002) in the map file. In Danganronpa 2, these correspond to the AABB file 
+In Danganronpa 1, this corresponds to the furniture objects present in the 3rd indexed file (0002) in the map file. In Danganronpa 2, these correspond to the AABB file, the 4th indexed file (0003).
 
 * `Obj No` - is used to select the object in the array
 * `File` - is used to select what type the object is, this changes if the object has a square or cicle behind it; The numbers are pulled from the current *Type* used, Type 7 maps to 1, Type 8 to 2 and Type 9 to 3
