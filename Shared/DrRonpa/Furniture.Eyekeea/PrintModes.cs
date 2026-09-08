@@ -4,7 +4,7 @@ using DanganFurniture.Structs;
 
 namespace DanganFurniture {
 	public class Print {
-		public static string GodotSvgIdentifierWhatever = "1_awcjp";
+		public static string GodotExtResID = "1_awcjp";
 
 		// easier to parse the game id here 
 		public static void JsonSerializedPrint<T>(GameID Game, List<T> Everything) where T : struct {
@@ -35,31 +35,30 @@ namespace DanganFurniture {
 				} else {
 					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypes), Object.Type), "_Node_", Indexer);
 				}
-				
-				var Test3 = new Godot.Transform3D().Translated(new Godot.Vector3(5,5,5)).Rotated(Godot.Vector3.Up, Object.Rotation);
-				Godot.Basis Test1 = new Godot.Basis().Rotated(new Godot.Vector3(Object.Position[0], Object.Position[1], Object.Position[2]),
-					(float)Double.DegreesToRadians(Object.Rotation));
-				Godot.Transform3D Test2 = new Godot.Transform3D(Test1, new Godot.Vector3(0, 0, 0));
 
-				// TODO: Finish this
-				Console.WriteLine(Test1);
-				Console.WriteLine(Test2);
-				Console.WriteLine(Test3);
-				
-				Console.ReadKey();
+				// fun fact, this stupidly doesn't work but making a transform3d from 2 objects does
+				/*
+				var DOES_NOT_WORK = new Godot.Transform3D()
+				.Translated(new Godot.Vector3(Object.Position[0], Object.Position[1], Object.Position[2]))
+				.RotatedLocal(Godot.Vector3.Up, (float)Double.DegreesToRadians(Object.Rotation));
+				*/
+
+				// TODO: Figure out scale later :^)
+				Godot.Basis BasisRotation = new Godot.Basis(Godot.Vector3.Up, (float)Double.DegreesToRadians(Object.Rotation));
+				Godot.Transform3D TransformTranslaed = new Godot.Transform3D(BasisRotation, new Godot.Vector3(Object.Position[0], Object.Position[1], Object.Position[2]));
 
 				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
 					NodeName, Map.RoomName, Indexer * 100);
-				Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
+				Console.WriteLine("transform = Transform3D({0}, {1}, {2}, {3})",
 					// some objects have the scale 0, which would make it so we can't see anything, we should
 					// think a little more about what we should scare here lol
 					//Object.Size[0], Object.Size[1], 1, Object.Position[0], Object.Position[1], Object.Position[2]);
-					1, 1, 1, Object.Position[0], Object.Position[1], Object.Position[2]);
+					TransformTranslaed.Basis.X.ToString()[1..^1], TransformTranslaed.Basis.Y.ToString()[1..^1],
+					TransformTranslaed.Basis.Z.ToString()[1..^1], TransformTranslaed.Origin.ToString()[1..^1]);
 				Console.WriteLine("metadata/type = \"{0}\"", Object.Type);
 				Console.WriteLine("metadata/id = \"{0}\"", Object.ID);
 				Console.WriteLine("metadata/unk1 = \"{0}\"", Object.Unk1);
 				Console.WriteLine("metadata/unk2 = \"{0}\"", Object.Unk2);
-				Console.WriteLine("metadata/rotation = \"{0}\"", Object.Rotation);
 				Console.WriteLine("gizmo_extents = 100.0");
 				Console.WriteLine();
 				// creating a bilboarded sprite
@@ -67,7 +66,7 @@ namespace DanganFurniture {
 					Map.RoomName, NodeName, Randomy.Next());
 				Console.WriteLine("pixel_size = 0.5");
 				Console.WriteLine("billboard = 2");
-				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
+				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
 				Console.WriteLine();
 			}
 
@@ -89,7 +88,7 @@ namespace DanganFurniture {
 						Map.RoomName, NodeName, Randomy.Next());
 					Console.WriteLine("pixel_size = 0.5");
 					Console.WriteLine("billboard = 2");
-					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
+					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
 					Console.WriteLine();
 				}
 			}
@@ -110,7 +109,7 @@ namespace DanganFurniture {
 						Map.RoomName, NodeName, Randomy.Next());
 					Console.WriteLine("pixel_size = 0.5");
 					Console.WriteLine("billboard = 2");
-					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
+					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
 					Console.WriteLine();
 				}
 			}
@@ -155,7 +154,7 @@ namespace DanganFurniture {
 					Map.RoomName, NodeName, Randomy.Next());
 				Console.WriteLine("pixel_size = 0.5");
 				Console.WriteLine("billboard = 2");
-				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotSvgIdentifierWhatever);
+				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
 				Console.WriteLine();
 			}
 			}
