@@ -9,8 +9,9 @@ namespace DanganFurniture {
 		// easier to parse the game id here 
 		public static void JsonSerializedPrint<T>(GameID Game, List<T> Everything) where T : struct {
 			// although not ever necesary, check if it's the right type
-			if (Everything.GetType() == typeof(HPA.Room) ||
-				Everything.GetType() == typeof(V3.Room)) {
+			// TODO: Can we check for just T instead?
+			if (Everything.GetType() == typeof(List<HPA.Room>) ||
+				Everything.GetType() == typeof(List<V3.Room>)) {
 				Console.WriteLine(
 					JsonSerializer.Serialize(Everything,
 					new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
@@ -35,6 +36,7 @@ namespace DanganFurniture {
 					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypes), Object.Type), "_Node_", Indexer);
 				}
 				
+				var Test3 = new Godot.Transform3D().Translated(new Godot.Vector3(5,5,5)).Rotated(Godot.Vector3.Up, Object.Rotation);
 				Godot.Basis Test1 = new Godot.Basis().Rotated(new Godot.Vector3(Object.Position[0], Object.Position[1], Object.Position[2]),
 					(float)Double.DegreesToRadians(Object.Rotation));
 				Godot.Transform3D Test2 = new Godot.Transform3D(Test1, new Godot.Vector3(0, 0, 0));
@@ -42,6 +44,7 @@ namespace DanganFurniture {
 				// TODO: Finish this
 				Console.WriteLine(Test1);
 				Console.WriteLine(Test2);
+				Console.WriteLine(Test3);
 				
 				Console.ReadKey();
 
