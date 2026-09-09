@@ -218,7 +218,7 @@ In Danganronpa 1, this corresponds to the furniture objects present in the 3rd i
   * `1` represents interacteable objects that would give you money when interacting
   * `2` represents doors that change level
   * `3` represents masks in DR2
-  * `4` is possible, I've been unable to find a map that uses these. Judgning by the fact Type 70 (Hidden Monokumas) is the next in the list in the code, this number is probabl used by these.
+  * `4` is possible, I've been unable to find a map that uses these. Judgning by the fact Type 70 (Hidden Monokumas) is the next in the list in the code, this number is probably used by these.
 * `Pos`, `PosY`, `Scale`, `Scale`, `Rot`, `RotZ` - is pretty self explanatory. In DR2 these values very awkwardly map two 3D points in space.
 * `Anime`, `AnimeLoop` - unknown behaivor, may have been used for the animation when you enter a room or interact
 * `Disp` - is used to set if the object is selectable and visible in the world

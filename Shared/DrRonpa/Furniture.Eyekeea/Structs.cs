@@ -18,19 +18,19 @@ namespace DanganFurniture.Structs {
 			INTERNAL NAME IN DR2: s_bg_NNN_NN_place2.dat
 		the code you see below, Furniture struct
 
-		=============================== DR2 ONLY ===============================
-		==== 0003
-			INTERNAL NAME IN DR2: s_bg_NNN_NN_bone_pos.dat
-		first number is how many names, after that it's just offsets and the last
-		offset is a string array ,seems to be a K=V where K is the name and
-		V is a struct, so Dictionary<string, struct>
-
 		==== last file before .tgas
 			INTERNAL NAME: s_bg_NNN_z.col.dat
 		uses "CC DD EE FF" as a header identifier????????
 		(well, tehnically the first files after the images, remember, danganronpa
 		reads map files top to bottom, so this is the first binary file it reads)
 		is an array mesh for the walls, read at 0x0046a9e0 in the code
+
+		=============================== DR2 ONLY ===============================
+		==== 0003
+			INTERNAL NAME IN DR2: s_bg_NNN_NN_bone_pos.dat
+		first number is how many names, after that it's just offsets and the last
+		offset is a string array ,seems to be a K=V where K is the name and
+		V is a struct, so Dictionary<string, struct>
 	*/	
 
 		public struct Room {
