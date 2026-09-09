@@ -76,15 +76,24 @@ namespace DanganFurniture {
 				}
 			}
 			
+			// TODO: Don't forget to change these once we get unions
 			switch (PrintMode) {
 				default:
 				case PrintModes.JsonSerialized:
 					Console.Clear();
-					Print.JsonSerializedPrint(SelectedGame, EyekeeaShowroom);
+					if (SelectedGame != GameID.DRV3) {
+						Print.JsonSerializedPrint(EyekeeaShowroom);
+					} else {
+						Print.JsonSerializedPrint(EyekeeaShowroomV3);
+					}
 					return;
 				case PrintModes.LazyGodot:
 					Console.Clear();
-					Print.LazyGodotPrint(SelectedGame, EyekeeaShowroom);
+					if (SelectedGame != GameID.DRV3) {
+						Print.LazyGodotPrint(EyekeeaShowroom);
+					} else {
+						Print.LazyGodotPrint(EyekeeaShowroomV3);
+					}
 					return;
 			}
 		}

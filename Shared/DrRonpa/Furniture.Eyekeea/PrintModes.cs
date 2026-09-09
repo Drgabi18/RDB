@@ -7,7 +7,7 @@ namespace DanganFurniture {
 		public static string GodotExtResID = "1_awcjp";
 
 		// easier to parse the game id here 
-		public static void JsonSerializedPrint<T>(GameID Game, List<T> Everything) where T : struct {
+		public static void JsonSerializedPrint<T>(List<T> Everything) where T : struct {
 			// although not ever necesary, check if it's the right type
 			// TODO: Can we check for just T instead?
 			if (Everything.GetType() == typeof(List<HPA.Room>) ||
@@ -19,7 +19,7 @@ namespace DanganFurniture {
 				}
 		}
 
-		public static void LazyGodotPrint(GameID Game, List<HPA.Room> Everything) {
+		public static void LazyGodotPrint(List<HPA.Room> Everything) {
 			Random Randomy = new Random();
 			int Indexer = 0;
 			
