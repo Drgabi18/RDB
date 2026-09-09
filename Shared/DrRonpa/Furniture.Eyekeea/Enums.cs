@@ -37,19 +37,24 @@ namespace DanganFurniture.Enums {
 		// ============================= DR2 only =============================
 		STOP = 0,	// used in DR2 to stop reading the furniture early, like ResetScript()
 
-		// 11 - 19
+		// 10 - 21
+		// inside the code at 0x004cd200 and 0x004ca580 all he functions are 
+		// grouped together, as such, these will specially also be grouped
 		UNK_SetColors = 11,	// seems to change the world only and not the skybox
-		UNK_13 = 13,	// only uses ID, Rotation and Unk2		
 		UNK_Lighting = 12,	// sets some stuff for the unused lighting system
-		UNK_14 = 14, 
+		UNK_13 = 13,	// only uses ID, Rotation and Unk2		
+		UNK_14 = 14,
+		UNUSED_15 = 15,	// only present in code at 0x004ca768, has the same code as Type 14
 		UNK_Background = 16,	// only present in maps with skyboxes that follow you
 		
 		UNK_17 = 17,
 		UNK_18 = 18,
-		UNK_19 = 19,	// position[x] is 0.5, ID is used for something
-		 				// used in saw room and java military things
+		UNUSED_UNK_19 = 19,	// present in code but the function it calls is empty
+							// only present in java and saw rooms
+		UNUSED_20 = 20,	// only present in code at 0x004ca88d, calls empty functions, returns 1 elsewhere
+		UNUSED_21 = 21,	// only present in code at 0x004ca88d, calls empty functions, returns 1 elsewhere
 		
-		// 20 - 29
+		// 22 - 29
 		WalkInTeleport = 22,	// only used once at the end of the chapter 6 corridor
 								// sees if player is behind it (on all axis), after it gets ID,
 								// it searches -20 bytes in memory behind itself?????
