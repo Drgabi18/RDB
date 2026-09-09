@@ -16,13 +16,13 @@ using DanganFurniture.Enums;
 using DanganFurniture.Structs;
 
 namespace DanganFurniture {
-	
 	public static class Program {
 		public static GameID SelectedGame = GameID.DR1;	// default to DR1
 		static PrintModes PrintMode = PrintModes.JsonSerialized;	// default to Json
 		static string FolderPath = null;
 
-		// TODO: Combine these into 1, maybe class<T> where T: struct?
+		// TODO: When .NET 11 releases, replace the 2 lines below with this
+		// public union EyekeeaShowroom(List<HPA.Room>, List<V3.Room>);
 		public static List<HPA.Room> EyekeeaShowroom = new List<HPA.Room>();
 		public static List<V3.Room> EyekeeaShowroomV3 = new List<V3.Room>();
 		
@@ -53,14 +53,15 @@ namespace DanganFurniture {
 					
 					// DR2 only, at the moment it currently breaks DR1 parsing
 					if (SelectedGame == GameID.DR2) {
-						Showcase.AABB = Readers.ReadAABBBonesFile(Path.Combine(Folder, "0003"));
-						
-						// TODO: is there a better way than just seraching through every file
-						// 		and not using the file list inside the game? 
-						foreach (string File in Directory.GetFiles(Folder)) {
-							if (Readers.IsZColFile(File)) {
-								Showcase.Colissions = Readers.ReadZColFile(File);
-							}
+						Showcase.AABB = Readers.ReadAABBBonesFile(Path.Combine(Folder, "0003"));	
+					}
+					
+					// TODO: is there a better way than just seraching through every file
+					// 		and not using the file list inside the game? 
+					foreach (string File in Directory.GetFiles(Folder)) {
+						if (Readers.IsZColFile(File)) {
+							Showcase.Colissions = Readers.ReadZColFile(File);
+							break;
 						}
 					}
 

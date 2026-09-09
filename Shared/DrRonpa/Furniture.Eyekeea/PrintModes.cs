@@ -92,12 +92,13 @@ namespace DanganFurniture {
 					Console.WriteLine();
 				}
 			}
+			}
 
 			if (Map.Colissions.Verticies != null) {
 				foreach (HPA.Vertex vertex in Map.Colissions.Verticies) {
 					string NodeName;
 					Indexer++;
-					NodeName = String.Concat(Map.RoomName, "_Vertex_", Indexer);
+					NodeName = String.Concat("C_", Map.RoomName, "_Vertex_", Indexer);
 					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
 						NodeName, Map.RoomName, Randomy.Next());
 					Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
@@ -112,7 +113,6 @@ namespace DanganFurniture {
 					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
 					Console.WriteLine();
 				}
-			}
 			}
 
 			}
