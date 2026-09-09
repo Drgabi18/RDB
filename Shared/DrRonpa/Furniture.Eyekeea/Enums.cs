@@ -51,8 +51,11 @@ namespace DanganFurniture.Enums {
 		UNK_18 = 18,
 		UNUSED_UNK_19 = 19,	// present in code but the function it calls is empty
 							// only present in java and saw rooms
+							// code present only on the PSP version, is related to the unused light system
 		UNUSED_20 = 20,	// only present in code at 0x004ca88d, calls empty functions, returns 1 elsewhere
+						// code present only on the PSP version, is related to the unused light system
 		UNUSED_21 = 21,	// only present in code at 0x004ca88d, calls empty functions, returns 1 elsewhere
+						// code present only on the PSP version, is related to the unused light system
 		
 		// 22 - 29
 		WalkInTeleport = 22,	// only used once at the end of the chapter 6 corridor
