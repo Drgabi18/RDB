@@ -4,8 +4,6 @@ using DanganFurniture.Structs;
 
 namespace DanganFurniture {
 	public class Print {
-		public static string GodotExtResID = "1_awcjp";
-
 		// easier to parse the game id here 
 		public static void JsonSerializedPrint<T>(List<T> Everything) where T : struct {
 			// although not ever necesary, check if it's the right type
@@ -62,11 +60,11 @@ namespace DanganFurniture {
 				Console.WriteLine("gizmo_extents = 100.0");
 				Console.WriteLine();
 				// creating a bilboarded sprite
-				Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}/{1}\" unique_id={2}]",
+				Console.WriteLine("[node name=\"Label3D\" type=\"Label3D\" parent=\"{0}/{1}\" unique_id={2}]",
 					Map.RoomName, NodeName, Randomy.Next());
-				Console.WriteLine("pixel_size = 0.5");
-				Console.WriteLine("billboard = 2");
-				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
+				Console.WriteLine("pixel_size = 1.0");
+				Console.WriteLine("billboard = 1");
+				Console.WriteLine("text = \"{0}\"", Object.Type);
 				Console.WriteLine();
 			}
 
@@ -84,11 +82,11 @@ namespace DanganFurniture {
 					Console.WriteLine("gizmo_extents = 100.0");
 					Console.WriteLine();
 					// creating a bilboarded sprite
-					Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}/{1}\" unique_id={2}]",
+					Console.WriteLine("[node name=\"Label3D\" type=\"Label3D\" parent=\"{0}/{1}\" unique_id={2}]",
 						Map.RoomName, NodeName, Randomy.Next());
 					Console.WriteLine("pixel_size = 0.5");
-					Console.WriteLine("billboard = 2");
-					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
+					Console.WriteLine("billboard = 1");
+					Console.WriteLine("text = \"AABB\"");
 					Console.WriteLine();
 				}
 			}
@@ -106,11 +104,11 @@ namespace DanganFurniture {
 					Console.WriteLine("gizmo_extents = 100.0");
 					Console.WriteLine();
 					// creating a bilboarded sprite
-					Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}/{1}\" unique_id={2}]",
+					Console.WriteLine("[node name=\"Label3D\" type=\"Label3D\" parent=\"{0}/{1}\" unique_id={2}]",
 						Map.RoomName, NodeName, Randomy.Next());
-					Console.WriteLine("pixel_size = 0.5");
-					Console.WriteLine("billboard = 2");
-					Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
+					Console.WriteLine("pixel_size = 1");
+					Console.WriteLine("billboard = 1");
+					Console.WriteLine("text = \"C\"");
 					Console.WriteLine();
 				}
 			}
@@ -129,8 +127,9 @@ namespace DanganFurniture {
 			foreach (V3.Furniture Object in Map.Places) {
 				Indexer++;
 				string NodeName;
+				// useless for now
 				if (Object.ObjectName != null) {
-					NodeName = Object.ObjectName;	// DR2 ONLY
+					NodeName = Object.ObjectName;
 				} else {
 					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypesV3), Object.Type), "_Node_", Indexer);
 				}
@@ -150,11 +149,11 @@ namespace DanganFurniture {
 				Console.WriteLine("gizmo_extents = 100.0");
 				Console.WriteLine();
 				// creating a bilboarded sprite
-				Console.WriteLine("[node name=\"Sprite3D\" type=\"Sprite3D\" parent=\"{0}/{1}\" unique_id={2}]",
+				Console.WriteLine("[node name=\"Label3D\" type=\"Label3D\" parent=\"{0}/{1}\" unique_id={2}]",
 					Map.RoomName, NodeName, Randomy.Next());
-				Console.WriteLine("pixel_size = 0.5");
-				Console.WriteLine("billboard = 2");
-				Console.WriteLine("texture = ExtResource(\"{0}\")", GodotExtResID);
+				Console.WriteLine("pixel_size = 1");
+				Console.WriteLine("billboard = 1");
+				Console.WriteLine("text = \"{0}\")", Object.Type);
 				Console.WriteLine();
 			}
 			}
