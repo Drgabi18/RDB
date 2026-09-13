@@ -38,7 +38,7 @@ Parameters **aren't sequential** but are all **requiered**:
 * `-d`/`--directory`
 	* Path where the LIN files are. DR2 Novels are skipped.
 * `-m`/`--mode`
-	* `"JsonSerialized"` - prints the OpCodes into a .json file which can be easily readable. [Example](Lazy.OpCode.Reader/output/UDG_Serialized.json).
+	* `"JsonSerialized"` - prints the OpCodes into a .json file which can be easily read. [Example](Lazy.OpCode.Reader/output/UDG_Serialized.json).
 	* `"GraphViz"` - prints the OpCodes into a text file which can be easily used to print GraphViz files. [Example](Lazy.OpCode.Reader/output/udg_manual_graphviz.txt).
 	* `"Specialized"` - whatever bullshit you wanna make
 
@@ -57,19 +57,24 @@ Only parameter is the Folder with the `.ev8` files.
 Just random code I absolutley didn't write because I forgot to bring my lunch to work. Currently useless.
 
 ## Furniture.Eyekeea
-**Tool is still worked on, except this description to be outdated and the commands to not work.**
-
 I'm not even gonna lie I saw https://github.com/morgana-x/danganronpa-RoomObjectsToJson and wanted to remake it for myself. Exports "furniture" objects from map files to JSON or Godot.
 
-Accepted parameter is the 2nd (0002.bin) binary data file from any `bg_NNN` room file.
+To use this tool, you need to extract the room files using [`pak_archiver`](https://github.com/vn-tools/danganronpa-tools/blob/master/pak_archiver/pak_archiver) (e.g. `python ./pak_archiver extract ./bg_000.pak ./bg_000/`) and in the parameters, specify the directory with all the extracted room files folders.
 
-To export to Godot you need change `PrintModesEnum PrintModes` from `true` to `false`.
+Parameters **aren't sequential** but are all **requiered**:
+* `-g`/`--game`
+	* Accepted options: `"DR1"`; `"DR2"`; `"DRV3"`
+* `-d`/`--directory`
+	* Path where the extracted Room folders are. `bg_054` is currently ignored in DR2.
+* `-m`/`--mode`
+	* `"JsonSerialized"` - prints the Room data into a .json file which can be easily read. [Example](Furniture.Eyekeea/output/DR1_Furniture.json).
+	* `"LazyGodot"` - prints the Room into a Godot project to easily visualize it in 3D. [Example](Furniture.Eyekeea/output/DR1_Godot_EverySingleObjectInOneScene.tscn).
 
-**Example usage**: `./DanganFurniture "/Path/To/bg_000/0002.bin" "/Path/To/bg_001/0002.bin"`
+[Did you know Eyekeea has been linked with illegal logging in protected nature reserves (like those in my home country) in Eastern European? Are you willing to ignore this because of a cute and funny shark?](https://eia.org/blog/ikeas-romanian-wood-sourcing-woes-highlight-the-need-for-national-transparent-timber-traceability-systems-across-europe/)
 
+**Example usage**: `./DanganFurniture -g "DR2" -m "LazyGodot" -d "./Path/To/RoomsFolder" > dr2_godot.txt`
 
 # Footnotes
-
 ¹ - I haven't used AI to code anything in this entire project, everything here is writen with pure stupidity, researched by pure autism and fueled by pure lesbianism. [I am training to become a lesbian the difficulty level is pretty high I am 99% gay and 1% synesthesia](https://bsky.app/profile/blockedforthispost.bsky.social/post/3mleqlvgmoh2x)
 
 ² - How the hell do I block this word off GitHub
