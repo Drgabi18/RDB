@@ -135,6 +135,7 @@ namespace DanganFurniture {
 		}
 
 		// 0001
+		// TODO: Check if these are shorts or floats, I think they're shorts actually
 		public static HPA.OptionsFile ReadOptionsFile(this string FilePath) {
 			HPA.OptionsFile RoomInfo = new HPA.OptionsFile();
 			
@@ -143,9 +144,9 @@ namespace DanganFurniture {
 				RoomInfo.Unk1 = br.ReadInt32();
 				RoomInfo.Unk2 = br.ReadInt32();
 				RoomInfo.Unk3 = br.ReadInt32();
-				RoomInfo.CameraMode = br.ReadInt32();	// written by the same species
-				RoomInfo.Unk5 = br.ReadInt32();	// that landed on the moon and
-				RoomInfo.Unk6 = br.ReadInt32();	// ate food from sewage
+				RoomInfo.CameraMode = br.ReadInt32();
+				RoomInfo.AngleLookUpDown = br.ReadInt32();
+				RoomInfo.FOV = br.ReadInt32();
 				RoomInfo.Unk7 = br.ReadInt32();
 				RoomInfo.Unk8 = br.ReadInt32();
 			}}

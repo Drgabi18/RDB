@@ -41,14 +41,16 @@ namespace DanganFurniture.Structs {
 			public Dictionary<string, AABBStruct> AABB;	// file 0003
 			public CollisionFile Colissions; // last file before iamges
 		}
-			// 0001
+		
+		// 0001
+		// TODO: Check if these are shorts or floats, I think they're shorts actually
 		public struct OptionsFile {
 			public int Unk1;	// always mostly 1
 			public int Unk2;	// always mostly 8
 			public int Unk3;
 			public int CameraMode;
-			public int Unk5;
-			public int Unk6;
+			public int AngleLookUpDown;
+			public int FOV;
 			public int Unk7;
 			public int Unk8;
 		}

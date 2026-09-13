@@ -1,11 +1,11 @@
-﻿#region Aknowladgement
-//	This project only exists because I saw this tool by morgana
-//		https://github.com/morgana-x/danganronpa-RoomObjectsToJson
-//	that didn't work with DR2's furnitre format, so I made my own version 
-#endregion
-
-#region Sketching
+﻿#region Aknowladgement & Sketching
 /*
+	==== Aknowladgement
+	This project only exists because I saw this tool by morgana
+		https://github.com/morgana-x/danganronpa-RoomObjectsToJson
+	that didn't work with DR2's furnitre format, so I made my own version 
+
+	==== Sketching
 	Game (1, 2, 3)
 	 ∟ Rooms (Room class)
 	   ∟ List of Furniture Items (all 3 games have it) 
