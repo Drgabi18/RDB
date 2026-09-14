@@ -22,7 +22,7 @@ namespace DanganFurniture.Enums {
 					// still present only in trial maps even in DR2
 		Bilboarded = 5,	// ID is index in the world, Unk1 seems to be type, used
 						// for lights in DR1 and palm trees in DR2
-		DR1_UNK_DR2CameraLimit = 6,	// limit how much you can look around,
+		DR1_UNK_DR2_CameraLimit = 6,	// limit how much you can look around,
 									// Pos[0] DR_X_CameraCenter, Pos[1] DR_Y_CameraCenter, Pos[2] DR_Z_CameraCenter
 									// Size[0] is DR_DistanceFromCenterPoint_RoomMode, UNK2 IS FLOAT HERE, Size[1] unused
 		Interacteable_UNK1 = 7,	// Type is indexed object in world you click,
@@ -30,9 +30,9 @@ namespace DanganFurniture.Enums {
 								// purpose in DR2 where they hold the string
 		Interacteable_UNK2 = 8,	// used a lot in DR1, has a different
 								// purpose in DR2 where they hold the string
-		DR1_UNK9_DR2Mask = 9,	// no clue, name taken from bg_100 in DR2
-		DR1_UNUSED10_DR2SetBloom = 10,	// only used once in DR1 in the map after celestia's trial
-									// used in DR2 for some things
+		DR1_UNK9_DR2_Mask = 9,	// no clue, name taken from bg_100 in DR2
+		DR1_ScaleHack_DR2_SetBloom = 10,	// only used once in DR1 in the map after celestia's trial to fix columns
+											// used in DR2 to set bloom
 		
 		// ============================= DR2 only =============================
 		STOP = 0,	// used in DR2 to stop reading the furniture early, like ResetScript()
