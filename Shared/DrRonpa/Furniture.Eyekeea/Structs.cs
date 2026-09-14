@@ -67,7 +67,7 @@ namespace DanganFurniture.Structs {
 			// people expect, the mesh gets scaled by 10% afterall
 			public float[] Size;
 			public float Rotation;
-			public int Unk2;
+			public float Unk2;
 			public string? ObjectName;
 
 			// idk how to not have this since i need to specify a construct for the array sizes

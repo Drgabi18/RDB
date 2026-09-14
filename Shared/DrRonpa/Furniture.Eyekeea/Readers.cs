@@ -18,7 +18,7 @@ namespace DanganFurniture {
 			float Position[3];
 			float Size[2];
 			float Rotation;
-			u32 Unk2;
+			float Unk2;
 		};
 
 		struct FurOffsets {
@@ -72,7 +72,7 @@ namespace DanganFurniture {
 					Mobilier.Size[0] = br.ReadSingle(); 
 					Mobilier.Size[1] = br.ReadSingle(); 
 					Mobilier.Rotation = br.ReadSingle(); 
-					Mobilier.Unk2 = br.ReadInt32();
+					Mobilier.Unk2 = br.ReadSingle();
 					
 					//Console.WriteLine("iter {0} - pos {1} - next {2} - size {3}",
 					//i,
