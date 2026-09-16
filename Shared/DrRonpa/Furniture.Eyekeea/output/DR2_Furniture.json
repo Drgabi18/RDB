@@ -5,14 +5,15 @@
       "bg_000_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 393212,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -4,
+      "LookDownAngle": 5,
+      "FOV": 27
     },
     "Places": [
       {
@@ -63,7 +64,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -80,7 +81,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -97,7 +98,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       }
     ],
@@ -144,14 +145,15 @@
       "bg_001_p27t1s18.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720881,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -15,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -508,7 +510,7 @@
           0
         ],
         "Rotation": 70,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -525,7 +527,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": 1120403456,
+        "Unk2": 100,
         "ObjectName": null
       },
       {
@@ -542,7 +544,7 @@
           0
         ],
         "Rotation": 70,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -559,7 +561,7 @@
           0
         ],
         "Rotation": 70,
-        "Unk2": 1116471296,
+        "Unk2": 70,
         "ObjectName": null
       },
       {
@@ -763,7 +765,7 @@
           0
         ],
         "Rotation": 45,
-        "Unk2": 1110704128,
+        "Unk2": 45,
         "ObjectName": null
       },
       {
@@ -848,7 +850,7 @@
           0
         ],
         "Rotation": 140,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -899,7 +901,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -950,7 +952,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1104674816,
+        "Unk2": 27,
         "ObjectName": null
       },
       {
@@ -967,7 +969,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": 1086324736,
+        "Unk2": 6,
         "ObjectName": null
       },
       {
@@ -1195,14 +1197,15 @@
       "bg_002_p16a2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 65516,
-      "Unk6": 35,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 0,
+      "FOV": 35
     },
     "Places": [
       {
@@ -1338,7 +1341,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -1355,7 +1358,7 @@
           0
         ],
         "Rotation": -50,
-        "Unk2": 1112014848,
+        "Unk2": 50,
         "ObjectName": null
       },
       {
@@ -1406,7 +1409,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -1423,7 +1426,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -1440,7 +1443,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -1678,7 +1681,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -1855,14 +1858,15 @@
       "bg_003_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 50
     },
     "Places": [
       {
@@ -2015,7 +2019,7 @@
           0
         ],
         "Rotation": -36,
-        "Unk2": 1098907648,
+        "Unk2": 16,
         "ObjectName": null
       },
       {
@@ -2032,7 +2036,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1059061760,
+        "Unk2": -7,
         "ObjectName": null
       },
       {
@@ -2304,7 +2308,7 @@
           0
         ],
         "Rotation": -6,
-        "Unk2": -1048051712,
+        "Unk2": -17,
         "ObjectName": null
       },
       {
@@ -2321,7 +2325,7 @@
           0
         ],
         "Rotation": 16,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -2470,14 +2474,15 @@
       "bg_004_p12t0a0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393210,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 5,
+      "FOV": 27
     },
     "Places": [
       {
@@ -2613,7 +2618,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -2630,7 +2635,7 @@
           0
         ],
         "Rotation": -26,
-        "Unk2": 1104150528,
+        "Unk2": 26,
         "ObjectName": null
       },
       {
@@ -2647,7 +2652,7 @@
           0
         ],
         "Rotation": -14,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -2664,7 +2669,7 @@
           0
         ],
         "Rotation": -14,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -3016,14 +3021,15 @@
       "bg_005_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -4856,14 +4862,15 @@
       "bg_006_p27S14.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -5169,7 +5176,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -5203,7 +5210,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -5509,7 +5516,7 @@
           0
         ],
         "Rotation": 26,
-        "Unk2": -1043333120,
+        "Unk2": -26,
         "ObjectName": null
       },
       {
@@ -5543,7 +5550,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -5577,7 +5584,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -5809,14 +5816,15 @@
       "bg_007_p29t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -6122,7 +6130,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -6156,7 +6164,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -6479,7 +6487,7 @@
           0
         ],
         "Rotation": 26,
-        "Unk2": -1043333120,
+        "Unk2": -26,
         "ObjectName": null
       },
       {
@@ -6530,7 +6538,7 @@
           0
         ],
         "Rotation": 10,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -6564,7 +6572,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -6581,7 +6589,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -6632,7 +6640,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -6683,7 +6691,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -6700,7 +6708,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -6910,14 +6918,15 @@
       "bg_008_p08d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 45
     },
     "Places": [
       {
@@ -7019,7 +7028,7 @@
           0
         ],
         "Rotation": -90,
-        "Unk2": -1035468800,
+        "Unk2": -50,
         "ObjectName": null
       },
       {
@@ -7036,7 +7045,7 @@
           0
         ],
         "Rotation": -65,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -7053,7 +7062,7 @@
           0
         ],
         "Rotation": -70,
-        "Unk2": -1032847360,
+        "Unk2": -60,
         "ObjectName": null
       },
       {
@@ -7301,14 +7310,15 @@
       "bg_009_p08d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 327670,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 4,
+      "FOV": 30
     },
     "Places": [
       {
@@ -7410,7 +7420,7 @@
           0
         ],
         "Rotation": -18,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -7444,7 +7454,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -7756,14 +7766,15 @@
       "bg_011_p11a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393206,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 5,
+      "FOV": 25
     },
     "Places": [
       {
@@ -7916,7 +7927,7 @@
           0
         ],
         "Rotation": -71,
-        "Unk2": -1039663104,
+        "Unk2": -34,
         "ObjectName": null
       },
       {
@@ -7933,7 +7944,7 @@
           0
         ],
         "Rotation": -52,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -7950,7 +7961,7 @@
           0
         ],
         "Rotation": -62,
-        "Unk2": -1037565952,
+        "Unk2": -42,
         "ObjectName": null
       },
       {
@@ -8171,7 +8182,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       }
     ],
@@ -8270,14 +8281,15 @@
       "bg_012_p02s00t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 458746,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 6,
+      "FOV": 40
     },
     "Places": [
       {
@@ -8345,7 +8357,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -8362,7 +8374,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -8379,7 +8391,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -8513,14 +8525,15 @@
       "bg_019_p06a0t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 60
     },
     "Places": [
       {
@@ -8877,7 +8890,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1110441984,
+        "Unk2": 44,
         "ObjectName": null
       },
       {
@@ -9013,7 +9026,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1110441984,
+        "Unk2": 44,
         "ObjectName": null
       },
       {
@@ -9435,14 +9448,15 @@
       "bg_020_p11dl.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 40
     },
     "Places": [
       {
@@ -10156,7 +10170,7 @@
           0
         ],
         "Rotation": 45,
-        "Unk2": 1110704128,
+        "Unk2": 45,
         "ObjectName": null
       },
       {
@@ -10241,7 +10255,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -10389,14 +10403,15 @@
       "bg_021_p09a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720881,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -15,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -10447,7 +10462,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -11008,7 +11023,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -11042,7 +11057,7 @@
           0
         ],
         "Rotation": 50,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -11270,14 +11285,15 @@
       "bg_022_p20d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 458747,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 6,
+      "FOV": 50
     },
     "Places": [
       {
@@ -11430,7 +11446,7 @@
           0
         ],
         "Rotation": 46,
-        "Unk2": 1117782016,
+        "Unk2": 80,
         "ObjectName": null
       },
       {
@@ -11447,7 +11463,7 @@
           0
         ],
         "Rotation": 62,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -11464,7 +11480,7 @@
           0
         ],
         "Rotation": 72,
-        "Unk2": 1112539136,
+        "Unk2": 52,
         "ObjectName": null
       },
       {
@@ -11839,14 +11855,15 @@
       "bg_023_p10t3d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 327676,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -4,
+      "LookDownAngle": 4,
+      "FOV": 45
     },
     "Places": [
       {
@@ -11999,7 +12016,7 @@
           0
         ],
         "Rotation": -18,
-        "Unk2": 1099956224,
+        "Unk2": 18,
         "ObjectName": null
       },
       {
@@ -12016,7 +12033,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -12033,7 +12050,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -12274,14 +12291,15 @@
       "bg_024_p13d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 589816,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -8,
+      "LookDownAngle": 8,
+      "FOV": 50
     },
     "Places": [
       {
@@ -12434,7 +12452,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -12451,7 +12469,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -12706,7 +12724,7 @@
           0
         ],
         "Rotation": -12.4,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -12822,14 +12840,15 @@
       "bg_025_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 720846,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -50,
+      "LookDownAngle": 10,
+      "FOV": 50
     },
     "Places": [
       {
@@ -13526,7 +13545,7 @@
           0
         ],
         "Rotation": 260,
-        "Unk2": 1114636288,
+        "Unk2": 60,
         "ObjectName": null
       },
       {
@@ -13747,7 +13766,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       }
     ],
@@ -15893,14 +15912,15 @@
       "bg_026_p20d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 45
     },
     "Places": [
       {
@@ -16053,7 +16073,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -16070,7 +16090,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -16529,7 +16549,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -16597,7 +16617,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": -1065353216,
+        "Unk2": -4,
         "ObjectName": null
       },
       {
@@ -16614,7 +16634,7 @@
           0
         ],
         "Rotation": -26,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -16631,7 +16651,7 @@
           0
         ],
         "Rotation": 11,
-        "Unk2": 1086324736,
+        "Unk2": 6,
         "ObjectName": null
       },
       {
@@ -16967,14 +16987,15 @@
       "bg_028_p08t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -327686,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": -6,
+      "FOV": 30
     },
     "Places": [
       {
@@ -17059,7 +17080,7 @@
           0
         ],
         "Rotation": -31,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -17076,7 +17097,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": -1046478848,
+        "Unk2": -20,
         "ObjectName": null
       },
       {
@@ -17110,7 +17131,7 @@
           0
         ],
         "Rotation": -31,
-        "Unk2": -1040711680,
+        "Unk2": -31,
         "ObjectName": null
       },
       {
@@ -17403,14 +17424,15 @@
       "bg_029_p07a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 589816,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -8,
+      "LookDownAngle": 8,
+      "FOV": 27
     },
     "Places": [
       {
@@ -17461,7 +17483,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -17478,7 +17500,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -17665,7 +17687,7 @@
           0
         ],
         "Rotation": 1.3,
-        "Unk2": 1106614682,
+        "Unk2": 30.7,
         "ObjectName": null
       },
       {
@@ -17682,7 +17704,7 @@
           0
         ],
         "Rotation": -60,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -17807,14 +17829,15 @@
       "bg_030_p24s14.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": -917549,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -45,
+      "LookDownAngle": -15,
+      "FOV": 60
     },
     "Places": [
       {
@@ -18103,7 +18126,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -18120,7 +18143,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -18137,7 +18160,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -18154,7 +18177,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -18171,7 +18194,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1042284544,
+        "Unk2": -28,
         "ObjectName": null
       },
       {
@@ -18609,14 +18632,15 @@
       "bg_032_p11dl.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 40
     },
     "Places": [
       {
@@ -19177,7 +19201,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -19328,14 +19352,15 @@
       "bg_040_p12d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 55,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 55
     },
     "Places": [
       {
@@ -20169,14 +20194,15 @@
       "bg_041_p16a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720876,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -20227,7 +20253,7 @@
           0
         ],
         "Rotation": -55,
-        "Unk2": 1113325568,
+        "Unk2": 55,
         "ObjectName": null
       },
       {
@@ -20686,7 +20712,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -20844,14 +20870,15 @@
       "bg_042_p10a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393212,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -4,
+      "LookDownAngle": 5,
+      "FOV": 40
     },
     "Places": [
       {
@@ -20902,7 +20929,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -21276,7 +21303,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -21293,7 +21320,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -21310,7 +21337,7 @@
           0
         ],
         "Rotation": 10,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -21327,7 +21354,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -21516,14 +21543,15 @@
       "bg_043_p01r.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 1310720,
-      "Unk6": 70,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": 0,
+      "LookDownAngle": 20,
+      "FOV": 70
     },
     "Places": [
       {
@@ -21608,7 +21636,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -21625,7 +21653,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -21642,7 +21670,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -21659,7 +21687,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -21676,7 +21704,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -21693,7 +21721,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -21847,14 +21875,15 @@
       "bg_044_p15s5.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393211,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 5,
+      "FOV": 50
     },
     "Places": [
       {
@@ -21905,7 +21934,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -22449,14 +22478,15 @@
       "bg_045_p09a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393213,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": 5,
+      "FOV": 60
     },
     "Places": [
       {
@@ -22558,7 +22588,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -22575,7 +22605,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -22592,7 +22622,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -22925,14 +22955,15 @@
       "bg_046_p19s11.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393211,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 5,
+      "FOV": 30
     },
     "Places": [
       {
@@ -22966,7 +22997,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -22983,7 +23014,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -23000,7 +23031,7 @@
           0
         ],
         "Rotation": 40,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -23017,7 +23048,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -23034,7 +23065,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -23596,14 +23627,15 @@
       "bg_047_p38s14.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 655355,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 9,
+      "FOV": 50
     },
     "Places": [
       {
@@ -23909,7 +23941,7 @@
           0
         ],
         "Rotation": 25,
-        "Unk2": 1115422720,
+        "Unk2": 63,
         "ObjectName": null
       },
       {
@@ -23943,7 +23975,7 @@
           0
         ],
         "Rotation": -13,
-        "Unk2": 1109917696,
+        "Unk2": 42,
         "ObjectName": null
       },
       {
@@ -23977,7 +24009,7 @@
           0
         ],
         "Rotation": 25,
-        "Unk2": 1115422720,
+        "Unk2": 63,
         "ObjectName": null
       },
       {
@@ -24419,7 +24451,7 @@
           0
         ],
         "Rotation": 8.8,
-        "Unk2": 1086324736,
+        "Unk2": 6,
         "ObjectName": null
       },
       {
@@ -24487,7 +24519,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -24521,7 +24553,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -24538,7 +24570,7 @@
           0
         ],
         "Rotation": -18,
-        "Unk2": 1093664768,
+        "Unk2": 11,
         "ObjectName": null
       },
       {
@@ -24555,7 +24587,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1041235968,
+        "Unk2": -30,
         "ObjectName": null
       },
       {
@@ -24817,14 +24849,15 @@
       "bg_048_p41s11.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393212,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -4,
+      "LookDownAngle": 5,
+      "FOV": 50
     },
     "Places": [
       {
@@ -25079,7 +25112,7 @@
           0
         ],
         "Rotation": 25,
-        "Unk2": 1115422720,
+        "Unk2": 63,
         "ObjectName": null
       },
       {
@@ -25113,7 +25146,7 @@
           0
         ],
         "Rotation": 25,
-        "Unk2": 1115422720,
+        "Unk2": 63,
         "ObjectName": null
       },
       {
@@ -25249,7 +25282,7 @@
           0
         ],
         "Rotation": 8.8,
-        "Unk2": 1086324736,
+        "Unk2": 6,
         "ObjectName": null
       }
     ],
@@ -25335,14 +25368,15 @@
       "bg_053_p10s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 262142,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -2,
+      "LookDownAngle": 3,
+      "FOV": 30
     },
     "Places": [
       {
@@ -25444,7 +25478,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -25461,7 +25495,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -25478,7 +25512,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -25761,14 +25795,15 @@
       "bg_055_p17.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393213,
-      "Unk6": 20,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": 5,
+      "FOV": 20
     },
     "Places": [
       {
@@ -25921,7 +25956,7 @@
           0
         ],
         "Rotation": -28,
-        "Unk2": 1109131264,
+        "Unk2": 39,
         "ObjectName": null
       },
       {
@@ -25955,7 +25990,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -26312,7 +26347,7 @@
           0
         ],
         "Rotation": 26.7,
-        "Unk2": 1066192077,
+        "Unk2": 1.1,
         "ObjectName": null
       },
       {
@@ -26440,14 +26475,15 @@
       "bg_056_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -27280,7 +27316,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1090519040,
+        "Unk2": 8,
         "ObjectName": null
       },
       {
@@ -27297,7 +27333,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -27314,7 +27350,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1065353216,
+        "Unk2": -4,
         "ObjectName": null
       },
       {
@@ -27501,7 +27537,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -29452,14 +29488,15 @@
       "bg_059_p11t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -29629,7 +29666,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -29646,7 +29683,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -29663,7 +29700,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -29867,7 +29904,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -29955,14 +29992,15 @@
       "bg_060_p06d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -30064,7 +30102,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30081,7 +30119,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30098,7 +30136,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30347,14 +30385,15 @@
       "bg_061_p09t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -30456,7 +30495,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30473,7 +30512,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30490,7 +30529,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30711,7 +30750,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -30788,14 +30827,15 @@
       "bg_062_p06d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -30897,7 +30937,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30914,7 +30954,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -30931,7 +30971,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -31178,14 +31218,15 @@
       "bg_063_p07s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -31287,7 +31328,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -31304,7 +31345,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -31321,7 +31362,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -31598,14 +31639,15 @@
       "bg_064_p08a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 60
     },
     "Places": [
       {
@@ -31707,7 +31749,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -31741,7 +31783,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -31758,7 +31800,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1110704128,
+        "Unk2": 45,
         "ObjectName": null
       },
       {
@@ -32154,14 +32196,15 @@
       "bg_070_p09t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 55,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 55
     },
     "Places": [
       {
@@ -32824,7 +32867,7 @@
           0
         ],
         "Rotation": 45,
-        "Unk2": 1110704128,
+        "Unk2": 45,
         "ObjectName": null
       },
       {
@@ -32959,14 +33002,15 @@
       "bg_071_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 720881,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -15,
+      "LookDownAngle": 10,
+      "FOV": 50
     },
     "Places": [
       {
@@ -33034,7 +33078,7 @@
           0
         ],
         "Rotation": 90,
-        "Unk2": 1123024896,
+        "Unk2": 120,
         "ObjectName": null
       },
       {
@@ -33085,7 +33129,7 @@
           0
         ],
         "Rotation": 235,
-        "Unk2": 1132920832,
+        "Unk2": 270,
         "ObjectName": null
       },
       {
@@ -33357,7 +33401,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33374,7 +33418,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33391,7 +33435,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33408,7 +33452,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33425,7 +33469,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33442,7 +33486,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33459,7 +33503,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33476,7 +33520,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33493,7 +33537,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33510,7 +33554,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33527,7 +33571,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33544,7 +33588,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33561,7 +33605,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33578,7 +33622,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33595,7 +33639,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33612,7 +33656,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33629,7 +33673,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33646,7 +33690,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33663,7 +33707,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33680,7 +33724,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33697,7 +33741,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33714,7 +33758,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33731,7 +33775,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33748,7 +33792,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33765,7 +33809,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33782,7 +33826,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33799,7 +33843,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33816,7 +33860,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33833,7 +33877,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33850,7 +33894,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33867,7 +33911,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33884,7 +33928,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33901,7 +33945,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33918,7 +33962,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -33935,7 +33979,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -35278,7 +35322,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -35295,7 +35339,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -35431,7 +35475,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1073741824,
+        "Unk2": 2,
         "ObjectName": null
       },
       {
@@ -35652,7 +35696,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -35669,7 +35713,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -35686,7 +35730,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -35703,7 +35747,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -35720,7 +35764,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -35754,7 +35798,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -35822,7 +35866,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1094713344,
+        "Unk2": 12,
         "ObjectName": null
       },
       {
@@ -35839,7 +35883,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -38756,14 +38800,15 @@
       "bg_072_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -38865,7 +38910,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -38882,7 +38927,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -38899,7 +38944,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -39048,14 +39093,15 @@
       "bg_072_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -39157,7 +39203,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -39174,7 +39220,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -39191,7 +39237,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -39342,14 +39388,15 @@
       "bg_074_p06a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -39451,7 +39498,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -39485,7 +39532,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -39713,14 +39760,15 @@
       "bg_075_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 458746,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 6,
+      "FOV": 40
     },
     "Places": [
       {
@@ -39822,7 +39870,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -39856,7 +39904,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -40005,14 +40053,15 @@
       "bg_075_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 458746,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 6,
+      "FOV": 40
     },
     "Places": [
       {
@@ -40114,7 +40163,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -40148,7 +40197,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -40320,14 +40369,15 @@
       "bg_079_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 720881,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -15,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -40395,7 +40445,7 @@
           0
         ],
         "Rotation": 280,
-        "Unk2": 1134559232,
+        "Unk2": 320,
         "ObjectName": null
       },
       {
@@ -41364,7 +41414,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41381,7 +41431,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41398,7 +41448,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41415,7 +41465,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41432,7 +41482,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41449,7 +41499,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41466,7 +41516,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41483,7 +41533,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41500,7 +41550,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41517,7 +41567,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41534,7 +41584,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41551,7 +41601,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41568,7 +41618,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41585,7 +41635,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41602,7 +41652,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41619,7 +41669,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41636,7 +41686,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41653,7 +41703,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41670,7 +41720,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41687,7 +41737,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41704,7 +41754,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -41857,7 +41907,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -41874,7 +41924,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -42010,7 +42060,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1073741824,
+        "Unk2": 2,
         "ObjectName": null
       },
       {
@@ -42282,7 +42332,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -42384,7 +42434,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -42401,7 +42451,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -42418,7 +42468,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -42435,7 +42485,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -42469,7 +42519,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -42503,7 +42553,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -46882,14 +46932,15 @@
       "bg_080_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393206,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 5,
+      "FOV": 40
     },
     "Places": [
       {
@@ -46991,7 +47042,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -47008,7 +47059,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -47025,7 +47076,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -47157,14 +47208,15 @@
       "bg_080_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393206,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 5,
+      "FOV": 40
     },
     "Places": [
       {
@@ -47266,7 +47318,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -47283,7 +47335,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -47300,7 +47352,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -47448,14 +47500,15 @@
       "bg_082_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 65526,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 0,
+      "FOV": 40
     },
     "Places": [
       {
@@ -47557,7 +47610,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -47591,7 +47644,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -47740,14 +47793,15 @@
       "bg_083_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 458746,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 6,
+      "FOV": 40
     },
     "Places": [
       {
@@ -47849,7 +47903,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -47883,7 +47937,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -48032,14 +48086,15 @@
       "bg_083_p04s02.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 458746,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 6,
+      "FOV": 40
     },
     "Places": [
       {
@@ -48141,7 +48196,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -48175,7 +48230,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -48353,14 +48408,15 @@
       "bg_086_p05a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 1376250,
-      "Unk6": 80,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -6,
+      "LookDownAngle": 20,
+      "FOV": 80
     },
     "Places": [
       {
@@ -48462,7 +48518,7 @@
           0
         ],
         "Rotation": -180,
-        "Unk2": 1127481344,
+        "Unk2": 180,
         "ObjectName": null
       },
       {
@@ -48957,14 +49013,15 @@
       "bg_087_p07d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 1048536,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -40,
+      "LookDownAngle": 15,
+      "FOV": 50
     },
     "Places": [
       {
@@ -48998,7 +49055,7 @@
           0
         ],
         "Rotation": -90,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -49015,7 +49072,7 @@
           0
         ],
         "Rotation": -105,
-        "Unk2": -1030356992,
+        "Unk2": -75,
         "ObjectName": null
       },
       {
@@ -49811,14 +49868,15 @@
       "bg_089_p02d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 2621480,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": 40,
+      "LookDownAngle": 40,
+      "FOV": 30
     },
     "Places": [
       {
@@ -49852,7 +49910,7 @@
           0
         ],
         "Rotation": -101,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -49869,7 +49927,7 @@
           0
         ],
         "Rotation": -101,
-        "Unk2": -1026949120,
+        "Unk2": -101,
         "ObjectName": null
       },
       {
@@ -50039,14 +50097,15 @@
       "bg_090_p03d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 1048536,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -40,
+      "LookDownAngle": 15,
+      "FOV": 50
     },
     "Places": [
       {
@@ -50097,7 +50156,7 @@
           0
         ],
         "Rotation": -105,
-        "Unk2": -1030356992,
+        "Unk2": -75,
         "ObjectName": null
       },
       {
@@ -50359,14 +50418,15 @@
       "bg_091_p09d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 1048536,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -40,
+      "LookDownAngle": 15,
+      "FOV": 50
     },
     "Places": [
       {
@@ -50400,7 +50460,7 @@
           0
         ],
         "Rotation": -90,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -50417,7 +50477,7 @@
           0
         ],
         "Rotation": -105,
-        "Unk2": -1030356992,
+        "Unk2": -75,
         "ObjectName": null
       },
       {
@@ -51243,14 +51303,15 @@
       "bg_093_p04d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 2621480,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": 40,
+      "LookDownAngle": 40,
+      "FOV": 30
     },
     "Places": [
       {
@@ -51284,7 +51345,7 @@
           0
         ],
         "Rotation": -101,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -51301,7 +51362,7 @@
           0
         ],
         "Rotation": -101,
-        "Unk2": -1026949120,
+        "Unk2": -101,
         "ObjectName": null
       },
       {
@@ -51550,14 +51611,15 @@
       "bg_096_p31t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 1703911,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -25,
+      "LookDownAngle": 25,
+      "FOV": 60
     },
     "Places": [
       {
@@ -51608,7 +51670,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1135869952,
+        "Unk2": 360,
         "ObjectName": null
       },
       {
@@ -51625,7 +51687,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -51659,7 +51721,7 @@
           0
         ],
         "Rotation": 85,
-        "Unk2": 1119748096,
+        "Unk2": 95,
         "ObjectName": null
       },
       {
@@ -51676,7 +51738,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -51693,7 +51755,7 @@
           0
         ],
         "Rotation": 90,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -51710,7 +51772,7 @@
           0
         ],
         "Rotation": 70,
-        "Unk2": 1121714176,
+        "Unk2": 110,
         "ObjectName": null
       },
       {
@@ -51727,7 +51789,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -51744,7 +51806,7 @@
           0
         ],
         "Rotation": -90,
-        "Unk2": 1112014848,
+        "Unk2": 50,
         "ObjectName": null
       },
       {
@@ -51761,7 +51823,7 @@
           0
         ],
         "Rotation": -110,
-        "Unk2": -1031012352,
+        "Unk2": -70,
         "ObjectName": null
       },
       {
@@ -51778,7 +51840,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": 1116471296,
+        "Unk2": 70,
         "ObjectName": null
       },
       {
@@ -51795,7 +51857,7 @@
           0
         ],
         "Rotation": 230,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -51812,7 +51874,7 @@
           0
         ],
         "Rotation": 210,
-        "Unk2": 1132068864,
+        "Unk2": 250,
         "ObjectName": null
       },
       {
@@ -51829,7 +51891,7 @@
           0
         ],
         "Rotation": 5,
-        "Unk2": 1110704128,
+        "Unk2": 45,
         "ObjectName": null
       },
       {
@@ -51863,7 +51925,7 @@
           0
         ],
         "Rotation": 160,
-        "Unk2": 1128792064,
+        "Unk2": 200,
         "ObjectName": null
       },
       {
@@ -51880,7 +51942,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -51914,7 +51976,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1135869952,
+        "Unk2": 360,
         "ObjectName": null
       },
       {
@@ -51931,7 +51993,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -51965,7 +52027,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1135869952,
+        "Unk2": 360,
         "ObjectName": null
       },
       {
@@ -51982,7 +52044,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -52016,7 +52078,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1135869952,
+        "Unk2": 360,
         "ObjectName": null
       },
       {
@@ -52033,7 +52095,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -52067,7 +52129,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1135869952,
+        "Unk2": 360,
         "ObjectName": null
       },
       {
@@ -52084,7 +52146,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -53359,7 +53421,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -53376,7 +53438,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -53512,7 +53574,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -53529,7 +53591,7 @@
           0
         ],
         "Rotation": 5,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -53546,7 +53608,7 @@
           0
         ],
         "Rotation": 5,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       }
     ],
@@ -53890,14 +53952,15 @@
       "bg_097_p04s1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393211,
-      "Unk6": 30,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 5,
+      "FOV": 30
     },
     "Places": [
       {
@@ -53948,7 +54011,7 @@
           0
         ],
         "Rotation": -200,
-        "Unk2": -1027080192,
+        "Unk2": -100,
         "ObjectName": null
       },
       {
@@ -54033,7 +54096,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -54254,7 +54317,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -54473,14 +54536,15 @@
       "bg_100_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 35,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 35
     },
     "Places": [
       {
@@ -54888,7 +54952,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -54905,7 +54969,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -54939,7 +55003,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1082130432,
+        "Unk2": -1,
         "ObjectName": null
       },
       {
@@ -54973,7 +55037,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -54990,7 +55054,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -55007,7 +55071,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": -1069547520,
+        "Unk2": -3,
         "ObjectName": null
       },
       {
@@ -55024,7 +55088,7 @@
           1
         ],
         "Rotation": -1,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -56061,7 +56125,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -56146,7 +56210,7 @@
           0
         ],
         "Rotation": 200,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -56197,7 +56261,7 @@
           0
         ],
         "Rotation": 6.5,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -56214,7 +56278,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1061158912,
+        "Unk2": -6,
         "ObjectName": null
       },
       {
@@ -57888,14 +57952,15 @@
       "bg_101_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 327676,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -4,
+      "LookDownAngle": 4,
+      "FOV": 45
     },
     "Places": [
       {
@@ -58048,7 +58113,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -58286,7 +58351,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -58413,14 +58478,15 @@
       "bg_102_p23t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -58726,7 +58792,7 @@
           0
         ],
         "Rotation": -34,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -58760,7 +58826,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -59032,7 +59098,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -59066,7 +59132,7 @@
           0
         ],
         "Rotation": -16,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -59083,7 +59149,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1093664768,
+        "Unk2": 11,
         "ObjectName": null
       },
       {
@@ -59226,14 +59292,15 @@
       "bg_104_p39a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -59335,7 +59402,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -60202,7 +60269,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -60219,7 +60286,7 @@
           0
         ],
         "Rotation": 9,
-        "Unk2": 1058642330,
+        "Unk2": 0.6,
         "ObjectName": null
       },
       {
@@ -60236,7 +60303,7 @@
           0
         ],
         "Rotation": 50,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -60375,14 +60442,15 @@
       "bg_105_p13a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -60484,7 +60552,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -60807,7 +60875,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -60824,7 +60892,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -61089,14 +61157,15 @@
       "bg_106_p09s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -61198,7 +61267,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -61453,7 +61522,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -61564,14 +61633,15 @@
       "bg_107_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -61673,7 +61743,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -61962,7 +62032,7 @@
           0
         ],
         "Rotation": 8,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -62098,14 +62168,15 @@
       "bg_108_p10.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -62207,7 +62278,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -62479,7 +62550,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -62496,7 +62567,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092196762,
+        "Unk2": 9.6,
         "ObjectName": null
       },
       {
@@ -62513,7 +62584,7 @@
           0
         ],
         "Rotation": -50,
-        "Unk2": 1073741824,
+        "Unk2": 2,
         "ObjectName": null
       },
       {
@@ -62703,14 +62774,15 @@
       "bg_109_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -62812,7 +62884,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -63101,7 +63173,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -63118,7 +63190,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1085066445,
+        "Unk2": 5.4,
         "ObjectName": null
       },
       {
@@ -63135,7 +63207,7 @@
           0
         ],
         "Rotation": 28.2,
-        "Unk2": 1074580685,
+        "Unk2": 2.2,
         "ObjectName": null
       },
       {
@@ -63268,14 +63340,15 @@
       "bg_110_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -63377,7 +63450,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -63649,7 +63722,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -63771,14 +63844,15 @@
       "bg_111_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -63880,7 +63954,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -64050,7 +64124,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -64218,14 +64292,15 @@
       "bg_112_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -64327,7 +64402,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -64633,7 +64708,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -64777,14 +64852,15 @@
       "bg_113_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -64886,7 +64962,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -65175,7 +65251,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -65326,14 +65402,15 @@
       "bg_114_p08t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -65435,7 +65512,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -65656,7 +65733,7 @@
           0
         ],
         "Rotation": -15,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -65857,14 +65934,15 @@
       "bg_115_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -65966,7 +66044,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -66204,7 +66282,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -66307,14 +66385,15 @@
       "bg_116_p10.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -66416,7 +66495,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -66739,7 +66818,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -66756,7 +66835,7 @@
           0
         ],
         "Rotation": -7,
-        "Unk2": 1083598438,
+        "Unk2": 4.7,
         "ObjectName": null
       },
       {
@@ -66773,7 +66852,7 @@
           0
         ],
         "Rotation": 4.5,
-        "Unk2": 1091777331,
+        "Unk2": 9.2,
         "ObjectName": null
       },
       {
@@ -66790,7 +66869,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -66957,14 +67036,15 @@
       "bg_117_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -67066,7 +67146,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -67355,7 +67435,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -67488,14 +67568,15 @@
       "bg_118_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -67597,7 +67678,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -67835,7 +67916,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -67935,14 +68016,15 @@
       "bg_119_p07s2t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -68044,7 +68126,7 @@
           0
         ],
         "Rotation": 23,
-        "Unk2": -1043857408,
+        "Unk2": -25,
         "ObjectName": null
       },
       {
@@ -68282,7 +68364,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -68385,14 +68467,15 @@
       "bg_120_p11a0t2r.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 327676,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -4,
+      "LookDownAngle": 4,
+      "FOV": 45
     },
     "Places": [
       {
@@ -68528,7 +68611,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -68562,7 +68645,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -68579,7 +68662,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -68906,14 +68989,15 @@
       "bg_130_p14.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720866,
-      "Unk6": 80,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -30,
+      "LookDownAngle": 10,
+      "FOV": 80
     },
     "Places": [
       {
@@ -69066,7 +69150,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -69720,14 +69804,15 @@
       "bg_131_p12t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 196563,
-      "Unk6": 53,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -45,
+      "LookDownAngle": 2,
+      "FOV": 53
     },
     "Places": [
       {
@@ -69880,7 +69965,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -69914,7 +69999,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -69948,7 +70033,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1044905984,
+        "Unk2": -23,
         "ObjectName": null
       },
       {
@@ -69965,7 +70050,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -69982,7 +70067,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -70186,7 +70271,7 @@
           0
         ],
         "Rotation": 12.8,
-        "Unk2": 1110704128,
+        "Unk2": 45,
         "ObjectName": null
       },
       {
@@ -70265,14 +70350,15 @@
       "bg_132_p19s9.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720866,
-      "Unk6": 75,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -30,
+      "LookDownAngle": 10,
+      "FOV": 75
     },
     "Places": [
       {
@@ -70476,7 +70562,7 @@
           0
         ],
         "Rotation": 15,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -70493,7 +70579,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -70510,7 +70596,7 @@
           0
         ],
         "Rotation": 15,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -70697,7 +70783,7 @@
           0
         ],
         "Rotation": 155,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -70850,7 +70936,7 @@
           0
         ],
         "Rotation": 12,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -70884,7 +70970,7 @@
           0
         ],
         "Rotation": 17,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -70981,14 +71067,15 @@
       "bg_133_p07d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 65516,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 0,
+      "FOV": 60
     },
     "Places": [
       {
@@ -71073,7 +71160,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -71090,7 +71177,7 @@
           0
         ],
         "Rotation": 18,
-        "Unk2": -1052770304,
+        "Unk2": -12,
         "ObjectName": null
       },
       {
@@ -71107,7 +71194,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -71311,7 +71398,7 @@
           0
         ],
         "Rotation": 130,
-        "Unk2": -1028390912,
+        "Unk2": -90,
         "ObjectName": null
       },
       {
@@ -71671,14 +71758,15 @@
       "bg_134_p06d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393213,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": 5,
+      "FOV": 60
     },
     "Places": [
       {
@@ -71780,7 +71868,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -71797,7 +71885,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -71814,7 +71902,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -72102,14 +72190,15 @@
       "bg_135_p10a2t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 65516,
-      "Unk6": 70,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 0,
+      "FOV": 70
     },
     "Places": [
       {
@@ -72313,7 +72402,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -72330,7 +72419,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": -1039400960,
+        "Unk2": -35,
         "ObjectName": null
       },
       {
@@ -72415,7 +72504,7 @@
           0
         ],
         "Rotation": 320,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -72806,7 +72895,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": -1052770304,
+        "Unk2": -12,
         "ObjectName": null
       },
       {
@@ -72910,14 +72999,15 @@
       "bg_140_p16t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 64,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 64
     },
     "Places": [
       {
@@ -74209,7 +74299,7 @@
           0
         ],
         "Rotation": 155,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -74364,14 +74454,15 @@
       "bg_141_p16t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 64,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 64
     },
     "Places": [
       {
@@ -75680,7 +75771,7 @@
           0
         ],
         "Rotation": 155,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -75838,14 +75929,15 @@
       "bg_142_p10ld.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720871,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -25,
+      "LookDownAngle": 10,
+      "FOV": 50
     },
     "Places": [
       {
@@ -76151,7 +76243,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -76168,7 +76260,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -76542,7 +76634,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1116471296,
+        "Unk2": 70,
         "ObjectName": null
       },
       {
@@ -76695,7 +76787,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -76712,7 +76804,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1073741824,
+        "Unk2": 2,
         "ObjectName": null
       },
       {
@@ -76816,14 +76908,15 @@
       "bg_143_p13t3d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720871,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -25,
+      "LookDownAngle": 10,
+      "FOV": 50
     },
     "Places": [
       {
@@ -77333,7 +77426,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -77350,7 +77443,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -77401,7 +77494,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -77877,7 +77970,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1116471296,
+        "Unk2": 70,
         "ObjectName": null
       },
       {
@@ -78098,7 +78191,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -78115,7 +78208,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -78166,7 +78259,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1073741824,
+        "Unk2": 2,
         "ObjectName": null
       },
       {
@@ -78294,14 +78387,15 @@
       "bg_144_p07.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720866,
-      "Unk6": 55,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -30,
+      "LookDownAngle": 10,
+      "FOV": 55
     },
     "Places": [
       {
@@ -78607,7 +78701,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -78624,7 +78718,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -78743,7 +78837,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -78896,7 +78990,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -78991,14 +79085,15 @@
       "bg_145_p13a2.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720876,
-      "Unk6": 55,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 10,
+      "FOV": 55
     },
     "Places": [
       {
@@ -79287,7 +79382,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -79304,7 +79399,7 @@
           70
         ],
         "Rotation": -25,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -79321,7 +79416,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -79355,7 +79450,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -79389,7 +79484,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -79406,7 +79501,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -79423,7 +79518,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -79975,14 +80070,15 @@
       "bg_150_p11d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720881,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -15,
+      "LookDownAngle": 10,
+      "FOV": 50
     },
     "Places": [
       {
@@ -80016,7 +80112,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -80033,7 +80129,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1106247680,
+        "Unk2": 30,
         "ObjectName": null
       },
       {
@@ -80288,7 +80384,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -80305,7 +80401,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -80379,14 +80475,15 @@
       "bg_160_p14t0a0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 55,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 55
     },
     "Places": [
       {
@@ -80539,7 +80636,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -80556,7 +80653,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -80573,7 +80670,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -80590,7 +80687,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -80607,7 +80704,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -81066,7 +81163,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1028390912,
+        "Unk2": -90,
         "ObjectName": null
       },
       {
@@ -81151,7 +81248,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -81359,14 +81456,15 @@
       "bg_161_p18a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393206,
-      "Unk6": 65,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 5,
+      "FOV": 65
     },
     "Places": [
       {
@@ -81400,7 +81498,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -81417,7 +81515,7 @@
           0
         ],
         "Rotation": -25,
-        "Unk2": 1108082688,
+        "Unk2": 35,
         "ObjectName": null
       },
       {
@@ -81434,7 +81532,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -81638,7 +81736,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -81655,7 +81753,7 @@
           0
         ],
         "Rotation": 10,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -81689,7 +81787,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -81757,7 +81855,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1103626240,
+        "Unk2": 25,
         "ObjectName": null
       },
       {
@@ -81774,7 +81872,7 @@
           1
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -81791,7 +81889,7 @@
           1
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -81808,7 +81906,7 @@
           1
         ],
         "Rotation": -30,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -81825,7 +81923,7 @@
           1
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -81842,7 +81940,7 @@
           1
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82276,14 +82374,15 @@
       "bg_162_p19d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 65516,
-      "Unk6": 50,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 0,
+      "FOV": 50
     },
     "Places": [
       {
@@ -82317,7 +82416,7 @@
           0
         ],
         "Rotation": 40,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -82334,7 +82433,7 @@
           0
         ],
         "Rotation": 10,
-        "Unk2": 1116471296,
+        "Unk2": 70,
         "ObjectName": null
       },
       {
@@ -82351,7 +82450,7 @@
           0
         ],
         "Rotation": 10,
-        "Unk2": -1046478848,
+        "Unk2": -20,
         "ObjectName": null
       },
       {
@@ -82368,7 +82467,7 @@
           0
         ],
         "Rotation": 40,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -82453,7 +82552,7 @@
           1
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82470,7 +82569,7 @@
           1
         ],
         "Rotation": 20,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82487,7 +82586,7 @@
           1
         ],
         "Rotation": -15,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82504,7 +82603,7 @@
           1
         ],
         "Rotation": -45,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82521,7 +82620,7 @@
           1
         ],
         "Rotation": -50,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82538,7 +82637,7 @@
           1
         ],
         "Rotation": -75,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -82708,7 +82807,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -83032,14 +83131,15 @@
       "bg_163_p10a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720876,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -83073,7 +83173,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83090,7 +83190,7 @@
           0
         ],
         "Rotation": -50,
-        "Unk2": 1114636288,
+        "Unk2": 60,
         "ObjectName": null
       },
       {
@@ -83141,7 +83241,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83158,7 +83258,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83362,7 +83462,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -83379,7 +83479,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -83413,7 +83513,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83646,14 +83746,15 @@
       "bg_164_p10s3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720876,
-      "Unk6": 40,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 10,
+      "FOV": 40
     },
     "Places": [
       {
@@ -83687,7 +83788,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83704,7 +83805,7 @@
           0
         ],
         "Rotation": -50,
-        "Unk2": 1114636288,
+        "Unk2": 60,
         "ObjectName": null
       },
       {
@@ -83755,7 +83856,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83772,7 +83873,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -83976,7 +84077,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -83993,7 +84094,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -84027,7 +84128,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -84044,7 +84145,7 @@
           0
         ],
         "Rotation": 15,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -84061,7 +84162,7 @@
           0
         ],
         "Rotation": 15,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -84357,14 +84458,15 @@
       "bg_165_p00a0r.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 2097176,
-      "Unk6": 10,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": 24,
+      "LookDownAngle": 32,
+      "FOV": 10
     },
     "Places": [
       {
@@ -84398,7 +84500,7 @@
           0
         ],
         "Rotation": -45,
-        "Unk2": 1105723392,
+        "Unk2": 29,
         "ObjectName": null
       },
       {
@@ -84415,7 +84517,7 @@
           0
         ],
         "Rotation": -48,
-        "Unk2": -1037565952,
+        "Unk2": -42,
         "ObjectName": null
       },
       {
@@ -84551,7 +84653,7 @@
           0
         ],
         "Rotation": 5.8,
-        "Unk2": -1051197440,
+        "Unk2": -13.5,
         "ObjectName": null
       },
       {
@@ -84632,14 +84734,15 @@
       "bg_166_p30d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 589816,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -8,
+      "LookDownAngle": 8,
+      "FOV": 60
     },
     "Places": [
       {
@@ -84792,7 +84895,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -85113,14 +85216,15 @@
       "bg_167_p25s05t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 851960,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -8,
+      "LookDownAngle": 12,
+      "FOV": 60
     },
     "Places": [
       {
@@ -85273,7 +85377,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -85647,7 +85751,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1039663104,
+        "Unk2": -34,
         "ObjectName": null
       },
       {
@@ -85664,7 +85768,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1039663104,
+        "Unk2": -34,
         "ObjectName": null
       },
       {
@@ -85732,7 +85836,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       }
     ],
@@ -85879,14 +85983,15 @@
       "bg_169_p20d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 393213,
-      "Unk6": 20,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": 5,
+      "FOV": 20
     },
     "Places": [
       {
@@ -86039,7 +86144,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -86056,7 +86161,7 @@
           0
         ],
         "Rotation": -13,
-        "Unk2": 1115815936,
+        "Unk2": 65,
         "ObjectName": null
       },
       {
@@ -86073,7 +86178,7 @@
           0
         ],
         "Rotation": -13,
-        "Unk2": -1051721728,
+        "Unk2": -13,
         "ObjectName": null
       },
       {
@@ -86107,7 +86212,7 @@
           0
         ],
         "Rotation": 65,
-        "Unk2": 1115815936,
+        "Unk2": 65,
         "ObjectName": null
       },
       {
@@ -86447,7 +86552,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -86464,7 +86569,7 @@
           0
         ],
         "Rotation": -16,
-        "Unk2": 1094713344,
+        "Unk2": 12,
         "ObjectName": null
       },
       {
@@ -86481,7 +86586,7 @@
           0
         ],
         "Rotation": -8,
-        "Unk2": 1073741824,
+        "Unk2": 2,
         "ObjectName": null
       },
       {
@@ -86498,7 +86603,7 @@
           0
         ],
         "Rotation": -4.1,
-        "Unk2": 1080872141,
+        "Unk2": 3.7,
         "ObjectName": null
       },
       {
@@ -86515,7 +86620,7 @@
           0
         ],
         "Rotation": -14,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -86676,14 +86781,15 @@
       "bg_169_p02d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 4915275,
-      "Unk6": 35,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": 75,
+      "LookDownAngle": 75,
+      "FOV": 35
     },
     "Places": [
       {
@@ -86717,7 +86823,7 @@
           0
         ],
         "Rotation": -36,
-        "Unk2": 1117126656,
+        "Unk2": 75,
         "ObjectName": null
       },
       {
@@ -86734,7 +86840,7 @@
           0
         ],
         "Rotation": -36,
-        "Unk2": -1039138816,
+        "Unk2": -36,
         "ObjectName": null
       },
       {
@@ -86989,7 +87095,7 @@
           0
         ],
         "Rotation": 10.5,
-        "Unk2": 1099117363,
+        "Unk2": 16.4,
         "ObjectName": null
       },
       {
@@ -87006,7 +87112,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -87040,7 +87146,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -87057,7 +87163,7 @@
           0
         ],
         "Rotation": -11.6,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -87074,7 +87180,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1042808832,
+        "Unk2": -27,
         "ObjectName": null
       },
       {
@@ -87183,14 +87289,15 @@
       "bg_170_p12d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393206,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 5,
+      "FOV": 45
     },
     "Places": [
       {
@@ -87343,7 +87450,7 @@
           0
         ],
         "Rotation": -7,
-        "Unk2": 1088421888,
+        "Unk2": 7,
         "ObjectName": null
       },
       {
@@ -87411,7 +87518,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1086324736,
+        "Unk2": 6,
         "ObjectName": null
       },
       {
@@ -87428,7 +87535,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1086324736,
+        "Unk2": 6,
         "ObjectName": null
       },
       {
@@ -87761,14 +87868,15 @@
       "bg_171_p14a0ld.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 393188,
-      "Unk6": 55,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -28,
+      "LookDownAngle": 5,
+      "FOV": 55
     },
     "Places": [
       {
@@ -87921,7 +88029,7 @@
           0
         ],
         "Rotation": -38,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -88125,7 +88233,7 @@
           0
         ],
         "Rotation": 275,
-        "Unk2": -1028390912,
+        "Unk2": -90,
         "ObjectName": null
       },
       {
@@ -88244,7 +88352,7 @@
           100
         ],
         "Rotation": -14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -88329,7 +88437,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1046478848,
+        "Unk2": -20,
         "ObjectName": null
       },
       {
@@ -88390,14 +88498,15 @@
       "bg_172_p01a0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 851960,
-      "Unk6": 60,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -8,
+      "LookDownAngle": 12,
+      "FOV": 60
     },
     "Places": [
       {
@@ -88448,7 +88557,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -88547,14 +88656,15 @@
       "bg_180_p11t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -88877,7 +88987,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -88894,7 +89004,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -88911,7 +89021,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -89035,14 +89145,15 @@
       "bg_200_p02t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -89508,14 +89619,15 @@
       "bg_201_p04.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -89979,14 +90091,15 @@
       "bg_202_p02t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -90433,14 +90546,15 @@
       "bg_203_p02t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -90904,14 +91018,15 @@
       "bg_204_P02t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -91374,14 +91489,15 @@
       "bg_205_p01.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -91792,14 +91908,15 @@
       "bg_206_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -65539,
-      "Unk6": 32,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": -2,
+      "FOV": 32
     },
     "Places": [
       {
@@ -92105,7 +92222,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -92122,7 +92239,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -92179,14 +92296,15 @@
       "bg_207_p03t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -65539,
-      "Unk6": 32,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": -2,
+      "FOV": 32
     },
     "Places": [
       {
@@ -92492,7 +92610,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -92509,7 +92627,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -92563,14 +92681,15 @@
       "bg_208_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -65539,
-      "Unk6": 32,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": -2,
+      "FOV": 32
     },
     "Places": [
       {
@@ -92876,7 +92995,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -92893,7 +93012,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -92947,14 +93066,15 @@
       "bg_209_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -65539,
-      "Unk6": 32,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": -2,
+      "FOV": 32
     },
     "Places": [
       {
@@ -93260,7 +93380,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -93277,7 +93397,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -93331,14 +93451,15 @@
       "bg_210_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -65539,
-      "Unk6": 32,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -3,
+      "LookDownAngle": -2,
+      "FOV": 32
     },
     "Places": [
       {
@@ -93644,7 +93765,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -93661,7 +93782,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -93716,14 +93837,15 @@
       "bg_211_p01r.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": -65538,
-      "Unk6": 32,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -2,
+      "LookDownAngle": -2,
+      "FOV": 32
     },
     "Places": [
       {
@@ -94029,7 +94151,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1073741824,
+        "Unk2": -2,
         "ObjectName": null
       },
       {
@@ -94046,7 +94168,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -94063,7 +94185,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": -1052770304,
+        "Unk2": -12,
         "ObjectName": null
       },
       {
@@ -94080,7 +94202,7 @@
           0
         ],
         "Rotation": 14,
-        "Unk2": 1096810496,
+        "Unk2": 14,
         "ObjectName": null
       },
       {
@@ -94114,7 +94236,7 @@
           0
         ],
         "Rotation": -12,
-        "Unk2": -1052770304,
+        "Unk2": -12,
         "ObjectName": null
       },
       {
@@ -94173,14 +94295,15 @@
       "bg_220_p05.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -94588,7 +94711,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1085485875,
+        "Unk2": 5.6,
         "ObjectName": null
       },
       {
@@ -94645,14 +94768,15 @@
       "bg_221_p03a0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -95162,7 +95286,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -95476,14 +95600,15 @@
       "bg_222_p05t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -95899,14 +96024,15 @@
       "bg_223_p05.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -96318,14 +96444,15 @@
       "bg_250_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -96635,14 +96762,15 @@
       "bg_251_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -96924,14 +97052,15 @@
       "bg_252_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -97629,14 +97758,15 @@
       "bg_253_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -98373,14 +98503,15 @@
       "bg_254_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -98717,14 +98848,15 @@
       "bg_255_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -98894,7 +99026,7 @@
           0
         ],
         "Rotation": 280,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -99000,14 +99132,15 @@
       "bg_256_p01.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65540,
-      "Unk5": 0,
-      "Unk6": 25,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 4,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 25
     },
     "Places": [
       {
@@ -99194,7 +99327,7 @@
           0
         ],
         "Rotation": 280,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -99316,14 +99449,15 @@
       "bg_259_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -103132,14 +103266,15 @@
       "bg_260_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -106999,14 +107134,15 @@
       "bg_261_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -112805,14 +112941,15 @@
       "bg_262_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -122241,14 +122378,15 @@
       "bg_263_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -126746,14 +126884,15 @@
       "bg_264_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -130759,14 +130898,15 @@
       "bg_265_p07d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -130868,7 +131008,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -130885,7 +131025,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -130902,7 +131042,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -131216,14 +131356,15 @@
       "bg_266_p12a0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -131325,7 +131466,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -131427,7 +131568,7 @@
           0
         ],
         "Rotation": -18,
-        "Unk2": -1047527424,
+        "Unk2": -18,
         "ObjectName": null
       },
       {
@@ -131716,7 +131857,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -131733,7 +131874,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -131750,7 +131891,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1088421888,
+        "Unk2": 7,
         "ObjectName": null
       },
       {
@@ -131869,7 +132010,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1077097267,
+        "Unk2": 2.8,
         "ObjectName": null
       },
       {
@@ -132034,14 +132175,15 @@
       "bg_267_p10a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -132092,7 +132234,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -132126,7 +132268,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -132160,7 +132302,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -132347,7 +132489,7 @@
           0
         ],
         "Rotation": -30,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       }
     ],
@@ -132388,14 +132530,15 @@
       "bg_268_p09a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -132446,7 +132589,7 @@
           0
         ],
         "Rotation": -70,
-        "Unk2": -1046478848,
+        "Unk2": -20,
         "ObjectName": null
       },
       {
@@ -132480,7 +132623,7 @@
           0
         ],
         "Rotation": -60,
-        "Unk2": -1038090240,
+        "Unk2": -40,
         "ObjectName": null
       },
       {
@@ -132667,7 +132810,7 @@
           0
         ],
         "Rotation": 10,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       }
     ],
@@ -132738,14 +132881,15 @@
       "bg_269_p06d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -132796,7 +132940,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -133170,7 +133314,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       },
       {
@@ -133204,7 +133348,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1088421888,
+        "Unk2": 7,
         "ObjectName": null
       },
       {
@@ -133221,7 +133365,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       }
     ],
@@ -133392,14 +133536,15 @@
       "bg_270_p07d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -133450,7 +133595,7 @@
           0
         ],
         "Rotation": 205,
-        "Unk2": 1130758144,
+        "Unk2": 230,
         "ObjectName": null
       },
       {
@@ -133484,7 +133629,7 @@
           0
         ],
         "Rotation": 215,
-        "Unk2": 1130430464,
+        "Unk2": 225,
         "ObjectName": null
       },
       {
@@ -133686,14 +133831,15 @@
       "bg_271_p12d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -133744,7 +133890,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -133778,7 +133924,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -134102,14 +134248,15 @@
       "bg_272_p10a2t1l.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -134160,7 +134307,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": 1114636288,
+        "Unk2": 60,
         "ObjectName": null
       },
       {
@@ -134177,7 +134324,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1063256064,
+        "Unk2": -5,
         "ObjectName": null
       },
       {
@@ -134194,7 +134341,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -134228,7 +134375,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": 1112014848,
+        "Unk2": 50,
         "ObjectName": null
       },
       {
@@ -134534,7 +134681,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": -1054867456,
+        "Unk2": -10,
         "ObjectName": null
       },
       {
@@ -134681,14 +134828,15 @@
       "bg_273_p10d.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -134790,7 +134938,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -134824,7 +134972,7 @@
           0
         ],
         "Rotation": -5,
-        "Unk2": 1084227584,
+        "Unk2": 5,
         "ObjectName": null
       },
       {
@@ -135174,14 +135322,15 @@
       "bg_274_p09a2t1.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720891,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -5,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -135215,7 +135364,7 @@
           0
         ],
         "Rotation": 40,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -135232,7 +135381,7 @@
           0
         ],
         "Rotation": 15,
-        "Unk2": 1119092736,
+        "Unk2": 90,
         "ObjectName": null
       },
       {
@@ -135249,7 +135398,7 @@
           0
         ],
         "Rotation": 49,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -135266,7 +135415,7 @@
           0
         ],
         "Rotation": 49,
-        "Unk2": 1111752704,
+        "Unk2": 49,
         "ObjectName": null
       },
       {
@@ -135283,7 +135432,7 @@
           0
         ],
         "Rotation": 40,
-        "Unk2": 1077936128,
+        "Unk2": 3,
         "ObjectName": null
       },
       {
@@ -135300,7 +135449,7 @@
           0
         ],
         "Rotation": 30,
-        "Unk2": 1112014848,
+        "Unk2": 50,
         "ObjectName": null
       },
       {
@@ -135521,7 +135670,7 @@
           0
         ],
         "Rotation": 50,
-        "Unk2": -1049624576,
+        "Unk2": -15,
         "ObjectName": null
       },
       {
@@ -135647,14 +135796,15 @@
       "bg_275_p11t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -135756,7 +135906,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -135773,7 +135923,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -135790,7 +135940,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -135909,7 +136059,7 @@
           0
         ],
         "Rotation": 4,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -135926,7 +136076,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1097859072,
+        "Unk2": 15,
         "ObjectName": null
       }
     ],
@@ -136017,14 +136167,15 @@
       "bg_276_p04t3.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 1,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 1,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -136126,7 +136277,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -136143,7 +136294,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1082130432,
+        "Unk2": 4,
         "ObjectName": null
       },
       {
@@ -136160,7 +136311,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -136262,7 +136413,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1065353216,
+        "Unk2": 1,
         "ObjectName": null
       },
       {
@@ -136378,14 +136529,15 @@
       "bg_277_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65536,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 1,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -137246,14 +137398,15 @@
       "test_sea00_p00a1t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -137443,14 +137596,15 @@
       "test_sea00_p00a1t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 2,
-      "Unk5": 720886,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 0,
+      "LookUpAngle": -10,
+      "LookDownAngle": 10,
+      "FOV": 27
     },
     "Places": [
       {
@@ -137586,7 +137740,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -137603,7 +137757,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -137620,7 +137774,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -137693,14 +137847,15 @@
       "bg_602_z.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -138384,14 +138539,15 @@
       "bg_602_p00t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65538,
-      "Unk5": 0,
-      "Unk6": 70,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 2,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 70
     },
     "Places": [
       {
@@ -138527,7 +138683,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -138600,14 +138756,15 @@
       "bg_601_p02t0.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 65539,
-      "Unk5": 0,
-      "Unk6": 58,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 3,
+      "UNUSED_2": 1,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 58
     },
     "Places": [
       {
@@ -138726,7 +138883,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -138845,7 +139002,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1110441984,
+        "Unk2": 44,
         "ObjectName": null
       },
       {
@@ -139001,14 +139158,15 @@
       "bg_000_p00.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 5,
-      "Unk5": 0,
-      "Unk6": 27,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 5,
+      "UNUSED_2": 0,
+      "LookUpAngle": 0,
+      "LookDownAngle": 0,
+      "FOV": 27
     },
     "Places": [
       {
@@ -139110,7 +139268,7 @@
           0
         ],
         "Rotation": 20,
-        "Unk2": 1101004800,
+        "Unk2": 20,
         "ObjectName": null
       },
       {
@@ -139144,7 +139302,7 @@
           0
         ],
         "Rotation": 40,
-        "Unk2": 1109393408,
+        "Unk2": 40,
         "ObjectName": null
       },
       {
@@ -139178,7 +139336,7 @@
           0
         ],
         "Rotation": 60,
-        "Unk2": 1114636288,
+        "Unk2": 60,
         "ObjectName": null
       },
       {
@@ -139212,7 +139370,7 @@
           0
         ],
         "Rotation": -60,
-        "Unk2": -1032847360,
+        "Unk2": -60,
         "ObjectName": null
       },
       {
@@ -139246,7 +139404,7 @@
           0
         ],
         "Rotation": -40,
-        "Unk2": -1038090240,
+        "Unk2": -40,
         "ObjectName": null
       },
       {
@@ -139280,7 +139438,7 @@
           0
         ],
         "Rotation": -20,
-        "Unk2": -1046478848,
+        "Unk2": -20,
         "ObjectName": null
       },
       {
@@ -139297,7 +139455,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -139314,7 +139472,7 @@
           0
         ],
         "Rotation": -10,
-        "Unk2": 1092616192,
+        "Unk2": 10,
         "ObjectName": null
       },
       {
@@ -139355,14 +139513,15 @@
       "bg_220_p04.gmo"
     ],
     "Options": {
-      "Unk1": 1,
-      "Unk2": 8,
-      "Unk3": 0,
-      "Unk4": 0,
-      "Unk5": 1376236,
-      "Unk6": 45,
-      "Unk7": 0,
-      "Unk8": 0
+      "HowManyOptions": 1,
+      "HeaderSize": 8,
+      "DR1_Unused_DR2_RoomUsesAnimation": 0,
+      "UNUSED_1": 0,
+      "CameraMode": 0,
+      "UNUSED_2": 0,
+      "LookUpAngle": -20,
+      "LookDownAngle": 20,
+      "FOV": 45
     },
     "Places": [
       {
@@ -139770,7 +139929,7 @@
           0
         ],
         "Rotation": 0,
-        "Unk2": 1077097267,
+        "Unk2": 2.8,
         "ObjectName": null
       },
       {
