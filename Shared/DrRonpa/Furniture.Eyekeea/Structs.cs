@@ -43,16 +43,16 @@ namespace DanganFurniture.Structs {
 		}
 		
 		// 0001
-		// TODO: Check if these are shorts or floats, I think they're shorts actually
 		public struct OptionsFile {
-			public int Unk1;	// always mostly 1
-			public int Unk2;	// always mostly 8
-			public int Unk3;
-			public int CameraMode;
-			public int AngleLookUpDown;
-			public int FOV;
-			public int Unk7;
-			public int Unk8;
+			public int HowManyOptions;
+			public int HeaderSize;
+			public short DR1_Unused_DR2_RoomUsesAnimation;
+			public short UNUSED_1;
+			public short CameraMode;
+			public short UNUSED_2;
+			public short LookUpAngle;
+			public short LookDownAngle;
+			public short FOV;
 		}
 
 		// 0002
