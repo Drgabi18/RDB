@@ -65,7 +65,7 @@ namespace DanganFurniture {
 					HPA.Furniture Mobilier = new HPA.Furniture();
 					Mobilier.Type = br.ReadInt32();
 					Mobilier.ID = br.ReadInt32(); 
-					Mobilier.Unk1 = br.ReadUInt32(); 
+					Mobilier.Unk1 = br.ReadInt32(); 
 					Mobilier.Position[0] = br.ReadSingle(); 
 					Mobilier.Position[1] = br.ReadSingle(); 
 					Mobilier.Position[2] = br.ReadSingle(); 

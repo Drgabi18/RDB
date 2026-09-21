@@ -61,7 +61,8 @@ namespace DanganFurniture.Structs {
 								// that type at a latter point
 			public int ID;	// for characters, they are placed by how they load the LIN
 							// for world, ID maps to the respective model file you click
-			public uint Unk1;
+			public int Unk1;	// this should be signed because 0xFFFFFFFF becomes -1 which makes more sense
+			// TODO: These should be the same as DRV3, as in float1, float2, float3 etc. 
 			public float[] Position;
 			// i have a nagging suspicion that this is not size in the way most 
 			// people expect, the mesh gets scaled by 10% afterall
