@@ -22,7 +22,8 @@ namespace DanganFurniture {
 			int Indexer = 0;
 			
 			foreach (HPA.Room Map in Everything) { // lol
-			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
+			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1} groups=[{2}]]",
+				Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName]));
 			Console.WriteLine();
 
 			foreach (HPA.Furniture Object in Map.Places) {
@@ -45,8 +46,8 @@ namespace DanganFurniture {
 				Godot.Basis BasisRotation = new Godot.Basis(Godot.Vector3.Up, (float)Double.DegreesToRadians(Object.Rotation));
 				Godot.Transform3D TransformTranslaed = new Godot.Transform3D(BasisRotation, new Godot.Vector3(Object.Position[0], Object.Position[1], Object.Position[2]));
 
-				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
-					NodeName, Map.RoomName, Indexer * 100);
+				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
+					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type" + Object.Type.ToString()]));
 				Console.WriteLine("transform = Transform3D({0}, {1}, {2}, {3})",
 					// some objects have the scale 0, which would make it so we can't see anything, we should
 					// think a little more about what we should scare here lol
@@ -64,6 +65,7 @@ namespace DanganFurniture {
 					Map.RoomName, NodeName, Randomy.Next());
 				Console.WriteLine("pixel_size = 1.0");
 				Console.WriteLine("billboard = 1");
+				Console.WriteLine("no_depth_test = true");
 				Console.WriteLine("text = \"{0}\"", Object.Type);
 				Console.WriteLine();
 			}
@@ -75,8 +77,8 @@ namespace DanganFurniture {
 					string NodeName;
 					Indexer++;
 					NodeName = String.Concat(Obiect.Key, "_AABB_", Indexer);
-					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
-						NodeName, Map.RoomName, Randomy.Next());
+					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
+						NodeName, Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName, "AABB"]));
 					Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 						1, 1, 1, Obiect.Value.SixFloats[i], Obiect.Value.SixFloats[i+1], Obiect.Value.SixFloats[i+2]);
 					Console.WriteLine("gizmo_extents = 100.0");
@@ -86,6 +88,7 @@ namespace DanganFurniture {
 						Map.RoomName, NodeName, Randomy.Next());
 					Console.WriteLine("pixel_size = 0.5");
 					Console.WriteLine("billboard = 1");
+					Console.WriteLine("no_depth_test = true");
 					Console.WriteLine("text = \"AABB\"");
 					Console.WriteLine();
 				}
@@ -97,8 +100,8 @@ namespace DanganFurniture {
 					string NodeName;
 					Indexer++;
 					NodeName = String.Concat("C_", Map.RoomName, "_Vertex_", Indexer);
-					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
-						NodeName, Map.RoomName, Randomy.Next());
+					Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
+						NodeName, Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName, "Collision"]));
 					Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 						1, 1, 1, vertex.Pos[0], vertex.Pos[1], vertex.Pos[2]);
 					Console.WriteLine("gizmo_extents = 100.0");
@@ -108,6 +111,7 @@ namespace DanganFurniture {
 						Map.RoomName, NodeName, Randomy.Next());
 					Console.WriteLine("pixel_size = 1");
 					Console.WriteLine("billboard = 1");
+					Console.WriteLine("no_depth_test = true");
 					Console.WriteLine("text = \"C\"");
 					Console.WriteLine();
 				}
@@ -121,7 +125,8 @@ namespace DanganFurniture {
 			int Indexer = 0;
 			
 			foreach (V3.Room Map in Everything) { // lol
-			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1}]", Map.RoomName, Randomy.Next());
+			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1} groups=[{2}]]",
+				Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName]));
 			Console.WriteLine();
 
 			foreach (V3.Furniture Object in Map.Places) {
@@ -134,8 +139,8 @@ namespace DanganFurniture {
 					NodeName = String.Concat(Enum.GetName(typeof(FurnitureTypesV3), Object.Type), "_Node_", Indexer);
 				}
 				
-				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2}]",
-					NodeName, Map.RoomName, Indexer * 100);
+				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
+					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type" + Object.Type.ToString()]));
 				Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 					// TODO: temp
 					1, 1, 1, Object.X, Object.Y, Object.Z);
@@ -153,10 +158,21 @@ namespace DanganFurniture {
 					Map.RoomName, NodeName, Randomy.Next());
 				Console.WriteLine("pixel_size = 1");
 				Console.WriteLine("billboard = 1");
+				Console.WriteLine("no_depth_test = true");
 				Console.WriteLine("text = \"{0}\")", Object.Type);
 				Console.WriteLine();
 			}
 			}
+		}
+	}
+
+	static public class PrintUtils {
+		static public string AddQuotes(string str) {
+			return String.Concat('"', str, '"');
+		}
+
+		static public string ReturnListForGroups(string[] strs) {
+			return string.Join(", ", strs.Select(s => AddQuotes(s)).ToArray());
 		}
 	}
 }
