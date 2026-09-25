@@ -24,7 +24,8 @@ namespace DanganFurniture {
 			// godot 4.x
 			Console.WriteLine("[gd_scene format=3 uid=\"uid://{0}\"]", PrintUtils.RandomUIDGenerator());
 
-			Console.WriteLine("[node name=\"Node3D\" type=\"Node3D\" unique_id={0}]", Randomy.Next());
+			Console.WriteLine("[node name=\"{0}\" type=\"Node3D\" unique_id={1}]",
+				Enum.GetName(typeof(GameID), Program.SelectedGame), Randomy.Next());
 			Console.WriteLine();
 
 			foreach (HPA.Room Map in Everything) { // lol
@@ -133,7 +134,9 @@ namespace DanganFurniture {
 			// godot 4.x
 			Console.WriteLine("[gd_scene format=3 uid=\"uid://{0}\"]", PrintUtils.RandomUIDGenerator());
 
-			Console.WriteLine("[node name=\"Node3D\" type=\"Node3D\" unique_id={0}]", Randomy.Next());
+			Console.WriteLine("[node name=\"{0}\" type=\"Node3D\" unique_id={1}]",
+			// tehnically always V3 but fuck it whatever
+				Enum.GetName(typeof(GameID), Program.SelectedGame), Randomy.Next());
 			Console.WriteLine();
 
 			foreach (V3.Room Map in Everything) { // lol
