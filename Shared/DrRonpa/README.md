@@ -2,6 +2,8 @@
 
 A suite of C# apps I've made in order to read the binary data from some (easily reverse engineer-able) file formats in the Danganronpa series. This has already been done better by other people before me, but I wanted to learn how to do the same thing as well individual of others' research and code.
 
+Because I'm treating each project as different, there's no central library, so each project does things separately. The command line parameters for each project are described below. Most common export mode is C# objects converted to .JSON using `JsonSerializer`, some projects support an export to Godot and GraphViz as well!
+
 **You are expected to pipe the output out to a file when running any of these.**
 
 Run `dotnet build ./DrRonpa.slnx -c Release -o ./Binaries/` to build all the applications at once.
