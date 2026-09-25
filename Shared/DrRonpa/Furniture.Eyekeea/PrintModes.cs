@@ -21,6 +21,9 @@ namespace DanganFurniture {
 			Random Randomy = new Random();
 			int Indexer = 0;
 			
+			// godot 4.x
+			Console.WriteLine("[gd_scene format=3 uid=\"uid://{0}\"]", PrintUtils.RandomUIDGenerator());
+
 			foreach (HPA.Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1} groups=[{2}]]",
 				Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName]));
@@ -123,7 +126,10 @@ namespace DanganFurniture {
 		public static void LazyGodotPrint(List<V3.Room> Everything) {
 			Random Randomy = new Random();
 			int Indexer = 0;
-			
+
+			// godot 4.x
+			Console.WriteLine("[gd_scene format=3 uid=\"uid://{0}\"]", PrintUtils.RandomUIDGenerator());
+
 			foreach (V3.Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1} groups=[{2}]]",
 				Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName]));
@@ -173,6 +179,20 @@ namespace DanganFurniture {
 
 		static public string ReturnListForGroups(string[] strs) {
 			return string.Join(", ", strs.Select(s => AddQuotes(s)).ToArray());
+		}
+		
+		// i didn't check how godot does it
+		static public string RandomUIDGenerator(int Size = 13) {
+			// why do i have to do this instead of it just working on a sring
+			char[] ResultString = new char[Size];
+			string AllowedCharacters = "abcdefghijklmnopqrstuvwxyz0123456789";
+			Random RNG = new Random();
+
+			for (int i = 0; i < Size; i++)
+				ResultString[i] = AllowedCharacters[RNG.Next(AllowedCharacters.Length)];
+
+			// char[].ToString() doesn't work?????????????/
+			return new string(ResultString);
 		}
 	}
 }
