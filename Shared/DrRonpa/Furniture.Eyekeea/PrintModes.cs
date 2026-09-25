@@ -24,6 +24,9 @@ namespace DanganFurniture {
 			// godot 4.x
 			Console.WriteLine("[gd_scene format=3 uid=\"uid://{0}\"]", PrintUtils.RandomUIDGenerator());
 
+			Console.WriteLine("[node name=\"Node3D\" type=\"Node3D\" unique_id={0}]", Randomy.Next());
+			Console.WriteLine();
+
 			foreach (HPA.Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1} groups=[{2}]]",
 				Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName]));
@@ -130,6 +133,9 @@ namespace DanganFurniture {
 			// godot 4.x
 			Console.WriteLine("[gd_scene format=3 uid=\"uid://{0}\"]", PrintUtils.RandomUIDGenerator());
 
+			Console.WriteLine("[node name=\"Node3D\" type=\"Node3D\" unique_id={0}]", Randomy.Next());
+			Console.WriteLine();
+
 			foreach (V3.Room Map in Everything) { // lol
 			Console.WriteLine("[node name=\"{0}\" type=\"Node\" parent=\".\" unique_id={1} groups=[{2}]]",
 				Map.RoomName, Randomy.Next(), PrintUtils.ReturnListForGroups([Map.RoomName]));
@@ -183,7 +189,7 @@ namespace DanganFurniture {
 		
 		// i didn't check how godot does it
 		static public string RandomUIDGenerator(int Size = 13) {
-			// why do i have to do this instead of it just working on a sring
+			// why do i have to do this instead of it just working on a string
 			char[] ResultString = new char[Size];
 			string AllowedCharacters = "abcdefghijklmnopqrstuvwxyz0123456789";
 			Random RNG = new Random();
