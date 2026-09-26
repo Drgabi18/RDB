@@ -191,11 +191,13 @@ namespace DanganFurniture {
 		}
 		
 		// i didn't check how godot does it
+		// edit: i did, it gets the filename for the seed, i mean i guess use game string instead
 		static public string RandomUIDGenerator(int Size = 13) {
 			// why do i have to do this instead of it just working on a string
 			char[] ResultString = new char[Size];
 			string AllowedCharacters = "abcdefghijklmnopqrstuvwxyz0123456789";
-			Random RNG = new Random();
+			Int32.TryParse(Enum.GetName(typeof(GameID), Program.SelectedGame), out int StrToInt);
+			Random RNG = new Random(StrToInt);
 
 			for (int i = 0; i < Size; i++)
 				ResultString[i] = AllowedCharacters[RNG.Next(AllowedCharacters.Length)];
