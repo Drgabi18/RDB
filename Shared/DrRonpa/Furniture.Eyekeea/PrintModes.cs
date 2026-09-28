@@ -54,7 +54,7 @@ namespace DanganFurniture {
 				Godot.Transform3D TransformTranslaed = new Godot.Transform3D(BasisRotation, new Godot.Vector3(Object.Position[0], Object.Position[1], Object.Position[2]));
 
 				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
-					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type" + Object.Type.ToString()]));
+					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type_" + Object.Type.ToString()]));
 				Console.WriteLine("transform = Transform3D({0}, {1}, {2}, {3})",
 					// some objects have the scale 0, which would make it so we can't see anything, we should
 					// think a little more about what we should scare here lol
@@ -155,10 +155,12 @@ namespace DanganFurniture {
 				}
 				
 				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
-					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type" + Object.Type.ToString()]));
+					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type_" + Object.Type.ToString()]));
 				Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 					// TODO: temp
 					1, 1, 1, Object.X, Object.Y, Object.Z);
+				// name will be metadata because it would be impossible for me to even navigate the scene tree
+				Console.WriteLine("metadata/name = \"{0}\"", Object.LegalName);
 				Console.WriteLine("metadata/float4 = \"{0}\"", Object.float4);
 				Console.WriteLine("metadata/float5 = \"{0}\"", Object.float5);
 				Console.WriteLine("metadata/float6 = \"{0}\"", Object.float6);
