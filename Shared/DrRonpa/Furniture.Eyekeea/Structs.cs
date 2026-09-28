@@ -134,6 +134,7 @@ namespace DanganFurniture.Structs {
 		// place.dat
 		public struct Furniture {
 			public short Type;
+			public string LegalName;	// john danganronpa
 			public short ID;
 			public float X;
 			public float Y;

@@ -327,6 +327,7 @@ namespace DanganFurniture {
 				Bucatarie = new V3.Furniture[HowMuchFurniture];
 				Console.WriteLine("[DanganFurniture V3] Found {0} furniture objects", HowMuchFurniture);
 
+				// skip refer header
 				br.BaseStream.Position = 0xB0;
 
 				for (int i = 0; i < HowMuchFurniture; i++) {
@@ -334,6 +335,9 @@ namespace DanganFurniture {
 					V3.Furniture Mobilier = new V3.Furniture();
 					Mobilier.Type = br.ReadInt16();
 					Mobilier.ID = br.ReadInt16();
+					// beaside the first 2 ints, the field names here aren't actually
+					// what they say they are, they are X Y and Z only on Type 11,
+					// on other stuff like Type 5, X and Y are actually walk and run speed
 					Mobilier.X = br.ReadSingle();
 					Mobilier.Y = br.ReadSingle();
 					Mobilier.Z = br.ReadSingle();
@@ -357,13 +361,68 @@ namespace DanganFurniture {
 				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
 				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
 				
-				// TODO: Find out how the values are actually associated
+
+				// separate japanase and ascii strings, list instead of array cause i'm lazy
+				List<string> TypeNames = new List<string>();
+				List<string> AsciiStrings = new List<string>();
+				int PosOfFirstAsciiChar = 0;
+
 				/*
-				for (int i = 0; i < Bucatarie.Length; i++) {
-					Console.WriteLine(ObjectNames[i]);
-					Bucatarie[i].ObjectName = ObjectNames[i];
+				for (int i = 0; i < ObjectNames.Length; i++) {
+					// if 1st character is not ascii, then add to ascii strings
+					if (!Char.IsAscii(ObjectNames[i][0])) {
+						TypeNames[i] = ObjectNames[i];
+					} else {
+						if (PosOfFirstAsciiChar != 0) PosOfFirstAsciiChar = i;
+						AsciiStrings[i] = ObjectNames[i];
+					}
 				}
 				*/
+
+				/*
+				Dictionary<string, List<string>?> LegalNamesAndAsciiNames = new();
+				int IndexInAscii = 0;
+				string LastStoredLegalName = null;
+
+				for (int i = 0; i < ObjectNames.Length; i++) {
+					// if 1st character is not ascii, then add to ascii strings
+					if (!Char.IsAscii(ObjectNames[i][0])) {
+						IndexInAscii = 0;
+						LastStoredLegalName = ObjectNames[i];
+						
+						TypeNames[i] = ObjectNames[i];
+						LegalNamesAndAsciiNames.Add(ObjectNames[i], null);
+					} else {
+						LegalNamesAndAsciiNames.Add(LastStoredLegalName, ObjectNames[i]);
+						IndexInAscii++;
+					}
+				}
+				*/
+
+				// UGLY UGLY UGLY FUCKING UGLY FIX THIS PLEASE
+				string[,] TestNames = new string[ObjectNames.Length, 2];
+				int IndexInString = 0;
+				int IndexInAscii = 0;
+
+				for (int i = 0; i < ObjectNames.Length; i++) {
+					if (!Char.IsAscii(ObjectNames[i][0])) {
+						TestNames[IndexInString++, 0] = ObjectNames[i];
+					} else {
+						TestNames[IndexInString, IndexInAscii++] = ObjectNames[i];
+					}
+				}
+
+				// unique list of Type values so we can associate
+				// type 0 withTypeNames[0], type 2 with TypeNames[1] etc.
+				// so basically excel's =UNIQUE()
+				List<short> UniqueListOfTypes = Bucatarie.Select(b => b.Type).Distinct().ToList();
+
+				// for (int i; i < UniqueListOfTypes.)
+
+				Console.WriteLine(JsonSerializer.Serialize(UniqueListOfTypes));
+				Console.WriteLine(JsonSerializer.Serialize(TypeNames));
+				Console.WriteLine(JsonSerializer.Serialize(AsciiStrings));
+				Console.ReadLine();
 
 				Console.WriteLine();
 			}}
