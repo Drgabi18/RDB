@@ -319,6 +319,7 @@ namespace DanganFurniture {
 		// TODO: Make this return a PlaceFile instead, this should be a list just for testing
 		// place.dat
 		public static List<V3.Furniture> ReadFurnitureFile(this string FilePath) {
+			Console.WriteLine("[DanganFurniture V3] ==== This is untested code, run at your own risk ====");
 			V3.Furniture[] Bucatarie;
 
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
@@ -361,13 +362,12 @@ namespace DanganFurniture {
 				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
 				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
 				
-
+				/*
 				// separate japanase and ascii strings, list instead of array cause i'm lazy
 				List<string> TypeNames = new List<string>();
 				List<string> AsciiStrings = new List<string>();
 				int PosOfFirstAsciiChar = 0;
 
-				/*
 				for (int i = 0; i < ObjectNames.Length; i++) {
 					// if 1st character is not ascii, then add to ascii strings
 					if (!Char.IsAscii(ObjectNames[i][0])) {
@@ -400,15 +400,17 @@ namespace DanganFurniture {
 				*/
 
 				// UGLY UGLY UGLY FUCKING UGLY FIX THIS PLEASE
-				string[,] TestNames = new string[ObjectNames.Length, 2];
+				string[,] Test2_KV_Strings = new string[ObjectNames.Length, 2];
 				int IndexInString = 0;
 				int IndexInAscii = 0;
 
 				for (int i = 0; i < ObjectNames.Length; i++) {
+					Console.WriteLine(ObjectNames[i]);
 					if (!Char.IsAscii(ObjectNames[i][0])) {
-						TestNames[IndexInString++, 0] = ObjectNames[i];
+						Test2_KV_Strings[IndexInString++, 0] = ObjectNames[i];
+						IndexInAscii = 0;
 					} else {
-						TestNames[IndexInString, IndexInAscii++] = ObjectNames[i];
+						Test2_KV_Strings[IndexInString, IndexInAscii++] = ObjectNames[i];
 					}
 				}
 
@@ -417,11 +419,15 @@ namespace DanganFurniture {
 				// so basically excel's =UNIQUE()
 				List<short> UniqueListOfTypes = Bucatarie.Select(b => b.Type).Distinct().ToList();
 
-				// for (int i; i < UniqueListOfTypes.)
+				Dictionary<short, string> TestAsignLegalName = new Dictionary<short, string>();
 
+				for (int i = 0; i < UniqueListOfTypes.Count; i++) {
+					TestAsignLegalName.Add(UniqueListOfTypes[i], Test2_KV_Strings[i, 0]);
+				}
+
+				Console.WriteLine(JsonSerializer.Serialize(Test2_KV_Strings));
 				Console.WriteLine(JsonSerializer.Serialize(UniqueListOfTypes));
-				Console.WriteLine(JsonSerializer.Serialize(TypeNames));
-				Console.WriteLine(JsonSerializer.Serialize(AsciiStrings));
+				Console.WriteLine(JsonSerializer.Serialize(TestAsignLegalName));
 				Console.ReadLine();
 
 				Console.WriteLine();
@@ -435,6 +441,7 @@ namespace DanganFurniture {
 		// TODO: Is a string List what we want? Would the previous KeyValue
 		// matter in other places?
 		public static List<string> ReadTextFile(this string FilePath) {
+			Console.WriteLine("[DanganFurniture V3] ==== This is untested code, run at your own risk ====");
 			List<string> TextNames = new List<string>();
 			
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
