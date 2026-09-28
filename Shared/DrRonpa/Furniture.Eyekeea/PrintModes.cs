@@ -1,4 +1,3 @@
-using System.Text.Json;
 using DanganFurniture.Enums;
 using DanganFurniture.Structs;
 
@@ -11,8 +10,9 @@ namespace DanganFurniture {
 			if (Everything.GetType() == typeof(List<HPA.Room>) ||
 				Everything.GetType() == typeof(List<V3.Room>)) {
 				Console.WriteLine(
-					JsonSerializer.Serialize(Everything,
-					new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
+					ReaderUtils.FuckAssSerializerForEncoding(Everything)
+					// JsonSerializer.Serialize(Everything,
+					// new JsonSerializerOptions{IncludeFields = true, WriteIndented = true})
 				);
 				}
 		}

@@ -284,17 +284,13 @@ namespace DanganFurniture {
 			int HowMuchFurniture;
 			int Unk1;
 			int HeaderSize;
-			// 164 bytes that tell the game how to deserialize, "float1 f32 \x01 float2 f32 \x01 ..."
-			// ...REFER...No..A
-			// SCII...float1.f3
-			// 2...float2.f32..
-			// .float3.f32...fl
-			// oat4.f32...float
-			// 5.f32...float6.f
-			// 32...float7.f32.
-			// ..float8.f32...a
-			// scii.ASCII...int
-			// 1.s16...........
+			// 164 bytes that tell the game how to deserialize
+			// REFER 0x01
+			// No. ASCII 0x01
+			// float1 f32 0x01 float2 f32 0x01 float3 f32 0x01 float4 f32 0x01
+			// float5 f32 0x01 float6 f32 0x01 float7 f32 0x01 float8 f32 0x01
+			// ascii ASCII 0x01
+			// int1 s16
 			FurnitureObject Objects[HowMuchFurniture];
 			int HowMuchAscii;
 			string Names[HowMuchAscii]; // UTF-8 ??????????????????????????
@@ -353,82 +349,53 @@ namespace DanganFurniture {
 					Bucatarie[i] = Mobilier;
 				}
 				
-				int HowMuchUTF8 = br.ReadInt32();
-				Console.WriteLine("[DanganFurniture V3] Found {0} object descriptions", HowMuchUTF8);
+				int HowManyUTF8Strins = br.ReadInt32();
+				Console.WriteLine("[DanganFurniture V3] Found {0} object descriptions", HowManyUTF8Strins);
 
-				string[] ObjectNames = new string[HowMuchUTF8];
+				string[] ObjectNames = new string[HowManyUTF8Strins];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
 				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
-				
-				/*
-				// separate japanase and ascii strings, list instead of array cause i'm lazy
-				List<string> TypeNames = new List<string>();
-				List<string> AsciiStrings = new List<string>();
-				int PosOfFirstAsciiChar = 0;
+				Console.WriteLine("============== 1 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(ObjectNames));
 
-				for (int i = 0; i < ObjectNames.Length; i++) {
-					// if 1st character is not ascii, then add to ascii strings
-					if (!Char.IsAscii(ObjectNames[i][0])) {
-						TypeNames[i] = ObjectNames[i];
-					} else {
-						if (PosOfFirstAsciiChar != 0) PosOfFirstAsciiChar = i;
-						AsciiStrings[i] = ObjectNames[i];
-					}
-				}
-				*/
-
-				/*
-				Dictionary<string, List<string>?> LegalNamesAndAsciiNames = new();
-				int IndexInAscii = 0;
-				string LastStoredLegalName = null;
-
-				for (int i = 0; i < ObjectNames.Length; i++) {
-					// if 1st character is not ascii, then add to ascii strings
-					if (!Char.IsAscii(ObjectNames[i][0])) {
-						IndexInAscii = 0;
-						LastStoredLegalName = ObjectNames[i];
-						
-						TypeNames[i] = ObjectNames[i];
-						LegalNamesAndAsciiNames.Add(ObjectNames[i], null);
-					} else {
-						LegalNamesAndAsciiNames.Add(LastStoredLegalName, ObjectNames[i]);
-						IndexInAscii++;
-					}
-				}
-				*/
-
-				// UGLY UGLY UGLY FUCKING UGLY FIX THIS PLEASE
-				string[,] Test2_KV_Strings = new string[ObjectNames.Length, 2];
-				int IndexInString = 0;
-				int IndexInAscii = 0;
+				Dictionary<string, List<string>> LegalNameAndObjects = new Dictionary<string, List<string>>();
+				List<string> TempListForAscii = null;
 
 				for (int i = 0; i < ObjectNames.Length; i++) {
 					Console.WriteLine(ObjectNames[i]);
-					if (!Char.IsAscii(ObjectNames[i][0])) {
-						Test2_KV_Strings[IndexInString++, 0] = ObjectNames[i];
-						IndexInAscii = 0;
+					Console.WriteLine("Is Ascii: " + (ReaderUtils.IsEntireStringAscii(ObjectNames[i]) ? "Yes" : "No"));
+					// if (!Char.IsAscii(ObjectNames[i][0])) {	// BUG
+					if (!ReaderUtils.IsEntireStringAscii(ObjectNames[i])) {
+						TempListForAscii = new List<string>();
+						LegalNameAndObjects.Add(ObjectNames[i], TempListForAscii);
 					} else {
-						Test2_KV_Strings[IndexInString, IndexInAscii++] = ObjectNames[i];
+						TempListForAscii.Add(ObjectNames[i]);
 					}
 				}
+				Console.WriteLine("============== 2 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(LegalNameAndObjects));
 
 				// unique list of Type values so we can associate
 				// type 0 withTypeNames[0], type 2 with TypeNames[1] etc.
 				// so basically excel's =UNIQUE()
 				List<short> UniqueListOfTypes = Bucatarie.Select(b => b.Type).Distinct().ToList();
+				Console.WriteLine("============== 3 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(UniqueListOfTypes));
 
-				Dictionary<short, string> TestAsignLegalName = new Dictionary<short, string>();
+				Dictionary<short, string> TypeToLegalName = new Dictionary<short, string>();
 
 				for (int i = 0; i < UniqueListOfTypes.Count; i++) {
-					TestAsignLegalName.Add(UniqueListOfTypes[i], Test2_KV_Strings[i, 0]);
+					Console.WriteLine(i);
+					Console.WriteLine("ult 1:\t\t" + UniqueListOfTypes[i]);
+					Console.WriteLine("ult 2:\t\t" + LegalNameAndObjects.ElementAt(i).Key);
+					Console.WriteLine();
+					TypeToLegalName.Add(UniqueListOfTypes[i], LegalNameAndObjects.ElementAt(i).Key);
 				}
+				Console.WriteLine("============== 4 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(TypeToLegalName));
 
-				Console.WriteLine(JsonSerializer.Serialize(Test2_KV_Strings));
-				Console.WriteLine(JsonSerializer.Serialize(UniqueListOfTypes));
-				Console.WriteLine(JsonSerializer.Serialize(TestAsignLegalName));
-				Console.ReadLine();
+				// TODO: some linq magic to get type from Bucatarie to asign legal name, line below is complete shit
+				Bucatarie.Select(f => f.LegalName = TypeToLegalName.ElementAt(f.Type).Value);
+
+				// Console.ReadLine();
 
 				Console.WriteLine();
 			}}
@@ -476,8 +443,28 @@ namespace DanganFurniture {
 				}
 
 			}}
-			Console.WriteLine(JsonSerializer.Serialize(TextNames, new JsonSerializerOptions{IncludeFields = true, WriteIndented = true}));
+			Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(TextNames));
 			return TextNames;
+		}
+	}
+	public static class ReaderUtils {
+		public static string FuckAssSerializerForEncoding(object obj) {
+			JsonSerializerOptions CoolOptions = new JsonSerializerOptions();
+			// https://stackoverflow.com/a/58003397
+			CoolOptions.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
+			CoolOptions.IncludeFields = true;
+			CoolOptions.WriteIndented = true;
+			return JsonSerializer.Serialize(obj, CoolOptions);
+		}
+		
+		// i'm not gonna lie but when i write stuff like this i do feel emberassed a bit
+		// anyways, previously we did `if (!Char.IsAscii(ObjectNames[i][0]))` which
+		// broke on lines like "6章砂塵：上エフェクト非表示"
+		public static bool IsEntireStringAscii(string str) {
+			foreach (char c in str) {
+				if (!Char.IsAscii(c)) return false;
+			}
+			return true;
 		}
 	}
 }
