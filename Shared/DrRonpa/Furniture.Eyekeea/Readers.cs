@@ -361,6 +361,13 @@ namespace DanganFurniture {
 		}
 	}
 	public static class ReaderUtils {
+		public static bool IsZColFile(string FilePath) {
+			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
+			using (BinaryReader br = new(fs) ) {
+				return br.ReadUInt32() == 4293844428; // 0xCCDDEEFF casting to uint doesn't work??????????
+			}}
+		}
+
 		public static string FuckAssSerializerForEncoding(object obj) {
 			JsonSerializerOptions CoolOptions = new JsonSerializerOptions();
 			// https://stackoverflow.com/a/58003397

@@ -59,7 +59,7 @@ namespace DanganFurniture {
 					// TODO: is there a better way than just seraching through every file
 					// 		and not using the file list inside the game? 
 					foreach (string File in Directory.GetFiles(Folder)) {
-						if (Readers.IsZColFile(File)) {
+						if (ReaderUtils.IsZColFile(File)) {
 							Showcase.Colissions = Readers.ReadZColFile(File);
 							break;
 						}
