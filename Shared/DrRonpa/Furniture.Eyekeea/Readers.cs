@@ -7,6 +7,7 @@ namespace DanganFurniture {
 	public static class Readers {
 		
 		// place.dat
+		// DR2: place2.dat
 		public static List<HPA.Furniture> ReadFurnitureFile(this string FilePath) {
 			List<HPA.Furniture> Bucatarie = new List<HPA.Furniture>();
 			
@@ -49,15 +50,15 @@ namespace DanganFurniture {
 					
 					// DR1 does not store object names, thus the result for these will always be 0,
 					// we should probably do this check earlier than here and only once
-					// TODO: Decide if this should remain as it harms no one, or replace it with SelectedGame = Game.DR2
+					// TODO: Decide if this should remain as it harms no one
 					bool IsDR1 = ((NextOffsetStart - (int)br.BaseStream.Position) == 0) ? true : false;
-					if (!IsDR1) {
+					if (!IsDR1 || Program.SelectedGame == GameID.DR2) {	// redundant check for selected game, doesn't hurt anyone
 						string AttemptedString = System.Text.Encoding.ASCII.GetString(br.ReadBytes(NextOffsetStart - (int)br.BaseStream.Position));
 						//foreach (byte by in AttemptedString.ToArray()) Console.Write("{0:X2} ", by);
 						// TODO: there HAS to be a better way of doing this
 						if (AttemptedString.ToArray()[0] != 0x00) {
 							Mobilier.ObjectName = AttemptedString.TrimEnd('\u0000');
-							// Console.WriteLine("[DanganFurniture] Object {0} is {1}", i, Mobilier.ObjectName);
+							//Console.WriteLine("[DanganFurniture] Object {0} is {1}", i, Mobilier.ObjectName);
 						} else {
 							Mobilier.ObjectName = null;
 						}
@@ -72,6 +73,7 @@ namespace DanganFurniture {
 		}
 
 		// file.dat
+		// DR2: file2.dat
 		public static List<string> ReadModelNamesFile(this string FilePath) {
 			List<string> ModelNames = new List<string>();
 			
@@ -170,7 +172,7 @@ namespace DanganFurniture {
 		}
 		
 		// c.col.dat
-		// z.col.dat in DR2
+		// DR2: z.col.dat
 		public static HPA.CollisionFile ReadZColFile(this string FilePath) {
 			HPA.CollisionFile Colissions = new();
 			
@@ -213,14 +215,6 @@ namespace DanganFurniture {
 
 			return Colissions;
 		}
-
-		public static bool IsZColFile(this string FilePath) {
-			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
-			using (BinaryReader br = new(fs) ) {
-				return br.ReadUInt32() == 4293844428; // 0xCCDDEEFF casting to uint doesn't work??????????
-			}}
-		}
-
 	}
 
 	// Actually glad these were easier to understand lol
