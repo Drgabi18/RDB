@@ -1,3 +1,83 @@
+#region ImHex Patterns
+/*
+	======== DR1 and DR2 ========
+	* place.dat
+	  * usually the 3rd indexed file in the map archive (0002)
+	
+	struct Furniture {
+			u32 Type;
+			u32 ID;
+			s32 Unk1;
+			float Position[3];
+			float Size[2];
+			float Rotation;
+			float Unk2;
+	};
+
+	struct FurOffsets {
+		u32 offset;
+		Furniture entries @ offset;
+	};
+
+	struct FurnitureBank {
+		u32 count;
+		FurOffsets offsets[count];
+	};
+
+	FurnitureBank bank @ 0x0;
+
+
+	======== DR2 only ========
+
+	======== DRV3 ========
+	* Place.dat
+
+	struct FurnitureObject {
+		u16 Unk1;
+		u16 Unk2;
+		float float1;
+		float float2;
+		float float3;
+		float float4;
+		float float5;
+		float float6;
+		float float7;
+		float float8;
+		u16 Unk3;
+		u16 Unk4;
+	}
+
+	struct PlaceFile {
+		int HowMuchFurniture;
+		int Unk1;
+		int HeaderSize;
+		// 164 bytes that tell the game how to deserialize
+		// REFER 0x01 No. ASCII 0x01
+		// float1 f32 0x01 float2 f32 0x01 float3 f32 0x01 float4 f32 0x01
+		// float5 f32 0x01 float6 f32 0x01 float7 f32 0x01 float8 f32 0x01
+		// ascii ASCII 0x01 int1 s16
+		FurnitureObject Objects[HowMuchFurniture];
+		int HowMuchAscii;
+		string Names[HowMuchAscii]; // UTF-8 ??????????????????????????
+	}
+
+	* Text.dat
+	
+	struct IndexNum {int Index; int Offset;}
+		
+	struct TextFile {
+		char[8] Identifier = "STXTJPLL"
+		int Unk1;
+		int OffsetToStartOfIndexes;
+		int Unk2;
+		int HowMuchText;
+		// 8 bytes of emtpy space, maybe Unk2?
+		IndexNum Indexes[HowMuchText];
+		// and the UTF-16LE text is here :P
+	}
+*/
+#endregion
+
 namespace DanganFurniture.Structs {
 	public class HPA {
 	/*

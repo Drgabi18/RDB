@@ -3,43 +3,10 @@ using System.Text.Json;
 using DanganFurniture.Structs;
 
 namespace DanganFurniture {
-	
 	// we could maybe make like an interface for these, or make them a class lol
-
 	public static class Readers {
-		// file 0002
-		/*
-		==== ImHex Pattern
-
-		struct Furniture {
-			u32 Type;
-			u32 ID;
-			s32 Unk1;
-			float Position[3];
-			float Size[2];
-			float Rotation;
-			float Unk2;
-		};
-
-		struct FurOffsets {
-			u32 offset;
-			Furniture entries @ offset;
-		};
-
-		struct FurnitureBank {
-			u32 count;
-			FurOffsets offsets[count];
-		};
-
-		FurnitureBank bank @ 0x0;
-
-		====
-		*/
-
-		//public static T ParseDataFile<T>(string FileName) {
-		//	return new T;
-		//}
 		
+		// place.dat
 		public static List<HPA.Furniture> ReadFurnitureFile(this string FilePath) {
 			List<HPA.Furniture> Bucatarie = new List<HPA.Furniture>();
 			
@@ -104,7 +71,7 @@ namespace DanganFurniture {
 			return Bucatarie;
 		}
 
-		// 0000
+		// file.dat
 		public static List<string> ReadModelNamesFile(this string FilePath) {
 			List<string> ModelNames = new List<string>();
 			
@@ -134,7 +101,7 @@ namespace DanganFurniture {
 			return ModelNames;
 		}
 
-		// 0001
+		// opt.dat
 		public static HPA.OptionsFile ReadOptionsFile(this string FilePath) {
 			HPA.OptionsFile RoomInfo = new HPA.OptionsFile();
 			
@@ -154,12 +121,8 @@ namespace DanganFurniture {
 			return RoomInfo;
 		}
 		
-		// file 0003
-		// OH MY GOD I JUST REALIZED WHY DANGANRONPA READS FROM BACK TO FRONT
-		// IT'S BECAUSE IN FILES LIKE THIS IT STARTS WITH THE LAST ELEMENT
-		// TO GET THE NAMES AND THEN IT SERIALZIES THE REST
-		// so now the question is, in this file is everything forwards or backwards?
-		// LATER EDIT: It's normal, no back to front
+		// DR2 ONLY
+		// bone_pos.dat
 		public static Dictionary<string, HPA.AABBStruct> ReadAABBBonesFile(this string FilePath) {
 			Dictionary<string, HPA.AABBStruct> ExtraObjectData = new();
 
@@ -206,7 +169,8 @@ namespace DanganFurniture {
 			return ExtraObjectData;
 		}
 		
-		// last one before iamges
+		// c.col.dat
+		// z.col.dat in DR2
 		public static HPA.CollisionFile ReadZColFile(this string FilePath) {
 			HPA.CollisionFile Colissions = new();
 			
@@ -259,61 +223,11 @@ namespace DanganFurniture {
 
 	}
 
+	// Actually glad these were easier to understand lol
 	public static class V3Readers {
-	/*
-		Actually glad these were easier to understand lol
-	
-		================================ place.dat ================================
-		
-		struct FurnitureObject {
-			u16 Unk1;
-			u16 Unk2;
-			float float1;
-			float float2;
-			float float3;
-			float float4;
-			float float5;
-			float float6;
-			float float7;
-			float float8;
-			u16 Unk3;
-			u16 Unk4;
-		}
 
-		struct PlaceFile {
-			int HowMuchFurniture;
-			int Unk1;
-			int HeaderSize;
-			// 164 bytes that tell the game how to deserialize
-			// REFER 0x01
-			// No. ASCII 0x01
-			// float1 f32 0x01 float2 f32 0x01 float3 f32 0x01 float4 f32 0x01
-			// float5 f32 0x01 float6 f32 0x01 float7 f32 0x01 float8 f32 0x01
-			// ascii ASCII 0x01
-			// int1 s16
-			FurnitureObject Objects[HowMuchFurniture];
-			int HowMuchAscii;
-			string Names[HowMuchAscii]; // UTF-8 ??????????????????????????
-		}
-
-
-		================================ text.stx ================================
-		struct IndexNum {int Index; int Offset;}
-		
-		struct TextFile {
-			char[8] Identifier = "STXTJPLL"
-			int Unk1;
-			int OffsetToStartOfIndexes;
-			int Unk2;
-			int HowMuchText;
-			// 8 bytes of emtpy space, maybe Unk2?
-			IndexNum Indexes[HowMuchText];
-			// and the UTF-16LE text is here :P
-		}
-	*/
-
-		// TODO: Make this return a PlaceFile instead, this should be a list just for testing
-		// place.dat
+		// TODO: Decide if this should return PlaceFile instead, this should be a list just for testing
+		// Place.dat
 		public static List<V3.Furniture> ReadFurnitureFile(this string FilePath) {
 			Console.WriteLine("[DanganFurniture V3] ==== This is untested code, run at your own risk ====");
 			V3.Furniture[] Bucatarie;
@@ -349,10 +263,10 @@ namespace DanganFurniture {
 					Bucatarie[i] = Mobilier;
 				}
 				
-				int HowManyUTF8Strins = br.ReadInt32();
-				Console.WriteLine("[DanganFurniture V3] Found {0} object descriptions", HowManyUTF8Strins);
+				int HowManyUTF8Strings = br.ReadInt32();
+				Console.WriteLine("[DanganFurniture V3] Found {0} object descriptions", HowManyUTF8Strings);
 
-				string[] ObjectNames = new string[HowManyUTF8Strins];
+				string[] ObjectNames = new string[HowManyUTF8Strings];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
@@ -365,7 +279,6 @@ namespace DanganFurniture {
 				for (int i = 0; i < ObjectNames.Length; i++) {
 					Console.WriteLine(ObjectNames[i]);
 					Console.WriteLine("Is Ascii: " + (ReaderUtils.IsEntireStringAscii(ObjectNames[i]) ? "Yes" : "No"));
-					// if (!Char.IsAscii(ObjectNames[i][0])) {	// BUG
 					if (!ReaderUtils.IsEntireStringAscii(ObjectNames[i])) {
 						TempListForAscii = new List<string>();
 						LegalNameAndObjects.Add(ObjectNames[i], TempListForAscii);
