@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.Json;
+using DanganFurniture.Enums;
 using DanganFurniture.Structs;
 
 namespace DanganFurniture {
@@ -260,6 +261,8 @@ namespace DanganFurniture {
 				int HowManyUTF8Strings = br.ReadInt32();
 				Console.WriteLine("[DanganFurniture V3] Found {0} object descriptions", HowManyUTF8Strings);
 
+				// ============== 1
+				// get object names
 				string[] ObjectNames = new string[HowManyUTF8Strings];
 				byte[] StringByteArray = br.ReadBytes((int)fs.Length - (int)br.BaseStream.Position);
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
@@ -267,7 +270,9 @@ namespace DanganFurniture {
 				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
 				Console.WriteLine("============== 1 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(ObjectNames));
 
-				Dictionary<string, List<string>> LegalNameAndObjects = new Dictionary<string, List<string>>();
+				// ============== 2
+				// separate object names and asign KV ascii strings to government name
+				Dictionary<string, List<string>> GovernmentNameAndObjects = new Dictionary<string, List<string>>();
 				List<string> TempListForAscii = null;
 
 				for (int i = 0; i < ObjectNames.Length; i++) {
@@ -275,32 +280,49 @@ namespace DanganFurniture {
 					Console.WriteLine("Is Ascii: " + (ReaderUtils.IsEntireStringAscii(ObjectNames[i]) ? "Yes" : "No"));
 					if (!ReaderUtils.IsEntireStringAscii(ObjectNames[i])) {
 						TempListForAscii = new List<string>();
-						LegalNameAndObjects.Add(ObjectNames[i], TempListForAscii);
+						GovernmentNameAndObjects.Add(ObjectNames[i], TempListForAscii);
 					} else {
 						TempListForAscii.Add(ObjectNames[i]);
 					}
 				}
-				Console.WriteLine("============== 2 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(LegalNameAndObjects));
+				Console.WriteLine("============== 2 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(GovernmentNameAndObjects));
 
+				// ============== 3
 				// unique list of Type values so we can associate
 				// type 0 withTypeNames[0], type 2 with TypeNames[1] etc.
 				// so basically excel's =UNIQUE()
 				List<short> UniqueListOfTypes = Bucatarie.Select(b => b.Type).Distinct().ToList();
 				Console.WriteLine("============== 3 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(UniqueListOfTypes));
 
-				Dictionary<short, string> TypeToLegalName = new Dictionary<short, string>();
+				// ============== 4
+				// actually KV type to government name... this could be a function instead
+				Dictionary<short, string> TypeToGovernmentName = new Dictionary<short, string>();
 
 				for (int i = 0; i < UniqueListOfTypes.Count; i++) {
 					Console.WriteLine(i);
 					Console.WriteLine("ult 1:\t\t" + UniqueListOfTypes[i]);
-					Console.WriteLine("ult 2:\t\t" + LegalNameAndObjects.ElementAt(i).Key);
+					Console.WriteLine("ult 2:\t\t" + GovernmentNameAndObjects.ElementAt(i).Key);
 					Console.WriteLine();
-					TypeToLegalName.Add(UniqueListOfTypes[i], LegalNameAndObjects.ElementAt(i).Key);
+					TypeToGovernmentName.Add(UniqueListOfTypes[i], GovernmentNameAndObjects.ElementAt(i).Key);
 				}
-				Console.WriteLine("============== 4 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(TypeToLegalName));
+				Console.WriteLine("============== 4 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(TypeToGovernmentName));
 
-				// TODO: some linq magic to get type from Bucatarie to asign legal name, line below is complete shit
-				Bucatarie.Select(f => f.LegalName = TypeToLegalName.ElementAt(f.Type).Value);
+				// ============== 5
+				// add government names to 
+				// TODO: some linq magic to get type from Bucatarie to asign government name, line below is complete shit
+				
+				// first, type 0 withTypeNames[0], type 2 with TypeNames[1] etc.
+				// not working 1
+				Bucatarie.ToList().ForEach(f => f.GovernmentName = TypeToGovernmentName.ElementAt(f.Type).Value);
+				
+				// not working 2
+				for (int i = 0; i < Bucatarie.Length; i++) {
+					Console.WriteLine(i + " -\t" + Bucatarie[i].Type + " -\t" + TypeToGovernmentName.ElementAt(Bucatarie[i].Type).Value);
+					Bucatarie[i].GovernmentName = TypeToGovernmentName.ElementAt(Bucatarie[i].Type).Value;
+				}
+
+				// second, associate each ascii name
+				// TODO
 
 				// Console.ReadLine();
 

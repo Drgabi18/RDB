@@ -160,7 +160,7 @@ namespace DanganFurniture {
 					// TODO: temp
 					1, 1, 1, Object.X, Object.Y, Object.Z);
 				// name will be metadata because it would be impossible for me to even navigate the scene tree
-				Console.WriteLine("metadata/name = \"{0}\"", Object.LegalName);
+				Console.WriteLine("metadata/name = \"{0}\"", Object.GovernmentName);
 				Console.WriteLine("metadata/float4 = \"{0}\"", Object.float4);
 				Console.WriteLine("metadata/float5 = \"{0}\"", Object.float5);
 				Console.WriteLine("metadata/float6 = \"{0}\"", Object.float6);
