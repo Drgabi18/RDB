@@ -308,17 +308,9 @@ namespace DanganFurniture {
 				Console.WriteLine("============== 4 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(TypeToGovernmentName));
 
 				// ============== 5
-				// add government names to 
-				// TODO: some linq magic to get type from Bucatarie to asign government name, line below is complete shit
-				
-				// first, type 0 withTypeNames[0], type 2 with TypeNames[1] etc.
-				// not working 1
-				Bucatarie.ToList().ForEach(f => f.GovernmentName = TypeToGovernmentName.ElementAt(f.Type).Value);
-				
-				// not working 2
+				// add government names to each object 
 				for (int i = 0; i < Bucatarie.Length; i++) {
-					Console.WriteLine(i + " -\t" + Bucatarie[i].Type + " -\t" + TypeToGovernmentName.ElementAt(Bucatarie[i].Type).Value);
-					Bucatarie[i].GovernmentName = TypeToGovernmentName.ElementAt(Bucatarie[i].Type).Value;
+					Bucatarie[i].GovernmentName = TypeToGovernmentName[Bucatarie[i].Type];
 				}
 
 				// second, associate each ascii name
