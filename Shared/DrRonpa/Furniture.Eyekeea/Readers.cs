@@ -300,8 +300,8 @@ namespace DanganFurniture {
 
 				for (int i = 0; i < UniqueListOfTypes.Count; i++) {
 					Console.WriteLine(i);
-					Console.WriteLine("ult 1:\t\t" + UniqueListOfTypes[i]);
-					Console.WriteLine("ult 2:\t\t" + GovernmentNameAndObjects.ElementAt(i).Key);
+					Console.WriteLine("assoc 1:\t\t" + UniqueListOfTypes[i]);
+					Console.WriteLine("assoc 2:\t\t" + GovernmentNameAndObjects.ElementAt(i).Key);
 					Console.WriteLine();
 					TypeToGovernmentName.Add(UniqueListOfTypes[i], GovernmentNameAndObjects.ElementAt(i).Key);
 				}
@@ -313,13 +313,33 @@ namespace DanganFurniture {
 					Bucatarie[i].GovernmentName = TypeToGovernmentName[Bucatarie[i].Type];
 				}
 
-				// second, associate each ascii name
-				// TODO
+				// second, associate each ascii name to object
+				foreach (var UniqueList in GovernmentNameAndObjects) {
+					if (UniqueList.Value.Count != 0) {
+						Console.WriteLine("{0} has names", UniqueList.Key);
+						// instead of using the type, let's just use the government name lol
+						var ListOfFoundNames = Bucatarie.Where(f => f.GovernmentName == UniqueList.Key).ToList();
+						Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(ListOfFoundNames));
+						// //foreach (V3.Furniture GoverName in ListOfFoundNames) {
+						Console.WriteLine("Size is {0} and {1}", ListOfFoundNames.Count(), UniqueList.Value.Count());
+						for (int i = 0; i < Math.Min(ListOfFoundNames.Count(), UniqueList.Value.Count()); i++) {
+							Console.Write("{0} ", i);
+							var Test123 = ListOfFoundNames[i];
+							Test123.ObjectName = UniqueList.Value[i];
+							ListOfFoundNames[i] = Test123;
+						}
+						Console.WriteLine("We exited");
+					}
+				}
 
-				// Console.ReadLine();
+				Console.ReadLine();
 
 				Console.WriteLine();
 			}}
+
+			// Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(Bucatarie.GroupBy(f => (f.GovernmentName))));
+
+			// Console.ReadLine();
 
 			// ugly lazy hack
 			return Bucatarie.ToList<V3.Furniture>();
