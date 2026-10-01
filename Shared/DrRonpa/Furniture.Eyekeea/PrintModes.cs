@@ -155,7 +155,7 @@ namespace DanganFurniture {
 				}
 				
 				Console.WriteLine("[node name=\"{0}\" type=\"Marker3D\" parent=\"{1}\" unique_id={2} groups=[{3}]]",
-					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type_" + Object.Type.ToString()]));
+					NodeName, Map.RoomName, Indexer * 100, PrintUtils.ReturnListForGroups([Map.RoomName, "Type_" + Object.Type.ToString(), Object.GovernmentName]));
 				Console.WriteLine("transform = Transform3D({0}, 0, 0, 0, {1}, 0, 0, 0, {2}, {3}, {4}, {5})",
 					// TODO: temp
 					1, 1, 1, Object.X, Object.Y, Object.Z);
@@ -176,7 +176,7 @@ namespace DanganFurniture {
 				Console.WriteLine("pixel_size = 1");
 				Console.WriteLine("billboard = 1");
 				Console.WriteLine("no_depth_test = true");
-				Console.WriteLine("text = \"{0}\")", Object.Type);
+				Console.WriteLine("text = \"{0}\"", Object.Type);
 				Console.WriteLine();
 			}
 			}
