@@ -208,7 +208,8 @@ namespace DanganFurniture.Structs {
 		public struct Room {
 			public string RoomName;	// taken from folder name
 			public List<Furniture> Places;	// place.dat
-			public List<string> ObjectNames;	// text.stx
+			public List<string> ObjectNames;	// strings resulted from place.dat
+			public List<string> TextFileStrings;	// text.stx
 		}
 
 		// place.dat

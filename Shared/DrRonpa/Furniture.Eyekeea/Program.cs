@@ -69,8 +69,9 @@ namespace DanganFurniture {
 				} else if (SelectedGame ==GameID.DRV3) {
 					V3.Room Showcase = new V3.Room();
 					Showcase.RoomName = FolderName;
-					Showcase.Places = V3Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"));
-					// Showcase.ObjectNames = V3Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
+					Showcase.Places = V3Readers.ReadFurnitureFile(Path.Combine(Folder, "place.dat"), out List<string> ResNames);
+					Showcase.ObjectNames = ResNames;
+					// Showcase.TextFileStrings = V3Readers.ReadTextFile(Path.Combine(Folder, "text.stx"));
 
 					EyekeeaShowroomV3.Add(Showcase);
 				}

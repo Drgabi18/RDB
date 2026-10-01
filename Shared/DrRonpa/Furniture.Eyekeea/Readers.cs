@@ -3,6 +3,8 @@ using System.Text.Json;
 using DanganFurniture.Enums;
 using DanganFurniture.Structs;
 
+// See `./Structs.cs` for what most of these functions deserialize
+
 namespace DanganFurniture {
 	// we could maybe make like an interface for these, or make them a class lol
 	public static class Readers {
@@ -223,8 +225,7 @@ namespace DanganFurniture {
 
 		// TODO: Decide if this should return PlaceFile instead, this should be a list just for testing
 		// Place.dat
-		public static List<V3.Furniture> ReadFurnitureFile(this string FilePath) {
-			Console.WriteLine("[DanganFurniture V3] ==== This is untested code, run at your own risk ====");
+		public static List<V3.Furniture> ReadFurnitureFile(this string FilePath, out List<string> ResObjNames) {
 			V3.Furniture[] Bucatarie;
 
 			using (FileStream fs = File.Open(FilePath, FileMode.Open)) {
@@ -268,6 +269,7 @@ namespace DanganFurniture {
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
 				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
+				ResObjNames = ObjectNames.ToList();
 				//Console.WriteLine("============== 1 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(ObjectNames));
 
 				// ============== 2
@@ -319,7 +321,7 @@ namespace DanganFurniture {
 						//Console.WriteLine("{0} has names", UniqueList.Key);
 						int Found = 0;
 
-						for (int i = 0; i < Bucatarie.Length && Found < UniqueList.Value.Count; i++) {
+						for (int i = 0; i < Bucatarie.Length && Found < UniqueList.Value.Count(); i++) {
 							if (Bucatarie[i].GovernmentName == UniqueList.Key) {
 								Bucatarie[i].ObjectName = UniqueList.Value[Found];
 								Found++;
@@ -327,6 +329,7 @@ namespace DanganFurniture {
 						}
 					}
 				}
+				//Console.WriteLine("============== 5 ==============\n");
 			}}
 
 			// Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(Bucatarie.GroupBy(f => (f.GovernmentName))));
