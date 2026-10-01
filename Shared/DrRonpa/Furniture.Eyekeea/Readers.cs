@@ -268,7 +268,7 @@ namespace DanganFurniture {
 				ObjectNames = Encoding.UTF8.GetString(StringByteArray).Split("\x00");
 				// TODO: could we maybe do this better or easier, checking if it's 0x00 does not work lol
 				ObjectNames = (from str in ObjectNames where str.Length > 0 select str).ToArray();
-				Console.WriteLine("============== 1 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(ObjectNames));
+				//Console.WriteLine("============== 1 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(ObjectNames));
 
 				// ============== 2
 				// separate object names and asign KV ascii strings to government name
@@ -276,8 +276,8 @@ namespace DanganFurniture {
 				List<string> TempListForAscii = null;
 
 				for (int i = 0; i < ObjectNames.Length; i++) {
-					Console.WriteLine(ObjectNames[i]);
-					Console.WriteLine("Is Ascii: " + (ReaderUtils.IsEntireStringAscii(ObjectNames[i]) ? "Yes" : "No"));
+					//Console.WriteLine(ObjectNames[i]);
+					//Console.WriteLine("Is Ascii: " + (ReaderUtils.IsEntireStringAscii(ObjectNames[i]) ? "Yes" : "No"));
 					if (!ReaderUtils.IsEntireStringAscii(ObjectNames[i])) {
 						TempListForAscii = new List<string>();
 						GovernmentNameAndObjects.Add(ObjectNames[i], TempListForAscii);
@@ -285,27 +285,27 @@ namespace DanganFurniture {
 						TempListForAscii.Add(ObjectNames[i]);
 					}
 				}
-				Console.WriteLine("============== 2 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(GovernmentNameAndObjects));
+				//Console.WriteLine("============== 2 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(GovernmentNameAndObjects));
 
 				// ============== 3
 				// unique list of Type values so we can associate
 				// type 0 withTypeNames[0], type 2 with TypeNames[1] etc.
 				// so basically excel's =UNIQUE()
 				List<short> UniqueListOfTypes = Bucatarie.Select(b => b.Type).Distinct().ToList();
-				Console.WriteLine("============== 3 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(UniqueListOfTypes));
+				//Console.WriteLine("============== 3 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(UniqueListOfTypes));
 
 				// ============== 4
 				// actually KV type to government name... this could be a function instead
 				Dictionary<short, string> TypeToGovernmentName = new Dictionary<short, string>();
 
 				for (int i = 0; i < UniqueListOfTypes.Count; i++) {
-					Console.WriteLine(i);
-					Console.WriteLine("assoc 1:\t\t" + UniqueListOfTypes[i]);
-					Console.WriteLine("assoc 2:\t\t" + GovernmentNameAndObjects.ElementAt(i).Key);
-					Console.WriteLine();
+					//Console.WriteLine(i);
+					//Console.WriteLine("assoc 1:\t\t" + UniqueListOfTypes[i]);
+					//Console.WriteLine("assoc 2:\t\t" + GovernmentNameAndObjects.ElementAt(i).Key);
+					//Console.WriteLine();
 					TypeToGovernmentName.Add(UniqueListOfTypes[i], GovernmentNameAndObjects.ElementAt(i).Key);
 				}
-				Console.WriteLine("============== 4 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(TypeToGovernmentName));
+				//Console.WriteLine("============== 4 ==============\n " + ReaderUtils.FuckAssSerializerForEncoding(TypeToGovernmentName));
 
 				// ============== 5
 				// add government names to each object 
@@ -316,25 +316,17 @@ namespace DanganFurniture {
 				// second, associate each ascii name to object
 				foreach (var UniqueList in GovernmentNameAndObjects) {
 					if (UniqueList.Value.Count != 0) {
-						Console.WriteLine("{0} has names", UniqueList.Key);
-						// instead of using the type, let's just use the government name lol
-						var ListOfFoundNames = Bucatarie.Where(f => f.GovernmentName == UniqueList.Key).ToList();
-						Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(ListOfFoundNames));
-						// //foreach (V3.Furniture GoverName in ListOfFoundNames) {
-						Console.WriteLine("Size is {0} and {1}", ListOfFoundNames.Count(), UniqueList.Value.Count());
-						for (int i = 0; i < Math.Min(ListOfFoundNames.Count(), UniqueList.Value.Count()); i++) {
-							Console.Write("{0} ", i);
-							var Test123 = ListOfFoundNames[i];
-							Test123.ObjectName = UniqueList.Value[i];
-							ListOfFoundNames[i] = Test123;
+						//Console.WriteLine("{0} has names", UniqueList.Key);
+						int Found = 0;
+
+						for (int i = 0; i < Bucatarie.Length && Found < UniqueList.Value.Count; i++) {
+							if (Bucatarie[i].GovernmentName == UniqueList.Key) {
+								Bucatarie[i].ObjectName = UniqueList.Value[Found];
+								Found++;
+							}
 						}
-						Console.WriteLine("We exited");
 					}
 				}
-
-				Console.ReadLine();
-
-				Console.WriteLine();
 			}}
 
 			// Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(Bucatarie.GroupBy(f => (f.GovernmentName))));
