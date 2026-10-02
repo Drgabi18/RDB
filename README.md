@@ -33,7 +33,7 @@ For the Anniversary ports where the Debug Symbols are from, I extraced them from
 * `jp.co.spike_chunsoft.DRV3.apk` - Version 1.1
 
 Several Markdown file with some text explanation documenting some aspects of the game:
-* [The Debug Menus from the PSP and Steam releases](Shared/DR1_DR2_DebugMenus.md) _(not including Android/iOS versions which have way too many)_
+* [The Debug Menus from the PSP and Steam releases](Shared/DR1_DR2_DebugMenus.md) _(not including Android/iOS versions which have way too many printfs and asserts left in the code)_
 * [DrRonpa documentation](Shared/DrRonpa/README.md)
 * [How to add the Save with the Level Select in UDG](UDG/LevelSelectSave/README.md)
 * [Confusion on how the player class in UDG is set](UDG/NightmarePlayerStruct.md)
@@ -56,22 +56,26 @@ Each file for each game is sorted individually into the folder for what title th
 ## [DrRonpa](Shared/DrRonpa/)
 [`./Shared/DrRonpa/`](Shared/DrRonpa/) is a suite of C# apps I've made in order to read the binary data from some (easily reverse engineer-able) file formats. The apps are explained in the [README file](Shared/DrRonpa/README.md)
 * `./Lazy.NonStopDebate.Reader` contains the code and output of my Lazy DAT Reader™, used to parse Nonstop/Hanron/Kokonronpa Debate Files. Results are in the .ods files inside the `././output/` folder.
-* `./Lazy.OpCode.Reader` contains the code and output of my Lazy OpCode Reader™™, used primarily for my curiosity in analysis of discrete and the weird ass structure the games have. Results are in the .json files inside the `././output/` folder.
+* `./Lazy.OpCode.Reader` contains the code and output of my Lazy OpCode Reader™™, used primarily for my curiosity in analysis of discrete and the weird ass structure the games have. Results are in the .json files inside the `./output/` folder.
 * `./TrialCamera.Exercise` contains the code of my Trial Camera Reimplementation™™™, that I absoluteley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than just to brag that I wrote it.
-* `./EV8.Parser` is a WIP Tool used to extract EV8 files from UDG.
-* `./Furniture.Eyekeea` is a tool used to export furniture objects from maps. Did you know the airport has the sun behind your back?
+* `./EV8.Parser` is a WIP Tool used to extract EV8 files from UDG. ™™™™
+* `./Furniture.Eyekeea` is a tool used to export furniture objects from maps. Did you know the airport has the sun™™™™™ behind your back?
+
+## For anyone who wants to contribute
+Don't.
+
+You are free to fork and expand on projects that already exist in this repo, but I wish that all of the work here remains mine as I wanna learn how to code better.
 
 Note that what you're seeing here is a passion project, the accuracy of some information may be low or straight up incorrect. I'm discovering stuff at the same time as of the making of the videos.
 
-I've put a restriction on myself to not look at information that would help me, information like [Spiral Framework's Spiral](https://github.com/SpiralFramework/Spiral) or [BitesizeBird's Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding) who have basically documented 5 years before me what I've discovered for the first time in the period of when I upload my videos. This is also the reason I don't look or use the Debug Symbols that much either. The joy of making these videos is discovery and learning to use the tools available to me for this, having everything in front of you isn't so fun anymore, wouldn't you agree?
+I've put a restriction on myself to not look at information that would help me, information like [Spiral Framework's Spiral](https://github.com/SpiralFramework/Spiral) or [BitesizeBird's Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding) who have basically documented 5 years before me what I've discovered for the first time in the period of when I upload my videos. This is also the reason I don't look or use the Debug Symbols that much either. The joy of making these videos is discovery and learning to use the tools available to me for this, having everything in front of you, or making a robot do the work for you for 15 minutes of fame isn't so fun anymore, wouldn't you agree?
 
 ## Acknowledgements
--# (for projects that are here on GitHub which I used, not auxiliary things like TCRF or TSR; and in the order that I used them)
 * BitesizeBird - For their [Danganronpa Modding Information](https://github.com/BitesizeBird/Danganronpa-Modding)
-* CaptainSwag101 - For creating [DRV3-Sharp](https://github.com/CaptainSwag101/DRV3-Sharp) which I used to extract files for the Super Dev Facts Pt 2 and DRV3 Chapter _test_ in the Unused Story Files video
+* CaptainSwag101 - For creating [DRV3-Sharp](https://github.com/CaptainSwag101/DRV3-Sharp) which I used to extract files for the _Super Dev Facts 2_ video and DRV3 Chapter _test_ in the _Unused Story Files_ video and... 🤫
 * [DanganBase](https://danganbase.neocities.org/)/jabbaimond - Effort in documenting other aspects which I took note and expanded upon in some parts
 * Liquid-S - For creating [DRAT](https://github.com/Liquid-S/Danganronpa-Another-Tool) which I used for repacking game files for the Sayaka Fun House joke
-* morgana-x - For creating [Danganronpa-Script-Dumps](https://github.com/morgana-x/Danganronpa-Script-Dumps) which is what lead to me making the Unused Story Files video; For creating [PakLib](https://github.com/morgana-x/PakLib) which was easier to use for unpacking; For continously updating [danganronpa-lin-compiler-v2](https://github.com/morgana-x/danganronpa-lin-compiler-v2) which is a better version than what I made and used it instead for diffing story files 
+* morgana-x - For creating [Danganronpa-Script-Dumps](https://github.com/morgana-x/Danganronpa-Script-Dumps) which is what lead to me making the _Unused Story Files_ video; For creating [PakLib](https://github.com/morgana-x/PakLib) which was easier to use for unpacking; For continously updating [danganronpa-lin-compiler-v2](https://github.com/morgana-x/danganronpa-lin-compiler-v2) which is a better version than what I made and used it instead for diffing story files; For creating [danganronpa-RoomObjectsToJson](https://github.com/morgana-x/danganronpa-RoomObjectsToJson) based of Spiral Framework's documentation, which lead me to create the [`Furniture.Eyekeea`](/Shared/DrRonpa/Furniture.Eyekeea/) project and... 🤫
 * shadow.nero - Helping me understand how the text renderer and debug text array work in-game... well in-code... as well as other interesting tidbits; also being cool and friendly.
 * Spiral Framework - For their efforts documenting the [OpCodes](https://github.com/SpiralFramework/Spiral) and many more formats the game uses, even if I sadly can't read Kotlin to know what it actually does.
 * vn-tools - For creating [danganronpa-tools](https://github.com/vn-tools/danganronpa-tools/) which I used `pak_archiver` and `wad_archiver` from in the initial first 2 episodes.

@@ -44,6 +44,8 @@ Parameters **aren't sequential** but are all **requiered**:
 	* `"GraphViz"` - prints the OpCodes into a text file which can be easily used to print GraphViz files. [Example](Lazy.OpCode.Reader/output/udg_manual_graphviz.txt).
 	* `"Specialized"` - whatever bullshit you wanna make
 
+`DEBUG_BUILD` is a compile-time flag used to print some extra stuff, set it to `true` if you want it to print more stuff.
+
 **Example usage**: `./OpCodeReader --game "DR2" -d "./Path/To/Files/" --mode "JsonSerialized"`
 
 This was already done better than me [countless](https://github.com/vn-tools/danganronpa-tools) [times](https://github.com/SpiralFramework/Spiral) [before](https://github.com/morgana-x/danganronpa-lin-compiler-v2).
@@ -61,7 +63,9 @@ Just random code I absolutley didn't write because I forgot to bring my lunch to
 ## Furniture.Eyekeea
 I'm not even gonna lie I saw https://github.com/morgana-x/danganronpa-RoomObjectsToJson and wanted to remake it for myself. Exports "furniture" objects from map files to JSON or Godot.
 
-To use this tool, you need to extract the room files using [`pak_archiver`](https://github.com/vn-tools/danganronpa-tools/blob/master/pak_archiver/pak_archiver) (e.g. `python ./pak_archiver extract ./bg_000.pak ./bg_000/`) and in the parameters, specify the directory with all the extracted room files folders.
+Prerequesite of using this tool is to get the room files extracted into a root folder, to do this:
+* **For DR1/2 (PC and PSP):** You need to extract the room files using [`pak_archiver`](https://github.com/vn-tools/danganronpa-tools/blob/master/pak_archiver/pak_archiver) (e.g. `python ./pak_archiver extract ./bg_000.pak ./bg_000/`) and in the parameters, specify the directory with all the extracted room files folders.
+* **For DRV3 (PC only):** You need to extract the files using [`DRV3-Sharp`](https://github.com/CaptainSwag101/DRV3-Sharp), the app has a special TUI which you will need to figure out. All the room files are in `./model/bg/`, just drag and drop all the files and after pressing enter the app should extract them. In the parameters specify the root folder for all the room folders.
 
 Parameters **aren't sequential** but are all **requiered**:
 * `-g`/`--game`
@@ -71,6 +75,7 @@ Parameters **aren't sequential** but are all **requiered**:
 * `-m`/`--mode`
 	* `"JsonSerialized"` - prints the Room data into a .json file which can be easily read. [Example](Furniture.Eyekeea/output/DR1_Furniture.json).
 	* `"LazyGodot"` - prints the Room into a Godot project to easily visualize it in 3D. [Example](Furniture.Eyekeea/output/DR1_Godot_EverySingleObjectInOneScene.tscn).
+	* `"V3_KV_TypeNames"` - prints the name from the game and the Type number associated with it to showcase that the game doesn't actually use the Type at all for these values. [Example](Furniture.Eyekeea/Enums.cs).
 
 [Did you know Eyekeea has been linked with illegal logging in protected nature reserves (like those in my home country) in Eastern European? Are you willing to ignore this because of a cute and funny shark?](https://eia.org/blog/ikeas-romanian-wood-sourcing-woes-highlight-the-need-for-national-transparent-timber-traceability-systems-across-europe/)
 
