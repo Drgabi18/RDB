@@ -106,30 +106,30 @@ ID222_hangar_wc.SPC	- CH5 Hangar peepee place
 ID240_casino_1f.SPC	- Casino Upper Floor
 ID241_casino_B1.SPC	- Casino Lower Floor
 
-ID247_sch_side_p.SPC	- CH1 Outdoors with Casino, Pool and Entrance to the back still locked
-ID248_elv_side_p.SPC	- CH1 Outdoors down a level, entranec to Miu and Tenko Dojo not built
-ID249_sch_side_0.SPC	- CH? Outdoors but you can now go in multiple places, pool's closed and F2 is still under construction
+ID247_sch_side_p.SPC	- Prolouge Outdoors with Casino, Pool and Entrance to the back still locked
+ID248_elv_side_p.SPC	- Prolouge Outdoors down a level, entranec to Miu and Tenko Dojo not built
+ID249_sch_side_0.SPC	- Prolouge Outdoors but you can now go in multiple places, pool's closed and F2 is still under construction
 
-ID251_elv_side_0.SPC	- CH? Outdoors but you can now go to Miu's Lab
+ID251_elv_side_0.SPC	- Prolouge Outdoors but you can now go to Miu's Lab
 ID252_backyard_c1.SPC	- CH1 The place where that fuced up flash of Gonta's face popus up lifting a manhole
 ID253_elevator_c1.SPC	- CH1 Elevator to trial
 
-ID255_sch_side_1.SPC	- CH? Outdoors but with trees cut down, Pool's still closed and F3 is still not built
-ID256_elv_side_1.SPC	- CH? Outdoors down a level, deforested and entrance to elevator has lees greenary
+ID255_sch_side_1.SPC	- CH1 Outdoors but with trees cut down, Pool's still closed and F3 is still not built
+ID256_elv_side_1.SPC	- CH1 Outdoors down a level, deforested and entrance to elevator has lees greenary
 ID257_backyard_c2.SPC	- CH2 Fucked up Gonta sprite room with less greenary
-ID258_sch_side_2.SPC	- CH3 Outdoors with even less fucked greenary, starting building on the upper levels
-ID259_elv_side_2.SPC	- CH3 Outdoors down a level, Tenko's Dojo built
+ID258_sch_side_2.SPC	- CH2 Outdoors with even less fucked greenary, starting building on the upper levels
+ID259_elv_side_2.SPC	- CH2 Outdoors down a level, Tenko's Dojo built
 
-ID262_sch_side_3.SPC	- CH? Outdoors with the final levels finished and Keeboo's Lab finished
-ID263_elv_side_3.SPC	- CH? Outdoors down a level, Keeboo's lab finished
+ID262_sch_side_3.SPC	- CH3 Outdoors with the final levels finished and Keeboo's Lab finished
+ID263_elv_side_3.SPC	- CH3 Outdoors down a level, Keeboo's lab finished
 
-ID266_sch_side_4.SPC	- CH5 Outdoors with Hangar built
-ID267_elv_side_4.SPC	- CH5 Outdoors down a level, with Hangar built
+ID266_sch_side_4.SPC	- CH4 Outdoors with Hangar built
+ID267_elv_side_4.SPC	- CH4 Outdoors down a level, with Hangar built
 
-ID270_sch_side_5.SPC	- CH6 Outdoors when Keeboo fires in all directions, can go in the back to the Cold room
-ID271_elv_side_5.SPC	- CH6 Outdoors down a level, Keeboo fight
+ID270_sch_side_5.SPC	- CH5 Outdoors when Keeboo fires in all directions, can go in the back to the Cold room
+ID271_elv_side_5.SPC	- CH5 Outdoors down a level, Keeboo fight
 ID272_backyard_c6.SPC	- CH6 Fucked up Gonta sprite room but destroyed
-ID273_elevator_c1.SPC	- CH6 Destroyed Elevator Room
+ID273_elevator_c1.SPC	- CH6 Destroyed Elevator Room (incorrectly labled as Chapter 1)
 
 ID281_casino_area_0.SPC	- Area where you walk to the Love Hotel or the casino
 
@@ -139,7 +139,7 @@ ID300_LC_01.SPC		- CH1-4 Class Trial
 ID301_LC_01s.SPC	- CH1-4 Dubstep area
 
 ID308_LC_05.SPC			- CH5 Class Trial
-ID309_LC_05s.SPC		- CH5 Dubstep area
+ID309_LC_05s.SPC		- CH5 Dubstep area (seems to be a duplicate of ID301)
 ID310_LC_06.SPC			- CH6 Class Trial
 ID311_LC_06_nico.SPC	- CH6 Class Trial with NicoNico text
 
@@ -147,7 +147,7 @@ ID330_LC_01_after.SPC	- CH1-4 After Class Trial Talk
 
 ID334_LC_05_after.SPC	- CH5 After Class Trial Talk (where Maki cries)
 ID335_LC_06_before.SPC	- CH6 Before Nico Nico Class Trial
-ID336_LC_06_after.SPC	- CH1-4 After Class Trial with NicoNico text
+ID336_LC_06_after.SPC	- CH6 After Class Trial with NicoNico text
 
 ID353_under.SPC			- CH1 Room before the stupid 2D game
 ID354_escapedeck.SPC	- CH1 Room if you finish the 2D game, CH5 Room where Kokichi shows us the exit
@@ -173,10 +173,10 @@ ID616_Private_15.SPC	- CH1 Kaede's Room, but at night
 
 ID655_lab_akamatu.SPC	- Shuici's Lab, but at night
 
-ID749_sch_side_0.SPC	- CH? Outdoors, can go anywhere but pool's closed, but at night
+ID749_sch_side_0.SPC	- Prolouge Outdoors, can go anywhere but pool's closed, but at night
 
 ID752_backyard_c1.SPC	- CH1 Fucked up Gonta sprite room, with greenary, but at night
-ID753_elevator_c1.SPC	- CH? Elevator to trial, buta t night
+ID753_elevator_c1.SPC	- CH1 Elevator to trial, buta t night
 
 ID755_sch_side_1.SPC	- Equivalent to the corresponding numbers from above, but at night
 
@@ -198,6 +198,7 @@ ID955_showerroom.SPC	- DEMO Bathroom, Hrio Dead
 ID956_cafe.SPC			- DEMO Cafetaria and you can inspect the Kitchen
 ID957_warehousea.SPC	- DEMO Warehouse
 ID958_wc.SPC			- DEMO Girl WC
+
 ID960_LC_01_after.SPC	- DEMO Tehnically used before and never after in the Demo, the Trial Room when you enter
 ID961_LC_01.SPC			- DEMO Class Trial
 
