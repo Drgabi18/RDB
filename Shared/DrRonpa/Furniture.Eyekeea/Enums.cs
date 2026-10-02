@@ -119,7 +119,119 @@ namespace DanganFurniture.Enums {
 		SANITY_CHECK = 255,	// DR2 starts reading the furniture only if this object exists
 	}
 
-	// TODO: corelating these with in-game stuff is harder than i thought
+	/*
+		Types in this game don't matter that much, as the index is actually used
+		to determine what he object does, as such, beaside the values only used once,
+		it's impossible  to tell what the other did without looking at the code.
+		Below is a table that asigns the names to the ints and also a table with DeepL translations.
+		The enum below these lists is what I bothered to match.
+
+		{
+		"操作": [ 0 ],
+		"キャラ表現": [ 2, 0 ],
+		"カメラ上下角度制限": [ 3 ],
+		"画角": [ 4 ],
+		"開始位置": [ 5, 6, 2 ],
+		"注視点座標": [ 7 ],
+		"キャラ": [ 9, 24, 19, 16, 13, 18, 10, 12, 8, 11, 22, 14, 23, 28, 26, 15, 51, 36, 29, 17, 4 ],
+		"オブジェクト": [ 35, 29, 41, 21, 23, 43, 17, 55, 37, 11, 32, 15, 19, 31, 18, 14, 9, 24, 30, 28, 20, 42, 16, 12, 27, 25, 22, 80, 39, 99, 34, 13, 33, 26, 76 ],
+		"影": [ 46, 40, 50, 24, 27, 49, 71, 60, 96, 14, 80, 42, 89, 95, 104, 37, 93, 32, 54, 36, 38, 10, 136, 35, 31, 53, 75, 23, 26, 57, 41, 48, 47, 90, 62, 102, 52, 63, 39, 103, 85, 81, 19, 51, 45, 61, 110, 78, 98, 86, 92, 33, 59, 56, 114, 106, 116, 107, 108, 58, 16, 28, 44, 22, 91, 87, 88 ],
+		"環境光": [ 48, 41, 51, 26, 28, 50, 25, 72, 62, 97, 16, 81, 43, 90, 96, 105, 38, 94, 33, 55, 37, 39, 12, 137, 36, 32, 54, 76, 24, 27, 58, 42, 49, 91, 63, 103, 53, 64, 40, 104, 86, 82, 21, 52, 46, 47, 111, 98, 79, 100, 87, 93, 34, 60, 57, 115, 107, 117, 108, 61, 109, 59, 17, 30, 45, 92, 88, 89 ],
+		"平行光源": [ 49, 42, 52, 27, 29, 51, 26, 73, 63, 98, 17, 82, 44, 91, 97, 106, 39, 95, 34, 56, 38, 40, 13, 138, 37, 33, 55, 77, 25, 28, 59, 43, 50, 92, 64, 104, 54, 65, 41, 105, 87, 83, 22, 53, 47, 48, 112, 99, 80, 101, 88, 94, 35, 61, 58, 116, 108, 118, 109, 62, 110, 60, 18, 45, 66, 31, 46, 93, 89, 90 ],
+		"移動速度": [ 5 ],
+		"キャラカラー": [ 25, 14, 11, 9, 10, 12, 13, 15, 24, 29, 27, 19, 30 ],
+		"エリア判定": [ 30, 42, 20, 24, 33, 32, 29, 17, 22, 31, 36, 19, 41, 13, 93, 43, 112, 47, 104, 52, 14, 28, 18, 89, 85, 48 ],
+		"背景オブジェクト": [ 32, 47, 25, 23, 69, 95, 41, 103, 92, 50, 35, 37, 135, 34, 30, 33, 45, 61, 59, 102, 27, 84, 49, 43, 60, 76, 96, 58, 57, 56, 52, 40, 44, 46, 36, 31, 89 ],
+		"オブジェクトカメラ": [ 33, 44, 18, 36, 14, 17, 98, 27, 19, 34, 31, 22, 37, 32, 21, 26, 48, 62, 29, 50, 20, 95, 77, 97, 85, 91, 57, 30, 55, 49, 51, 47, 38 ],
+		"ブルーム": [ 26, 25, 23, 35, 29 ],
+		"タッチフィルター": [ 74, 64, 99, 18, 83, 45, 92, 98, 107, 40, 96, 35, 57, 39, 41, 139, 34, 27, 56, 78, 93, 65, 105, 43, 55, 66, 42, 106, 88, 84, 23, 54, 48, 49, 113, 100, 81, 102, 89, 95, 36, 62, 52, 59, 51, 44 ],
+		"観察眼：環境光": [ 75, 65, 100, 84, 46, 36, 35, 66, 67, 43, 107, 24, 55, 49, 50, 101, 82, 103, 90, 96, 37, 63, 53, 60, 56, 52, 45 ],
+		"観察眼：点光源": [ 76, 66, 101, 47, 37, 36, 67, 68, 44, 108, 25, 56, 50, 51, 102, 83, 104, 91, 97, 38, 64, 54, 61, 57, 53, 46 ],
+		"レンズフレア": [ 77, 92, 98, 117 ],
+		"透過オブジェクト": [ 93, 99, 104, 145, 56, 90, 65, 94 ],
+		"影設定：PS4": [ 99, 140, 79, 100, 89, 85, 26, 52, 114, 103, 105, 98, 104, 57, 58 ],
+		"影設定：Vita": [ 100, 141, 80, 101, 90, 86, 27, 53, 115, 104, 106, 99, 105, 58, 59 ],
+		"影マップ0：PS4": [ 101, 142, 81, 102, 91, 87, 28, 54, 116, 105, 107, 100, 106, 59, 60 ],
+		"影マップ1：PS4": [ 102, 143, 82, 103, 92, 88, 29, 55, 117, 106, 108, 101, 107, 60, 61 ],
+		"影マップ0：Vita": [ 103, 144, 83, 104, 93, 89, 30, 56, 118, 107, 109, 102, 108, 61, 62 ],
+		"オブジェクト（未使用）": [ 53 ],
+		"出現カメラアニメ": [ 9, 11, 12, 8 ],
+		"キャラルート": [ 46, 44, 60, 48, 53, 111, 16 ],
+		"6章砂塵": [ 61, 44, 51, 35, 50, 38 ],
+		"6章砂塵：上エフェクト非表示": [ 62, 46, 52, 37 ],
+		"6章砂塵：下エフェクト非表示": [ 63, 45, 53, 36, 39 ],
+		"水面1：設定1": [ 93, 99, 19 ],
+		"水面2：設定2": [ 94, 100, 20 ],
+		"水面3：法線マップ1": [ 95, 101, 21 ],
+		"水面4：法線マップ2": [ 96, 102, 22 ],
+		"水面5：色": [ 97, 103, 23 ],
+		"水面Windows1：設定1": [ 103, 109 ],
+		"水面Windows2：設定2": [ 104, 110 ],
+		"水面Windows3：法線マップ1": [ 105, 111 ],
+		"水面Windows4：法線マップ2": [ 106, 112 ],
+		"水面Windows5：色": [ 107, 113 ],
+		"水面Windows6：水面板": [ 108, 114 ],
+		"水面Vita1：設定1": [ 24 ],
+		"水面Vita2：設定2": [ 25 ],
+		"水面Vita3：法線マップ1": [ 26 ],
+		"水面Vita4：法線マップ2": [ 27 ],
+		"水面Vita5：色": [ 28 ],
+		"水面6：鏡面方向Windows": [ 30 ]
+		}
+
+		操作                       “Controls”
+		キャラ表現                 “Character Rendering”
+		カメラ上下角度制限         “Camera Up/Down Angle Limits”
+		画角                       “Field of View”
+		開始位置                   “Starting Position”
+		注視点座標                 “Viewpoint Coordinates”
+		キャラ                     ‘Character’
+		オブジェクト               “Object”
+		影                         “Shadows”
+		環境光                     “Ambient Light”
+		平行光源                   “Parallel Light Source”
+		移動速度                   “Movement Speed”
+		キャラカラー               “Character Color”
+		エリア判定                 “Collision Detection”
+		背景オブジェクト           “Background Object”
+		オブジェクトカメラ         “Object Camera”
+		ブルーム                   “Bloom”
+		タッチフィルター           “Touch Filter”
+		観察眼：環境光             “Observation: Ambient Light”
+		観察眼：点光源             “Observation: Point Light”
+		レンズフレア               “Lens Flare”
+		透過オブジェクト           “Transparent Objects”
+		影設定：PS4                “Shadow Settings: PS4”
+		影設定：Vita               “Shadow Settings: Vita”
+		影マップ0：PS4             “Shadow Map 0: PS4”
+		影マップ1：PS4             “Shadow Map 1: PS4”
+		影マップ0：Vita            “Shadow Map 0: Vita”
+		オブジェクト（未使用）     “Objects (Unused)”
+		出現カメラアニメ           “Appearance Camera Animation”
+		キャラルート               “Character Route”
+		6章砂塵                    “Chapter 6: Sandstorm”
+		6章砂塵：上エフェクト非表示  “Chapter 6: Sandstorm: Hide Top Effects”
+		6章砂塵：下エフェクト非表示  “Chapter 6: Sandstorm: Hide Bottom Effects”
+		水面1：設定1                “Water Surface 1: Setting 1”
+		水面2：設定2                “Water Surface 2: Setting 2”
+		水面3：法線マップ1          “Water Surface 3: Normal Map 1”
+		水面4：法線マップ2          “Water Surface 4: Normal Map 2”
+		水面5：色                   “Water Surface 5: Color”
+		水面Windows1：設定1         “Water Surface Windows 1: Setting 1”
+		水面Windows2：設定2         “Water Surface Windows 2: Setting 2”
+		水面Windows3：法線マップ1   “Water Surface Windows 3: Normal Map 1”
+		水面Windows4：法線マップ2   “Water Surface Windows 4: Normal Map 2”
+		水面Windows5：色            “Water Surface Windows 5: Color”
+		水面Windows6：水面板        “Water Surface Windows 6: Water Panel”
+		水面Vita1：設定1            “Water Surface Vita 1: Setting 1”
+		水面Vita2：設定2            "Water Surface Vita 2: Setting
+		水面Vita3：法線マップ1      “Water Surface Vita3: Normal Map 1”
+		水面Vita4：法線マップ2      “Water Surface Vita4: Normal Map 2”
+		水面Vita5：色               “Water Surface Vita5: Color”
+		水面6：鏡面方向Windows      “Water Surface 6: Specular Direction (Windows)”
+
+
+	*/
 	public enum FurnitureTypesV3 : int {
 		// 0 - 9
 		LoveSosa = 0,	// called "操作" intenrally, present in every map, Unk4 changes between first person and locked
