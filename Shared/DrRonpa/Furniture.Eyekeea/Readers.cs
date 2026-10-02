@@ -332,8 +332,6 @@ namespace DanganFurniture {
 				//Console.WriteLine("============== 5 ==============\n");
 			}}
 
-			// Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(Bucatarie.GroupBy(f => (f.GovernmentName))));
-
 			// Console.ReadLine();
 
 			// ugly lazy hack

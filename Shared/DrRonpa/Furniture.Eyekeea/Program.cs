@@ -96,6 +96,20 @@ namespace DanganFurniture {
 						Print.LazyGodotPrint(EyekeeaShowroomV3);
 					}
 					return;
+				case PrintModes.V3_KV_TypeNames:
+					Console.Clear();
+					Dictionary<string, List<int>> ForStatistics = new Dictionary<string, List<int>>();
+					foreach (var buc in EyekeeaShowroomV3) {
+						foreach (var rom in buc.Places) {
+							// if not list, create one
+							if (!ForStatistics.ContainsKey(rom.GovernmentName)) ForStatistics[rom.GovernmentName] = new List<int>();
+							// after that, just add regularly
+							ForStatistics[rom.GovernmentName].Add(rom.Type);
+						}
+					}
+					ForStatistics = ForStatistics.ToDictionary(x => x.Key, x => x.Value.Distinct().ToList());
+					Console.WriteLine(ReaderUtils.FuckAssSerializerForEncoding(ForStatistics));
+					return;
 			}
 		}
 

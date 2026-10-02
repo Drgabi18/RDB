@@ -5,7 +5,11 @@ namespace DanganFurniture.Enums {
 		DRV3 = 3
 	}
 
-	public enum PrintModes { JsonSerialized, LazyGodot }
+	public enum PrintModes {
+		JsonSerialized,
+		LazyGodot,
+		V3_KV_TypeNames		
+	}
 	
 	// TODO: Would these work better as objects? For example, Type 1 is people
 	// in the world and uses the Positions as position in the world, but Type 40
