@@ -30,7 +30,7 @@ ID032_cold.SPC			- CH6 room with the space like pods
 ID034_wc.SPC			- BOYS WC
 ID036_vacancy_00.SPC	- CH3 One of the empty ritual rooms
 ID037_vacancy_01.SPC	- CH3 Tenko dead room
-ID038_vacancy_02.SPC	- CH3 UNUSED? Duplicate of one of the empty ritual rooms
+ID038_vacancy_02.SPC	- CH3 Duplicate of one of the empty ritual rooms
 
 ID040_vacancy_01.SPC	- CH3 Room with statue on top of Tenko cage
 ID041_vacancy_01.SPC	- CH3 Room under the floorboards
