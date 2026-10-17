@@ -67,7 +67,7 @@ Prerequesite of using this tool is to get the room files extracted into a root f
 * **For DR1/2 (PC and PSP):** You need to extract the room files using [`pak_archiver`](https://github.com/vn-tools/danganronpa-tools/blob/master/pak_archiver/pak_archiver) (e.g. `python ./pak_archiver extract ./bg_000.pak ./bg_000/`) and in the parameters, specify the directory with all the extracted room files folders.
 * **For DRV3 (PC only):** You need to extract the files using [`DRV3-Sharp`](https://github.com/CaptainSwag101/DRV3-Sharp), the app has a special TUI which you will need to figure out. All the room files are in `./model/bg/`, just drag and drop all the files and after pressing enter the app should extract them. In the parameters specify the root folder for all the room folders.
 
-Parameters **aren't sequential** but are all **requiered**:
+Parameters **aren't sequential** but **are all requiered**:
 * `-g`/`--game`
 	* Accepted options: `"DR1"`; `"DR2"`; `"DRV3"`
 * `-d`/`--directory`
@@ -80,6 +80,24 @@ Parameters **aren't sequential** but are all **requiered**:
 [Did you know Eyekeea has been linked with illegal logging in protected nature reserves (like those in my home country) in Eastern European? Are you willing to ignore this because of a cute and funny shark?](https://eia.org/blog/ikeas-romanian-wood-sourcing-woes-highlight-the-need-for-national-transparent-timber-traceability-systems-across-europe/)
 
 **Example usage**: `./DanganFurniture -g "DR2" -m "LazyGodot" -d "./Path/To/RoomsFolder" > dr2_godot.txt`
+
+# DRAT.ExtractDat.ButItWorks
+A modification of [`Danganronpa-Another-Tool/CONTAINERS/DATpsp.cs`](https://github.com/Liquid-S/Danganronpa-Another-Tool/blob/master/CONTAINERS/DATpsp.cs) made to work with the Original version and the untranslated The Best edition.
+
+Parameters **are sequential** and **are all requiered**:
+1. Path to the UMDIMAGE.dat file you want to extract data from (either 1 or 2)
+2. Destination where you want all the files to be extracted to
+3. Decrypted EBOOT file.
+	* Getting this file depends on the version, to make sure it's always dumped, assuming PPSSPP, go to _PPSSPP_ > _System_ > _Developer tools_ > check _"Dump decrypted EBOOT.BIN on game boot"_. If a notification appears at the top, then it means the EBOOT was encrypted and at the location it showed up there is the decrypted file. If no notification shows, then the EBOOT.BIN file inside the .iso is already decrypted. The Translated DEMO and TBE versions are already decrypted.
+4. Version name, because I didn't wanna assume the input file, you'll have to specify the umdimage container here. Valid options are:
+	* `"FULL"`, `"FullTranslation"` - both point to the same thing, the translated TBE edition.
+	* `"NPJH50372-umdimage"`
+	* `"NPJH50372-umdimage2"`
+	* `"NPJH50515-umdimage"`
+	* `"NPJH50515-umdimage2"`
+	* `"DEMO"`, `"TranslatedDemo"` - both point to the same thing, `NPJH90164` but patched with the translated DEMO.
+
+**Example usage**: `./DRAT.ExtractDat.ButItWorks "./Path/to/UMDIMAGE.DAT" "./DestinationFolder/" "./Path/to/EBOOT.BIN" "NPJH50515-umdimage"`
 
 # Footnotes
 ¹ - I haven't used AI to code anything in this entire project, everything here is writen with pure stupidity, researched by pure autism and fueled by pure lesbianism. [I am training to become a lesbian the difficulty level is pretty high I am 99% gay and 1% synesthesia](https://bsky.app/profile/blockedforthispost.bsky.social/post/3mleqlvgmoh2x)
