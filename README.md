@@ -41,7 +41,8 @@ Several Markdown file with some text explanation documenting some aspects of the
 Each file for each game is sorted individually into the folder for what title they are part of. To explain what each file is:
 * `./DR1/DR1_Rooms.ods`, `./DR2/DR2_Rooms.ods`, `./DRV3/DRV3_Rooms.txt`, `./UDG/UDG_Maps.txt` are the files containing the Room IDs and a short description of what they do.
 * `./DR1/DR1 Room File Paths.txt` and `./DR2/DR2 Room File Paths.txt` contain strings extracted from decompressed .pak files. These file paths have been recreated in `./DR1/DR1FolderStructureRemade` and `./DR2/DR2FolderStructureRemade` respectivley if you wanna explore them.
-* `./Shared/Codepaths_from_DR2.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. These file paths have been recreated in `./Shared/Codepaths_from_DR2/` if you wanna explore them.
+* `./DR1/DR1_Orig_to_TBE.diff`, `./DR1/DR1_TBE_to_Reloaded.diff` and `./DR2/DR2_PSP_to_PSV_LIN_changes.diff` are `git diff` files for the changes done between the versions of the game. The diffed files have been created using morgana's [danganronpa-lin-compiler-v2](https://github.com/morgana-x/danganronpa-lin-compiler-v2).
+* `./Shared/Codepaths_from_DR2.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. In actuality, it's a stubbed build of DR 1.2 Reloaded made to only run the DR2 namespace. These file paths have been recreated in `./Shared/Codepaths_from_DR2/` if you wanna explore them.
 * `./DR1/DR1_UserDefinedSymbols.csv`, `./DR2/DR2_UserDefinedSymbols.csv` and `./UDG/UDG_UserDefinedSymbols.csv` contain the names I gave to memory addresses I could find. Again these only work assuming you used the same manifest versions as me and the stars aligned correctly so you have dumped the same stuff (in DRV3's case, you can do the same by running x64dbg in Wine to dump the game, since ASLR is disabled in Wine, thank fuck).
 * `./DR1/DR1_DebugSymbols.csv`, `./DR2/DR2_DebugSymbols.csv`, `./UDG/UDG_DebugSymbols.csv` and `./DRV3/DRV3_DebugSymbols.csv` contain the names of the symbols extracted from the Anniversary versions of the game (except for UDG which is just the strings that remained for Steam Achievements and uhh... random vtables???????), these are provided as plaintext files instead of a Ghidra Project
 * `./Shared/DR12V3_Unused_LINs.txt` contains a list of the unused LIN files I found in the mainline series games.
@@ -79,7 +80,7 @@ I've put a restriction on myself to not look at information that would help me, 
 * shadow.nero - Helping me understand how the text renderer and debug text array work in-game... well in-code... as well as other interesting tidbits; also being cool and friendly.
 * Spiral Framework - For their efforts documenting the [OpCodes](https://github.com/SpiralFramework/Spiral) and many more formats the game uses, even if I sadly can't read Kotlin to know what it actually does.
 * vn-tools - For creating [danganronpa-tools](https://github.com/vn-tools/danganronpa-tools/) which I used `pak_archiver` and `wad_archiver` from in the initial first 2 episodes.
-* You - yes, you! if you watched or commented <3
+* You - yes, you! if you watched, liked or commented <3
 
 Anyways, if you wanna see something fun in the first game, run `set {int}0x009f7e4c=0` (`0x00b3e4ee` in the 2nd game) in any 2D room. Have fun!
 
