@@ -2,12 +2,12 @@
 This repository includes the random stuff I was able to find reverse engineering Danganronpa.
 
 This repo contains a collection of research documents I created for the following videos that I've made:
-* [[Danganronpa 1/2/V3] Unused Rooms](https://www.youtube.com/watch?v=QMtvbAJh83s)
-* [[Danganronpa 1/2/V3] Development Trivia & Fun Facts](https://www.youtube.com/watch?v=ljNlJfbsQQk)
-* [[Danganronpa 1/2/V3] Unused Story (.LIN) Files](https://www.youtube.com/watch?v=nDRb3It6jOs)
-* [[Danganronpa 1/2/V3] Super Development Trivia & Fun Facts 2: Goodbye Debug Menus](https://www.youtube.com/watch?v=jjzG6y8MyrU)
-* [[Danganronpa UDG] Unused Rooms, Cutscenes & Development Trivia](https://www.youtube.com/watch?v=eH-B8eT481U)
-* [[Danganronpa UDG] Addendum: How to "play" as Toko](https://www.youtube.com/watch?v=iCMTiXoMFgI)
+* [[Danganronpa 1/2/V3] Unused Rooms](https://www.youtube.com/watch?v=QMtvbAJh83s) [01h:00m:30s]
+* [[Danganronpa 1/2/V3] Development Trivia & Fun Facts](https://www.youtube.com/watch?v=ljNlJfbsQQk) [01h:17m:54s]
+* [[Danganronpa 1/2/V3] Unused Story (.LIN) Files](https://www.youtube.com/watch?v=nDRb3It6jOs) [46m:22s]
+* [[Danganronpa 1/2/V3] Super Development Trivia & Fun Facts 2: Goodbye Debug Menus](https://www.youtube.com/watch?v=jjzG6y8MyrU) [01h:05m:14s]
+* [[Danganronpa UDG] Unused Rooms, Cutscenes & Development Trivia](https://www.youtube.com/watch?v=eH-B8eT481U) [01h:08m:46s]
+* [[Danganronpa UDG] Addendum: How to "play" as Toko](https://www.youtube.com/watch?v=iCMTiXoMFgI) [07m:12s]
 
 Please check them out since I put more effort than necessary in all of them!
 
