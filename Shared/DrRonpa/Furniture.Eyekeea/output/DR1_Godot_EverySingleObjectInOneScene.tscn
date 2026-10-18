@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://835sykvg07mt"]
 
-[node name="Node3D" type="Node3D" unique_id=631629052]
+[node name="DR1" type="Node3D" unique_id=631629052]
 
 [node name="bg_000" type="Node" parent="." unique_id=1674141103 groups=["bg_000"]]
 
