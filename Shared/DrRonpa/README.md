@@ -88,7 +88,7 @@ Parameters **are sequential** and **are all requiered**:
 1. Path to the UMDIMAGE.dat file you want to extract data from (either 1 or 2)
 2. Destination where you want all the files to be extracted to
 3. Decrypted EBOOT file.
-	* Getting this file depends on the version, to make sure it's always dumped, assuming PPSSPP, go to _PPSSPP_ > _System_ > _Developer tools_ > check _"Dump decrypted EBOOT.BIN on game boot"_. If a notification appears at the top, then it means the EBOOT was encrypted and at the location it showed up there is the decrypted file. If no notification shows, then the EBOOT.BIN file inside the .iso is already decrypted. The Translated DEMO and TBE versions are already decrypted.
+	* Getting this file depends on the version, to make sure it's always dumped, assuming PPSSPP, go to _PPSSPP_ > _System_ > _Developer tools_ > check _"Dump decrypted EBOOT.BIN on game boot"_. If a notification appears at the top, then it means the EBOOT was encrypted and at the location it showed up there is the decrypted file. If no notification shows, then the EBOOT.BIN file inside the .iso is already decrypted. The Translated DEMO and Translated TBE version are already decrypted.
 4. Version name, because I didn't wanna assume the input file, you'll have to specify the umdimage container here. Valid options are:
 	* `"FULL"`, `"FullTranslation"` - both point to the same thing, the translated TBE edition.
 	* `"NPJH50372-umdimage"`

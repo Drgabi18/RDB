@@ -61,7 +61,7 @@ Each file for each game is sorted individually into the folder for what title th
 * `./TrialCamera.Exercise` contains the code of my Trial Camera Reimplementation™™™, that I absoluteley didn't write during lunch break at work. Contains a bleak reimplementation of the structs used for Cameras in Trials. Has no other practical use than just to brag that I wrote it.
 * `./EV8.Parser` is a WIP Tool used to extract EV8 files from UDG. ™™™™
 * `./Furniture.Eyekeea` is a tool used to export furniture objects from maps. Did you know the airport has the sun™™™™™ behind your back?
-* `./DRAT.ExtractDat.ButItWorks` is my modification of [`Danganronpa-Another-Tool/CONTAINERS/DATpsp.cs`](https://github.com/Liquid-S/Danganronpa-Another-Tool/blob/master/CONTAINERS/DATpsp.cs) made to work with the Original version and the untranslated The Best edition.
+* `./DRAT.ExtractDat.ButItWorks` is my™™™™™™ modification of [`Danganronpa-Another-Tool/CONTAINERS/DATpsp.cs`](https://github.com/Liquid-S/Danganronpa-Another-Tool/blob/master/CONTAINERS/DATpsp.cs) made to work with the Original version and the untranslated The Best edition.
 
 ## For anyone who wants to contribute
 Don't.
