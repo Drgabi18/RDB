@@ -80,7 +80,7 @@ I've put a restriction on myself to not look at information that would help me, 
 * morgana-x - For creating [Danganronpa-Script-Dumps](https://github.com/morgana-x/Danganronpa-Script-Dumps) which is what lead to me making the _Unused Story Files_ video; For creating [PakLib](https://github.com/morgana-x/PakLib) which was easier to use for unpacking; For continously updating [danganronpa-lin-compiler-v2](https://github.com/morgana-x/danganronpa-lin-compiler-v2) which is a better version than what I made and used it instead for diffing story files; For creating [danganronpa-RoomObjectsToJson](https://github.com/morgana-x/danganronpa-RoomObjectsToJson) based of Spiral Framework's documentation, which lead me to create the [`Furniture.Eyekeea`](/Shared/DrRonpa/Furniture.Eyekeea/) project and... 🤫
 * shadow.nero - Helping me understand how the text renderer and debug text array work in-game... well in-code... as well as other interesting tidbits; also being cool and friendly.
 * Spiral Framework - For their efforts documenting the [OpCodes](https://github.com/SpiralFramework/Spiral) and many more formats the game uses, even if I sadly can't read Kotlin to know what it actually does.
-* vn-tools - For creating [danganronpa-tools](https://github.com/vn-tools/danganronpa-tools/) which I used `pak_archiver` and `wad_archiver` from in the initial first 2 episodes.
+* vn-tools - For creating [danganronpa-tools](https://github.com/vn-tools/danganronpa-tools/) which I used `pak_archiver` and `wad_archiver` from in a few episodes.
 * You - yes, you! if you watched, liked or commented <3
 
 Anyways, if you wanna see something fun in the first game, run `set {int}0x009f7e4c=0` (`0x00b3e4ee` in the 2nd game) in any 2D room. Have fun!

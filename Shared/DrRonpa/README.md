@@ -4,7 +4,7 @@ A suite of C# apps I've made in order to read the binary data from some (easily 
 
 Because I'm treating each project as different, there's no central library, so each project does things separately. The command line parameters for each project are described below. Most common export mode is C# objects converted to .JSON using `JsonSerializer`, some projects support an export to Godot and GraphViz as well!
 
-**You are expected to pipe the output out to a file when running any of these.**
+**You are expected to redirect the output to a file when running any of these.**
 
 Run `dotnet build ./DrRonpa.slnx -c Release -o ./Binaries/` to build all the applications at once.
 
@@ -27,7 +27,7 @@ Parameters are **sequential** and all **requiered**:
 		* `2` - prints the format which can be easily used in a .csv file
 4. Folder Path (place where all the nonstop_\*_\*.dat files are)
 
-**Example usage**: `./DebateReader "nonstop" "DR2" 2 "./Path/To/Files/"`
+**Example usage**: `./DebateReader "nonstop" "DR2" 2 "./Path/To/Files/" > DR2_nonstop.csv`
 
 This was already done better before me by [BitesizeBird](https://github.com/BitesizeBird/Danganronpa-Modding/tree/master/Nonstop%20Debate%20DAT%20converters), which also documented what all the Unknown values in my code are.
 
@@ -46,7 +46,7 @@ Parameters **aren't sequential** but are all **requiered**:
 
 `DEBUG_BUILD` is a compile-time flag used to print some extra stuff, set it to `true` if you want it to print more stuff.
 
-**Example usage**: `./OpCodeReader --game "DR2" -d "./Path/To/Files/" --mode "JsonSerialized"`
+**Example usage**: `./OpCodeReader --game "DR2" -d "./Path/To/Files/" --mode "JsonSerialized" > DR2_OpCodes.json`
 
 This was already done better than me [countless](https://github.com/vn-tools/danganronpa-tools) [times](https://github.com/SpiralFramework/Spiral) [before](https://github.com/morgana-x/danganronpa-lin-compiler-v2).
 
@@ -96,6 +96,8 @@ Parameters **are sequential** and **are all requiered**:
 	* `"NPJH50515-umdimage"`
 	* `"NPJH50515-umdimage2"`
 	* `"DEMO"`, `"TranslatedDemo"` - both point to the same thing, `NPJH90164` but patched with the translated DEMO.
+
+Upon running this command, the files will be extracted to the specified destination folder.
 
 **Example usage**: `./DRAT.ExtractDat.ButItWorks "./Path/to/UMDIMAGE.DAT" "./DestinationFolder/" "./Path/to/EBOOT.BIN" "NPJH50515-umdimage"`
 
