@@ -52,7 +52,7 @@ namespace LazyOpCodeReader.Games {
 		// 0x0E
 		// this seems to be correct and incorrect at the same time
 		public class LoadScript {
-			public string Type = "Load Script"; // hack to see what the objects are
+			public string Comment = "Load Script"; // hack to see what the objects are
 			public short Chapter;
 			public short Episode;
 			public short SubEpisode;
@@ -81,7 +81,7 @@ namespace LazyOpCodeReader.Games {
 
 		// 0x17
 		public class SetFlag {
-			public string Type = "Set Flag"; // hack to see what the objects are
+			public string Comment = "Set Flag"; // hack to see what the objects are
 			public short Flag;
 			public byte Value;
 			public SetFlag(byte[] bytes) {
@@ -97,7 +97,7 @@ namespace LazyOpCodeReader.Games {
 
 		// 0x1B
 		public class CheckFlag {
-			public string Type = "Check Flag"; // hack to see what the objects are
+			public string Comment = "Check Flag"; // hack to see what the objects are
 			public short Flag;
 			public CheckFlag(byte[] bytes) {
 				this.Flag	= BinaryPrimitives.ReverseEndianness(BitConverter.ToInt16(bytes));
@@ -106,7 +106,7 @@ namespace LazyOpCodeReader.Games {
 
 		// 0x18 since I'm lazy
 		public class EndFlagCheck {
-			public string Type = "End Check Flag"; // hack to see what the objects are
+			public string Comment = "End Check Flag"; // hack to see what the objects are
 			public short Flag;
 			public EndFlagCheck(byte[] bytes) {
 				this.Flag	= BinaryPrimitives.ReverseEndianness(BitConverter.ToInt16(bytes));
