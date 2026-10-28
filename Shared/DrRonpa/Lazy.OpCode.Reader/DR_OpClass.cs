@@ -23,7 +23,6 @@ namespace LazyOpCodeReader.OpCodes {
 		public static List<OperationCode> UDGOpCodes = new List<OperationCode>{
 			// new OperationCode("START", 0x70, 0),
 			new OperationCode(UDGClasses.HexOpCode.LOAD_SCRIPT, 4 * 2),	// 4 shorts (8 bytes)
-			//new OperationCode(UDGClasses.HexOpCode.RUN_SCRIPT, 4 * 2),	// ditto
 			new OperationCode(UDGClasses.HexOpCode.SET_FLAG, 3),	// 1 short, 1 byte
 			new OperationCode(UDGClasses.HexOpCode.CHECK_FLAG, 2),	// 1 short
 			new OperationCode(UDGClasses.HexOpCode.END_CHECK_FLAG, 2)	// 1 short
