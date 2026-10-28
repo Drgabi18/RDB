@@ -25,7 +25,8 @@ namespace LazyOpCodeReader.OpCodes {
 			new OperationCode(UDGClasses.HexOpCode.LOAD_SCRIPT, 4 * 2),	// 4 shorts (8 bytes)
 			new OperationCode(UDGClasses.HexOpCode.SET_FLAG, 3),	// 1 short, 1 byte
 			new OperationCode(UDGClasses.HexOpCode.CHECK_FLAG, 2),	// 1 short
-			new OperationCode(UDGClasses.HexOpCode.END_CHECK_FLAG, 2)	// 1 short
+			new OperationCode(UDGClasses.HexOpCode.END_CHECK_FLAG, 2),	// 1 short
+			new OperationCode(UDGClasses.HexOpCode.ASSOCIATE_EV8, 2)	// 2 bytes
 			/*
 				Some observations I made that I'm not very sure about
 				If you're reading this and want to be a good puppy, see

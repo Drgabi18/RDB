@@ -25,12 +25,13 @@ namespace LazyOpCodeReader.Games {
 			SET_FLAG = 0x17,
 			CHECK_FLAG = 0x1B,
 			END_CHECK_FLAG = 0x18, // HOLY FUCK I JUST REALIZED THIS SHOULD BE AN ENDIF
+			ASSOCIATE_EV8 = 0x24,
 			STOP_SCRIPT = 0x25 // has vargs number of arguments because of 4-byte padding
 			/*
 			UNK_0x01 = 01, UNK_0x02 = 02, UNK_0x05 = 05, UNK_0x06 = 06, UNK_0x07 = 07,
 			UNK_0x08 = 08, UNK_0x09 = 09, UNK_0x0C = 0C, UNK_0x11 = 11, UNK_0x12 = 12,
 			UNK_0x15 = 15, UNK_0x16 = 16, UNK_0x19 = 19, UNK_0x1A = 1A, UNK_0x1C = 1C,
-			UNK_0x1D = 1D, UNK_0x21 = 21, UNK_0x22 = 22, UNK_0x23 = 23, UNK_0x24 = 24,
+			UNK_0x1D = 1D, UNK_0x21 = 21, UNK_0x22 = 22, UNK_0x23 = 23,
 			UNK_0x26 = 26, UNK_0x27 = 27, UNK_0x28 = 28, UNK_0x2D = 2D, UNK_0x30 = 30,
 			UNK_0x32 = 32, UNK_0x33 = 33, UNK_0x39 = 39, UNK_0x3C = 3C, UNK_0x3D = 3D,
 			UNK_0x41 = 41, UNK_0x45 = 45, UNK_0x46 = 46,  UNK_0x47 = 47, UNK_0x48 = 48,
@@ -45,6 +46,7 @@ namespace LazyOpCodeReader.Games {
 				case HexOpCode.SET_FLAG:	return new SetFlag(bytes);
 				case HexOpCode.CHECK_FLAG:	return new CheckFlag(bytes);
 				case HexOpCode.END_CHECK_FLAG:	return new EndFlagCheck(bytes);
+				case HexOpCode.ASSOCIATE_EV8: return new Ev8Association(bytes);
 				default: return null;
 			}
 		}
@@ -110,6 +112,17 @@ namespace LazyOpCodeReader.Games {
 			public short Flag;
 			public EndFlagCheck(byte[] bytes) {
 				this.Flag	= BinaryPrimitives.ReverseEndianness(BitConverter.ToInt16(bytes));
+			}
+		}
+
+		public class Ev8Association {
+			public string Comment = "Type and Index EV8 association"; // hack to see what the objects are
+			public byte Type;
+			public byte Index;
+			
+			public Ev8Association(byte[] bytes) {
+				this.Type	= bytes[0];
+				this.Index	= bytes[1];
 			}
 		}
 	}
