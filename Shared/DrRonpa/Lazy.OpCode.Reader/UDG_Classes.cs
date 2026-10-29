@@ -1,17 +1,4 @@
-#region Yes, I know what it outputs isn't right
-/*
-	Yes, I'm aware that if you execute this you will see stuff like
-		e05_107_002 -> e00_-16381_???   (Unk1: 0        0000,   Unk2: -11261    D403,   Load)
-	
-	Truth be told, I don't know why, I have absolutely NO idea why. I am doing the
-	conversion from BE to LE correctly, why would the game call for numbers
-	higher than any existing LIN filenames? I also have no idea how the second
-	example even has negative numbers, I verified and both opcodes are correct 
-*/
-#endregion
-
 using System.Buffers.Binary;
-
 
 namespace LazyOpCodeReader.Games {
 	public static class UDGClasses {
