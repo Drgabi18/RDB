@@ -12,7 +12,7 @@ namespace LazyOpCodeReader.Games {
 			SET_FLAG = 0x17,
 			CHECK_FLAG = 0x1B,
 			END_CHECK_FLAG = 0x18, // HOLY FUCK I JUST REALIZED THIS SHOULD BE AN ENDIF
-			ASSOCIATE_EV8 = 0x24,
+			EV8_ASSOCIATE = 0x24,
 			STOP_SCRIPT = 0x25 // has vargs number of arguments because of 4-byte padding
 			/*
 			UNK_0x01 = 01, UNK_0x02 = 02, UNK_0x05 = 05, UNK_0x06 = 06, UNK_0x07 = 07,
@@ -32,7 +32,7 @@ namespace LazyOpCodeReader.Games {
 				case HexOpCode.SET_FLAG:	return new SetFlag(bytes);
 				case HexOpCode.CHECK_FLAG:	return new CheckFlag(bytes);
 				case HexOpCode.END_CHECK_FLAG:	return new EndFlagCheck(bytes);
-				case HexOpCode.ASSOCIATE_EV8: return new Ev8Association(bytes);
+				case HexOpCode.EV8_ASSOCIATE: return new Ev8Association(bytes);
 				default: return null;
 			}
 		}
