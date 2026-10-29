@@ -29,7 +29,6 @@ namespace LazyOpCodeReader.Games {
 		public static object? CreateObject(byte OpCode, byte[] bytes) {
 			switch( (HexOpCode)OpCode ) {
 				case HexOpCode.LOAD_SCRIPT:	return new LoadScript(bytes);
-				//case HexOpCode.RUN_SCRIPT:	return new RunScript(bytes);
 				case HexOpCode.SET_FLAG:	return new SetFlag(bytes);
 				case HexOpCode.CHECK_FLAG:	return new CheckFlag(bytes);
 				case HexOpCode.END_CHECK_FLAG:	return new EndFlagCheck(bytes);
