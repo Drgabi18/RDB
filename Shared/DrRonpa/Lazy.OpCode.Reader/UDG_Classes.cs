@@ -11,18 +11,68 @@ namespace LazyOpCodeReader.Games {
 			LOAD_SCRIPT = 0x0E,
 			SET_FLAG = 0x17,
 			CHECK_FLAG = 0x1B,
-			END_CHECK_FLAG = 0x18, // HOLY FUCK I JUST REALIZED THIS SHOULD BE AN ENDIF
+			END_CHECK_FLAG = 0x18,	// makes the most sense
 			EV8_ASSOCIATE = 0x24,
-			STOP_SCRIPT = 0x25 // has vargs number of arguments because of 4-byte padding
+			STOP_SCRIPT = 0x25 // has vargs number of arguments because of 4-byte padding :P
+			
 			/*
-			UNK_0x01 = 01, UNK_0x02 = 02, UNK_0x05 = 05, UNK_0x06 = 06, UNK_0x07 = 07,
-			UNK_0x08 = 08, UNK_0x09 = 09, UNK_0x0C = 0C, UNK_0x11 = 11, UNK_0x12 = 12,
-			UNK_0x15 = 15, UNK_0x16 = 16, UNK_0x19 = 19, UNK_0x1A = 1A, UNK_0x1C = 1C,
-			UNK_0x1D = 1D, UNK_0x21 = 21, UNK_0x22 = 22, UNK_0x23 = 23,
-			UNK_0x26 = 26, UNK_0x27 = 27, UNK_0x28 = 28, UNK_0x2D = 2D, UNK_0x30 = 30,
-			UNK_0x32 = 32, UNK_0x33 = 33, UNK_0x39 = 39, UNK_0x3C = 3C, UNK_0x3D = 3D,
-			UNK_0x41 = 41, UNK_0x45 = 45, UNK_0x46 = 46,  UNK_0x47 = 47, UNK_0x48 = 48,
-			UNK_0x49 = 49, UNK_0x4F = 4F
+			BOTTOM_TEXT = 0x01	// 2 bytes, text at the bottom, like ones said by genocider
+			S_RETURN_EARLY_1 = 0x0E,	// always present after load scripts in e99_007_002
+			S_RETURN_EARLY_2 = 0x0F	// same as above,exists e99_004_001
+			UNK_11 = 0x11,	// seems to always follow 0x1A
+			SET_ATTRIBUTE = 0x1A,	// mostly present after EV8_ASSOCIATE, but not
+									// always, i think it's something like for byte[0]
+									// set values bytes[1..3]
+			UNK_30 = 0x30,	// seems to be followed by 4 shorts, used by OBJTYPE_RECT that
+							// make a text at the bottom
+			UNK_4F = 0x4F,	// seems to be always before CHECK_FLAG
+
+				Some observations I made that I'm not very sure about
+				If you're reading this and want to be a good puppy, see
+				between 0x16 and 0x21 which one is load room and .ev8
+				I think 0x21 might be load .ev8, because maps64.bnd, the files
+				are organized like
+					1 = MP_STREET_01
+					2 = MP_STREET_03 (yes, there's no mp_street_2 and 3 really uses index 2)
+					3 = MP_STREET_04
+					4 = MP_STREET_05
+				and it makes the most sense with 0x21 where the 2nd argument seems
+				to be this number 
+
+			UNK_02 = 0x02
+			UNK_05 = 0x05	// 3 bytes
+			UNK_06 = 0x06	// 4 bytes
+			UNK_07 = 0x07	// 5 bytes
+			UNK_08 = 0x08
+			UNK_09 = 0x09	// 3 bytes
+			UNK_0C = 0x0C	// 0 bytes
+			UNK_12 = 0x12	// 5 bytes
+			UNK_15 = 0x15	// 1 byte
+			UNK_16 = 0x16	// 3 bytes
+			UNK_19 = 0x19	// 1 byte
+			UNK_1A = 0x1A	// 4 bytes
+			UNK_1C = 0x1C	// 4 bytes
+			UNK_1D = 0x1D	// 4 bytes (seems like 2 shorts)
+			UNK_21 = 0x21	// 3 bytes
+			UNK_22 = 0x22	// 2 bytes
+			UNK_23 = 0x23	// 2 bytes
+			UNK_24 = 0x24	// 2 bytes (associate certain object to flag?)
+			UNK_26 = 0x26	// 6 bytes (seems like 3 shorts, maybe voice)
+			UNK_27 = 0x27	// 3 bytes (seems like 1 byte and 1 short)
+			UNK_28 = 0x28	// 3 bytes
+			UNK_2D = 0x2D
+			UNK_30 = 0x30	// 8 bytes (seems like 4 shorts)
+			UNK_32 = 0x32	// 4 bytes
+			UNK_33 = 0x33
+			UNK_39 = 0x39	// 4 bytes
+			UNK_3C = 0x3C
+			UNK_3D = 0x3D	// 10 bytes (seems like 5 shorts)
+			UNK_41 = 0x41	// 8 bytes (seems like 4 shorts)
+			UNK_45 = 0x45
+			UNK_46 = 0x46
+			UNK_47 = 0x47
+			UNK_48 = 0x48,
+			UNK_49 = 0x49, 
 			*/
 		}
 
