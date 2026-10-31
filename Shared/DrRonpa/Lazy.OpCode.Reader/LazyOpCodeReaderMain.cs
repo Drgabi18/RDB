@@ -96,9 +96,7 @@ namespace LazyOpCodeReader {
 
 			OurGame = new Game(GameID);
 
-			// BUG?: Because we're doing it in parallel, the alphabetic order no longer matters
-			List<string> LinFilesFromFolder =
-				Directory.EnumerateFiles(FolderPath, "*.lin").Order().ToList();
+			List<string> LinFilesFromFolder = Directory.EnumerateFiles(FolderPath, "*.lin").ToList();
 			
 			//foreach (string file in LinFilesFromFolder) {
 			Parallel.ForEach(LinFilesFromFolder, file => {
@@ -109,8 +107,10 @@ namespace LazyOpCodeReader {
 				ReadFile(OurLinFile);
 				OurGame.LinFiles.Add(OurLinFile);
 				//Thread.Sleep(16);
-			}
-			);
+			});
+
+			// order lin files alphabetically... well from 0 to 9, this is hacky
+			OurGame.LinFiles = OurGame.LinFiles.OrderBy(l => l.PrettyFileName).ToList();
 
 			switch(PrintMode) {
 				default:
