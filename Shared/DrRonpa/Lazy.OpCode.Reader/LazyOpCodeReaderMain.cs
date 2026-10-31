@@ -51,7 +51,8 @@ namespace LazyOpCodeReader {
 						break;
 					case "-d":
 					case "--directory":
-						FolderPath = args[Array.IndexOf(args, command)+1]; break;
+						FolderPath = args[Array.IndexOf(args, command)+1];
+						break;
 					case "-m":
 					case "--mode":
 						// same thing as the previous enum parse
@@ -71,8 +72,10 @@ namespace LazyOpCodeReader {
 										"Valid options are:\n" +
 										"\t-g \"DR1\"/\"DR2\"/\"UDG\"\n" +
 										"\t-m \"JsonSerialized\"/\"GraphViz\"\n"
-										); return;
-					default: break;
+										);
+						return;
+					default:
+						break;
 				}
 			}
 
@@ -101,6 +104,7 @@ namespace LazyOpCodeReader {
 			Parallel.ForEach(LinFilesFromFolder, file => {
 				// skip DR2 novels cause i'm lazy
 				if (OurGame.GameName == Game.GameID.DR2 && file.Contains("novel")) return;
+				
 				LinFile OurLinFile = new LinFile(file);
 				ReadFile(OurLinFile);
 				OurGame.LinFiles.Add(OurLinFile);
@@ -175,6 +179,7 @@ namespace LazyOpCodeReader {
 						byte ByteRead = br.ReadByte();
 						if (ByteRead == OperationCode.START_HEX) { // hacky
 							//Console.WriteLine("Found potential opcode");
+							
 							// who in their right fucking mind decided that
 							// chars in C# are actually an int and not a byte
 							// guess we'll do it like this then
@@ -215,14 +220,8 @@ namespace LazyOpCodeReader {
 																"INDEX IN OFFSY: {2}",
 																leFile.PrettyFileName, leFile.HowManyStrings, offsy);
 							br.BaseStream.Position = leFile.TextOffset + offsy;
-							// well, the reason why i'm not trying to read it is
-							// because some strings are UTF-16 while some are
-							// SHIFT-JIS in the unused files, while i could read
-							// byte for byte untill an 0xFEFF (or whatever the
-							// Shift-JIS equivalent is) and then decode them with
-							// `Encoding.GetEncoding("Shift-JIS")`,
-							// I think it's easier to admit i don't know how to
-							//leFile.Strings.Add(br.ReadString());
+							// TODO: An attempt to get the UTF-16 strings
+							// should be made here, in the future...  maybe
 						}
 					}
 				}

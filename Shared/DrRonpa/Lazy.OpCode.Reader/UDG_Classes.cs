@@ -92,7 +92,8 @@ namespace LazyOpCodeReader.Games {
 			}
 		}
 
-		// 0x18 since I'm lazy
+		// 0x18
+		// copy pasted from above since I'm lazy
 		public class EndFlagCheck {
 			public string Comment = "End Check Flag"; // hack to see what the objects are
 			public short Flag;
@@ -101,6 +102,7 @@ namespace LazyOpCodeReader.Games {
 			}
 		}
 
+		// 0x24
 		public class Ev8Association {
 			public string Comment = "Type and Index EV8 association"; // hack to see what the objects are
 			public byte Type;

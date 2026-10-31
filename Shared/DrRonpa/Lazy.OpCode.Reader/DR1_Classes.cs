@@ -43,6 +43,7 @@ namespace LazyOpCodeReader.Games {
 				return $"e{Chapter:D2}_{Episode:D3}_{SubEpisode:D3}";
 			}
 		}
+
 		// 0x1B
 		// personally I would have done `RunScript : LoadScript` but I don't know
 		// how i would make the constructor for this not be LoadScript's 
@@ -61,6 +62,7 @@ namespace LazyOpCodeReader.Games {
 				return $"e{Chapter:D2}_{Episode:D3}_{SubEpisode:D3}";
 			}
 		}
+		
 		// 0x15
 		public class LoadMap {
 			public string Type = "Load Map"; // hack to see what the objects are
