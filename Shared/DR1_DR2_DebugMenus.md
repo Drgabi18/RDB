@@ -319,7 +319,11 @@ Honestly, no clue, allows you to select a file (most likely object type) and cha
 Does nothing. If it worked, it may have been used to test what happens currently when you set the Priority bool on the characters, but for other points of interest
 
 # Game Debug Menus
-These are the Debug Menus that affect the game state and not elements in the world. Can be accessed on the MacOS version by just pressing Q+E and V. Values changed by it are the same values that end up in the save file.
+These are the Debug Menus that affect the game state and not elements in the world. Can be accessed on the MacOS version by just pressing Q+E and V.
+
+This menu was not compiled (header file got commented out instead of being stubbed) in the final PSP release but strings from it remained. Values changed by it are the same values that end up in the save file. The code for these menus was most likely changed when the game got ported to the PS Vita due to `psp_debug_text` in DR1 having functions that call the `X` position at `600`. The code for these menus was removed (and the text display stubbed) with the Anniversay Update ports.
+
+These also don't remove the HUD and change the time of day like how those `bg_%03.tga` images were made if that's what you're searching. Oof.
 
 ## `Episode` Debug Menu
 ### DR1
@@ -390,8 +394,8 @@ HANBAIKI %01d
 * `MONOMONO` is the gacha capsule BS
 * `HANBAIKI` is the vending machine
 
-## `Script_Debug` Debug Menu
-### DR1
+## `Debug_Mode` / `Script_Debug` Debug Menu
+### DR1 (`Debug_Mode`)
 ```
 POKETBOOK %d
       MAP %d
@@ -415,7 +419,7 @@ Hispeed Skip %d
 ```
 In DR1, the previous 2 menus from above didn't exist, thus, those options are in this menu. `MAPOPEN` allows you to access all floors on the MAP (but not unused ones, there's no code for them), spots where you can teleports are glitched but using them crashes the game.
 
-### DR2
+### DR2 (`Script_Debug`)
 ```
 SkillCoin    %d
 SkillPoint   %d
@@ -439,10 +443,13 @@ Monokuma Medal %03d
 KKRM %04d %04d %04d %04d %04d %04d %04d %04d
 ```
 Oh boy. I'll just be honest and say I don't understand these, I'll note the only ones I understand.
-* `W[19]`, `W[20]`, `W[22]` - is used to set a bitmask flag for story flags, for example if you talked to a Character, it sets a flag for it so next time you have a dialouge with them, the .lin file checks that and skips the dialouge so it doesn't repeat what they've said again. A flag is also set for 
+* `[12]`, `[13]`, `[14]`, `[15]`, `W[19]`, `W[20]`, `W[22]` - is used to set a bitmask flag for story flags, for example if you talked to a Character, it sets a flag for it so next time you have a dialouge with them, the .lin file checks that and skips the dialouge so it doesn't repeat what they've said again.
+  * `12` is used after talking to characters (e.g. Mahiru in the introduction), sets bitmask right to left +1, so `SetFlag(12, 14, 1)` is `[12] 0000 0000 0000 0000 0100 0000 0000 0000`, `13 - 15` were already documented [here](https://github.com/morgana-x/danganronpa-lin-compiler-v2/blob/02f7a5c536ed4ba01ef057cd1f7894d55af0facf/LinLib/LIN/Enums.cs#L346-L351)
+  * `W[20]` is used for the system that converts stuff to read `eNN_999_NNN` files, for example, in the prolouge after ariving and talking to Mahiru, Nekomaru and Gangsta Baby, when this option is set to `3`, the restaurant goes to the normal Sonia and Teruteru, when the value is set to `4`, the `e00_999_023.lin` loads instead.
+  * if `W[22]` is also a bitmask, it's only used in `e09_900_000.lin` and no other file
 * `KKRM` - unknown
 * `MainMenuLoad` - is a bit useless, for example, when you start the game, you can't really access the Main Menu in the prolouge. This value only reports that value, but changing it does nothing, changing it aftet you have the menu availiable also does nothing.
-* `SET_MAP_NO` - unknown, most likely sets flags for what should be visible in maps
+* `SET_MAP_NO` - sets flags for what should be visible on the minimap (e.g. characters at a location, is the player there, can you hover over, has urgent event or name etc.), is where `[%03d]%04d %04d %04d %04d %04d %04d %04d %04d` is used. For some bizzare reason there's 350 entries.
 
 ## `Adv_Kotodama` Debug Menu
 ```
