@@ -27,10 +27,19 @@ For the PSP, I explored the following Catalog Numbers:
 For the PSV, I explored the following Catalog Number(s):
 * `PCSG00202 v1.00` - _ダンガンロンパ１・２ Reload_
 
-For the Anniversary ports where the Debug Symbols are from, I extraced them from the following versions:
+For the lost 2012 iOS/Android C# remake in unity, I explored the code from
+* `ダンガンロンパ-希望の学園と絶望の高校生.1.3.apk` - _Danganronpa 1_
+
+For the """Anniversary""" (it's just Unity again but they made parts of the original Danganronpa code a native library, check `drslib.so`) ports where the protobufs and some Debug Symbols are from, I extraced them from the following versions:
 * `jp.co.spike_chunsoft.DR1.apk` - Version 1.0.0
 * `jp.co.spike_chunsoft.DR2.apk` - Version 1.0.2
 * `jp.co.spike_chunsoft.DRV3.apk` - Version 1.1
+
+**Fun Fact!** When *DR 1.2 Reloaded* was made - because DR1 and DR2 were so similar - the collection (internally called `DRCommon`) basically just made a namespace for the code files inside the originals (`D:/Prj/Dgnpsv/GRP/DR1/` and `D:/Prj/Dgnpsv/GRP/DR2/` on Spike Chunsoft's intranet) and that cool fancy menu at the start just boots you into the `main()` functions inside the namespaces.
+
+This version was used for the Anniversary ports, which in consequence makes it so DR1 has DR2 code and DR2 has DR1 code. To give DR 1.2 on the Vita/PS4 some credit, for functions that were 1:1 the same were added into a common namespace and both DR1 and DR2 called the same code (e.g. code that `printf()`s `bg_%03d.pak`). In this Anniversary port however, when they got to these functions, they decided they should re-copy the code from the originals PSV versions, so now you have 1:1 identical functions between 2 namespaces. Good job Spike Chunsoft!
+
+Because DRV3 is so different from the original code of the 2 games, they just copy pasted `F:/Work/DR_backlog/DRS3/Dangan3/project/source/` (yes internally they store the 3 games in different places) and worked off that.
 
 Several Markdown file with some text explanation documenting some aspects of the game:
 * [The Debug Menus from the PSP and Steam releases](Shared/DR1_DR2_DebugMenus.md) _(not including Android/iOS versions which have way too many printfs and asserts left in the code)_
@@ -42,7 +51,7 @@ Each file for each game is sorted individually into the folder for what title th
 * `./DR1/DR1_Rooms.ods`, `./DR2/DR2_Rooms.ods`, `./DRV3/DRV3_Rooms.txt`, `./UDG/UDG_Maps.txt` are the files containing the Room IDs and a short description of what they do.
 * `./DR1/DR1 Room File Paths.txt` and `./DR2/DR2 Room File Paths.txt` contain strings extracted from decompressed .pak files. These file paths have been recreated in `./DR1/DR1FolderStructureRemade` and `./DR2/DR2FolderStructureRemade` respectivley if you wanna explore them.
 * `./DR1/DR1_Orig_to_TBE_LIN_changes.diff`, `./DR1/DR1_TBE_to_Reloaded_LIN_changes.diff` and `./DR2/DR2_PSP_to_PSV_LIN_changes.diff` are `git diff` files for the changes done between the versions of the game. The diffed files have been created using morgana's [danganronpa-lin-compiler-v2](https://github.com/morgana-x/danganronpa-lin-compiler-v2).
-* `./Shared/Codepaths_from_DR2.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. In actuality, it's a stubbed build of DR 1.2 Reloaded made to only run the DR2 namespace. These file paths have been recreated in `./Shared/Codepaths_from_DR2/` if you wanna explore them.
+* `./Shared/Codepaths_from_DR_Reloaded.txt` contains the file paths extracted from the Debug Symbols left in the """Unity""" (Anniversary) versions of the game. These file paths have been recreated in `./Shared/Codepaths_from_DR_Reloaded/` if you wanna explore them.
 * `./DR1/DR1_UserDefinedSymbols.csv`, `./DR2/DR2_UserDefinedSymbols.csv` and `./UDG/UDG_UserDefinedSymbols.csv` contain the names I gave to memory addresses I could find. Again these only work assuming you used the same manifest versions as me and the stars aligned correctly so you have dumped the same stuff (in DRV3's case, you can do the same by running x64dbg in Wine to dump the game, since ASLR is disabled in Wine, thank fuck).
 * `./DR1/DR1_ProtobufSymbols.csv`, `./DR2/DR2_ProtobufSymbols.csv` and `./DRV3/DRV3_ProtobufSymbols.csv` contain the Protobuf function names and structs extracted from `drslib.so` shared object files in the Anniversary versions of the game. `./UDG/UDG_ClassNames.csv` contains an assortment of class names from some vtables, most likely as a result of wanting to use `dynamic_cast<>`.
 * `./Shared/DR12V3_Unused_LINs.txt` contains a list of the unused LIN files I found in the mainline series games.
