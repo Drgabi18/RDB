@@ -11,6 +11,8 @@ namespace DanganFurniture.Enums {
 		V3_KV_TypeNames		
 	}
 	
+	// ============ DR1 and DR2 ============
+
 	// TODO: Would these work better as objects? For example, Type 1 is people
 	// in the world and uses the Positions as position in the world, but Type 40
 	// which sets the overlay color casts (char)(int)(float) to a byte array to
@@ -118,6 +120,8 @@ namespace DanganFurniture.Enums {
 		PathWhenWalkingInRoomsWithFloors = 90,	// Unk1 represents the ID of the path, unused one in bg_025
 		SANITY_CHECK = 255,	// DR2 starts reading the furniture only if this object exists
 	}
+
+	// ============ DRV3 ============
 
 	/*
 		Types in this game don't matter that much, as the index is actually used
